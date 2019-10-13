@@ -1,0 +1,6 @@
+framework module WGBEasyMarqueeView {
+  umbrella header "WGBEasyMarqueeView-umbrella.h"
+
+  export *
+  module * { export * }
+}

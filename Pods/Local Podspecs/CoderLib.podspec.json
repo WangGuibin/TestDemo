@@ -1,0 +1,22 @@
+{
+  "name": "CoderLib",
+  "version": "0.0.1",
+  "summary": "一个本地库的测试库.",
+  "description": "一个本地库的测试库一个本地库的测试库",
+  "homepage": "http://EXAMPLE/CoderLib",
+  "license": "MIT",
+  "authors": {
+    "CoderWGB": "guchengye153@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ]
+}

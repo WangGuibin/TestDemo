@@ -1,0 +1,52 @@
+//
+//  PrefixHeader.pch
+//  TestDemo
+//
+//  Created by mac on 2019/9/29.
+//  Copyright © 2019 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <Masonry.h>
+#import <YYText.h>
+#import <ReactiveObjC.h> 
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <WGBCocoa.h>
+#import <WGBCustomPopUpView/WGBCustomPopUpView.h>
+#import <WGBEasyMarqueeView/WGBEasyMarqueeView.h>
+#import <WGBWaveLayerButton/WGBWaveLayerButton.h>
+#import <WGBCommonAlertSheetView/WGBCommonAlertSheetView.h>
+#import <WGBRepairedOrientationLabel/WGBRepairedOrientationLabel.h>
+#import "WGBCustomButton.h"
+#import "WGBAlertTool.h"
+
+
+///颜色随机
+#define randomColor        [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1.0]
+/// 获取RGBA颜色
+#define RGBA(r,g,b,a)      [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+/// 获取RGB颜色
+#define RGB(r,g,b)         RGBA(r,g,b,1.0f)
+/// 拿到通知中心实例
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
+//View圆角和加边框 对象,圆角大小,边框宽度,颜色
+#define ViewBorderRadius(View,Radius,Width,Color)\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+// View圆角 对象,圆角大小
+#define ViewRadius(View,Radius)\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
+
+#endif /* PrefixHeader_pch */

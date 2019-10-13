@@ -1,0 +1,6 @@
+framework module WGBCustomPopUpView {
+  umbrella header "WGBCustomPopUpView-umbrella.h"
+
+  export *
+  module * { export * }
+}

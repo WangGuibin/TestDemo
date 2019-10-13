@@ -1,0 +1,84 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.4.2)
+  - Masonry (1.1.0)
+  - ReactiveObjC (3.1.1)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - WGBCocoaKit (1.1.1):
+    - WGBCocoaKit/FoundationModule (= 1.1.1)
+    - WGBCocoaKit/UIKitModule (= 1.1.1)
+  - WGBCocoaKit/FoundationModule (1.1.1)
+  - WGBCocoaKit/UIKitModule (1.1.1)
+  - WGBCommonAlertSheetView (1.0.0)
+  - WGBCustomPopUpView (1.0.0)
+  - WGBEasyMarqueeView (1.0.0)
+  - WGBRepairedOrientationLabel (1.0.0)
+  - WGBWaveLayerButton (1.0.0)
+  - YSQRCodeGenerator (1.0)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
+  - Masonry
+  - ReactiveObjC (~> 3.1.1)
+  - SDWebImage
+  - WGBCocoaKit
+  - WGBCommonAlertSheetView
+  - WGBCustomPopUpView (~> 1.0.0)
+  - WGBEasyMarqueeView
+  - WGBRepairedOrientationLabel
+  - WGBWaveLayerButton
+  - YSQRCodeGenerator
+  - YYText
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - ReactiveObjC
+    - SDWebImage
+    - WGBCocoaKit
+    - WGBCommonAlertSheetView
+    - WGBCustomPopUpView
+    - WGBEasyMarqueeView
+    - WGBRepairedOrientationLabel
+    - WGBWaveLayerButton
+    - YSQRCodeGenerator
+    - YYText
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  WGBCocoaKit: 66e159fc3e67b5acca256083b5746c7a3fac602a
+  WGBCommonAlertSheetView: df09b046991161e59e1c0dab3f839fea6dd723b9
+  WGBCustomPopUpView: ca687050aba50bf6a3bb895755b1b8acdc94f1bf
+  WGBEasyMarqueeView: cac25ad877def51c5615054230bf355c8543abe7
+  WGBRepairedOrientationLabel: 236b72d5b8ff84c4feba50bda0a109de143c6064
+  WGBWaveLayerButton: f90b0e8abc7a5b51750d2b5dc1e7a41342c9d55f
+  YSQRCodeGenerator: 9721a635e7de03a0bbefef6602ca601f9ac62f9a
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: fb100e420662b4bcdfe034dd3b5434f3bb8eb8a8
+
+COCOAPODS: 1.7.5

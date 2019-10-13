@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HPSelectSexAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMb-5c-fig">
+                    <rect key="frame" x="20" y="20" width="65.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zo5-Cl-umO">
+                    <rect key="frame" x="30" y="59.5" width="260" height="100"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kz-3r-iF4">
+                            <rect key="frame" x="0.0" y="7" width="120" height="86"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="86" id="EgI-cO-41T"/>
+                            </constraints>
+                            <state key="normal" image="icon_big_sex_boy_nor"/>
+                            <state key="selected" image="icon_big_sex_boy_sel"/>
+                            <connections>
+                                <action selector="selectSexAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="fQk-Dm-50X"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xm1-Vi-cz5">
+                            <rect key="frame" x="140" y="7" width="120" height="86"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="86" id="pl5-6l-BZv"/>
+                            </constraints>
+                            <state key="normal" image="icon_big_sex_girl_nor"/>
+                            <state key="selected" image="icon_big_sex_girl_sel"/>
+                            <connections>
+                                <action selector="selectSexAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="xbq-sJ-Of4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="NSQ-lX-EyB"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-HX-6Rs">
+                    <rect key="frame" x="0.0" y="189.5" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0AQ-gn-HiE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJu-qV-kiH">
+                    <rect key="frame" x="159.5" y="190.5" width="1" height="49.5"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="zAW-sd-Ie8"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIU-or-2kO">
+                    <rect key="frame" x="160.5" y="190.5" width="159.5" height="49.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.85098039219999999" green="0.59999999999999998" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickOperationButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ehp-q5-IKt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="166-XP-gMc">
+                    <rect key="frame" x="0.0" y="190.5" width="159.5" height="49.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickOperationButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="5zX-eU-AwL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gMC-HX-6Rs" secondAttribute="trailing" id="285-rA-DSQ"/>
+                <constraint firstItem="LMb-5c-fig" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="6Q3-eS-beC"/>
+                <constraint firstItem="zo5-Cl-umO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="9uz-Mx-CCe"/>
+                <constraint firstAttribute="bottom" secondItem="QIU-or-2kO" secondAttribute="bottom" id="Crb-v6-o6z"/>
+                <constraint firstItem="OJu-qV-kiH" firstAttribute="leading" secondItem="166-XP-gMc" secondAttribute="trailing" id="SrC-90-Pk3"/>
+                <constraint firstItem="166-XP-gMc" firstAttribute="top" secondItem="gMC-HX-6Rs" secondAttribute="bottom" id="T4Z-Fh-6ee"/>
+                <constraint firstItem="OJu-qV-kiH" firstAttribute="top" secondItem="gMC-HX-6Rs" secondAttribute="bottom" id="Yoi-jm-Nil"/>
+                <constraint firstItem="gMC-HX-6Rs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dku-Lh-Xt7"/>
+                <constraint firstItem="166-XP-gMc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hg0-Jo-zrO"/>
+                <constraint firstItem="QIU-or-2kO" firstAttribute="leading" secondItem="OJu-qV-kiH" secondAttribute="trailing" id="j2c-0e-hNw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QIU-or-2kO" secondAttribute="trailing" id="lkp-Le-st4"/>
+                <constraint firstItem="OJu-qV-kiH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lyd-aB-WqP"/>
+                <constraint firstItem="zo5-Cl-umO" firstAttribute="top" secondItem="LMb-5c-fig" secondAttribute="bottom" constant="20" id="n94-We-8TP"/>
+                <constraint firstItem="LMb-5c-fig" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="pbT-hw-6PC"/>
+                <constraint firstItem="QIU-or-2kO" firstAttribute="top" secondItem="gMC-HX-6Rs" secondAttribute="bottom" id="ri3-Wt-CBD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OJu-qV-kiH" secondAttribute="bottom" id="uvK-H4-zsx"/>
+                <constraint firstAttribute="bottom" secondItem="166-XP-gMc" secondAttribute="bottom" id="vQM-bx-iEA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zo5-Cl-umO" secondAttribute="trailing" constant="30" id="zbB-8C-CK5"/>
+                <constraint firstItem="gMC-HX-6Rs" firstAttribute="top" secondItem="zo5-Cl-umO" secondAttribute="bottom" constant="30" id="zdK-we-aE0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="boyButton" destination="1kz-3r-iF4" id="hpE-aN-dHh"/>
+            </connections>
+            <point key="canvasLocation" x="3" y="5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_big_sex_boy_nor" width="86" height="86"/>
+        <image name="icon_big_sex_boy_sel" width="86" height="86"/>
+        <image name="icon_big_sex_girl_nor" width="86" height="86"/>
+        <image name="icon_big_sex_girl_sel" width="86" height="86"/>
+    </resources>
+</document>

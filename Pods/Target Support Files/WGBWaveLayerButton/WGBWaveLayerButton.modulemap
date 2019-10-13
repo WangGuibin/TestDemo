@@ -1,0 +1,6 @@
+framework module WGBWaveLayerButton {
+  umbrella header "WGBWaveLayerButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

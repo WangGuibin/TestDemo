@@ -1,0 +1,6 @@
+framework module WGBCocoaKit {
+  umbrella header "WGBCocoaKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

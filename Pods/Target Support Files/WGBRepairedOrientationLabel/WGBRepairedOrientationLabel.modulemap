@@ -1,0 +1,6 @@
+framework module WGBRepairedOrientationLabel {
+  umbrella header "WGBRepairedOrientationLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}
