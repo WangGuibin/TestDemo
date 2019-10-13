@@ -31,7 +31,7 @@
         case ShowQRCodeStyleNormal:
         {
             YSQRCodeGenerator *generator = [YSQRCodeGenerator new];
-            generator.content = @"123123";
+            generator.content = @"6666666666666666";
             [generator setColorWithBackColor:[UIColor whiteColor] foregroundColor:[UIColor blackColor]];
             UIImage *image = [generator generate];
             QRCodeImageView.image =  image;
@@ -40,7 +40,7 @@
         case ShowQRCodeStyleIconBg:
         {
             YSQRCodeGenerator *generator = [YSQRCodeGenerator new];
-            generator.content = @"123123";
+            generator.content = @"6666666666666666";
             [generator setColorWithBackColor:[UIColor whiteColor] foregroundColor:[UIColor blackColor]];
             generator.watermark = [UIImage imageNamed:@"Miku.jpg"];
             generator.watermarkMode = UIViewContentModeScaleAspectFill;
@@ -53,7 +53,7 @@
         case ShowQRCodeStyleGIFBg:
         {
             YSQRCodeGenerator *generator = [YSQRCodeGenerator new];
-            generator.content = @"123123";
+            generator.content = @"6666666666666666";
             [generator setColorWithBackColor:[UIColor whiteColor] foregroundColor:[UIColor blackColor]];
             UIImage *image = [generator generateWithGIFCodeWithGIFNamed:@"74766_811947_358458"];
             QRCodeImageView.image =  image;
@@ -61,7 +61,7 @@
             break;
         case ShowQRCodeStyleJPQRTool:
         {
-            QRCodeImageView.image = [JPQRCodeTool generateCodeForString:@"花式二维码示例" withCorrectionLevel:(kQRCodeCorrectionLevelHight) SizeType:(kQRCodeSizeTypeBig) customSizeDelta:5 drawType:(kQRCodeDrawTypeCircle) gradientType:(kQRCodeGradientTypeDiagonal) gradientColors:@[[UIColor redColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor blueColor],[UIColor yellowColor],[UIColor cyanColor]]];
+            QRCodeImageView.image = [JPQRCodeTool generateCodeForString:@"6666666666666666" withCorrectionLevel:(kQRCodeCorrectionLevelHight) SizeType:(kQRCodeSizeTypeBig) customSizeDelta:5 drawType:(kQRCodeDrawTypeCircle) gradientType:(kQRCodeGradientTypeDiagonal) gradientColors:@[[UIColor redColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor blueColor],[UIColor yellowColor],[UIColor cyanColor]]];
         }
             break;
 
