@@ -29,7 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat margin;//上下左右边距 默认 = 15.0
 @property (nonatomic, assign) CGFloat spacing;//图片之间的间距 默认 = 10.0
 
-
 @property (nonatomic, weak) id <WGBSelectPhotoViewDelegate> delegate;
 
 - (NSUInteger)picturesCount;

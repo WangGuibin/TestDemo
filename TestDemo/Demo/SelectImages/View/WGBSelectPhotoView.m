@@ -10,12 +10,11 @@
 #import "WGBSelectPhotoButton.h"
 
 @interface WGBSelectPhotoView ()<UIGestureRecognizerDelegate>
-@property (nonatomic, strong) NSMutableArray *pictureBtnArr;
 
+@property (nonatomic, strong) NSMutableArray *pictureBtnArr;
 @property (nonatomic, assign) CGPoint centerPoint;
 @property (nonatomic, assign) CGPoint originPoint;
 @property (nonatomic, assign) CGPoint startPoint;
-
 @property (nonatomic, assign) NSInteger selectedIndex;
 
 
