@@ -35,9 +35,6 @@
     }];
     
     [pickerVC setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
-        if (self.selectImageArray.count) {
-            [self.selectImageArray removeAllObjects];
-        }
         [self.selectImageArray addObjectsFromArray:assets];
         [self.selectPhotoView addPhotoesWithImages: photos];
     }];
@@ -62,6 +59,14 @@
         [browser show];
     }
 }
+
+//删除图片事件回调
+- (void)wgb_photoViewDidDeletedPhotoAtIndex:(NSInteger)index{
+    if (self.selectImageArray.count) {
+        [self.selectImageArray removeObjectAtIndex: index];
+    }
+}
+
 
 - (WGBSelectPhotoView *)selectPhotoView {
     if (!_selectPhotoView) {

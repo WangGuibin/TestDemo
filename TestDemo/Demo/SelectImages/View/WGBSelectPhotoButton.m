@@ -31,7 +31,10 @@
         self.contentVerticalAlignment   = UIControlContentVerticalAlignmentFill;
         self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentFill;
         
-        UIImage *addImg = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"wgb_add" ofType:@"png"]];
+        NSString* path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"WGBSelectPhotoView.bundle"];
+        NSBundle *bundle = [NSBundle bundleWithPath:path];
+
+        UIImage *addImg = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"wgb_add" ofType:@"png"]];
         [self setBackgroundImage: addImg forState:UIControlStateNormal];
         
         [self addTarget:self
@@ -61,7 +64,9 @@
         _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _deleteBtn.frame = CGRectMake(0, 0, 25, 25);
-        UIImage *deleteImg = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"wgb_delete" ofType:@"png"]];
+        NSString* path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"WGBSelectPhotoView.bundle"];
+        NSBundle *bundle = [NSBundle bundleWithPath:path];
+        UIImage *deleteImg = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"wgb_delete" ofType:@"png"]];
         [_deleteBtn setBackgroundImage: deleteImg forState:UIControlStateNormal];
         [_deleteBtn addTarget:self
                        action:@selector(didCLickedDeleteBtn)

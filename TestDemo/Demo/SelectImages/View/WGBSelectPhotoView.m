@@ -107,6 +107,10 @@
         [self addAddPictureButton];
     }
     
+    if (self.delegate && [self.delegate respondsToSelector:@selector(wgb_photoViewDidDeletedPhotoAtIndex:)]) {
+        [self.delegate wgb_photoViewDidDeletedPhotoAtIndex: index];
+    }
+    
     //更新视图本身的frame 自适应高度
     CGRect frame = [self pictureButtonFrameWithIndex:self.pictureBtnArr.count - 1];
     CGRect viewRect = self.frame;
