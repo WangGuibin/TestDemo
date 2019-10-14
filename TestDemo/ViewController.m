@@ -15,6 +15,8 @@
 #import "NSLayoutAnchorDemoViewController.h"
 #import "YYTextDemoViewController.h"
 #import "FancyQRCodeToolDemoViewController.h"
+#import "GlowingAnimationDemoViewController.h"
+#import "SelectImagesDemoViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -40,7 +42,9 @@
              [WGBRepairedOrientationLabelDemoViewController class],
              [NSLayoutAnchorDemoViewController class],
              [YYTextDemoViewController class],
-             [FancyQRCodeToolDemoViewController class]
+             [FancyQRCodeToolDemoViewController class],
+             [GlowingAnimationDemoViewController class],
+             [SelectImagesDemoViewController class]
              ];
 }
 
@@ -54,7 +58,9 @@
              @"WGBRepairedOrientationLabel",
              @"iOS 布局约束`NSLayoutAnchor`学习",
              @"YYTextDemoViewController测试学习",
-             @"花式二维码"
+             @"花式二维码",
+             @"发光动画",
+             @"选择相册-发布" 
              ];
 }
 

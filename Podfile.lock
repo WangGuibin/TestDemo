@@ -20,6 +20,7 @@ PODS:
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
+  - TZImagePickerController (3.2.4)
   - WGBCocoaKit (1.1.1):
     - WGBCocoaKit/FoundationModule (= 1.1.1)
     - WGBCocoaKit/UIKitModule (= 1.1.1)
@@ -30,7 +31,15 @@ PODS:
   - WGBEasyMarqueeView (1.0.0)
   - WGBRepairedOrientationLabel (1.0.0)
   - WGBWaveLayerButton (1.0.0)
+  - YBImageBrowser (3.0.4):
+    - YBImageBrowser/Core (= 3.0.4)
+  - YBImageBrowser/Core (3.0.4):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
   - YSQRCodeGenerator (1.0)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
   - YYText (1.0.7)
 
 DEPENDENCIES:
@@ -39,12 +48,14 @@ DEPENDENCIES:
   - Masonry
   - ReactiveObjC (~> 3.1.1)
   - SDWebImage
+  - TZImagePickerController
   - WGBCocoaKit
   - WGBCommonAlertSheetView
   - WGBCustomPopUpView (~> 1.0.0)
   - WGBEasyMarqueeView
   - WGBRepairedOrientationLabel
   - WGBWaveLayerButton
+  - YBImageBrowser
   - YSQRCodeGenerator
   - YYText
 
@@ -55,13 +66,16 @@ SPEC REPOS:
     - Masonry
     - ReactiveObjC
     - SDWebImage
+    - TZImagePickerController
     - WGBCocoaKit
     - WGBCommonAlertSheetView
     - WGBCustomPopUpView
     - WGBEasyMarqueeView
     - WGBRepairedOrientationLabel
     - WGBWaveLayerButton
+    - YBImageBrowser
     - YSQRCodeGenerator
+    - YYImage
     - YYText
 
 SPEC CHECKSUMS:
@@ -70,15 +84,18 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  TZImagePickerController: d259369c5c2cc96299e53da868ae5be1b24353cd
   WGBCocoaKit: 66e159fc3e67b5acca256083b5746c7a3fac602a
   WGBCommonAlertSheetView: df09b046991161e59e1c0dab3f839fea6dd723b9
   WGBCustomPopUpView: ca687050aba50bf6a3bb895755b1b8acdc94f1bf
   WGBEasyMarqueeView: cac25ad877def51c5615054230bf355c8543abe7
   WGBRepairedOrientationLabel: 236b72d5b8ff84c4feba50bda0a109de143c6064
   WGBWaveLayerButton: f90b0e8abc7a5b51750d2b5dc1e7a41342c9d55f
+  YBImageBrowser: c02f42bbc89955f5a88ddb57e0b94ff9fdbee461
   YSQRCodeGenerator: 9721a635e7de03a0bbefef6602ca601f9ac62f9a
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: fb100e420662b4bcdfe034dd3b5434f3bb8eb8a8
+PODFILE CHECKSUM: cb01a052e0928ea00bc51ba3ffc43c76891e86c9
 
 COCOAPODS: 1.7.5

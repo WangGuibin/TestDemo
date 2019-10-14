@@ -11,6 +11,12 @@
 		0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */; };
 		0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C8235187EC0069AC4D /* Miku.jpg */; };
 		0450C8CC235187EC0069AC4D /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C9235187EC0069AC4D /* github.png */; };
+		0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8CF23547E3A0069AC4D /* GlowingAnimationDemoViewController.m */; };
+		0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8D82354A6CA0069AC4D /* SelectImagesDemoViewController.m */; };
+		0450C8DC2354A7270069AC4D /* WGBSelectPhotoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8DB2354A7270069AC4D /* WGBSelectPhotoButton.m */; };
+		0450C8DF2354A95C0069AC4D /* WGBSelectPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8DE2354A95C0069AC4D /* WGBSelectPhotoView.m */; };
+		0450C8E32354BCC90069AC4D /* wgb_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8E12354BCC80069AC4D /* wgb_add.png */; };
+		0450C8E42354BCC90069AC4D /* wgb_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8E22354BCC90069AC4D /* wgb_delete.png */; };
 		048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A796822D397DC00A0E38F /* JPQRCodeTool.m */; };
 		0496021122CF7BBF00404432 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0496021022CF7BBF00404432 /* SDWebImage.framework */; };
 		04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */; };
@@ -50,6 +56,16 @@
 		0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 74766_811947_358458.gif; sourceTree = "<group>"; };
 		0450C8C8235187EC0069AC4D /* Miku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Miku.jpg; sourceTree = "<group>"; };
 		0450C8C9235187EC0069AC4D /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		0450C8CE23547E3A0069AC4D /* GlowingAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlowingAnimationDemoViewController.h; sourceTree = "<group>"; };
+		0450C8CF23547E3A0069AC4D /* GlowingAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlowingAnimationDemoViewController.m; sourceTree = "<group>"; };
+		0450C8D72354A6CA0069AC4D /* SelectImagesDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectImagesDemoViewController.h; sourceTree = "<group>"; };
+		0450C8D82354A6CA0069AC4D /* SelectImagesDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectImagesDemoViewController.m; sourceTree = "<group>"; };
+		0450C8DA2354A7270069AC4D /* WGBSelectPhotoButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSelectPhotoButton.h; sourceTree = "<group>"; };
+		0450C8DB2354A7270069AC4D /* WGBSelectPhotoButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSelectPhotoButton.m; sourceTree = "<group>"; };
+		0450C8DD2354A95C0069AC4D /* WGBSelectPhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSelectPhotoView.h; sourceTree = "<group>"; };
+		0450C8DE2354A95C0069AC4D /* WGBSelectPhotoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSelectPhotoView.m; sourceTree = "<group>"; };
+		0450C8E12354BCC80069AC4D /* wgb_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wgb_add.png; sourceTree = "<group>"; };
+		0450C8E22354BCC90069AC4D /* wgb_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wgb_delete.png; sourceTree = "<group>"; };
 		048A796722D397DC00A0E38F /* JPQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPQRCodeTool.h; sourceTree = "<group>"; };
 		048A796822D397DC00A0E38F /* JPQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPQRCodeTool.m; sourceTree = "<group>"; };
 		0496021022CF7BBF00404432 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +157,54 @@
 			path = DemoImages;
 			sourceTree = "<group>";
 		};
+		0450C8CD23547E210069AC4D /* GlowingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0450C8CE23547E3A0069AC4D /* GlowingAnimationDemoViewController.h */,
+				0450C8CF23547E3A0069AC4D /* GlowingAnimationDemoViewController.m */,
+			);
+			path = GlowingAnimation;
+			sourceTree = "<group>";
+		};
+		0450C8D42354A6860069AC4D /* SelectImages */ = {
+			isa = PBXGroup;
+			children = (
+				0450C8D62354A6B00069AC4D /* Controller */,
+				0450C8D52354A6930069AC4D /* View */,
+			);
+			path = SelectImages;
+			sourceTree = "<group>";
+		};
+		0450C8D52354A6930069AC4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0450C8E02354BC890069AC4D /* ReSource */,
+				0450C8DA2354A7270069AC4D /* WGBSelectPhotoButton.h */,
+				0450C8DB2354A7270069AC4D /* WGBSelectPhotoButton.m */,
+				0450C8DD2354A95C0069AC4D /* WGBSelectPhotoView.h */,
+				0450C8DE2354A95C0069AC4D /* WGBSelectPhotoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0450C8D62354A6B00069AC4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0450C8D72354A6CA0069AC4D /* SelectImagesDemoViewController.h */,
+				0450C8D82354A6CA0069AC4D /* SelectImagesDemoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0450C8E02354BC890069AC4D /* ReSource */ = {
+			isa = PBXGroup;
+			children = (
+				0450C8E12354BCC80069AC4D /* wgb_add.png */,
+				0450C8E22354BCC90069AC4D /* wgb_delete.png */,
+			);
+			path = ReSource;
+			sourceTree = "<group>";
+		};
 		048A796622D397DC00A0E38F /* JPQRCodeTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +217,8 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				0450C8D42354A6860069AC4D /* SelectImages */,
+				0450C8CD23547E210069AC4D /* GlowingAnimation */,
 				04CA01FA2351816B009C8C22 /* QRCode */,
 				0439C9EA234C93F100E9D9AB /* YYText */,
 				04B0CAB42341F5F4007B2AD2 /* NSLayoutAnchor */,
@@ -394,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F735A522CDAA8D007CB0D0 /* LaunchScreen.storyboard in Resources */,
+				0450C8E42354BCC90069AC4D /* wgb_delete.png in Resources */,
 				04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */,
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
@@ -403,6 +470,7 @@
 				04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */,
 				0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */,
 				04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */,
+				0450C8E32354BCC90069AC4D /* wgb_add.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +531,7 @@
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
+				0450C8DF2354A95C0069AC4D /* WGBSelectPhotoView.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
@@ -473,7 +542,10 @@
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				04B0CA912340CF4F007B2AD2 /* WGBEasyMarqueeViewDemoViewController.m in Sources */,
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
+				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
+				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
+				0450C8DC2354A7270069AC4D /* WGBSelectPhotoButton.m in Sources */,
 				04CA01FD235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m in Sources */,
 				04F735A822CDAA8D007CB0D0 /* main.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,

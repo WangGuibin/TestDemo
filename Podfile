@@ -15,6 +15,8 @@ target 'TestDemo' do
   pod 'SDWebImage'
   pod 'Masonry'
   pod 'IQKeyboardManager'
+  pod 'TZImagePickerController'
+  pod 'YBImageBrowser'
   pod 'WGBCocoaKit'
   pod 'YYText'
   pod 'YSQRCodeGenerator' #花式二维码
