@@ -10,6 +10,7 @@
 #import "HPEditSignatureAlertView.h"
 #import "HPSelectSexAlertView.h"
 #import "HPCommonCancelConfirmAlertView.h"
+#import "HPPublishAlertView.h"
 
 @implementation WGBAlertTool
 /// 免费次数已用完的弹窗
@@ -280,6 +281,37 @@
         !rightBlock? : rightBlock();
     }];
 }
+
+
+///MARK:- 发布动态页面选择入口弹窗
++ (void)showPostSelectMediaAlertViewWithCallBack:(void(^)(NSInteger index))callBack{
+        WGBCustomPopUpView *pop = [[WGBCustomPopUpView alloc] initWithFrame:CGRectZero];
+        HPPublishAlertView *alertView = [HPPublishAlertView fromXIBWithIndex: 0];
+        alertView.layer.cornerRadius = 15;
+        alertView.layer.masksToBounds = YES;
+        CGFloat alertW =  KWIDTH - 80;
+        if (KWIDTH <= 320) {
+            alertW = 300;
+        }
+        CGFloat alertHeight = 225;
+        alertView.frame = CGRectMake(0, 0, alertW , alertHeight);
+        UIView *bgView = [[UIView alloc] initWithFrame:UIScreen.mainScreen.bounds];
+        [bgView addSubview: alertView];
+        alertView.center = CGPointMake(KWIDTH/2.0, KHIGHT/2.0);
+        pop.contentView = bgView;
+        pop.animationType = WGBAlertAnimationTypeCenter;
+        [pop show];
+        [alertView setCancelBlock:^{
+            [pop dismiss];
+        }];
+    
+        [alertView setSelectPublishMediaBlock:^(NSInteger index) {
+            !callBack? : callBack(index);
+            [pop dismiss];
+        }];
+
+}
+
 
 
 @end

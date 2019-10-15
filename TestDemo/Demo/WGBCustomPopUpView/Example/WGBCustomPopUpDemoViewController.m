@@ -50,6 +50,7 @@
              @"性别选择",
              @"基于StackView自定义弹窗一个按钮",
              @"基于StackView自定义弹窗两个按钮",
+             @"发布动态选择资源弹窗"
              ];
 }
 
@@ -132,7 +133,15 @@
             [self customAlertTwoButtonStyle];
         }
             break;
+        case 10:
+        {
+            [WGBAlertTool showPostSelectMediaAlertViewWithCallBack:^(NSInteger index) {
+                
+            }];
+        }
+            break;
 
+            
         default:
             break;
     }

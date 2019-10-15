@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="SelectMediaTypeAlert" customClass="HPPublishAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择发布形式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-JW-WvV">
+                    <rect key="frame" x="30" y="10" width="313" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="lAl-49-2GV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0039215686269999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZ8-u9-LDJ">
+                    <rect key="frame" x="0.0" y="40" width="373" height="1"/>
+                    <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fks-KP-g1b"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzZ-SA-Y5O">
+                    <rect key="frame" x="337" y="10.5" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Dpd-CS-GUy"/>
+                        <constraint firstAttribute="width" constant="24" id="SyT-XM-X5J"/>
+                    </constraints>
+                    <state key="normal" image="shutdown"/>
+                    <connections>
+                        <action selector="cancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="su4-d8-cIo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CqG-iM-grx" customClass="WGBCustomButton">
+                    <rect key="frame" x="25" y="61" width="323" height="65"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="JWz-Dg-54z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="发布图文            " image="release01">
+                        <color key="titleColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="release1">
+                        <color key="titleColor" red="0.61568627450000002" green="0.23921568630000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="publishSelectMediaAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="VcW-mH-rOT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2b-tu-hUR" customClass="WGBCustomButton">
+                    <rect key="frame" x="25" y="136" width="323" height="65"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="7e9-UN-Qyh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="分享自己的视频" image="release02">
+                        <color key="titleColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="release2">
+                        <color key="titleColor" red="0.61568627450000002" green="0.23921568630000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="publishSelectMediaAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="C8e-ii-8ZL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DZ8-u9-LDJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="1mN-tr-SOK"/>
+                <constraint firstAttribute="trailing" secondItem="CoI-JW-WvV" secondAttribute="trailing" constant="30" id="6V0-IX-UdU"/>
+                <constraint firstAttribute="trailing" secondItem="CqG-iM-grx" secondAttribute="trailing" constant="25" id="Klz-T5-N80"/>
+                <constraint firstItem="TzZ-SA-Y5O" firstAttribute="centerY" secondItem="CoI-JW-WvV" secondAttribute="centerY" id="MT1-iQ-0nA"/>
+                <constraint firstAttribute="trailing" secondItem="DZ8-u9-LDJ" secondAttribute="trailing" id="Q7C-KA-3FC"/>
+                <constraint firstAttribute="trailing" secondItem="TzZ-SA-Y5O" secondAttribute="trailing" constant="12" id="Uie-7H-NAU"/>
+                <constraint firstItem="CoI-JW-WvV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="Wha-hB-RrT"/>
+                <constraint firstAttribute="trailing" secondItem="H2b-tu-hUR" secondAttribute="trailing" constant="25" id="XO9-vX-spW"/>
+                <constraint firstItem="DZ8-u9-LDJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eO0-yj-UwQ"/>
+                <constraint firstItem="H2b-tu-hUR" firstAttribute="top" secondItem="CqG-iM-grx" secondAttribute="bottom" constant="10" id="ebO-7k-557"/>
+                <constraint firstItem="H2b-tu-hUR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="i4V-e1-d8p"/>
+                <constraint firstItem="CqG-iM-grx" firstAttribute="top" secondItem="DZ8-u9-LDJ" secondAttribute="bottom" constant="20" id="oIz-65-pKz"/>
+                <constraint firstItem="CqG-iM-grx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="qRN-CZ-tvq"/>
+                <constraint firstItem="CoI-JW-WvV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="u9g-Ka-QYO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-15" y="-233"/>
+        </view>
+        <view contentMode="scaleToFill" id="41H-uf-QVR" userLabel="SelectMediaWayAlert" customClass="HPPublishAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择获取形式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZU-V7-WTN">
+                    <rect key="frame" x="30" y="10" width="313" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="ifO-9f-9Pw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0039215686269999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxx-8a-cdf">
+                    <rect key="frame" x="337" y="10.5" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="1jg-NU-79u"/>
+                        <constraint firstAttribute="width" constant="24" id="pvY-qh-Tz0"/>
+                    </constraints>
+                    <state key="normal" image="shutdown"/>
+                    <connections>
+                        <action selector="cancelAction:" destination="41H-uf-QVR" eventType="touchUpInside" id="sxC-fv-sTy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHp-DO-Moz" customClass="WGBCustomButton">
+                    <rect key="frame" x="25" y="60" width="323" height="65"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="9v8-mB-2pI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="拍摄">
+                        <color key="titleColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.61568627450000002" green="0.23921568630000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="publishSelectMediaAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="uGf-2x-DoG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYB-A5-dWf" customClass="WGBCustomButton">
+                    <rect key="frame" x="25" y="135" width="323" height="65"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="HnV-1E-40y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="从相册中选择">
+                        <color key="titleColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.61568627450000002" green="0.23921568630000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="publishSelectMediaAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1XY-tl-wNM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eYB-A5-dWf" secondAttribute="trailing" constant="25" id="Anq-bE-T2c"/>
+                <constraint firstAttribute="trailing" secondItem="rZU-V7-WTN" secondAttribute="trailing" constant="30" id="CEP-Ku-aYY"/>
+                <constraint firstItem="rZU-V7-WTN" firstAttribute="top" secondItem="41H-uf-QVR" secondAttribute="top" constant="10" id="KNk-0l-lWq"/>
+                <constraint firstItem="eYB-A5-dWf" firstAttribute="leading" secondItem="41H-uf-QVR" secondAttribute="leading" constant="25" id="MBV-0d-gWO"/>
+                <constraint firstItem="rZU-V7-WTN" firstAttribute="leading" secondItem="41H-uf-QVR" secondAttribute="leading" constant="30" id="W9C-3J-w9w"/>
+                <constraint firstItem="KHp-DO-Moz" firstAttribute="top" secondItem="41H-uf-QVR" secondAttribute="top" constant="60" id="WUR-A0-2ev"/>
+                <constraint firstItem="xxx-8a-cdf" firstAttribute="centerY" secondItem="rZU-V7-WTN" secondAttribute="centerY" id="bOU-Gj-yk5"/>
+                <constraint firstItem="KHp-DO-Moz" firstAttribute="leading" secondItem="41H-uf-QVR" secondAttribute="leading" constant="25" id="eSI-pk-h4c"/>
+                <constraint firstAttribute="trailing" secondItem="KHp-DO-Moz" secondAttribute="trailing" constant="25" id="mjt-qh-Mc9"/>
+                <constraint firstItem="eYB-A5-dWf" firstAttribute="top" secondItem="KHp-DO-Moz" secondAttribute="bottom" constant="10" id="t3Q-zD-8Zm"/>
+                <constraint firstAttribute="trailing" secondItem="xxx-8a-cdf" secondAttribute="trailing" constant="12" id="yAF-kC-XQW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-343" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="release01" width="38" height="38"/>
+        <image name="release02" width="38" height="38"/>
+        <image name="release1" width="38" height="38"/>
+        <image name="release2" width="38" height="38"/>
+        <image name="shutdown" width="14" height="14"/>
+    </resources>
+</document>

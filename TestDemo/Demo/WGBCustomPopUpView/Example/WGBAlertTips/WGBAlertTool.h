@@ -54,6 +54,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///MARK:- 精选页面的弹窗
 + (void)showFeaturedLevelLimitAlertWithLeftBlock:(dispatch_block_t)leftBlock
                                       rightBlock:(dispatch_block_t)rightBlock;
+///MARK:- 发布动态页面选择入口弹窗
++ (void)showPostSelectMediaAlertViewWithCallBack:(void(^)(NSInteger index))callBack;
+
 
 @end
 
