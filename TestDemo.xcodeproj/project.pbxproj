@@ -18,6 +18,9 @@
 		0450C8E62354BF9A0069AC4D /* WGBSelectPhotoView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8E52354BF9A0069AC4D /* WGBSelectPhotoView.bundle */; };
 		0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */; };
 		0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */; };
+		047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */; };
+		047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05F02358C12E0009301D /* FSPopDialogViewController.m */; };
+		047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05F42358C1D10009301D /* NSArray+Sudoku.m */; };
 		048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A796822D397DC00A0E38F /* JPQRCodeTool.m */; };
 		0496021122CF7BBF00404432 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0496021022CF7BBF00404432 /* SDWebImage.framework */; };
 		04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */; };
@@ -69,6 +72,12 @@
 		0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPPublishAlertView.xib; sourceTree = "<group>"; };
 		0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPublishAlertView.m; sourceTree = "<group>"; };
 		0450C9292355FC4A0069AC4D /* HPPublishAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishAlertView.h; sourceTree = "<group>"; };
+		047F05E92358C0D60009301D /* FSPopDialogViewControllerDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSPopDialogViewControllerDemoViewController.h; sourceTree = "<group>"; };
+		047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSPopDialogViewControllerDemoViewController.m; sourceTree = "<group>"; };
+		047F05EF2358C12E0009301D /* FSPopDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPopDialogViewController.h; sourceTree = "<group>"; };
+		047F05F02358C12E0009301D /* FSPopDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPopDialogViewController.m; sourceTree = "<group>"; };
+		047F05F42358C1D10009301D /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
+		047F05F52358C1D10009301D /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
 		048A796722D397DC00A0E38F /* JPQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPQRCodeTool.h; sourceTree = "<group>"; };
 		048A796822D397DC00A0E38F /* JPQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPQRCodeTool.m; sourceTree = "<group>"; };
 		0496021022CF7BBF00404432 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +208,34 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		047F05E82358C0B60009301D /* FSPopDialogViewController */ = {
+			isa = PBXGroup;
+			children = (
+				047F05EF2358C12E0009301D /* FSPopDialogViewController.h */,
+				047F05F02358C12E0009301D /* FSPopDialogViewController.m */,
+				047F05E92358C0D60009301D /* FSPopDialogViewControllerDemoViewController.h */,
+				047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */,
+			);
+			path = FSPopDialogViewController;
+			sourceTree = "<group>";
+		};
+		047F05F22358C19E0009301D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				047F05F32358C1D10009301D /* NSArray */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		047F05F32358C1D10009301D /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				047F05F52358C1D10009301D /* NSArray+Sudoku.h */,
+				047F05F42358C1D10009301D /* NSArray+Sudoku.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
 		048A796622D397DC00A0E38F /* JPQRCodeTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +248,8 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				047F05F22358C19E0009301D /* Tools */,
+				047F05E82358C0B60009301D /* FSPopDialogViewController */,
 				0450C8D42354A6860069AC4D /* SelectImages */,
 				0450C8CD23547E210069AC4D /* GlowingAnimation */,
 				04CA01FA2351816B009C8C22 /* QRCode */,
@@ -531,13 +570,16 @@
 				0450C8DF2354A95C0069AC4D /* WGBSelectPhotoView.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
+				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
+				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
 				04CA020023518530009C8C22 /* ShowQRCodeViewController.m in Sources */,
 				04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */,
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
+				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
 				04B0CA912340CF4F007B2AD2 /* WGBEasyMarqueeViewDemoViewController.m in Sources */,
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
 				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,

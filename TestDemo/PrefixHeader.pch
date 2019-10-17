@@ -26,6 +26,7 @@
 #import <WGBRepairedOrientationLabel/WGBRepairedOrientationLabel.h>
 #import "WGBCustomButton.h"
 #import "WGBAlertTool.h"
+#import "NSArray+Sudoku.h"
 
 
 ///颜色随机

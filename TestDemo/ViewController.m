@@ -17,6 +17,7 @@
 #import "FancyQRCodeToolDemoViewController.h"
 #import "GlowingAnimationDemoViewController.h"
 #import "SelectImagesDemoViewController.h"
+#import "FSPopDialogViewControllerDemoViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -44,7 +45,8 @@
              [YYTextDemoViewController class],
              [FancyQRCodeToolDemoViewController class],
              [GlowingAnimationDemoViewController class],
-             [SelectImagesDemoViewController class]
+             [SelectImagesDemoViewController class],
+             [FSPopDialogViewControllerDemoViewController class]
              ];
 }
 
@@ -60,7 +62,8 @@
              @"YYTextDemoViewController测试学习",
              @"花式二维码",
              @"发光动画",
-             @"选择相册-发布" 
+             @"选择相册-发布",
+             @"FSPopDialogVC Demo"
              ];
 }
 
