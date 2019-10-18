@@ -43,6 +43,7 @@
         [buttons addObject: button];
     }
     
+    //Masonry九宫格布局
     [buttons mas_distributeSudokuViewsWithFixedLineSpacing:10 fixedInteritemSpacing:0 warpCount:1 topSpacing:100 bottomSpacing:30 leadSpacing:10 tailSpacing:10];
     
 }

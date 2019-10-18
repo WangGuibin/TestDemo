@@ -16,6 +16,7 @@
 #import <UIImageView+WebCache.h>
 #import <Masonry.h>
 #import <YYText.h>
+#import <YYModel.h>
 #import <ReactiveObjC.h> 
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <WGBCocoa.h>
@@ -27,6 +28,7 @@
 #import "WGBCustomButton.h"
 #import "WGBAlertTool.h"
 #import "NSArray+Sudoku.h"
+#import "WebCommonDemoViewController.h"
 
 
 ///颜色随机
@@ -48,6 +50,100 @@
 #define ViewRadius(View,Radius)\
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES]
+
+
+
+
+#ifndef KWIDTH
+#define KWIDTH [UIScreen mainScreen].bounds.size.width
+#endif
+
+#ifndef KHIGHT
+#define KHIGHT [UIScreen mainScreen].bounds.size.height
+#endif
+
+
+NS_INLINE BOOL isIphoneX(){
+    if(@available(iOS 11.0, *)) {
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        CGFloat bottomSafeInset = window.safeAreaInsets.bottom;
+        if(bottomSafeInset == 34.0f || bottomSafeInset == 21.0f){
+            return YES;
+        }
+    }
+    return NO;
+}
+
+//状态栏高度
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+//导航栏+状态栏
+#define kNavBarHeight   (44.0 + kStatusBarHeight)
+//tabBar高度
+#define kTabBarHeight  ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+
+#define IS_Iphone_X   isIphoneX()
+#define kBottomHeight IS_Iphone_X? 34 : 0
+
+
+///适配iOS 11 scrollView向下偏移
+#define  adjustsScrollViewInsets_NO(scrollView,vc)\
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+[scrollView   performSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:") withObject:@(2)];\
+} else {\
+vc.automaticallyAdjustsScrollViewInsets = NO;\
+}\
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+
+/// 拿到通知中心实例
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
+
+//本地存储UserDefault
+#define kUserDefaults  [NSUserDefaults standardUserDefaults]
+
+///AppDeleagte
+#define kAppdelegate  AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+
+///关键盘
+#define kCloseKeyboard       [[UIApplication sharedApplication].keyWindow endEditing:YES]
+
+///RootVC
+#define kRootVC  [UIApplication sharedApplication].keyWindow.rootViewController
+
+//keyWindow
+#define kWindow [UIApplication sharedApplication].keyWindow
+
+//app名称
+#define kAppName [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
+
+//app版本
+#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+
+//获取当前系统版本
+#define kCurrentSystemVersion  [ [ [UIDevice currentDevice]  systemVersion ] floatValue]
+
+//加载比较大的图片 优化性能
+#define kLoadImagae(file,type) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:type]]
+//定义UIImage对象
+#define kImageNamed(imgName)  [UIImage imageNamed:imgName]
+
+//获取一段时间间隔  起点  终点
+#define kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+#define kEndTime  NSLog(@"Time: %f", CFAbsoluteTimeGetCurrent() - start);
+
+//设置字体
+#define kPingFang(F)  [UIFont fontWithName:@"PingFang SC" size:(F)]
+#define kBoldPingFang(A) [UIFont fontWithName:@"PingFang-SC-Medium" size:A]
+#define kFont(a) [UIFont fontWithName:@"Avenir-Light" size:(a)]
+
+//系统默认字体
+#define KFontSize(A)  [UIFont systemFontOfSize: A]
+#define kFontBold(A)  [UIFont boldSystemFontOfSize:A]
 
 
 #endif /* PrefixHeader_pch */

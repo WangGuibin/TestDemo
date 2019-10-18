@@ -20,6 +20,7 @@
 #import "FSPopDialogViewControllerDemoViewController.h"
 
 
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -46,7 +47,7 @@
              [FancyQRCodeToolDemoViewController class],
              [GlowingAnimationDemoViewController class],
              [SelectImagesDemoViewController class],
-             [FSPopDialogViewControllerDemoViewController class]
+             [FSPopDialogViewControllerDemoViewController class],
              ];
 }
 
@@ -63,7 +64,7 @@
              @"花式二维码",
              @"发光动画",
              @"选择相册-发布",
-             @"FSPopDialogVC Demo"
+             @"FSPopDialogVC Demo",
              ];
 }
 
