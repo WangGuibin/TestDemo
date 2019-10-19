@@ -38,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addPhotoesWithImages:(NSArray *)images;
 ///MARK:- 添加单张图片 (一张一张添加很烦的 除非需求就是这样)
 - (void)addPictureWithImage:(UIImage *)image;
+///MARK:- 更新视图的高度
+@property (nonatomic,copy) void(^updateHeightBlock) (CGFloat viewHeight);
 
 
 @end

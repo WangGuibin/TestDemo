@@ -72,6 +72,7 @@
     CGRect viewRect = self.frame;
     viewRect.size.height = CGRectGetMaxY(addBtn.frame) + 10;
     self.frame = viewRect;
+    !self.updateHeightBlock? : self.updateHeightBlock(viewRect.size.height);
 
     __weak typeof(self) weakSelf = self;
     __weak typeof(addBtn) weakBtn = addBtn;
@@ -115,6 +116,7 @@
     CGRect viewRect = self.frame;
     viewRect.size.height = CGRectGetMaxY(frame) + 10;
     self.frame = viewRect;
+    !self.updateHeightBlock? : self.updateHeightBlock(viewRect.size.height);
 }
 
 - (NSUInteger)picturesCount {
