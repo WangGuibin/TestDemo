@@ -19,7 +19,12 @@
 #import "GlowingAnimationDemoViewController.h"
 #import "SelectImagesDemoViewController.h"
 #import "FSPopDialogViewControllerDemoViewController.h"
+<<<<<<< HEAD
 #import "GradientProgressDemoViewController.h"
+=======
+
+#import "UIApplication+TouchHints.h"
+>>>>>>> bbbbb8bde6ff726e5c417712e66717335ede3b56
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
