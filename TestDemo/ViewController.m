@@ -19,6 +19,7 @@
 #import "SelectImagesDemoViewController.h"
 #import "FSPopDialogViewControllerDemoViewController.h"
 
+#import "UIApplication+TouchHints.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -80,6 +81,8 @@
     self.refreshControl = refreshControl;
     [self.tableView reloadData];
     
+    [[UIApplication sharedApplication] tch_enableTouchHintsWithImage: [UIImage imageNamed:@"touch"]];
+
 }
 
 - (void)refreshTabView{
