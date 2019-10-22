@@ -49,6 +49,7 @@
         ///MARK：- 优雅的方式 只获取`kMaxSelectImagesCount`张
         if (self.selectImageArray.count) {
             NSInteger detaCount = kMaxSelectImagesCount - self.selectImageArray.count;
+            detaCount = MIN(detaCount, assets.count);
             NSIndexSet *indexes = [NSIndexSet indexSetWithIndexesInRange:
                                    NSMakeRange(0,detaCount)];
             NSArray *tempAssets = [assets objectsAtIndexes:indexes];
