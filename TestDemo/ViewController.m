@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIApplication+TouchHints.h"
 #import "WGBCustomPopUpDemoViewController.h"
 #import "WGBEasyMarqueeViewDemoViewController.h"
 #import "WGBWaveLayerButtonDemoViewController.h"
@@ -18,7 +19,7 @@
 #import "GlowingAnimationDemoViewController.h"
 #import "SelectImagesDemoViewController.h"
 #import "FSPopDialogViewControllerDemoViewController.h"
-
+#import "GradientProgressDemoViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -48,6 +49,7 @@
              [GlowingAnimationDemoViewController class],
              [SelectImagesDemoViewController class],
              [FSPopDialogViewControllerDemoViewController class],
+             [GradientProgressDemoViewController class] 
              ];
 }
 
@@ -65,6 +67,7 @@
              @"发光动画",
              @"选择相册-发布",
              @"FSPopDialogVC Demo",
+             @"渐变进度条Demo"
              ];
 }
 
@@ -80,6 +83,8 @@
     self.refreshControl = refreshControl;
     [self.tableView reloadData];
     
+    [[UIApplication sharedApplication] tch_enableTouchHintsWithImage: [UIImage imageNamed:@"touch"]];
+
 }
 
 - (void)refreshTabView{

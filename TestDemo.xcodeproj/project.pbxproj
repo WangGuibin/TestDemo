@@ -19,6 +19,7 @@
 		0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */; };
 		0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */; };
 		046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046098D52359EBFB00A673D6 /* WebCommonDemoViewController.m */; };
+		0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461CBA8235EA85200F43B61 /* UIApplication+TouchHints.m */; };
 		047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */; };
 		047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05F02358C12E0009301D /* FSPopDialogViewController.m */; };
 		047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05F42358C1D10009301D /* NSArray+Sudoku.m */; };
@@ -38,6 +39,8 @@
 		04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAA22340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m */; };
 		04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAA62340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m */; };
 		04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */; };
+		04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */; };
+		04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6F235F08D500A8671B /* WGBGradientProgressView.m */; };
 		04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01EB23517BC0009C8C22 /* HPSelectSexAlertView.xib */; };
 		04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01ED23517BC1009C8C22 /* HPSelectSexAlertView.m */; };
 		04CA01F323517BE2009C8C22 /* HPEditSignatureAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01F023517BE2009C8C22 /* HPEditSignatureAlertView.xib */; };
@@ -75,6 +78,8 @@
 		0450C9292355FC4A0069AC4D /* HPPublishAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishAlertView.h; sourceTree = "<group>"; };
 		046098D42359EBFB00A673D6 /* WebCommonDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebCommonDemoViewController.h; sourceTree = "<group>"; };
 		046098D52359EBFB00A673D6 /* WebCommonDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebCommonDemoViewController.m; sourceTree = "<group>"; };
+		0461CBA7235EA85200F43B61 /* UIApplication+TouchHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TouchHints.h"; sourceTree = "<group>"; };
+		0461CBA8235EA85200F43B61 /* UIApplication+TouchHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TouchHints.m"; sourceTree = "<group>"; };
 		047F05E92358C0D60009301D /* FSPopDialogViewControllerDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSPopDialogViewControllerDemoViewController.h; sourceTree = "<group>"; };
 		047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSPopDialogViewControllerDemoViewController.m; sourceTree = "<group>"; };
 		047F05EF2358C12E0009301D /* FSPopDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPopDialogViewController.h; sourceTree = "<group>"; };
@@ -112,6 +117,10 @@
 		04B0CAA62340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRepairedOrientationLabelDemoViewController.m; sourceTree = "<group>"; };
 		04B0CAB52341F607007B2AD2 /* NSLayoutAnchorDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLayoutAnchorDemoViewController.h; sourceTree = "<group>"; };
 		04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLayoutAnchorDemoViewController.m; sourceTree = "<group>"; };
+		04C5CF6A235F083600A8671B /* GradientProgressDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientProgressDemoViewController.h; sourceTree = "<group>"; };
+		04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientProgressDemoViewController.m; sourceTree = "<group>"; };
+		04C5CF6E235F08D500A8671B /* WGBGradientProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientProgressView.h; sourceTree = "<group>"; };
+		04C5CF6F235F08D500A8671B /* WGBGradientProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGradientProgressView.m; sourceTree = "<group>"; };
 		04CA01EB23517BC0009C8C22 /* HPSelectSexAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPSelectSexAlertView.xib; sourceTree = "<group>"; };
 		04CA01EC23517BC1009C8C22 /* HPSelectSexAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPSelectSexAlertView.h; sourceTree = "<group>"; };
 		04CA01ED23517BC1009C8C22 /* HPSelectSexAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPSelectSexAlertView.m; sourceTree = "<group>"; };
@@ -219,6 +228,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		0461CBA6235EA83300F43B61 /* TouchHints */ = {
+			isa = PBXGroup;
+			children = (
+				0461CBA7235EA85200F43B61 /* UIApplication+TouchHints.h */,
+				0461CBA8235EA85200F43B61 /* UIApplication+TouchHints.m */,
+			);
+			path = TouchHints;
+			sourceTree = "<group>";
+		};
 		047F05E82358C0B60009301D /* FSPopDialogViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +251,7 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0461CBA6235EA83300F43B61 /* TouchHints */,
 				04B0CA922340CF90007B2AD2 /* HPAutoScorllTextLabel */,
 				048A796622D397DC00A0E38F /* JPQRCodeTool */,
 				046098C22359EA7000A673D6 /* Category */,
@@ -261,6 +280,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				04C5CF69235F07EB00A8671B /* GradientProgress */,
 				047F05E82358C0B60009301D /* FSPopDialogViewController */,
 				0450C8D42354A6860069AC4D /* SelectImages */,
 				0450C8CD23547E210069AC4D /* GlowingAnimation */,
@@ -378,6 +398,25 @@
 				04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */,
 			);
 			path = NSLayoutAnchor;
+			sourceTree = "<group>";
+		};
+		04C5CF69235F07EB00A8671B /* GradientProgress */ = {
+			isa = PBXGroup;
+			children = (
+				04C5CF6D235F08A800A8671B /* GradientProgressView */,
+				04C5CF6A235F083600A8671B /* GradientProgressDemoViewController.h */,
+				04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */,
+			);
+			path = GradientProgress;
+			sourceTree = "<group>";
+		};
+		04C5CF6D235F08A800A8671B /* GradientProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				04C5CF6E235F08D500A8671B /* WGBGradientProgressView.h */,
+				04C5CF6F235F08D500A8671B /* WGBGradientProgressView.m */,
+			);
+			path = GradientProgressView;
 			sourceTree = "<group>";
 		};
 		04CA01FA2351816B009C8C22 /* QRCode */ = {
@@ -586,6 +625,8 @@
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
+				04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */,
+				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
 				04CA020023518530009C8C22 /* ShowQRCodeViewController.m in Sources */,
@@ -598,6 +639,7 @@
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
 				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
+				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
 				0450C8DC2354A7270069AC4D /* WGBSelectPhotoButton.m in Sources */,
 				04CA01FD235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m in Sources */,
