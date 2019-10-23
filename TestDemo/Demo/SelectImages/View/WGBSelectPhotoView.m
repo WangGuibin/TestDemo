@@ -30,11 +30,23 @@
         self.margin   = 15.0;
         self.spacing  = 10.0;
         
-        [self addAddPictureButton];//加号按钮先行
     }
     return self;
 }
 
+- (void)setMaxCount:(NSInteger)maxCount{
+    _maxCount = maxCount;
+}
+
+- (void)setRowCount:(NSInteger)rowCount{
+    _rowCount = rowCount;
+}
+
+///MARK:- 显式调用 显示加号按钮  调用时机是初始化完之后 或者 重新设置`maxCount`和`rowCount`之后
+- (void)showAddButtonDisplay{
+    //加号按钮先行
+    [self addAddPictureButton];
+}
 
 ///MARK:- 添加图片数组
 - (void)addPhotoesWithImages:(NSArray *)images{

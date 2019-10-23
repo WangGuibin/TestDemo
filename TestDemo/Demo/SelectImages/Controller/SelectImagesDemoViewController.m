@@ -94,6 +94,7 @@
         _selectPhotoView = [[WGBSelectPhotoView alloc] initWithFrame:CGRectMake(0, 88, KWIDTH, 100)];
         _selectPhotoView.backgroundColor = [UIColor cyanColor];
         _selectPhotoView.delegate = self;
+        [_selectPhotoView showAddButtonDisplay];
     }
     return _selectPhotoView;
 }

@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger maxCount;//最多显示图片数量 默认9张
 @property (nonatomic, assign) NSInteger rowCount;//每行显示图片数量 默认4张
+///MARK:- 显式调用 显示加号按钮  调用时机是初始化完之后 或者 重新设置`maxCount`和`rowCount`之后
+- (void)showAddButtonDisplay;
 
 @property (nonatomic, assign) CGFloat margin;//上下左右边距 默认 = 15.0
 @property (nonatomic, assign) CGFloat spacing;//图片之间的间距 默认 = 10.0
