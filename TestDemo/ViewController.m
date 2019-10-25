@@ -19,12 +19,10 @@
 #import "GlowingAnimationDemoViewController.h"
 #import "SelectImagesDemoViewController.h"
 #import "FSPopDialogViewControllerDemoViewController.h"
-<<<<<<< HEAD
 #import "GradientProgressDemoViewController.h"
-=======
-
 #import "UIApplication+TouchHints.h"
->>>>>>> bbbbb8bde6ff726e5c417712e66717335ede3b56
+#import "WGBMaskDemoViewController.h"
+#import "PopverDemoViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -54,7 +52,9 @@
              [GlowingAnimationDemoViewController class],
              [SelectImagesDemoViewController class],
              [FSPopDialogViewControllerDemoViewController class],
-             [GradientProgressDemoViewController class] 
+             [GradientProgressDemoViewController class],
+             [WGBMaskDemoViewController class],
+             [PopverDemoViewController class]
              ];
 }
 
@@ -72,7 +72,9 @@
              @"发光动画",
              @"选择相册-发布",
              @"FSPopDialogVC Demo",
-             @"渐变进度条Demo"
+             @"渐变进度条Demo",
+             @"mask使用",
+             @"系统`UIPopoverPresentationController`带箭头弹窗"
              ];
 }
 

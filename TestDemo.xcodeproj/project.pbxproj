@@ -23,8 +23,12 @@
 		047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */; };
 		047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05F02358C12E0009301D /* FSPopDialogViewController.m */; };
 		047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05F42358C1D10009301D /* NSArray+Sudoku.m */; };
+		048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048600CF2363421200B63EDE /* PopverDemoViewController.m */; };
+		048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048600D22363432200B63EDE /* TestPopverContentViewController.m */; };
 		048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A796822D397DC00A0E38F /* JPQRCodeTool.m */; };
 		0496021122CF7BBF00404432 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0496021022CF7BBF00404432 /* SDWebImage.framework */; };
+		04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */; };
+		04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */; };
 		04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */; };
 		04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7E2340C5C4007B2AD2 /* WGBAlertTool.m */; };
 		04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0CA7F2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib */; };
@@ -86,9 +90,17 @@
 		047F05F02358C12E0009301D /* FSPopDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPopDialogViewController.m; sourceTree = "<group>"; };
 		047F05F42358C1D10009301D /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
 		047F05F52358C1D10009301D /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
+		048600CE2363421200B63EDE /* PopverDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopverDemoViewController.h; sourceTree = "<group>"; };
+		048600CF2363421200B63EDE /* PopverDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopverDemoViewController.m; sourceTree = "<group>"; };
+		048600D12363432200B63EDE /* TestPopverContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPopverContentViewController.h; sourceTree = "<group>"; };
+		048600D22363432200B63EDE /* TestPopverContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPopverContentViewController.m; sourceTree = "<group>"; };
 		048A796722D397DC00A0E38F /* JPQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPQRCodeTool.h; sourceTree = "<group>"; };
 		048A796822D397DC00A0E38F /* JPQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPQRCodeTool.m; sourceTree = "<group>"; };
 		0496021022CF7BBF00404432 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A78F7B2361B9C500915493 /* UIImage+MaskExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MaskExtension.h"; sourceTree = "<group>"; };
+		04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MaskExtension.m"; sourceTree = "<group>"; };
+		04A78F7E2361BAB700915493 /* WGBMaskDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMaskDemoViewController.h; sourceTree = "<group>"; };
+		04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMaskDemoViewController.m; sourceTree = "<group>"; };
 		04B0CA7C2340C5C4007B2AD2 /* WGBAlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGBAlertTool.h; sourceTree = "<group>"; };
 		04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBCommonLeftRightButtonAlertView.m; sourceTree = "<group>"; };
 		04B0CA7E2340C5C4007B2AD2 /* WGBAlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBAlertTool.m; sourceTree = "<group>"; };
@@ -268,6 +280,17 @@
 			path = NSArray;
 			sourceTree = "<group>";
 		};
+		048600CD236341ED00B63EDE /* Popver */ = {
+			isa = PBXGroup;
+			children = (
+				048600CE2363421200B63EDE /* PopverDemoViewController.h */,
+				048600CF2363421200B63EDE /* PopverDemoViewController.m */,
+				048600D12363432200B63EDE /* TestPopverContentViewController.h */,
+				048600D22363432200B63EDE /* TestPopverContentViewController.m */,
+			);
+			path = Popver;
+			sourceTree = "<group>";
+		};
 		048A796622D397DC00A0E38F /* JPQRCodeTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,9 +300,22 @@
 			path = JPQRCodeTool;
 			sourceTree = "<group>";
 		};
+		04A78F7A2361B99F00915493 /* MaskLayer */ = {
+			isa = PBXGroup;
+			children = (
+				04A78F7B2361B9C500915493 /* UIImage+MaskExtension.h */,
+				04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */,
+				04A78F7E2361BAB700915493 /* WGBMaskDemoViewController.h */,
+				04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */,
+			);
+			path = MaskLayer;
+			sourceTree = "<group>";
+		};
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				048600CD236341ED00B63EDE /* Popver */,
+				04A78F7A2361B99F00915493 /* MaskLayer */,
 				04C5CF69235F07EB00A8671B /* GradientProgress */,
 				047F05E82358C0B60009301D /* FSPopDialogViewController */,
 				0450C8D42354A6860069AC4D /* SelectImages */,
@@ -622,6 +658,7 @@
 				0450C8DF2354A95C0069AC4D /* WGBSelectPhotoView.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
+				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
@@ -634,11 +671,14 @@
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
+				048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */,
 				04B0CA912340CF4F007B2AD2 /* WGBEasyMarqueeViewDemoViewController.m in Sources */,
 				046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */,
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
 				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,
+				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
+				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
 				0450C8DC2354A7270069AC4D /* WGBSelectPhotoButton.m in Sources */,

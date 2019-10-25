@@ -4,7 +4,7 @@
 //
 //  Created by mac on 2019/10/14.
 //  Copyright © 2019 mac. All rights reserved.
-//
+// https://github.com/WangGuibin/WGBSelectPhotoView
 
 #import "SelectImagesDemoViewController.h"
 #import "WGBSelectPhotoView.h"
@@ -88,7 +88,7 @@
     }
 }
 
-
+//https://github.com/WangGuibin/WGBSelectPhotoView
 - (WGBSelectPhotoView *)selectPhotoView {
     if (!_selectPhotoView) {
         _selectPhotoView = [[WGBSelectPhotoView alloc] initWithFrame:CGRectMake(0, 88, KWIDTH, 100)];
