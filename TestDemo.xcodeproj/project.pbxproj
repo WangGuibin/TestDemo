@@ -18,6 +18,12 @@
 		0450C8E62354BF9A0069AC4D /* WGBSelectPhotoView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8E52354BF9A0069AC4D /* WGBSelectPhotoView.bundle */; };
 		0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */; };
 		0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */; };
+		0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453FDBE236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m */; };
+		0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453FDC1236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m */; };
+		0453FDC4236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0453FDC2236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.xib */; };
+		0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453FDC7236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m */; };
+		0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453FDCA236C36D100D8B2A5 /* HPCannonBottomOperationView.m */; };
+		0453FDCD236C36D100D8B2A5 /* HPCannonBottomOperationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0453FDCB236C36D100D8B2A5 /* HPCannonBottomOperationView.xib */; };
 		046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046098D52359EBFB00A673D6 /* WebCommonDemoViewController.m */; };
 		0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461CBA8235EA85200F43B61 /* UIApplication+TouchHints.m */; };
 		047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */; };
@@ -80,6 +86,16 @@
 		0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPPublishAlertView.xib; sourceTree = "<group>"; };
 		0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPublishAlertView.m; sourceTree = "<group>"; };
 		0450C9292355FC4A0069AC4D /* HPPublishAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishAlertView.h; sourceTree = "<group>"; };
+		0453FDBD236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCustomDeleteButtonDemoViewController.h; sourceTree = "<group>"; };
+		0453FDBE236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCustomDeleteButtonDemoViewController.m; sourceTree = "<group>"; };
+		0453FDC0236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDeleteButtonTableViewCell.h; sourceTree = "<group>"; };
+		0453FDC1236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDeleteButtonTableViewCell.m; sourceTree = "<group>"; };
+		0453FDC2236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestDeleteButtonTableViewCell.xib; sourceTree = "<group>"; };
+		0453FDC6236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewMultipleSelectionDemoViewController.h; sourceTree = "<group>"; };
+		0453FDC7236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewMultipleSelectionDemoViewController.m; sourceTree = "<group>"; };
+		0453FDC9236C36D100D8B2A5 /* HPCannonBottomOperationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCannonBottomOperationView.h; sourceTree = "<group>"; };
+		0453FDCA236C36D100D8B2A5 /* HPCannonBottomOperationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCannonBottomOperationView.m; sourceTree = "<group>"; };
+		0453FDCB236C36D100D8B2A5 /* HPCannonBottomOperationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPCannonBottomOperationView.xib; sourceTree = "<group>"; };
 		046098D42359EBFB00A673D6 /* WebCommonDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebCommonDemoViewController.h; sourceTree = "<group>"; };
 		046098D52359EBFB00A673D6 /* WebCommonDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebCommonDemoViewController.m; sourceTree = "<group>"; };
 		0461CBA7235EA85200F43B61 /* UIApplication+TouchHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TouchHints.h"; sourceTree = "<group>"; };
@@ -232,6 +248,30 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0453FDBC236C2B4C00D8B2A5 /* TableViewCustomDeleteButton */ = {
+			isa = PBXGroup;
+			children = (
+				0453FDBD236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.h */,
+				0453FDBE236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m */,
+				0453FDC0236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.h */,
+				0453FDC1236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m */,
+				0453FDC2236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.xib */,
+			);
+			path = TableViewCustomDeleteButton;
+			sourceTree = "<group>";
+		};
+		0453FDC5236C343000D8B2A5 /* UITableViewMultipleSelection */ = {
+			isa = PBXGroup;
+			children = (
+				0453FDC6236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.h */,
+				0453FDC7236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m */,
+				0453FDC9236C36D100D8B2A5 /* HPCannonBottomOperationView.h */,
+				0453FDCA236C36D100D8B2A5 /* HPCannonBottomOperationView.m */,
+				0453FDCB236C36D100D8B2A5 /* HPCannonBottomOperationView.xib */,
+			);
+			path = UITableViewMultipleSelection;
+			sourceTree = "<group>";
+		};
 		046098C22359EA7000A673D6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +354,8 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				0453FDC5236C343000D8B2A5 /* UITableViewMultipleSelection */,
+				0453FDBC236C2B4C00D8B2A5 /* TableViewCustomDeleteButton */,
 				048600CD236341ED00B63EDE /* Popver */,
 				04A78F7A2361B99F00915493 /* MaskLayer */,
 				04C5CF69235F07EB00A8671B /* GradientProgress */,
@@ -589,12 +631,14 @@
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
+				0453FDCD236C36D100D8B2A5 /* HPCannonBottomOperationView.xib in Resources */,
 				04CA01F323517BE2009C8C22 /* HPEditSignatureAlertView.xib in Resources */,
 				0450C8CC235187EC0069AC4D /* github.png in Resources */,
 				04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */,
 				0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */,
 				0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */,
 				04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */,
+				0453FDC4236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +694,7 @@
 				0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */,
 				04B0CA882340C5C4007B2AD2 /* WGBRewardAlertView.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
+				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */,
 				04B0CA9F2340D13B007B2AD2 /* WGBWaveLayerButtonDemoViewController.m in Sources */,
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
@@ -679,12 +724,15 @@
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
+				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
 				0450C8DC2354A7270069AC4D /* WGBSelectPhotoButton.m in Sources */,
+				0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */,
 				04CA01FD235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m in Sources */,
 				04F735A822CDAA8D007CB0D0 /* main.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
+				0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */,
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

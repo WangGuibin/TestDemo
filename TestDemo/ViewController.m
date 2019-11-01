@@ -23,6 +23,8 @@
 #import "UIApplication+TouchHints.h"
 #import "WGBMaskDemoViewController.h"
 #import "PopverDemoViewController.h"
+#import "TableViewCustomDeleteButtonDemoViewController.h"
+#import "TableViewMultipleSelectionDemoViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -54,7 +56,9 @@
              [FSPopDialogViewControllerDemoViewController class],
              [GradientProgressDemoViewController class],
              [WGBMaskDemoViewController class],
-             [PopverDemoViewController class]
+             [PopverDemoViewController class],
+             [TableViewCustomDeleteButtonDemoViewController class],
+             [TableViewMultipleSelectionDemoViewController class]
              ];
 }
 
@@ -74,7 +78,9 @@
              @"FSPopDialogVC Demo",
              @"渐变进度条Demo",
              @"mask使用",
-             @"系统`UIPopoverPresentationController`带箭头弹窗"
+             @"系统`UIPopoverPresentationController`带箭头弹窗",
+             @"自定义TableView的删除按钮",
+             @"UITableView多选demo"
              ];
 }
 
