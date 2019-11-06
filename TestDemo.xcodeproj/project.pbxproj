@@ -13,9 +13,6 @@
 		0450C8CC235187EC0069AC4D /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C9235187EC0069AC4D /* github.png */; };
 		0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8CF23547E3A0069AC4D /* GlowingAnimationDemoViewController.m */; };
 		0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8D82354A6CA0069AC4D /* SelectImagesDemoViewController.m */; };
-		0450C8DC2354A7270069AC4D /* WGBSelectPhotoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8DB2354A7270069AC4D /* WGBSelectPhotoButton.m */; };
-		0450C8DF2354A95C0069AC4D /* WGBSelectPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8DE2354A95C0069AC4D /* WGBSelectPhotoView.m */; };
-		0450C8E62354BF9A0069AC4D /* WGBSelectPhotoView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8E52354BF9A0069AC4D /* WGBSelectPhotoView.bundle */; };
 		0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */; };
 		0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */; };
 		0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453FDBE236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m */; };
@@ -78,11 +75,6 @@
 		0450C8CF23547E3A0069AC4D /* GlowingAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlowingAnimationDemoViewController.m; sourceTree = "<group>"; };
 		0450C8D72354A6CA0069AC4D /* SelectImagesDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectImagesDemoViewController.h; sourceTree = "<group>"; };
 		0450C8D82354A6CA0069AC4D /* SelectImagesDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectImagesDemoViewController.m; sourceTree = "<group>"; };
-		0450C8DA2354A7270069AC4D /* WGBSelectPhotoButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSelectPhotoButton.h; sourceTree = "<group>"; };
-		0450C8DB2354A7270069AC4D /* WGBSelectPhotoButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSelectPhotoButton.m; sourceTree = "<group>"; };
-		0450C8DD2354A95C0069AC4D /* WGBSelectPhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSelectPhotoView.h; sourceTree = "<group>"; };
-		0450C8DE2354A95C0069AC4D /* WGBSelectPhotoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSelectPhotoView.m; sourceTree = "<group>"; };
-		0450C8E52354BF9A0069AC4D /* WGBSelectPhotoView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WGBSelectPhotoView.bundle; sourceTree = "<group>"; };
 		0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPPublishAlertView.xib; sourceTree = "<group>"; };
 		0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPublishAlertView.m; sourceTree = "<group>"; };
 		0450C9292355FC4A0069AC4D /* HPPublishAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishAlertView.h; sourceTree = "<group>"; };
@@ -222,21 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				0450C8D62354A6B00069AC4D /* Controller */,
-				0450C8D52354A6930069AC4D /* View */,
 			);
 			path = SelectImages;
-			sourceTree = "<group>";
-		};
-		0450C8D52354A6930069AC4D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0450C8E52354BF9A0069AC4D /* WGBSelectPhotoView.bundle */,
-				0450C8DA2354A7270069AC4D /* WGBSelectPhotoButton.h */,
-				0450C8DB2354A7270069AC4D /* WGBSelectPhotoButton.m */,
-				0450C8DD2354A95C0069AC4D /* WGBSelectPhotoView.h */,
-				0450C8DE2354A95C0069AC4D /* WGBSelectPhotoView.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		0450C8D62354A6B00069AC4D /* Controller */ = {
@@ -627,7 +606,6 @@
 			files = (
 				04F735A522CDAA8D007CB0D0 /* LaunchScreen.storyboard in Resources */,
 				04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */,
-				0450C8E62354BF9A0069AC4D /* WGBSelectPhotoView.bundle in Resources */,
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
@@ -700,7 +678,6 @@
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
-				0450C8DF2354A95C0069AC4D /* WGBSelectPhotoView.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
@@ -727,7 +704,6 @@
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
-				0450C8DC2354A7270069AC4D /* WGBSelectPhotoButton.m in Sources */,
 				0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */,
 				04CA01FD235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m in Sources */,
 				04F735A822CDAA8D007CB0D0 /* main.m in Sources */,

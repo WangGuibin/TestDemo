@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WGBSelectPhotoButton : UIButton
 
 @property (nonatomic,assign) BOOL isAddButton;
+@property (nonatomic,assign) BOOL isVideoButton;
+
 @property (nonatomic,copy) dispatch_block_t didClickButtonBlock;
 @property (nonatomic,copy) dispatch_block_t deletePhotoBlock;
 

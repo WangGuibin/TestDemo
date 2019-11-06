@@ -47,6 +47,12 @@
 #import "YBIBDefaultWebImageMediator.h"
 #import "YBIBWebImageMediator.h"
 #import "YBImageBrowser.h"
+#import "YBIBVideoActionBar.h"
+#import "YBIBVideoCell.h"
+#import "YBIBVideoData+Internal.h"
+#import "YBIBVideoData.h"
+#import "YBIBVideoTopBar.h"
+#import "YBIBVideoView.h"
 
 FOUNDATION_EXPORT double YBImageBrowserVersionNumber;
 FOUNDATION_EXPORT const unsigned char YBImageBrowserVersionString[];

@@ -10,6 +10,7 @@ ${BUILT_PRODUCTS_DIR}/WGBCommonAlertSheetView/WGBCommonAlertSheetView.framework
 ${BUILT_PRODUCTS_DIR}/WGBCustomPopUpView/WGBCustomPopUpView.framework
 ${BUILT_PRODUCTS_DIR}/WGBEasyMarqueeView/WGBEasyMarqueeView.framework
 ${BUILT_PRODUCTS_DIR}/WGBRepairedOrientationLabel/WGBRepairedOrientationLabel.framework
+${BUILT_PRODUCTS_DIR}/WGBSelectPhotoView/WGBSelectPhotoView.framework
 ${BUILT_PRODUCTS_DIR}/WGBWaveLayerButton/WGBWaveLayerButton.framework
 ${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework
 ${BUILT_PRODUCTS_DIR}/YSQRCodeGenerator/YSQRCodeGenerator.framework

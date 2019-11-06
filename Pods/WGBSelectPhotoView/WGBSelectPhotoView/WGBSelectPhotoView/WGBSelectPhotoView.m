@@ -15,8 +15,9 @@
 @property (nonatomic, assign) CGPoint centerPoint;
 @property (nonatomic, assign) CGPoint originPoint;
 @property (nonatomic, assign) CGPoint startPoint;
+@property (nonatomic,assign) NSInteger startIndex;//移动起始下标
+@property (nonatomic,assign) NSInteger endIndex;//移动结束下标
 @property (nonatomic, assign) NSInteger selectedIndex;
-
 
 @end
 
@@ -24,14 +25,16 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.maxCount = 9;
-        self.rowCount = 4;
-        
-        self.margin   = 15.0;
-        self.spacing  = 10.0;
-        
+        [self initDefaultConfig];
     }
     return self;
+}
+
+- (void)initDefaultConfig{
+    self.maxCount = 9;
+    self.rowCount = 4;
+    self.margin   = 15.0;
+    self.spacing  = 10.0;
 }
 
 - (void)setMaxCount:(NSInteger)maxCount{
@@ -42,25 +45,39 @@
     _rowCount = rowCount;
 }
 
-///MARK:- 显式调用 显示加号按钮  调用时机是初始化完之后 或者 重新设置`maxCount`和`rowCount`之后
+- (void)setMargin:(CGFloat)margin{
+    _margin = margin;
+}
+
+- (void)setSpacing:(CGFloat)spacing{
+    _spacing = spacing;
+}
+
+///MARK:- 显式调用 显示加号按钮  调用时机是初始化完之后 或者 初始化完重新设置`maxCount`和`rowCount`之后 选择第一张图片之前
 - (void)showAddButtonDisplay{
     //加号按钮先行
     [self addAddPictureButton];
 }
 
-///MARK:- 添加图片数组
-- (void)addPhotoesWithImages:(NSArray *)images{
+///MARK:- 添加数据源数组
+- (void)addPhotoesWithDataItems:(NSArray<WGBSelectPhotoDataItem *> *)items{
     if (self.pictureBtnArr.count == self.maxCount && ![self.pictureBtnArr.lastObject isAddButton]){
         return;
     }
-    
-    for (UIImage *img in images) {
-        [self addPictureWithImage: img];
+    for (WGBSelectPhotoDataItem *item in items) {
+        UIImage *img = item.coverImage;
+        PHAsset *asset = item.assetObj;
+        BOOL isVideo = NO;
+        if (asset) {
+            isVideo = item.assetObj.mediaType == PHAssetMediaTypeVideo;
+        }
+        [self addMediaCoverImageViewWithImage:img isVideoCoverImage: isVideo];
     }
 }
 
-//添加图片
-- (void)addPictureWithImage:(UIImage *)image {
+//添加资源封面图片展示
+- (void)addMediaCoverImageViewWithImage:(UIImage *)image
+                 isVideoCoverImage:(BOOL)isVideo{
     if (self.pictureBtnArr.count == self.maxCount && ![self.pictureBtnArr.lastObject isAddButton]){
         return;
     }
@@ -68,11 +85,10 @@
     WGBSelectPhotoButton *btn = (WGBSelectPhotoButton *)self.pictureBtnArr.lastObject;
     [btn setBackgroundImage:image forState:UIControlStateNormal];
     btn.isAddButton = NO;
-    
+    btn.isVideoButton = isVideo;
     if ([self picturesCount] == self.maxCount) {
         return;
     }
-    
     [self addAddPictureButton];
 }
 
@@ -82,15 +98,15 @@
     WGBSelectPhotoButton *addBtn = [[WGBSelectPhotoButton alloc] initWithFrame:frame];
 
     CGRect viewRect = self.frame;
-    viewRect.size.height = CGRectGetMaxY(addBtn.frame) + 10;
+    viewRect.size.height = CGRectGetMaxY(addBtn.frame) + self.margin;
     self.frame = viewRect;
-    !self.updateHeightBlock? : self.updateHeightBlock(viewRect.size.height);
+    !self.updateHeightBlock? : self.updateHeightBlock(viewRect);
 
     __weak typeof(self) weakSelf = self;
     __weak typeof(addBtn) weakBtn = addBtn;
     addBtn.didClickButtonBlock = ^{
-        if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(wgb_photoViewDidClickedPhotoAtIndex:)]) {
-            [weakSelf.delegate wgb_photoViewDidClickedPhotoAtIndex:[weakSelf.pictureBtnArr indexOfObject:weakBtn]];
+        if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(wgb_photoViewDidClickedPhotoAtIndex:photoView:)]) {
+            [weakSelf.delegate wgb_photoViewDidClickedPhotoAtIndex:[weakSelf.pictureBtnArr indexOfObject:weakBtn] photoView:self];
         }
     };
     
@@ -119,16 +135,16 @@
         [self addAddPictureButton];
     }
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(wgb_photoViewDidDeletedPhotoAtIndex:)]) {
-        [self.delegate wgb_photoViewDidDeletedPhotoAtIndex: index];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(wgb_photoViewDidDeletedPhotoAtIndex:photoView:)]) {
+        [self.delegate wgb_photoViewDidDeletedPhotoAtIndex: index photoView:self];
     }
     
     //更新视图本身的frame 自适应高度
     CGRect frame = [self pictureButtonFrameWithIndex:self.pictureBtnArr.count - 1];
     CGRect viewRect = self.frame;
-    viewRect.size.height = CGRectGetMaxY(frame) + 10;
+    viewRect.size.height = CGRectGetMaxY(frame) + self.margin;
     self.frame = viewRect;
-    !self.updateHeightBlock? : self.updateHeightBlock(viewRect.size.height);
+    !self.updateHeightBlock? : self.updateHeightBlock(viewRect);
 }
 
 - (NSUInteger)picturesCount {
@@ -214,6 +230,7 @@
     self.originPoint = self.centerPoint;
     self.startPoint = [sender locationInView:self];
     self.selectedIndex = [self.pictureBtnArr indexOfObject:btn];
+    self.startIndex = self.selectedIndex;
     
     __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.25 animations:^{
@@ -249,6 +266,7 @@
     }
     if (index != self.selectedIndex) {
         self.selectedIndex = index;
+        self.endIndex = index;
         [self.pictureBtnArr removeObject:btn];
         [self.pictureBtnArr insertObject:btn atIndex:index];
         [self layoutButtonsExceptAtIndex:index];
@@ -259,6 +277,12 @@
     [self layoutViewAtIndex:self.selectedIndex];
     WGBSelectPhotoButton *btn = self.pictureBtnArr[self.selectedIndex];
     btn.alpha = 1;
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(wgb_photoViewDidMovedPhotoWithStartIndex:endIndex:photoView:)]) {
+        [self.delegate wgb_photoViewDidMovedPhotoWithStartIndex:self.startIndex endIndex:self.endIndex photoView:self];
+    }
+    self.startIndex = self.selectedIndex;
+    self.endIndex = self.selectedIndex;
 }
 
 #pragma mark - getters & setters
@@ -269,8 +293,28 @@
     return _pictureBtnArr;
 }
 
+@end
 
+
+@implementation WGBSelectPhotoDataItem
+
+///MARK:- 获取相册选择的数据源
++ (NSArray<WGBSelectPhotoDataItem *> *)createDataItemsWithPHAssets:(NSArray<PHAsset*> *)mediaAssets
+                                                           photoes:(NSArray<UIImage*>*)photoes{
+    if (!photoes.count) {
+        return nil;
+    }
+    NSMutableArray *dataSource = [NSMutableArray array];
+    [photoes enumerateObjectsUsingBlock:^(UIImage * _Nonnull img, NSUInteger index, BOOL * _Nonnull stop) {
+        WGBSelectPhotoDataItem *item = [WGBSelectPhotoDataItem new];
+        item.assetObj = mediaAssets[index];
+        item.coverImage = img;
+        [dataSource addObject: item];
+    }];
+    return dataSource;
+}
 
 
 
 @end
+
