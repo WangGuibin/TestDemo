@@ -1,0 +1,19 @@
+${PODS_ROOT}/Target Support Files/Pods-TestDemo/Pods-TestDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework
+${BUILT_PRODUCTS_DIR}/WGBCocoaKit/WGBCocoaKit.framework
+${BUILT_PRODUCTS_DIR}/WGBCommonAlertSheetView/WGBCommonAlertSheetView.framework
+${BUILT_PRODUCTS_DIR}/WGBCustomPopUpView/WGBCustomPopUpView.framework
+${BUILT_PRODUCTS_DIR}/WGBEasyMarqueeView/WGBEasyMarqueeView.framework
+${BUILT_PRODUCTS_DIR}/WGBRepairedOrientationLabel/WGBRepairedOrientationLabel.framework
+${BUILT_PRODUCTS_DIR}/WGBSelectPhotoView/WGBSelectPhotoView.framework
+${BUILT_PRODUCTS_DIR}/WGBWaveLayerButton/WGBWaveLayerButton.framework
+${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework
+${BUILT_PRODUCTS_DIR}/YSQRCodeGenerator/YSQRCodeGenerator.framework
+${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework
+${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework
+${BUILT_PRODUCTS_DIR}/YYText/YYText.framework
