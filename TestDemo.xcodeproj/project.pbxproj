@@ -63,6 +63,10 @@
 		04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F735A122CDAA8D007CB0D0 /* Assets.xcassets */; };
 		04F735A522CDAA8D007CB0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F735A322CDAA8D007CB0D0 /* LaunchScreen.storyboard */; };
 		04F735A822CDAA8D007CB0D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F735A722CDAA8D007CB0D0 /* main.m */; };
+		04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914EC237599B1006E8B77 /* TableViewSigleSelectionViewController.m */; };
+		04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914EF23759BEF006E8B77 /* TestSigleSelectModel.m */; };
+		04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */; };
+		04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -156,7 +160,7 @@
 		04CA01FC235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FancyQRCodeToolDemoViewController.m; sourceTree = "<group>"; };
 		04CA01FE23518530009C8C22 /* ShowQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowQRCodeViewController.h; sourceTree = "<group>"; };
 		04CA01FF23518530009C8C22 /* ShowQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowQRCodeViewController.m; sourceTree = "<group>"; };
-		04F7359522CDAA8B007CB0D0 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F7359522CDAA8B007CB0D0 /* Demo集合.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo集合.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F7359822CDAA8B007CB0D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04F7359922CDAA8B007CB0D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04F7359B22CDAA8B007CB0D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -166,6 +170,13 @@
 		04F735A422CDAA8D007CB0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F735A622CDAA8D007CB0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F735A722CDAA8D007CB0D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F914EB237599B1006E8B77 /* TableViewSigleSelectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewSigleSelectionViewController.h; sourceTree = "<group>"; };
+		04F914EC237599B1006E8B77 /* TableViewSigleSelectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSigleSelectionViewController.m; sourceTree = "<group>"; };
+		04F914EE23759BEF006E8B77 /* TestSigleSelectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSigleSelectModel.h; sourceTree = "<group>"; };
+		04F914EF23759BEF006E8B77 /* TestSigleSelectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSigleSelectModel.m; sourceTree = "<group>"; };
+		04F914F423759CF8006E8B77 /* TestSigleSelectTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSigleSelectTableViewCell.h; sourceTree = "<group>"; };
+		04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSigleSelectTableViewCell.m; sourceTree = "<group>"; };
+		04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSigleSelectTableViewCell.xib; sourceTree = "<group>"; };
 		1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAA866633D4A46C1BE8B538 /* Pods-TestDemo.testrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.testrelease.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.testrelease.xcconfig"; sourceTree = "<group>"; };
@@ -336,6 +347,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				04F914EA2375997E006E8B77 /* UITableViewSigleSelection */,
 				0453FDC5236C343000D8B2A5 /* UITableViewMultipleSelection */,
 				0453FDBC236C2B4C00D8B2A5 /* TableViewCustomDeleteButton */,
 				048600CD236341ED00B63EDE /* Popver */,
@@ -504,7 +516,7 @@
 		04F7359622CDAA8B007CB0D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04F7359522CDAA8B007CB0D0 /* TestDemo.app */,
+				04F7359522CDAA8B007CB0D0 /* Demo集合.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -529,6 +541,20 @@
 				04F735A722CDAA8D007CB0D0 /* main.m */,
 			);
 			path = TestDemo;
+			sourceTree = "<group>";
+		};
+		04F914EA2375997E006E8B77 /* UITableViewSigleSelection */ = {
+			isa = PBXGroup;
+			children = (
+				04F914EB237599B1006E8B77 /* TableViewSigleSelectionViewController.h */,
+				04F914EC237599B1006E8B77 /* TableViewSigleSelectionViewController.m */,
+				04F914EE23759BEF006E8B77 /* TestSigleSelectModel.h */,
+				04F914EF23759BEF006E8B77 /* TestSigleSelectModel.m */,
+				04F914F423759CF8006E8B77 /* TestSigleSelectTableViewCell.h */,
+				04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */,
+				04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */,
+			);
+			path = UITableViewSigleSelection;
 			sourceTree = "<group>";
 		};
 		B34E9CF01EFF6E98B196324E /* Pods */ = {
@@ -569,7 +595,7 @@
 			);
 			name = TestDemo;
 			productName = TestDemo;
-			productReference = 04F7359522CDAA8B007CB0D0 /* TestDemo.app */;
+			productReference = 04F7359522CDAA8B007CB0D0 /* Demo集合.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -619,6 +645,7 @@
 				04CA01F323517BE2009C8C22 /* HPEditSignatureAlertView.xib in Resources */,
 				0450C8CC235187EC0069AC4D /* github.png in Resources */,
 				04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */,
+				04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */,
 				0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */,
 				0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */,
 				04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */,
@@ -675,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */,
 				0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */,
 				04B0CA882340C5C4007B2AD2 /* WGBRewardAlertView.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
@@ -689,6 +717,7 @@
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
+				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
@@ -707,6 +736,7 @@
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
+				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
@@ -777,7 +807,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CustomProductName = "预发布环境";
+				CustomProductName = "Demo集合(pre)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -812,7 +842,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ak.localDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Demo集合";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = TestRelease;
@@ -853,7 +883,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CustomProductName = "测试环境";
+				CustomProductName = "Demo集合(dev)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -915,7 +945,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CustomProductName = "正式环境";
+				CustomProductName = "Demo集合";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -949,7 +979,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ak.localDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Demo集合";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -968,7 +998,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ak.localDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Demo集合";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -25,6 +25,7 @@
 #import "PopverDemoViewController.h"
 #import "TableViewCustomDeleteButtonDemoViewController.h"
 #import "TableViewMultipleSelectionDemoViewController.h"
+#import "TableViewSigleSelectionViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -58,7 +59,8 @@
              [WGBMaskDemoViewController class],
              [PopverDemoViewController class],
              [TableViewCustomDeleteButtonDemoViewController class],
-             [TableViewMultipleSelectionDemoViewController class]
+             [TableViewMultipleSelectionDemoViewController class],
+             [TableViewSigleSelectionViewController class]
              ];
 }
 
@@ -80,7 +82,8 @@
              @"mask使用",
              @"系统`UIPopoverPresentationController`带箭头弹窗",
              @"自定义TableView的删除按钮",
-             @"UITableView多选demo"
+             @"UITableView多选demo",
+             @"UITableView单选demo"
              ];
 }
 
