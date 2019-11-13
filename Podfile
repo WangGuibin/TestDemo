@@ -23,8 +23,8 @@ target 'TestDemo' do
   pod 'YYText'
   pod 'YYModel'
   pod 'YSQRCodeGenerator' #花式二维码
-  #pod 'DFUIKit/WGBCustomPopUpView',:git => "ssh://yegucheng@gitblit.local.com:29418/ios-lib.git"
-  pod 'WGBCustomPopUpView',‘~>1.0.0’
+  pod 'YogaKit','~> 1.7'#FlexBox布局
+  pod 'WGBCustomPopUpView','~>1.0.0'
   pod 'WGBCommonAlertSheetView'
   pod 'WGBEasyMarqueeView'
   pod 'WGBWaveLayerButton'

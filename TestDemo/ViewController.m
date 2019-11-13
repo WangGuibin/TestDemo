@@ -26,6 +26,7 @@
 #import "TableViewCustomDeleteButtonDemoViewController.h"
 #import "TableViewMultipleSelectionDemoViewController.h"
 #import "TableViewSigleSelectionViewController.h"
+#import "YogaKitDemoViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -60,7 +61,8 @@
              [PopverDemoViewController class],
              [TableViewCustomDeleteButtonDemoViewController class],
              [TableViewMultipleSelectionDemoViewController class],
-             [TableViewSigleSelectionViewController class]
+             [TableViewSigleSelectionViewController class],
+             [YogaKitDemoViewController class]
              ];
 }
 
@@ -83,7 +85,8 @@
              @"系统`UIPopoverPresentationController`带箭头弹窗",
              @"自定义TableView的删除按钮",
              @"UITableView多选demo",
-             @"UITableView单选demo"
+             @"UITableView单选demo",
+             @"YogaKit Demo (FlexBox布局)"
              ];
 }
 

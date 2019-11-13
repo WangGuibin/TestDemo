@@ -47,6 +47,7 @@
 		04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAA22340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m */; };
 		04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAA62340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m */; };
 		04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */; };
+		04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */; };
 		04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */; };
 		04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6F235F08D500A8671B /* WGBGradientProgressView.m */; };
 		04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01EB23517BC0009C8C22 /* HPSelectSexAlertView.xib */; };
@@ -67,6 +68,7 @@
 		04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914EF23759BEF006E8B77 /* TestSigleSelectModel.m */; };
 		04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */; };
 		04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */; };
+		04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +145,8 @@
 		04B0CAA62340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRepairedOrientationLabelDemoViewController.m; sourceTree = "<group>"; };
 		04B0CAB52341F607007B2AD2 /* NSLayoutAnchorDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLayoutAnchorDemoViewController.h; sourceTree = "<group>"; };
 		04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLayoutAnchorDemoViewController.m; sourceTree = "<group>"; };
+		04B13FBB2376A6D700583B63 /* YogaDemoOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaDemoOneViewController.h; sourceTree = "<group>"; };
+		04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaDemoOneViewController.m; sourceTree = "<group>"; };
 		04C5CF6A235F083600A8671B /* GradientProgressDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientProgressDemoViewController.h; sourceTree = "<group>"; };
 		04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientProgressDemoViewController.m; sourceTree = "<group>"; };
 		04C5CF6E235F08D500A8671B /* WGBGradientProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientProgressView.h; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 		04F914F423759CF8006E8B77 /* TestSigleSelectTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSigleSelectTableViewCell.h; sourceTree = "<group>"; };
 		04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSigleSelectTableViewCell.m; sourceTree = "<group>"; };
 		04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSigleSelectTableViewCell.xib; sourceTree = "<group>"; };
+		04F9150523769EB8006E8B77 /* YogaKitDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaKitDemoViewController.h; sourceTree = "<group>"; };
+		04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaKitDemoViewController.m; sourceTree = "<group>"; };
 		1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAA866633D4A46C1BE8B538 /* Pods-TestDemo.testrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.testrelease.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.testrelease.xcconfig"; sourceTree = "<group>"; };
@@ -347,6 +353,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				04F9150323769E26006E8B77 /* YogaKitDemo */,
 				04F914EA2375997E006E8B77 /* UITableViewSigleSelection */,
 				0453FDC5236C343000D8B2A5 /* UITableViewMultipleSelection */,
 				0453FDBC236C2B4C00D8B2A5 /* TableViewCustomDeleteButton */,
@@ -557,6 +564,17 @@
 			path = UITableViewSigleSelection;
 			sourceTree = "<group>";
 		};
+		04F9150323769E26006E8B77 /* YogaKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04F9150523769EB8006E8B77 /* YogaKitDemoViewController.h */,
+				04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */,
+				04B13FBB2376A6D700583B63 /* YogaDemoOneViewController.h */,
+				04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */,
+			);
+			path = YogaKitDemo;
+			sourceTree = "<group>";
+		};
 		B34E9CF01EFF6E98B196324E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,6 +732,7 @@
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
+				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
@@ -737,6 +756,7 @@
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
 				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
+				04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */,
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
