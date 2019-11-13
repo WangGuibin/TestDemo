@@ -33,6 +33,7 @@ THE SOFTWARE.
 
 #import "YogaKitDemoViewController.h"
 #import "YogaDemoOneViewController.h"
+#import "YogaScrollViewDemoViewController.h"
 
 @interface YogaKitDemoViewController () <UITableViewDelegate, UITableViewDataSource>
  
@@ -47,14 +48,17 @@ THE SOFTWARE.
 
 - (NSArray<Class> *)demoClassArray{
     return @[
-        [YogaDemoOneViewController class]
+        [YogaDemoOneViewController class],
+        [YogaScrollViewDemoViewController class]
      ];
 }
 
 
 - (NSArray *)demoTitleArray{
     return @[
-             @"试试水而已"
+             @"试试水而已",
+             @"测试UIScrollView"
+             
              ];
 }
 

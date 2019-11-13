@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */; };
 		0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */; };
 		0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */; };
 		0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C8235187EC0069AC4D /* Miku.jpg */; };
@@ -73,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04083DD1237C3E2C002702C6 /* YogaScrollViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaScrollViewDemoViewController.h; sourceTree = "<group>"; };
+		04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaScrollViewDemoViewController.m; sourceTree = "<group>"; };
 		0439C9EB234C940A00E9D9AB /* YYTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
 		0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextDemoViewController.m; sourceTree = "<group>"; };
 		0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 74766_811947_358458.gif; sourceTree = "<group>"; };
@@ -571,6 +574,8 @@
 				04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */,
 				04B13FBB2376A6D700583B63 /* YogaDemoOneViewController.h */,
 				04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */,
+				04083DD1237C3E2C002702C6 /* YogaScrollViewDemoViewController.h */,
+				04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */,
 			);
 			path = YogaKitDemo;
 			sourceTree = "<group>";
@@ -743,6 +748,7 @@
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
 				04CA020023518530009C8C22 /* ShowQRCodeViewController.m in Sources */,
+				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
 				04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */,
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
