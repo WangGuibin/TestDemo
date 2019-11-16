@@ -29,6 +29,7 @@
 #import "YogaKitDemoViewController.h"
 #import "VCTimeProfilerViewController.h"
 #import "ZombieTestViewController.h"
+#import "AppFluencyMonitorTestViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -65,7 +66,8 @@
              [TableViewSigleSelectionViewController class],
              [YogaKitDemoViewController class],
              [VCTimeProfilerViewController class],
-             [ZombieTestViewController class]
+             [ZombieTestViewController class],
+             [AppFluencyMonitorTestViewController class]
              ];
 }
 
@@ -91,7 +93,8 @@
              @"UITableView单选demo",
              @"YogaKit Demo (FlexBox布局)",
              @"页面耗时统计",
-             @"野指针检测"
+             @"野指针检测",
+             @"卡顿检测"
              ];
 }
 

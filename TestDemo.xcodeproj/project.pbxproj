@@ -16,6 +16,9 @@
 		04083E25237FAE44002702C6 /* VCTimeProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E21237FAE44002702C6 /* VCTimeProfiler.m */; };
 		04083E2A237FAF4F002702C6 /* ZombieTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E28237FAF4F002702C6 /* ZombieTestViewController.m */; };
 		04083E2B237FAF4F002702C6 /* ZombieTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04083E29237FAF4F002702C6 /* ZombieTestViewController.xib */; };
+		04083E32237FB72C002702C6 /* XDAppFluencyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E30237FB72C002702C6 /* XDAppFluencyMonitor.m */; };
+		04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */; };
+		04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */; };
 		0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */; };
 		0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */; };
 		0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C8235187EC0069AC4D /* Miku.jpg */; };
@@ -57,6 +60,7 @@
 		04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAA62340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m */; };
 		04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */; };
 		04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */; };
+		04BF7A35237FD8F2003D99CF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF7A34237FD8F2003D99CF /* Constants.m */; };
 		04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */; };
 		04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6F235F08D500A8671B /* WGBGradientProgressView.m */; };
 		04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01EB23517BC0009C8C22 /* HPSelectSexAlertView.xib */; };
@@ -99,6 +103,12 @@
 		04083E27237FAF4F002702C6 /* ZombieTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZombieTestViewController.h; sourceTree = "<group>"; };
 		04083E28237FAF4F002702C6 /* ZombieTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZombieTestViewController.m; sourceTree = "<group>"; };
 		04083E29237FAF4F002702C6 /* ZombieTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZombieTestViewController.xib; sourceTree = "<group>"; };
+		04083E2E237FB72C002702C6 /* XDAppFluencyMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDAppFluencyMonitor.h; sourceTree = "<group>"; };
+		04083E2F237FB72C002702C6 /* XDMachThreadBacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDMachThreadBacktrace.h; sourceTree = "<group>"; };
+		04083E30237FB72C002702C6 /* XDAppFluencyMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDAppFluencyMonitor.m; sourceTree = "<group>"; };
+		04083E34237FB73D002702C6 /* AppFluencyMonitorTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFluencyMonitorTestViewController.h; sourceTree = "<group>"; };
+		04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppFluencyMonitorTestViewController.m; sourceTree = "<group>"; };
+		04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XDMachThreadBacktrace.c; sourceTree = "<group>"; };
 		0439C9EB234C940A00E9D9AB /* YYTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
 		0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextDemoViewController.m; sourceTree = "<group>"; };
 		0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 74766_811947_358458.gif; sourceTree = "<group>"; };
@@ -173,6 +183,8 @@
 		04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLayoutAnchorDemoViewController.m; sourceTree = "<group>"; };
 		04B13FBB2376A6D700583B63 /* YogaDemoOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaDemoOneViewController.h; sourceTree = "<group>"; };
 		04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaDemoOneViewController.m; sourceTree = "<group>"; };
+		04BF7A33237FD8F2003D99CF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		04BF7A34237FD8F2003D99CF /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		04C5CF6A235F083600A8671B /* GradientProgressDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientProgressDemoViewController.h; sourceTree = "<group>"; };
 		04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientProgressDemoViewController.m; sourceTree = "<group>"; };
 		04C5CF6E235F08D500A8671B /* WGBGradientProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientProgressView.h; sourceTree = "<group>"; };
@@ -280,6 +292,26 @@
 			path = ZombieTest;
 			sourceTree = "<group>";
 		};
+		04083E2C237FB71A002702C6 /* AppFluencyMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				04083E34237FB73D002702C6 /* AppFluencyMonitorTestViewController.h */,
+				04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */,
+			);
+			path = AppFluencyMonitor;
+			sourceTree = "<group>";
+		};
+		04083E2D237FB72C002702C6 /* AppFluencyMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				04083E2E237FB72C002702C6 /* XDAppFluencyMonitor.h */,
+				04083E30237FB72C002702C6 /* XDAppFluencyMonitor.m */,
+				04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */,
+				04083E2F237FB72C002702C6 /* XDMachThreadBacktrace.h */,
+			);
+			path = AppFluencyMonitor;
+			sourceTree = "<group>";
+		};
 		0439C9EA234C93F100E9D9AB /* YYText */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +412,7 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04083E2D237FB72C002702C6 /* AppFluencyMonitor */,
 				04083E17237FAE44002702C6 /* VCTimeProfiler */,
 				04083E10237FAE1B002702C6 /* XDZombieDetector */,
 				0461CBA6235EA83300F43B61 /* TouchHints */,
@@ -433,6 +466,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				04083E2C237FB71A002702C6 /* AppFluencyMonitor */,
 				04083E26237FAF32002702C6 /* ZombieTest */,
 				04F9150323769E26006E8B77 /* YogaKitDemo */,
 				04F914EA2375997E006E8B77 /* UITableViewSigleSelection */,
@@ -621,6 +655,8 @@
 				04F7359B22CDAA8B007CB0D0 /* ViewController.h */,
 				04F7359C22CDAA8B007CB0D0 /* ViewController.m */,
 				04B0CA8A2340C5D9007B2AD2 /* PrefixHeader.pch */,
+				04BF7A33237FD8F2003D99CF /* Constants.h */,
+				04BF7A34237FD8F2003D99CF /* Constants.m */,
 				04F7359E22CDAA8B007CB0D0 /* Main.storyboard */,
 				04F735A122CDAA8D007CB0D0 /* Assets.xcassets */,
 				04F735A322CDAA8D007CB0D0 /* LaunchScreen.storyboard */,
@@ -815,15 +851,19 @@
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
+				04BF7A35237FD8F2003D99CF /* Constants.m in Sources */,
+				04083E32237FB72C002702C6 /* XDAppFluencyMonitor.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
 				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
+				04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */,
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
+				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
@@ -946,6 +986,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5LS8HSA233;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1083,6 +1124,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5LS8HSA233;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1102,6 +1144,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5LS8HSA233;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

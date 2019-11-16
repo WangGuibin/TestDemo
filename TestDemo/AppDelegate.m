@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "VCTimeProfiler.h"
+#import "XDAppFluencyMonitor.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,7 @@
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
     //页面耗时统计
     [[VCTimeProfiler shared] start];
+    [[XDAppFluencyMonitor sharedInstance] startMonitoring];
 
     return YES;
 }
