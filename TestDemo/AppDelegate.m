@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "VCTimeProfiler.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //调试插件 UI热重载
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+    //页面耗时统计
+    [[VCTimeProfiler shared] start];
+
     return YES;
 }
 

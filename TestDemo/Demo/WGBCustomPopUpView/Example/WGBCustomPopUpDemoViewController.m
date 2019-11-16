@@ -162,7 +162,7 @@
         NSLog(@"能否支付：%@ \n 金额：%@ \n 留言：%@",canPay? @"能":@"不能",money,message);
         [pop dismiss];
     }];
-    [pop show];
+    [pop showFromSuperView:self.view];
 }
 
 - (void)showGudieVIP{

@@ -27,7 +27,8 @@
 #import "TableViewMultipleSelectionDemoViewController.h"
 #import "TableViewSigleSelectionViewController.h"
 #import "YogaKitDemoViewController.h"
-
+#import "VCTimeProfilerViewController.h"
+#import "ZombieTestViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -62,7 +63,9 @@
              [TableViewCustomDeleteButtonDemoViewController class],
              [TableViewMultipleSelectionDemoViewController class],
              [TableViewSigleSelectionViewController class],
-             [YogaKitDemoViewController class]
+             [YogaKitDemoViewController class],
+             [VCTimeProfilerViewController class],
+             [ZombieTestViewController class]
              ];
 }
 
@@ -86,7 +89,9 @@
              @"自定义TableView的删除按钮",
              @"UITableView多选demo",
              @"UITableView单选demo",
-             @"YogaKit Demo (FlexBox布局)"
+             @"YogaKit Demo (FlexBox布局)",
+             @"页面耗时统计",
+             @"野指针检测"
              ];
 }
 

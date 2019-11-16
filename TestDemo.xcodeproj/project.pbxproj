@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */; };
+		04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E12237FAE1B002702C6 /* XDZombieProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E14237FAE1B002702C6 /* XDZombieDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04083E22237FAE44002702C6 /* VCTimeProfilerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E19237FAE44002702C6 /* VCTimeProfilerViewController.m */; };
+		04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E1C237FAE44002702C6 /* VCTimeProfilerRecorder.m */; };
+		04083E24237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E1E237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m */; };
+		04083E25237FAE44002702C6 /* VCTimeProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E21237FAE44002702C6 /* VCTimeProfiler.m */; };
+		04083E2A237FAF4F002702C6 /* ZombieTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E28237FAF4F002702C6 /* ZombieTestViewController.m */; };
+		04083E2B237FAF4F002702C6 /* ZombieTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04083E29237FAF4F002702C6 /* ZombieTestViewController.xib */; };
 		0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */; };
 		0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */; };
 		0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C8235187EC0069AC4D /* Miku.jpg */; };
@@ -76,6 +84,21 @@
 /* Begin PBXFileReference section */
 		04083DD1237C3E2C002702C6 /* YogaScrollViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaScrollViewDemoViewController.h; sourceTree = "<group>"; };
 		04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaScrollViewDemoViewController.m; sourceTree = "<group>"; };
+		04083E11237FAE1B002702C6 /* XDZombieDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDZombieDetector.h; sourceTree = "<group>"; };
+		04083E12237FAE1B002702C6 /* XDZombieProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDZombieProxy.m; sourceTree = "<group>"; };
+		04083E13237FAE1B002702C6 /* XDZombieProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDZombieProxy.h; sourceTree = "<group>"; };
+		04083E14237FAE1B002702C6 /* XDZombieDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDZombieDetector.m; sourceTree = "<group>"; };
+		04083E19237FAE44002702C6 /* VCTimeProfilerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTimeProfilerViewController.m; sourceTree = "<group>"; };
+		04083E1A237FAE44002702C6 /* VCTimeProfilerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTimeProfilerViewController.h; sourceTree = "<group>"; };
+		04083E1C237FAE44002702C6 /* VCTimeProfilerRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTimeProfilerRecorder.m; sourceTree = "<group>"; };
+		04083E1D237FAE44002702C6 /* VCTimeProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTimeProfiler.h; sourceTree = "<group>"; };
+		04083E1E237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ViewControllerTimeProfiler.m"; sourceTree = "<group>"; };
+		04083E1F237FAE44002702C6 /* VCTimeProfilerRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTimeProfilerRecorder.h; sourceTree = "<group>"; };
+		04083E20237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ViewControllerTimeProfiler.h"; sourceTree = "<group>"; };
+		04083E21237FAE44002702C6 /* VCTimeProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTimeProfiler.m; sourceTree = "<group>"; };
+		04083E27237FAF4F002702C6 /* ZombieTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZombieTestViewController.h; sourceTree = "<group>"; };
+		04083E28237FAF4F002702C6 /* ZombieTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZombieTestViewController.m; sourceTree = "<group>"; };
+		04083E29237FAF4F002702C6 /* ZombieTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZombieTestViewController.xib; sourceTree = "<group>"; };
 		0439C9EB234C940A00E9D9AB /* YYTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
 		0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextDemoViewController.m; sourceTree = "<group>"; };
 		0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 74766_811947_358458.gif; sourceTree = "<group>"; };
@@ -205,6 +228,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04083E10237FAE1B002702C6 /* XDZombieDetector */ = {
+			isa = PBXGroup;
+			children = (
+				04083E11237FAE1B002702C6 /* XDZombieDetector.h */,
+				04083E14237FAE1B002702C6 /* XDZombieDetector.m */,
+				04083E13237FAE1B002702C6 /* XDZombieProxy.h */,
+				04083E12237FAE1B002702C6 /* XDZombieProxy.m */,
+			);
+			path = XDZombieDetector;
+			sourceTree = "<group>";
+		};
+		04083E17237FAE44002702C6 /* VCTimeProfiler */ = {
+			isa = PBXGroup;
+			children = (
+				04083E18237FAE44002702C6 /* UI */,
+				04083E1B237FAE44002702C6 /* Core */,
+			);
+			path = VCTimeProfiler;
+			sourceTree = "<group>";
+		};
+		04083E18237FAE44002702C6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				04083E19237FAE44002702C6 /* VCTimeProfilerViewController.m */,
+				04083E1A237FAE44002702C6 /* VCTimeProfilerViewController.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		04083E1B237FAE44002702C6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04083E1C237FAE44002702C6 /* VCTimeProfilerRecorder.m */,
+				04083E1D237FAE44002702C6 /* VCTimeProfiler.h */,
+				04083E1E237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m */,
+				04083E1F237FAE44002702C6 /* VCTimeProfilerRecorder.h */,
+				04083E20237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.h */,
+				04083E21237FAE44002702C6 /* VCTimeProfiler.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		04083E26237FAF32002702C6 /* ZombieTest */ = {
+			isa = PBXGroup;
+			children = (
+				04083E27237FAF4F002702C6 /* ZombieTestViewController.h */,
+				04083E28237FAF4F002702C6 /* ZombieTestViewController.m */,
+				04083E29237FAF4F002702C6 /* ZombieTestViewController.xib */,
+			);
+			path = ZombieTest;
+			sourceTree = "<group>";
+		};
 		0439C9EA234C93F100E9D9AB /* YYText */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +380,8 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04083E17237FAE44002702C6 /* VCTimeProfiler */,
+				04083E10237FAE1B002702C6 /* XDZombieDetector */,
 				0461CBA6235EA83300F43B61 /* TouchHints */,
 				04B0CA922340CF90007B2AD2 /* HPAutoScorllTextLabel */,
 				048A796622D397DC00A0E38F /* JPQRCodeTool */,
@@ -356,6 +433,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				04083E26237FAF32002702C6 /* ZombieTest */,
 				04F9150323769E26006E8B77 /* YogaKitDemo */,
 				04F914EA2375997E006E8B77 /* UITableViewSigleSelection */,
 				0453FDC5236C343000D8B2A5 /* UITableViewMultipleSelection */,
@@ -660,6 +738,7 @@
 			files = (
 				04F735A522CDAA8D007CB0D0 /* LaunchScreen.storyboard in Resources */,
 				04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */,
+				04083E2B237FAF4F002702C6 /* ZombieTestViewController.xib in Resources */,
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
@@ -744,9 +823,11 @@
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */,
+				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
+				04083E22237FAE44002702C6 /* VCTimeProfilerViewController.m in Sources */,
 				04CA020023518530009C8C22 /* ShowQRCodeViewController.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
 				04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */,
@@ -760,17 +841,22 @@
 				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
+				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
 				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
 				04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */,
+				04083E24237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m in Sources */,
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
 				0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */,
 				04CA01FD235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m in Sources */,
 				04F735A822CDAA8D007CB0D0 /* main.m in Sources */,
+				04083E2A237FAF4F002702C6 /* ZombieTestViewController.m in Sources */,
+				04083E25237FAE44002702C6 /* VCTimeProfiler.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
 				0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */,
+				04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */,
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
