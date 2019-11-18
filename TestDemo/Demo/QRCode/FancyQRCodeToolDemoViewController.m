@@ -90,7 +90,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = [UIColor whiteColor];
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         if (@available(iOS 11.0, *)) {
             _tableView.estimatedRowHeight = 0;
             _tableView.estimatedSectionFooterHeight = 0;

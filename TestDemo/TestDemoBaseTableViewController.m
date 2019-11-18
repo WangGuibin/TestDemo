@@ -1,12 +1,12 @@
 //
-// YogaKitDemoViewController.m
+// TestDemoBaseTableViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/9
+// Created by CoderWGB on 2019/11/18
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,43 +31,19 @@ THE SOFTWARE.
 */
     
 
-#import "YogaKitDemoViewController.h"
-#import "YogaDemoOneViewController.h"
-#import "YogaScrollViewDemoViewController.h"
+#import "TestDemoBaseTableViewController.h"
 
-@interface YogaKitDemoViewController () <UITableViewDelegate, UITableViewDataSource>
- 
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic,strong) NSArray *demoTitleArray;
-@property (nonatomic,strong) NSArray<Class> *demoClassArray;
+@interface TestDemoBaseTableViewController ()
 
 @end
 
-@implementation YogaKitDemoViewController
-
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [YogaDemoOneViewController class],
-        [YogaScrollViewDemoViewController class]
-     ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-             @"试试水而已",
-             @"测试UIScrollView"
-             
-             ];
-}
+@implementation TestDemoBaseTableViewController
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
 }
 
 #pragma mark - tableView DataSource
@@ -143,12 +119,11 @@ THE SOFTWARE.
                 make.bottom.equalTo(self.view.mas_safeAreaLayoutGuideBottom);
             } else {
                 // Fallback on earlier versions
-                make.bottom.equalTo(self.view.mas_bottom);
+                make.bottom.equalTo(self.view.mas_bottom); 
             }
         }];
     }
     return _tableView;
 }
-
 
 @end

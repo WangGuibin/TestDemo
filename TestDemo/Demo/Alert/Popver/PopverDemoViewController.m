@@ -51,7 +51,7 @@
 }
 
 - (BOOL)popoverPresentationControllerShouldDismissPopover:(UIPopoverPresentationController *)popoverPresentationController{
-    return NO;   //点击蒙版popover不消失， 默认yes
+    return YES;   //设置NO点击蒙版popover不消失， 默认YES
 }
 
 

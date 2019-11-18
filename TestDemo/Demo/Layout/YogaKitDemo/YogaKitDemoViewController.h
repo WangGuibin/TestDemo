@@ -32,10 +32,11 @@ THE SOFTWARE.
     
 
 #import <UIKit/UIKit.h>
+#import "TestDemoBaseTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YogaKitDemoViewController : UIViewController
+@interface YogaKitDemoViewController : TestDemoBaseTableViewController
 
 @end
 

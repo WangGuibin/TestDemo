@@ -8,28 +8,15 @@
 
 #import "ViewController.h"
 #import "UIApplication+TouchHints.h"
-#import "WGBCustomPopUpDemoViewController.h"
-#import "WGBEasyMarqueeViewDemoViewController.h"
-#import "WGBWaveLayerButtonDemoViewController.h"
-#import "WGBCommonAlertSheetViewDemoViewController.h"
-#import "WGBRepairedOrientationLabelDemoViewController.h"
-#import "NSLayoutAnchorDemoViewController.h"
-#import "YYTextDemoViewController.h"
 #import "FancyQRCodeToolDemoViewController.h"
-#import "GlowingAnimationDemoViewController.h"
 #import "SelectImagesDemoViewController.h"
-#import "FSPopDialogViewControllerDemoViewController.h"
 #import "GradientProgressDemoViewController.h"
 #import "UIApplication+TouchHints.h"
-#import "WGBMaskDemoViewController.h"
-#import "PopverDemoViewController.h"
-#import "TableViewCustomDeleteButtonDemoViewController.h"
-#import "TableViewMultipleSelectionDemoViewController.h"
-#import "TableViewSigleSelectionViewController.h"
-#import "YogaKitDemoViewController.h"
-#import "VCTimeProfilerViewController.h"
-#import "ZombieTestViewController.h"
-#import "AppFluencyMonitorTestViewController.h"
+#import "AnimationDemoViewController.h"
+#import "TableViewDemoViewController.h"
+#import "DebugDemoViewController.h"
+#import "AlertDemoViewController.h"
+#import "LayoutDemoListViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -47,54 +34,28 @@
 
 - (NSArray<Class> *)demoClassArray{
     return @[
-             [WGBCustomPopUpDemoViewController class],
-             [WGBEasyMarqueeViewDemoViewController class],
-             [WGBWaveLayerButtonDemoViewController class],
-             [WGBCommonAlertSheetViewDemoViewController class],
-             [WGBRepairedOrientationLabelDemoViewController class],
-             [NSLayoutAnchorDemoViewController class],
-             [YYTextDemoViewController class],
              [FancyQRCodeToolDemoViewController class],
-             [GlowingAnimationDemoViewController class],
              [SelectImagesDemoViewController class],
-             [FSPopDialogViewControllerDemoViewController class],
              [GradientProgressDemoViewController class],
-             [WGBMaskDemoViewController class],
-             [PopverDemoViewController class],
-             [TableViewCustomDeleteButtonDemoViewController class],
-             [TableViewMultipleSelectionDemoViewController class],
-             [TableViewSigleSelectionViewController class],
-             [YogaKitDemoViewController class],
-             [VCTimeProfilerViewController class],
-             [ZombieTestViewController class],
-             [AppFluencyMonitorTestViewController class]
-             ];
+             [AnimationDemoViewController class],
+             [TableViewDemoViewController class],
+             [DebugDemoViewController class],
+             [AlertDemoViewController class],
+             [LayoutDemoListViewController class]
+            ];
 }
 
 
 - (NSArray *)demoTitleArray{
     return @[
-             @"WGBCustomPopUpView",
-             @"WGBEasyMarqueeView",
-             @"WGBWaveLayerButton",
-             @"WGBCommonAlertSheetView",
-             @"WGBRepairedOrientationLabel",
-             @"iOS 布局约束`NSLayoutAnchor`学习",
-             @"YYTextDemoViewController测试学习",
              @"花式二维码",
-             @"发光动画",
              @"选择相册-发布",
-             @"FSPopDialogVC Demo",
              @"渐变进度条Demo",
-             @"mask使用",
-             @"系统`UIPopoverPresentationController`带箭头弹窗",
-             @"自定义TableView的删除按钮",
-             @"UITableView多选demo",
-             @"UITableView单选demo",
-             @"YogaKit Demo (FlexBox布局)",
-             @"页面耗时统计",
-             @"野指针检测",
-             @"卡顿检测"
+             @"动画相关",
+             @"TableView相关Demo",
+             @"Debug相关Demo",
+             @"弹窗相关Demo",
+             @"布局相关demo"
              ];
 }
 
