@@ -19,6 +19,7 @@
 		04083E32237FB72C002702C6 /* XDAppFluencyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E30237FB72C002702C6 /* XDAppFluencyMonitor.m */; };
 		04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */; };
 		04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */; };
+		041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */; };
 		0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */; };
 		0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */; };
 		0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C8235187EC0069AC4D /* Miku.jpg */; };
@@ -130,6 +131,8 @@
 		04083E34237FB73D002702C6 /* AppFluencyMonitorTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFluencyMonitorTestViewController.h; sourceTree = "<group>"; };
 		04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppFluencyMonitorTestViewController.m; sourceTree = "<group>"; };
 		04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XDMachThreadBacktrace.c; sourceTree = "<group>"; };
+		041D64762384279600FB5337 /* WGBCallStackDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCallStackDemoViewController.h; sourceTree = "<group>"; };
+		041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCallStackDemoViewController.m; sourceTree = "<group>"; };
 		0439C9EB234C940A00E9D9AB /* YYTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
 		0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextDemoViewController.m; sourceTree = "<group>"; };
 		0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 74766_811947_358458.gif; sourceTree = "<group>"; };
@@ -373,6 +376,15 @@
 				04083E2F237FB72C002702C6 /* XDMachThreadBacktrace.h */,
 			);
 			path = AppFluencyMonitor;
+			sourceTree = "<group>";
+		};
+		041D64752384276D00FB5337 /* CallStack */ = {
+			isa = PBXGroup;
+			children = (
+				041D64762384279600FB5337 /* WGBCallStackDemoViewController.h */,
+				041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */,
+			);
+			path = CallStack;
 			sourceTree = "<group>";
 		};
 		0439C9EA234C93F100E9D9AB /* YYText */ = {
@@ -746,6 +758,7 @@
 		04C3025A2382D6B400356991 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				041D64752384276D00FB5337 /* CallStack */,
 				04C302662382DDCC00356991 /* NetDiagnoService */,
 				04083E2C237FB71A002702C6 /* AppFluencyMonitor */,
 				04083E26237FAF32002702C6 /* ZombieTest */,
@@ -1079,6 +1092,7 @@
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
+				041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */,
 				04083E22237FAE44002702C6 /* VCTimeProfilerViewController.m in Sources */,
 				04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,

@@ -1,12 +1,12 @@
 //
-// DebugDemoViewController.m
+// WGBCallStackDemoViewController.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/11/19
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,45 +31,12 @@ THE SOFTWARE.
 */
     
 
-#import "DebugDemoViewController.h"
-#import "VCTimeProfilerViewController.h"
-#import "ZombieTestViewController.h"
-#import "AppFluencyMonitorTestViewController.h"
-#import "NetDiagnoServiceDemoViewController.h"
-#import "WGBCallStackDemoViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface DebugDemoViewController ()
+NS_ASSUME_NONNULL_BEGIN
+
+@interface WGBCallStackDemoViewController : UIViewController
 
 @end
 
-@implementation DebugDemoViewController
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [VCTimeProfilerViewController class],
-        [ZombieTestViewController class],
-        [AppFluencyMonitorTestViewController class],
-        [NetDiagnoServiceDemoViewController class],
-        [WGBCallStackDemoViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"页面耗时统计",
-        @"野指针检测",
-        @"卡顿检测",
-        @"网络诊断",
-        @"获取堆栈日志"
-    ];
-}
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
-}
-
-@end
+NS_ASSUME_NONNULL_END
