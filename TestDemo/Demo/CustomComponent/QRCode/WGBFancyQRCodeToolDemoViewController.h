@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FancyQRCodeToolDemoViewController : UIViewController
+@interface WGBFancyQRCodeToolDemoViewController : UIViewController
 
 @end
 

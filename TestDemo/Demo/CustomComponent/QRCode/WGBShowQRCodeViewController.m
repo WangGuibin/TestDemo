@@ -6,15 +6,15 @@
 //  Copyright © 2019 mac. All rights reserved.
 //
 
-#import "ShowQRCodeViewController.h"
+#import "WGBShowQRCodeViewController.h"
 #import "JPQRCodeTool.h"
 #import <YSQRCodeGenerator.h>
 
-@interface ShowQRCodeViewController ()
+@interface WGBShowQRCodeViewController ()
 
 @end
 
-@implementation ShowQRCodeViewController
+@implementation WGBShowQRCodeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +28,7 @@
     [QRCodeImageView.heightAnchor constraintEqualToConstant:300].active = YES;
     
     switch (self.style) {
-        case ShowQRCodeStyleNormal:
+        case  WGBShowQRCodeStyleNormal:
         {
             YSQRCodeGenerator *generator = [YSQRCodeGenerator new];
             generator.content = @"6666666666666666";
@@ -37,7 +37,7 @@
             QRCodeImageView.image =  image;
         }
             break;
-        case ShowQRCodeStyleIconBg:
+        case  WGBShowQRCodeStyleIconBg:
         {
             YSQRCodeGenerator *generator = [YSQRCodeGenerator new];
             generator.content = @"6666666666666666";
@@ -50,7 +50,7 @@
             QRCodeImageView.image =  image;
         }
             break;
-        case ShowQRCodeStyleGIFBg:
+        case  WGBShowQRCodeStyleGIFBg:
         {
             YSQRCodeGenerator *generator = [YSQRCodeGenerator new];
             generator.content = @"6666666666666666";
@@ -63,7 +63,7 @@
             });
         }
             break;
-        case ShowQRCodeStyleJPQRTool:
+        case  WGBShowQRCodeStyleJPQRTool:
         {
             QRCodeImageView.image = [JPQRCodeTool generateCodeForString:@"6666666666666666" withCorrectionLevel:(kQRCodeCorrectionLevelHight) SizeType:(kQRCodeSizeTypeBig) customSizeDelta:5 drawType:(kQRCodeDrawTypeCircle) gradientType:(kQRCodeGradientTypeDiagonal) gradientColors:@[[UIColor redColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor blueColor],[UIColor yellowColor],[UIColor cyanColor]]];
         }

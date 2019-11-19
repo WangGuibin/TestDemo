@@ -24,7 +24,7 @@
 		0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C8235187EC0069AC4D /* Miku.jpg */; };
 		0450C8CC235187EC0069AC4D /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C9235187EC0069AC4D /* github.png */; };
 		0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8CF23547E3A0069AC4D /* GlowingAnimationDemoViewController.m */; };
-		0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8D82354A6CA0069AC4D /* SelectImagesDemoViewController.m */; };
+		0450C8D92354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C8D82354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m */; };
 		0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */; };
 		0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */; };
 		0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453FDBE236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m */; };
@@ -82,7 +82,7 @@
 		04C302612382D7B500356991 /* AlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C302602382D7B500356991 /* AlertDemoViewController.m */; };
 		04C302652382DA7300356991 /* LayoutDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C302642382DA7300356991 /* LayoutDemoListViewController.m */; };
 		04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C302682382DDDC00356991 /* NetDiagnoServiceDemoViewController.m */; };
-		04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */; };
+		04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6B235F083600A8671B /* WGBGradientProgressDemoViewController.m */; };
 		04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6F235F08D500A8671B /* WGBGradientProgressView.m */; };
 		04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01EB23517BC0009C8C22 /* HPSelectSexAlertView.xib */; };
 		04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01ED23517BC1009C8C22 /* HPSelectSexAlertView.m */; };
@@ -90,8 +90,8 @@
 		04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01F223517BE2009C8C22 /* HPEditSignatureAlertView.m */; };
 		04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01F523517E1F009C8C22 /* HPCommonCancelConfirmAlertView.m */; };
 		04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01F623517E1F009C8C22 /* HPCommonCancelConfirmAlertView.xib */; };
-		04CA01FD235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01FC235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m */; };
-		04CA020023518530009C8C22 /* ShowQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01FF23518530009C8C22 /* ShowQRCodeViewController.m */; };
+		04CA01FD235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01FC235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m */; };
+		04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
 		04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359C22CDAA8B007CB0D0 /* ViewController.m */; };
 		04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F7359E22CDAA8B007CB0D0 /* Main.storyboard */; };
@@ -137,8 +137,8 @@
 		0450C8C9235187EC0069AC4D /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
 		0450C8CE23547E3A0069AC4D /* GlowingAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlowingAnimationDemoViewController.h; sourceTree = "<group>"; };
 		0450C8CF23547E3A0069AC4D /* GlowingAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlowingAnimationDemoViewController.m; sourceTree = "<group>"; };
-		0450C8D72354A6CA0069AC4D /* SelectImagesDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectImagesDemoViewController.h; sourceTree = "<group>"; };
-		0450C8D82354A6CA0069AC4D /* SelectImagesDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectImagesDemoViewController.m; sourceTree = "<group>"; };
+		0450C8D72354A6CA0069AC4D /* WGBSelectImagesDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSelectImagesDemoViewController.h; sourceTree = "<group>"; };
+		0450C8D82354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSelectImagesDemoViewController.m; sourceTree = "<group>"; };
 		0450C9272355FC4A0069AC4D /* HPPublishAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPPublishAlertView.xib; sourceTree = "<group>"; };
 		0450C9282355FC4A0069AC4D /* HPPublishAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPublishAlertView.m; sourceTree = "<group>"; };
 		0450C9292355FC4A0069AC4D /* HPPublishAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishAlertView.h; sourceTree = "<group>"; };
@@ -247,8 +247,8 @@
 		04C302642382DA7300356991 /* LayoutDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutDemoListViewController.m; sourceTree = "<group>"; };
 		04C302672382DDDC00356991 /* NetDiagnoServiceDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDiagnoServiceDemoViewController.h; sourceTree = "<group>"; };
 		04C302682382DDDC00356991 /* NetDiagnoServiceDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetDiagnoServiceDemoViewController.m; sourceTree = "<group>"; };
-		04C5CF6A235F083600A8671B /* GradientProgressDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientProgressDemoViewController.h; sourceTree = "<group>"; };
-		04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientProgressDemoViewController.m; sourceTree = "<group>"; };
+		04C5CF6A235F083600A8671B /* WGBGradientProgressDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientProgressDemoViewController.h; sourceTree = "<group>"; };
+		04C5CF6B235F083600A8671B /* WGBGradientProgressDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGradientProgressDemoViewController.m; sourceTree = "<group>"; };
 		04C5CF6E235F08D500A8671B /* WGBGradientProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientProgressView.h; sourceTree = "<group>"; };
 		04C5CF6F235F08D500A8671B /* WGBGradientProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGradientProgressView.m; sourceTree = "<group>"; };
 		04CA01EB23517BC0009C8C22 /* HPSelectSexAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPSelectSexAlertView.xib; sourceTree = "<group>"; };
@@ -260,10 +260,10 @@
 		04CA01F523517E1F009C8C22 /* HPCommonCancelConfirmAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCommonCancelConfirmAlertView.m; sourceTree = "<group>"; };
 		04CA01F623517E1F009C8C22 /* HPCommonCancelConfirmAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPCommonCancelConfirmAlertView.xib; sourceTree = "<group>"; };
 		04CA01F723517E20009C8C22 /* HPCommonCancelConfirmAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCommonCancelConfirmAlertView.h; sourceTree = "<group>"; };
-		04CA01FB235181A2009C8C22 /* FancyQRCodeToolDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FancyQRCodeToolDemoViewController.h; sourceTree = "<group>"; };
-		04CA01FC235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FancyQRCodeToolDemoViewController.m; sourceTree = "<group>"; };
-		04CA01FE23518530009C8C22 /* ShowQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowQRCodeViewController.h; sourceTree = "<group>"; };
-		04CA01FF23518530009C8C22 /* ShowQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowQRCodeViewController.m; sourceTree = "<group>"; };
+		04CA01FB235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBFancyQRCodeToolDemoViewController.h; sourceTree = "<group>"; };
+		04CA01FC235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFancyQRCodeToolDemoViewController.m; sourceTree = "<group>"; };
+		04CA01FE23518530009C8C22 /* WGBShowQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBShowQRCodeViewController.h; sourceTree = "<group>"; };
+		04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBShowQRCodeViewController.m; sourceTree = "<group>"; };
 		04F7359522CDAA8B007CB0D0 /* Demo集合.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo集合.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F7359822CDAA8B007CB0D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04F7359922CDAA8B007CB0D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -414,8 +414,8 @@
 		0450C8D62354A6B00069AC4D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0450C8D72354A6CA0069AC4D /* SelectImagesDemoViewController.h */,
-				0450C8D82354A6CA0069AC4D /* SelectImagesDemoViewController.m */,
+				0450C8D72354A6CA0069AC4D /* WGBSelectImagesDemoViewController.h */,
+				0450C8D82354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -795,8 +795,8 @@
 			isa = PBXGroup;
 			children = (
 				04C5CF6D235F08A800A8671B /* GradientProgressView */,
-				04C5CF6A235F083600A8671B /* GradientProgressDemoViewController.h */,
-				04C5CF6B235F083600A8671B /* GradientProgressDemoViewController.m */,
+				04C5CF6A235F083600A8671B /* WGBGradientProgressDemoViewController.h */,
+				04C5CF6B235F083600A8671B /* WGBGradientProgressDemoViewController.m */,
 			);
 			path = GradientProgress;
 			sourceTree = "<group>";
@@ -814,10 +814,10 @@
 			isa = PBXGroup;
 			children = (
 				0450C8C6235187D90069AC4D /* DemoImages */,
-				04CA01FB235181A2009C8C22 /* FancyQRCodeToolDemoViewController.h */,
-				04CA01FC235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m */,
-				04CA01FE23518530009C8C22 /* ShowQRCodeViewController.h */,
-				04CA01FF23518530009C8C22 /* ShowQRCodeViewController.m */,
+				04CA01FB235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.h */,
+				04CA01FC235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m */,
+				04CA01FE23518530009C8C22 /* WGBShowQRCodeViewController.h */,
+				04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -1072,7 +1072,7 @@
 				04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */,
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
-				04C5CF6C235F083600A8671B /* GradientProgressDemoViewController.m in Sources */,
+				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
@@ -1080,7 +1080,7 @@
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
 				04083E22237FAE44002702C6 /* VCTimeProfilerViewController.m in Sources */,
-				04CA020023518530009C8C22 /* ShowQRCodeViewController.m in Sources */,
+				04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
 				04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */,
@@ -1106,10 +1106,10 @@
 				04083E24237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m in Sources */,
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
-				0450C8D92354A6CA0069AC4D /* SelectImagesDemoViewController.m in Sources */,
+				0450C8D92354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m in Sources */,
 				046C5D832382E0E1005A12E4 /* LDNetTimer.m in Sources */,
 				0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */,
-				04CA01FD235181A2009C8C22 /* FancyQRCodeToolDemoViewController.m in Sources */,
+				04CA01FD235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m in Sources */,
 				04F735A822CDAA8D007CB0D0 /* main.m in Sources */,
 				04083E2A237FAF4F002702C6 /* ZombieTestViewController.m in Sources */,
 				04083E25237FAE44002702C6 /* VCTimeProfiler.m in Sources */,

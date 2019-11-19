@@ -6,7 +6,7 @@
 //  Copyright © 2019 mac. All rights reserved.
 // https://github.com/WangGuibin/WGBSelectPhotoView
 
-#import "SelectImagesDemoViewController.h"
+#import "WGBSelectImagesDemoViewController.h"
 #import <WGBSelectPhotoView.h>
 #import <TZImagePickerController/TZImagePickerController.h>
 #import "YBImageBrowser.h"
@@ -14,7 +14,7 @@
 
 #define kMaxSelectImagesCount 9
 
-@interface SelectImagesDemoViewController ()<UITableViewDelegate, UITableViewDataSource, WGBSelectPhotoViewDelegate>
+@interface WGBSelectImagesDemoViewController ()<UITableViewDelegate, UITableViewDataSource, WGBSelectPhotoViewDelegate>
 
 @property (nonatomic, strong) WGBSelectPhotoView *selectPhotoView;
 @property (nonatomic, strong) NSMutableArray *selectImageArray;
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation SelectImagesDemoViewController
+@implementation WGBSelectImagesDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

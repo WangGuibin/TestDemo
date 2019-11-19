@@ -6,10 +6,10 @@
 //  Copyright © 2019 mac. All rights reserved.
 //
 
-#import "FancyQRCodeToolDemoViewController.h"
-#import "ShowQRCodeViewController.h"
+#import "WGBFancyQRCodeToolDemoViewController.h"
+#import "WGBShowQRCodeViewController.h"
 
-@interface FancyQRCodeToolDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface WGBFancyQRCodeToolDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *titleArray;
@@ -17,7 +17,7 @@
 @end
 
 
-@implementation FancyQRCodeToolDemoViewController
+@implementation WGBFancyQRCodeToolDemoViewController
 
 
 - (void)viewDidLoad {
@@ -78,7 +78,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    ShowQRCodeViewController *showQRCodeVC = [[ShowQRCodeViewController alloc] init];
+    WGBShowQRCodeViewController *showQRCodeVC = [[WGBShowQRCodeViewController alloc] init];
     showQRCodeVC.navigationItem.title = self.titleArray[indexPath.row];
     showQRCodeVC.style = indexPath.row;
     [self.navigationController pushViewController:showQRCodeVC animated: YES];

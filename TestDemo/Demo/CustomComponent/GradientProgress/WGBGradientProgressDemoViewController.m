@@ -6,16 +6,16 @@
 //  Copyright © 2019 mac. All rights reserved.
 //
 
-#import "GradientProgressDemoViewController.h"
+#import "WGBGradientProgressDemoViewController.h"
 #import "WGBGradientProgressView.h"
 
-@interface GradientProgressDemoViewController ()
+@interface WGBGradientProgressDemoViewController ()
 
 @property (nonatomic, strong) WGBGradientProgressView *progressView;
 
 @end
 
-@implementation GradientProgressDemoViewController
+@implementation WGBGradientProgressDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

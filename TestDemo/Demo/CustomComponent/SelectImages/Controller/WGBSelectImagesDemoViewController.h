@@ -1,8 +1,8 @@
 //
-//  GradientProgressDemoViewController.h
+//  SelectImagesDemoViewController.h
 //  TestDemo
 //
-//  Created by mac on 2019/10/22.
+//  Created by mac on 2019/10/14.
 //  Copyright © 2019 mac. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GradientProgressDemoViewController : UIViewController
+@interface WGBSelectImagesDemoViewController : UIViewController
 
 @end
 

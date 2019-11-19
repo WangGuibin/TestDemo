@@ -93,7 +93,7 @@
 }
 
 - (instancetype)initWithURLString:(NSString *)urlStr navgationBarTitle:(NSString *)title {
-    return [self initWithMethodType:WGBWebRequestTypeGET parameters: nil url:urlStr title:title];
+    return [self initWithMethodType:WGBWebRequestTypeGET parameters: @{} url:urlStr title:title];
 }
 
 /**

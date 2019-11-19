@@ -32,9 +32,9 @@ THE SOFTWARE.
     
 
 #import "WGBCustomComponentDemoViewController.h"
-#import "FancyQRCodeToolDemoViewController.h"
-#import "SelectImagesDemoViewController.h"
-#import "GradientProgressDemoViewController.h"
+#import "WGBFancyQRCodeToolDemoViewController.h"
+#import "WGBSelectImagesDemoViewController.h"
+#import "WGBGradientProgressDemoViewController.h"
 #import "WGBColorSliderPickerDemoViewController.h"
 #import "WGBWaveLayerButtonDemoViewController.h"
 #import "WGBEasyMarqueeViewDemoViewController.h"
@@ -46,9 +46,9 @@ THE SOFTWARE.
 @implementation WGBCustomComponentDemoViewController
 - (NSArray<Class> *)demoClassArray{
     return @[
-        [FancyQRCodeToolDemoViewController class],
-        [SelectImagesDemoViewController class],
-        [GradientProgressDemoViewController class],
+        [WGBFancyQRCodeToolDemoViewController class],
+        [WGBSelectImagesDemoViewController class],   
+        [WGBGradientProgressDemoViewController class],
         [WGBColorSliderPickerDemoViewController class],
         [WGBWaveLayerButtonDemoViewController class], 
         [WGBEasyMarqueeViewDemoViewController class]
