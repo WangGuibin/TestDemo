@@ -49,7 +49,7 @@ THE SOFTWARE.
     NSMutableArray *xArray = [[NSMutableArray alloc] init];
     // 保存y坐标
     NSMutableArray *yArray = [[NSMutableArray alloc] init];
-    CGFloat margin = self.bounds.size.width/2.0 ;
+    CGFloat margin = 30;
     for (NSInteger i = 0; i < self.bounds.size.width; i = i + 10) {
         [xArray addObject:@(i+margin)];
     }
@@ -65,7 +65,7 @@ THE SOFTWARE.
             CGRect snapshotRegion = CGRectMake([x doubleValue], [y doubleValue], 10, 10);
             
             // resizableSnapshotViewFromRect 这个方法就是根据frame 去截图
-            UIView *snapshot      = [snapView resizableSnapshotViewFromRect:snapshotRegion afterScreenUpdates:NO withCapInsets:UIEdgeInsetsZero];
+            UIView *snapshot  = [snapView resizableSnapshotViewFromRect:snapshotRegion afterScreenUpdates:NO withCapInsets:UIEdgeInsetsZero];
             snapshot.frame  = snapshotRegion;
             [self.superview addSubview: snapshot];
             [snapshots addObject:snapshot];

@@ -194,7 +194,7 @@ THE SOFTWARE.
 
 ## WGBCustomPopUpView
 
-Copyright (c) 2019 Wangguibin <guchengye153@gmail.com>
+Copyright (c) 2019 Wangguibin <864562082@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

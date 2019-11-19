@@ -20,8 +20,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     CGRect screenBounds = [UIScreen mainScreen].bounds;
     WGBWaveLayerButton *waveButton = [WGBWaveLayerButton buttonWithType:UIButtonTypeCustom];
-    waveButton.frame = CGRectMake(0, 0, 300, 100);
-    waveButton.center = CGPointMake(screenBounds.size.width/2.0, 110);
+    waveButton.frame = CGRectMake(0, 100, 300, 100);
+    waveButton.center = CGPointMake(screenBounds.size.width/2.0, 300);
     waveButton.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.5];;
     waveButton.waveLayerColor = [UIColor orangeColor];//设置波纹的颜色
     [waveButton setTitle:@"Click Me" forState:UIControlStateNormal];

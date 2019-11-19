@@ -8,15 +8,12 @@
 
 #import "ViewController.h"
 #import "UIApplication+TouchHints.h"
-#import "FancyQRCodeToolDemoViewController.h"
-#import "SelectImagesDemoViewController.h"
-#import "GradientProgressDemoViewController.h"
-#import "UIApplication+TouchHints.h"
 #import "AnimationDemoViewController.h"
 #import "TableViewDemoViewController.h"
 #import "DebugDemoViewController.h"
 #import "AlertDemoViewController.h"
 #import "LayoutDemoListViewController.h"
+#import "WGBCustomComponentDemoViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -34,29 +31,25 @@
 
 - (NSArray<Class> *)demoClassArray{
     return @[
-             [FancyQRCodeToolDemoViewController class],
-             [SelectImagesDemoViewController class],
-             [GradientProgressDemoViewController class],
-             [AnimationDemoViewController class],
-             [TableViewDemoViewController class],
-             [DebugDemoViewController class],
-             [AlertDemoViewController class],
-             [LayoutDemoListViewController class]
-            ];
+        [AnimationDemoViewController class],
+        [TableViewDemoViewController class],
+        [DebugDemoViewController class],
+        [AlertDemoViewController class],
+        [LayoutDemoListViewController class],
+        [WGBCustomComponentDemoViewController class]
+    ];
 }
 
 
 - (NSArray *)demoTitleArray{
     return @[
-             @"花式二维码",
-             @"选择相册-发布",
-             @"渐变进度条Demo",
-             @"动画相关",
-             @"TableView相关Demo",
-             @"Debug相关Demo",
-             @"弹窗相关Demo",
-             @"布局相关demo"
-             ];
+        @"动画相关",
+        @"TableView相关Demo",
+        @"Debug相关Demo",
+        @"弹窗相关Demo",
+        @"布局相关demo",
+        @"自定义组件或者工具"
+    ];
 }
 
 
@@ -71,7 +64,8 @@
     self.refreshControl = refreshControl;
     [self.tableView reloadData];
     
-    [[UIApplication sharedApplication] tch_enableTouchHintsWithImage: [UIImage imageNamed:@"touch"]];
+    //录屏的时候的一个手势图标展示
+//    [[UIApplication sharedApplication] tch_enableTouchHintsWithImage: [UIImage imageNamed:@"touch"]];
 
 }
 

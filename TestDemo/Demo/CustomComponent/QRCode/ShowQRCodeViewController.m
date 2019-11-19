@@ -55,8 +55,12 @@
             YSQRCodeGenerator *generator = [YSQRCodeGenerator new];
             generator.content = @"6666666666666666";
             [generator setColorWithBackColor:[UIColor whiteColor] foregroundColor:[UIColor blackColor]];
-            UIImage *image = [generator generateWithGIFCodeWithGIFNamed:@"74766_811947_358458"];
-            QRCodeImageView.image =  image;
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                UIImage *image = [generator generateWithGIFCodeWithGIFNamed:@"74766_811947_358458"];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    QRCodeImageView.image =  image;
+                });
+            });
         }
             break;
         case ShowQRCodeStyleJPQRTool:

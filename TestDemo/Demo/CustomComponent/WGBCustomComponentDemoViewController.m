@@ -1,12 +1,12 @@
 //
-// AlertDemoViewController.m
+// WGBCustomComponentDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/11/19
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,39 +31,38 @@ THE SOFTWARE.
 */
     
 
-#import "AlertDemoViewController.h"
-#import "WGBCustomPopUpDemoViewController.h"
-#import "FSPopDialogViewControllerDemoViewController.h"
-#import "WGBCommonAlertSheetViewDemoViewController.h"
-#import "WGBMaskDemoViewController.h"
-#import "PopverDemoViewController.h"
+#import "WGBCustomComponentDemoViewController.h"
+#import "FancyQRCodeToolDemoViewController.h"
+#import "SelectImagesDemoViewController.h"
+#import "GradientProgressDemoViewController.h"
+#import "WGBColorSliderPickerDemoViewController.h"
+#import "WGBWaveLayerButtonDemoViewController.h"
+#import "WGBEasyMarqueeViewDemoViewController.h"
 
-@interface AlertDemoViewController ()
+@interface WGBCustomComponentDemoViewController ()
 
 @end
 
-@implementation AlertDemoViewController
-
+@implementation WGBCustomComponentDemoViewController
 - (NSArray<Class> *)demoClassArray{
     return @[
-        [WGBCustomPopUpDemoViewController class],  
-        [FSPopDialogViewControllerDemoViewController class],
-        [WGBCommonAlertSheetViewDemoViewController class],
-        [WGBMaskDemoViewController class],
-        [PopverDemoViewController class],
-
+        [FancyQRCodeToolDemoViewController class],
+        [SelectImagesDemoViewController class],
+        [GradientProgressDemoViewController class],
+        [WGBColorSliderPickerDemoViewController class],
+        [WGBWaveLayerButtonDemoViewController class], 
+        [WGBEasyMarqueeViewDemoViewController class]
     ];
 }
 
-
 - (NSArray *)demoTitleArray{
     return @[
-        @"WGBCustomPopUpView",
-        @"FSPopDialogVC Demo",
-        @"WGBCommonAlertSheetView仿抖音评论",
-        @"mask使用",
-        @"系统`UIPopoverPresentationController`带箭头弹窗",
-
+        @"花式二维码",
+        @"选择相册-发布",
+        @"渐变进度条Demo",
+        @"颜色选择控件",
+        @"WGBWaveLayerButton涟漪按钮",
+        @"WGBEasyMarqueeVie跑马灯实践"
     ];
 }
 
@@ -74,5 +73,6 @@ THE SOFTWARE.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.tableView reloadData];
 }
+
 
 @end

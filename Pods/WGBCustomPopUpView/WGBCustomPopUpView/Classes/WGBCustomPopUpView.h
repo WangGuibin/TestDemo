@@ -41,9 +41,6 @@
 #define KHIGHT             [UIScreen mainScreen].bounds.size.height
 #endif
 
-#ifndef kWGBAlertAnimationDuration
-#define kWGBAlertAnimationDuration  0.25
-#endif
 
 /// 暂时想到这点简陋的动画 后续拓展 持续更新吧~
 typedef NS_ENUM(NSInteger,WGBAlertAnimationType) {
@@ -78,6 +75,10 @@ typedef NS_ENUM(NSInteger,WGBAlertAnimationType) {
  @abstract 弹出动画类型 Default type is WGBAlertAnimationTypeCenter
  */
 @property (assign,nonatomic) WGBAlertAnimationType  animationType;
+
+//动画时长 默认0.25s  default is 0.25 seconds
+@property (nonatomic,assign) CGFloat animationDuration;
+
 /*!
  @property
  @abstract 是否点击背景移除 默认否 the background layer dismiss. Default is NO

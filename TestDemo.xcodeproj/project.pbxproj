@@ -43,6 +43,10 @@
 		046C5D872382E0E1005A12E4 /* LDNetDiagnoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C5D7D2382E0E1005A12E4 /* LDNetDiagnoService.m */; };
 		046C5D882382E0E1005A12E4 /* LDNetConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C5D812382E0E1005A12E4 /* LDNetConnect.m */; };
 		046C5D8A2382E159005A12E4 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 046C5D892382E159005A12E4 /* libresolv.9.tbd */; };
+		047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */; };
+		047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */; };
+		047BA6922383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA6912383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m */; };
+		047BA6962383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA6952383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m */; };
 		047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */; };
 		047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05F02358C12E0009301D /* FSPopDialogViewController.m */; };
 		047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F05F42358C1D10009301D /* NSArray+Sudoku.m */; };
@@ -168,6 +172,13 @@
 		046C5D802382E0E1005A12E4 /* LDNetPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetPing.h; sourceTree = "<group>"; };
 		046C5D812382E0E1005A12E4 /* LDNetConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetConnect.m; sourceTree = "<group>"; };
 		046C5D892382E159005A12E4 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		047BA6892383CE40008B6FC8 /* XDVerticalGradientColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDVerticalGradientColorSlider.h; sourceTree = "<group>"; };
+		047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XDVerticalGradientColorSlider.bundle; sourceTree = "<group>"; };
+		047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDVerticalGradientColorSlider.m; sourceTree = "<group>"; };
+		047BA6902383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomComponentDemoViewController.h; sourceTree = "<group>"; };
+		047BA6912383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomComponentDemoViewController.m; sourceTree = "<group>"; };
+		047BA6942383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBColorSliderPickerDemoViewController.h; sourceTree = "<group>"; };
+		047BA6952383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBColorSliderPickerDemoViewController.m; sourceTree = "<group>"; };
 		047F05E92358C0D60009301D /* FSPopDialogViewControllerDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSPopDialogViewControllerDemoViewController.h; sourceTree = "<group>"; };
 		047F05EA2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSPopDialogViewControllerDemoViewController.m; sourceTree = "<group>"; };
 		047F05EF2358C12E0009301D /* FSPopDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPopDialogViewController.h; sourceTree = "<group>"; };
@@ -472,6 +483,48 @@
 			path = LDNetDiagnoService;
 			sourceTree = "<group>";
 		};
+		047BA6882383CE40008B6FC8 /* XDVerticalGradientColorSlider */ = {
+			isa = PBXGroup;
+			children = (
+				047BA68A2383CE40008B6FC8 /* Resources */,
+				047BA6892383CE40008B6FC8 /* XDVerticalGradientColorSlider.h */,
+				047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */,
+			);
+			path = XDVerticalGradientColorSlider;
+			sourceTree = "<group>";
+		};
+		047BA68A2383CE40008B6FC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		047BA68F2383CE63008B6FC8 /* CustomComponent */ = {
+			isa = PBXGroup;
+			children = (
+				04B0CA9C2340D12F007B2AD2 /* WGBWaveLayerButton */,
+				04B0CA8E2340CF40007B2AD2 /* WGBEasyMarqueeView */,
+				047BA6932383CFCD008B6FC8 /* ColorSliderPicker */,
+				04C5CF69235F07EB00A8671B /* GradientProgress */,
+				0450C8D42354A6860069AC4D /* SelectImages */,
+				04CA01FA2351816B009C8C22 /* QRCode */,
+				047BA6902383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.h */,
+				047BA6912383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m */,
+			);
+			path = CustomComponent;
+			sourceTree = "<group>";
+		};
+		047BA6932383CFCD008B6FC8 /* ColorSliderPicker */ = {
+			isa = PBXGroup;
+			children = (
+				047BA6942383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.h */,
+				047BA6952383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m */,
+			);
+			path = ColorSliderPicker;
+			sourceTree = "<group>";
+		};
 		047F05E82358C0B60009301D /* FSPopDialogViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +539,7 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				047BA6882383CE40008B6FC8 /* XDVerticalGradientColorSlider */,
 				046C5D722382E0E1005A12E4 /* LDNetDiagnoService */,
 				04083E2D237FB72C002702C6 /* AppFluencyMonitor */,
 				04083E17237FAE44002702C6 /* VCTimeProfiler */,
@@ -541,14 +595,12 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				047BA68F2383CE63008B6FC8 /* CustomComponent */,
 				04C302622382DA5800356991 /* Layout */,
 				04C3025E2382D7A100356991 /* Alert */,
 				04C3025A2382D6B400356991 /* Debug */,
 				04C3024F2382D41F00356991 /* TableViewDemo */,
 				04C302482382D19500356991 /* Animation */,
-				04C5CF69235F07EB00A8671B /* GradientProgress */,
-				0450C8D42354A6860069AC4D /* SelectImages */,
-				04CA01FA2351816B009C8C22 /* QRCode */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -710,8 +762,6 @@
 				04A78F7A2361B99F00915493 /* MaskLayer */,
 				047F05E82358C0B60009301D /* FSPopDialogViewController */,
 				04B0CAA02340D23C007B2AD2 /* WGBCommonAlertSheetView */,
-				04B0CA9C2340D12F007B2AD2 /* WGBWaveLayerButton */,
-				04B0CA8E2340CF40007B2AD2 /* WGBEasyMarqueeView */,
 				04B0CA792340C568007B2AD2 /* WGBCustomPopUpView */,
 				04C3025F2382D7B500356991 /* AlertDemoViewController.h */,
 				04C302602382D7B500356991 /* AlertDemoViewController.m */,
@@ -927,6 +977,7 @@
 				04083E2B237FAF4F002702C6 /* ZombieTestViewController.xib in Resources */,
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
+				047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */,
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
 				049973522374307900FBFC1E /* 666.png in Resources */,
 				0453FDCD236C36D100D8B2A5 /* HPCannonBottomOperationView.xib in Resources */,
@@ -1001,7 +1052,9 @@
 				04B0CA9F2340D13B007B2AD2 /* WGBWaveLayerButtonDemoViewController.m in Sources */,
 				046C5D862382E0E1005A12E4 /* LDNetGetAddress.m in Sources */,
 				046C5D882382E0E1005A12E4 /* LDNetConnect.m in Sources */,
+				047BA6922383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m in Sources */,
 				04C3024E2382D35800356991 /* AnimationDemoViewController.m in Sources */,
+				047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */,
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
@@ -1010,6 +1063,7 @@
 				04BF7A35237FD8F2003D99CF /* Constants.m in Sources */,
 				04083E32237FB72C002702C6 /* XDAppFluencyMonitor.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
+				047BA6962383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m in Sources */,
 				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,

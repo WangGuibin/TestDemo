@@ -25,7 +25,7 @@ target 'TestDemo' do
   pod 'YSQRCodeGenerator' #花式二维码
   pod 'YogaKit','~> 1.7'#FlexBox布局
     
-  pod 'WGBCustomPopUpView','~>1.0.0'
+  pod 'WGBCustomPopUpView','~>1.0.1'
   pod 'WGBCommonAlertSheetView'
   pod 'WGBEasyMarqueeView'
   pod 'WGBWaveLayerButton'

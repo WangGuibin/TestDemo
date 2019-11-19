@@ -1,12 +1,12 @@
 //
-// AlertDemoViewController.m
+// WGBColorSliderPickerDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/11/19
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,48 +31,37 @@ THE SOFTWARE.
 */
     
 
-#import "AlertDemoViewController.h"
-#import "WGBCustomPopUpDemoViewController.h"
-#import "FSPopDialogViewControllerDemoViewController.h"
-#import "WGBCommonAlertSheetViewDemoViewController.h"
-#import "WGBMaskDemoViewController.h"
-#import "PopverDemoViewController.h"
+#import "WGBColorSliderPickerDemoViewController.h"
+#import "XDVerticalGradientColorSlider.h"
 
-@interface AlertDemoViewController ()
+@interface WGBColorSliderPickerDemoViewController ()
 
 @end
 
-@implementation AlertDemoViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBCustomPopUpDemoViewController class],  
-        [FSPopDialogViewControllerDemoViewController class],
-        [WGBCommonAlertSheetViewDemoViewController class],
-        [WGBMaskDemoViewController class],
-        [PopverDemoViewController class],
-
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"WGBCustomPopUpView",
-        @"FSPopDialogVC Demo",
-        @"WGBCommonAlertSheetView仿抖音评论",
-        @"mask使用",
-        @"系统`UIPopoverPresentationController`带箭头弹窗",
-
-    ];
-}
-
+@implementation WGBColorSliderPickerDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    XDVerticalGradientColorSlider *colorSlider = [XDVerticalGradientColorSlider createGradientColorSliderWithColors:nil];
+    colorSlider.frame = CGRectMake(180, 100, 40, 213);
+    [self.view addSubview:colorSlider];
+    
+    __weak typeof(self) weakSelf  = self;
+    [colorSlider setValueChangedHandler:^(UIColor *color) {
+        weakSelf.view.backgroundColor = color;
+        NSLog(@"%@", color);
+    }];
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

@@ -27,7 +27,7 @@ PODS:
   - WGBCocoaKit/FoundationModule (1.1.1)
   - WGBCocoaKit/UIKitModule (1.1.1)
   - WGBCommonAlertSheetView (1.0.0)
-  - WGBCustomPopUpView (1.0.0)
+  - WGBCustomPopUpView (1.0.1)
   - WGBEasyMarqueeView (1.0.0)
   - WGBRepairedOrientationLabel (1.0.0)
   - WGBSelectPhotoView (1.0.1)
@@ -61,7 +61,7 @@ DEPENDENCIES:
   - TZImagePickerController
   - WGBCocoaKit
   - WGBCommonAlertSheetView
-  - WGBCustomPopUpView (~> 1.0.0)
+  - WGBCustomPopUpView (~> 1.0.1)
   - WGBEasyMarqueeView
   - WGBRepairedOrientationLabel
   - WGBSelectPhotoView
@@ -83,7 +83,6 @@ SPEC REPOS:
     - TZImagePickerController
     - WGBCocoaKit
     - WGBCommonAlertSheetView
-    - WGBCustomPopUpView
     - WGBEasyMarqueeView
     - WGBRepairedOrientationLabel
     - WGBWaveLayerButton
@@ -93,6 +92,7 @@ SPEC REPOS:
     - YYModel
     - YYText
   trunk:
+    - WGBCustomPopUpView
     - WGBSelectPhotoView
     - Yoga
     - YogaKit
@@ -106,7 +106,7 @@ SPEC CHECKSUMS:
   TZImagePickerController: d259369c5c2cc96299e53da868ae5be1b24353cd
   WGBCocoaKit: 66e159fc3e67b5acca256083b5746c7a3fac602a
   WGBCommonAlertSheetView: df09b046991161e59e1c0dab3f839fea6dd723b9
-  WGBCustomPopUpView: ca687050aba50bf6a3bb895755b1b8acdc94f1bf
+  WGBCustomPopUpView: 4de01ed96e6b9e17b14756c369fbdd2be03bfe79
   WGBEasyMarqueeView: cac25ad877def51c5615054230bf355c8543abe7
   WGBRepairedOrientationLabel: 236b72d5b8ff84c4feba50bda0a109de143c6064
   WGBSelectPhotoView: 0dd74c688ca62a7070b094dd279d50734cfdf3a4
@@ -119,6 +119,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 9e38fdcf30ffc7695c4a53f3a12feba1654c5fa2
+PODFILE CHECKSUM: 341734f92ddce62424a39dd47dc28a39e9e1c177
 
 COCOAPODS: 1.8.4
