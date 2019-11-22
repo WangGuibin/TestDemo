@@ -36,6 +36,7 @@ THE SOFTWARE.
 #import "NSLayoutAnchorDemoViewController.h"
 #import "YYTextDemoViewController.h"
 #import "YogaKitDemoViewController.h"
+#import "WGBPersonEffectViewController.h"
 
 
 @interface LayoutDemoListViewController ()
@@ -50,6 +51,7 @@ THE SOFTWARE.
         [NSLayoutAnchorDemoViewController class],
         [YYTextDemoViewController class],
         [YogaKitDemoViewController class],
+        [WGBPersonEffectViewController class]
     ];
 }
 
@@ -60,6 +62,7 @@ THE SOFTWARE.
         @"iOS 布局约束`NSLayoutAnchor`学习",
         @"YYTextDemoViewController测试学习",
         @"YogaKit Demo (FlexBox布局)",
+        @"个人中心或者详情页下拉展开上推收缩效果"
 
     ];
 }

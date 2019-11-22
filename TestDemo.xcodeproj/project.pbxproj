@@ -93,6 +93,8 @@
 		04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01F623517E1F009C8C22 /* HPCommonCancelConfirmAlertView.xib */; };
 		04CA01FD235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01FC235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m */; };
 		04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */; };
+		04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */; };
+		04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
 		04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359C22CDAA8B007CB0D0 /* ViewController.m */; };
 		04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F7359E22CDAA8B007CB0D0 /* Main.storyboard */; };
@@ -267,6 +269,10 @@
 		04CA01FC235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFancyQRCodeToolDemoViewController.m; sourceTree = "<group>"; };
 		04CA01FE23518530009C8C22 /* WGBShowQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBShowQRCodeViewController.h; sourceTree = "<group>"; };
 		04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBShowQRCodeViewController.m; sourceTree = "<group>"; };
+		04DCE458238814E900D380D9 /* WGBPersonEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPersonEffectViewController.h; sourceTree = "<group>"; };
+		04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPersonEffectViewController.m; sourceTree = "<group>"; };
+		04DCE45B2388157B00D380D9 /* WGBPersonEffectNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPersonEffectNavBar.h; sourceTree = "<group>"; };
+		04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPersonEffectNavBar.m; sourceTree = "<group>"; };
 		04F7359522CDAA8B007CB0D0 /* Demo集合.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo集合.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F7359822CDAA8B007CB0D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04F7359922CDAA8B007CB0D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -785,6 +791,7 @@
 		04C302622382DA5800356991 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				04DCE457238814C200D380D9 /* PersonEffect */,
 				04F9150323769E26006E8B77 /* YogaKitDemo */,
 				0439C9EA234C93F100E9D9AB /* YYText */,
 				04B0CAB42341F5F4007B2AD2 /* NSLayoutAnchor */,
@@ -833,6 +840,17 @@
 				04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		04DCE457238814C200D380D9 /* PersonEffect */ = {
+			isa = PBXGroup;
+			children = (
+				04DCE458238814E900D380D9 /* WGBPersonEffectViewController.h */,
+				04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */,
+				04DCE45B2388157B00D380D9 /* WGBPersonEffectNavBar.h */,
+				04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */,
+			);
+			path = PersonEffect;
 			sourceTree = "<group>";
 		};
 		04F7358C22CDAA8B007CB0D0 = {
@@ -1054,9 +1072,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */,
 				04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */,
 				0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */,
 				04C3024B2382D21A00356991 /* TestDemoBaseTableViewController.m in Sources */,
+				04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */,
 				04B0CA882340C5C4007B2AD2 /* WGBRewardAlertView.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
