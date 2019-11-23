@@ -106,6 +106,7 @@
 		04D7048C2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7048B2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m */; };
 		04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7048E2389448200E88123 /* WGBCollectionLayoutDemoViewController.m */; };
 		04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D70491238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m */; };
+		04D70495238950B900E88123 /* WGBZoomScaleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D70494238950B900E88123 /* WGBZoomScaleFlowLayout.m */; };
 		04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */; };
 		04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -308,6 +309,8 @@
 		04D7048E2389448200E88123 /* WGBCollectionLayoutDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCollectionLayoutDemoViewController.m; sourceTree = "<group>"; };
 		04D70490238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBShowCollectionLayoutListDemoViewController.h; sourceTree = "<group>"; };
 		04D70491238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBShowCollectionLayoutListDemoViewController.m; sourceTree = "<group>"; };
+		04D70493238950B900E88123 /* WGBZoomScaleFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBZoomScaleFlowLayout.h; sourceTree = "<group>"; };
+		04D70494238950B900E88123 /* WGBZoomScaleFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBZoomScaleFlowLayout.m; sourceTree = "<group>"; };
 		04DCE458238814E900D380D9 /* WGBPersonEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPersonEffectViewController.h; sourceTree = "<group>"; };
 		04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPersonEffectViewController.m; sourceTree = "<group>"; };
 		04DCE45B2388157B00D380D9 /* WGBPersonEffectNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPersonEffectNavBar.h; sourceTree = "<group>"; };
@@ -951,6 +954,8 @@
 				04D70488238942C900E88123 /* MaximumSpacingFlowLayout.m */,
 				04D7048A2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.h */,
 				04D7048B2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m */,
+				04D70493238950B900E88123 /* WGBZoomScaleFlowLayout.h */,
+				04D70494238950B900E88123 /* WGBZoomScaleFlowLayout.m */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -1255,6 +1260,7 @@
 				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */,
+				04D70495238950B900E88123 /* WGBZoomScaleFlowLayout.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
 				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,

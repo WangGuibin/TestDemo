@@ -32,8 +32,9 @@ THE SOFTWARE.
     
 
 #import "WGBShowCollectionLayoutListDemoViewController.h"
-#import "WGBCollectionItemCenterFlowLayout.h"
 #import "WGBCollectionLayoutDemoViewController.h"
+#import "WGBCollectionItemCenterFlowLayout.h"
+#import "WGBZoomScaleFlowLayout.h"
 
 @interface WGBShowCollectionLayoutListDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -105,6 +106,7 @@ THE SOFTWARE.
     return @[
         @"居中布局",
         @"普通布局",
+        @"两边小中间变大布局"
     
     ];
 }
@@ -130,7 +132,18 @@ THE SOFTWARE.
         WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
         layoutVC.layout = layout;
         [self.navigationController pushViewController:layoutVC animated:YES];
+    }else if ([title isEqualToString:@"两边小中间变大布局"]) {
+        WGBZoomScaleFlowLayout *layout = [WGBZoomScaleFlowLayout new];
+        layout.itemSize = CGSizeMake(300, 400);
+        layout.minimumLineSpacing = 15;
+        layout.minimumInteritemSpacing = 15;
+        layout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
+        WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
+        layoutVC.layout = layout;
+        [self.navigationController pushViewController:layoutVC animated:YES];
     }
+    
+    
 }
 
 - (UITableView *)tableView{
