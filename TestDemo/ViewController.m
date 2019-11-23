@@ -15,6 +15,7 @@
 #import "LayoutDemoListViewController.h"
 #import "WGBCustomComponentDemoViewController.h"
 #import "JXCategoryDemoViewController.h"
+#import "WGBSpecialEffectDemoViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -38,7 +39,8 @@
         [AlertDemoViewController class],
         [LayoutDemoListViewController class],
         [WGBCustomComponentDemoViewController class],
-        [JXCategoryDemoViewController class]
+        [JXCategoryDemoViewController class],
+        [WGBSpecialEffectDemoViewController class]
     ];
 }
 
@@ -51,7 +53,8 @@
         @"弹窗相关Demo",
         @"布局相关demo",
         @"自定义组件或者工具",
-        @"JXCategoryView的一些demo实践"
+        @"JXCategoryView的一些demo实践",
+        @"特殊效果demo"
     ];
 }
 

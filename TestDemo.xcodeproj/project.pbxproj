@@ -97,6 +97,15 @@
 		04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01F623517E1F009C8C22 /* HPCommonCancelConfirmAlertView.xib */; };
 		04CA01FD235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01FC235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m */; };
 		04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */; };
+		04D7047723893DF600E88123 /* WGBSpecialEffectDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7047623893DF600E88123 /* WGBSpecialEffectDemoViewController.m */; };
+		04D7047A23893E5800E88123 /* WGBGlowEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7047923893E5800E88123 /* WGBGlowEffectViewController.m */; };
+		04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7047C23893E8900E88123 /* WGBGlowEffectLabelViewController.m */; };
+		04D7048023893ED000E88123 /* UIView+GlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7047F23893ED000E88123 /* UIView+GlowView.m */; };
+		04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7048223893FBE00E88123 /* FBGlowLabel.m */; };
+		04D70489238942C900E88123 /* MaximumSpacingFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D70488238942C900E88123 /* MaximumSpacingFlowLayout.m */; };
+		04D7048C2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7048B2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m */; };
+		04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7048E2389448200E88123 /* WGBCollectionLayoutDemoViewController.m */; };
+		04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D70491238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m */; };
 		04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */; };
 		04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -281,6 +290,24 @@
 		04CA01FC235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFancyQRCodeToolDemoViewController.m; sourceTree = "<group>"; };
 		04CA01FE23518530009C8C22 /* WGBShowQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBShowQRCodeViewController.h; sourceTree = "<group>"; };
 		04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBShowQRCodeViewController.m; sourceTree = "<group>"; };
+		04D7047523893DF600E88123 /* WGBSpecialEffectDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpecialEffectDemoViewController.h; sourceTree = "<group>"; };
+		04D7047623893DF600E88123 /* WGBSpecialEffectDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpecialEffectDemoViewController.m; sourceTree = "<group>"; };
+		04D7047823893E5800E88123 /* WGBGlowEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGlowEffectViewController.h; sourceTree = "<group>"; };
+		04D7047923893E5800E88123 /* WGBGlowEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGlowEffectViewController.m; sourceTree = "<group>"; };
+		04D7047B23893E8900E88123 /* WGBGlowEffectLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGlowEffectLabelViewController.h; sourceTree = "<group>"; };
+		04D7047C23893E8900E88123 /* WGBGlowEffectLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGlowEffectLabelViewController.m; sourceTree = "<group>"; };
+		04D7047E23893ED000E88123 /* UIView+GlowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GlowView.h"; sourceTree = "<group>"; };
+		04D7047F23893ED000E88123 /* UIView+GlowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GlowView.m"; sourceTree = "<group>"; };
+		04D7048123893FBE00E88123 /* FBGlowLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBGlowLabel.h; sourceTree = "<group>"; };
+		04D7048223893FBE00E88123 /* FBGlowLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBGlowLabel.m; sourceTree = "<group>"; };
+		04D70487238942C900E88123 /* MaximumSpacingFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaximumSpacingFlowLayout.h; sourceTree = "<group>"; };
+		04D70488238942C900E88123 /* MaximumSpacingFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaximumSpacingFlowLayout.m; sourceTree = "<group>"; };
+		04D7048A2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCollectionItemCenterFlowLayout.h; sourceTree = "<group>"; };
+		04D7048B2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCollectionItemCenterFlowLayout.m; sourceTree = "<group>"; };
+		04D7048D2389448200E88123 /* WGBCollectionLayoutDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCollectionLayoutDemoViewController.h; sourceTree = "<group>"; };
+		04D7048E2389448200E88123 /* WGBCollectionLayoutDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCollectionLayoutDemoViewController.m; sourceTree = "<group>"; };
+		04D70490238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBShowCollectionLayoutListDemoViewController.h; sourceTree = "<group>"; };
+		04D70491238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBShowCollectionLayoutListDemoViewController.m; sourceTree = "<group>"; };
 		04DCE458238814E900D380D9 /* WGBPersonEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPersonEffectViewController.h; sourceTree = "<group>"; };
 		04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPersonEffectViewController.m; sourceTree = "<group>"; };
 		04DCE45B2388157B00D380D9 /* WGBPersonEffectNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPersonEffectNavBar.h; sourceTree = "<group>"; };
@@ -648,6 +675,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				04D7047323893D9E00E88123 /* SpecialEffect */,
 				0454E5BE23891ACD0000D62C /* JXCategoryViewDemo */,
 				047BA68F2383CE63008B6FC8 /* CustomComponent */,
 				04C302622382DA5800356991 /* Layout */,
@@ -827,7 +855,7 @@
 		04C302622382DA5800356991 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				04DCE457238814C200D380D9 /* PersonEffect */,
+				04D704842389427200E88123 /* CollectionLayout */,
 				04F9150323769E26006E8B77 /* YogaKitDemo */,
 				0439C9EA234C93F100E9D9AB /* YYText */,
 				04B0CAB42341F5F4007B2AD2 /* NSLayoutAnchor */,
@@ -876,6 +904,55 @@
 				04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		04D7047323893D9E00E88123 /* SpecialEffect */ = {
+			isa = PBXGroup;
+			children = (
+				04DCE457238814C200D380D9 /* PersonEffect */,
+				04D7047423893DBC00E88123 /* GlowEffect */,
+				04D7047523893DF600E88123 /* WGBSpecialEffectDemoViewController.h */,
+				04D7047623893DF600E88123 /* WGBSpecialEffectDemoViewController.m */,
+			);
+			path = SpecialEffect;
+			sourceTree = "<group>";
+		};
+		04D7047423893DBC00E88123 /* GlowEffect */ = {
+			isa = PBXGroup;
+			children = (
+				04D7047823893E5800E88123 /* WGBGlowEffectViewController.h */,
+				04D7047923893E5800E88123 /* WGBGlowEffectViewController.m */,
+				04D7047B23893E8900E88123 /* WGBGlowEffectLabelViewController.h */,
+				04D7047C23893E8900E88123 /* WGBGlowEffectLabelViewController.m */,
+				04D7048123893FBE00E88123 /* FBGlowLabel.h */,
+				04D7048223893FBE00E88123 /* FBGlowLabel.m */,
+				04D7047E23893ED000E88123 /* UIView+GlowView.h */,
+				04D7047F23893ED000E88123 /* UIView+GlowView.m */,
+			);
+			path = GlowEffect;
+			sourceTree = "<group>";
+		};
+		04D704842389427200E88123 /* CollectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				04D704862389428400E88123 /* Layouts */,
+				04D7048D2389448200E88123 /* WGBCollectionLayoutDemoViewController.h */,
+				04D7048E2389448200E88123 /* WGBCollectionLayoutDemoViewController.m */,
+				04D70490238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.h */,
+				04D70491238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m */,
+			);
+			path = CollectionLayout;
+			sourceTree = "<group>";
+		};
+		04D704862389428400E88123 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				04D70487238942C900E88123 /* MaximumSpacingFlowLayout.h */,
+				04D70488238942C900E88123 /* MaximumSpacingFlowLayout.m */,
+				04D7048A2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.h */,
+				04D7048B2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 		04DCE457238814C200D380D9 /* PersonEffect */ = {
@@ -1121,6 +1198,7 @@
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */,
 				04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */,
+				04D7047A23893E5800E88123 /* WGBGlowEffectViewController.m in Sources */,
 				04B0CA9F2340D13B007B2AD2 /* WGBWaveLayerButtonDemoViewController.m in Sources */,
 				046C5D862382E0E1005A12E4 /* LDNetGetAddress.m in Sources */,
 				046C5D882382E0E1005A12E4 /* LDNetConnect.m in Sources */,
@@ -1147,6 +1225,7 @@
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
+				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
@@ -1154,6 +1233,7 @@
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
 				041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */,
 				04083E22237FAE44002702C6 /* VCTimeProfilerViewController.m in Sources */,
+				04D7047723893DF600E88123 /* WGBSpecialEffectDemoViewController.m in Sources */,
 				04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
@@ -1162,10 +1242,14 @@
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
+				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
 				048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */,
 				046C5D852382E0E1005A12E4 /* LDNetPing.m in Sources */,
 				04B0CA912340CF4F007B2AD2 /* WGBEasyMarqueeViewDemoViewController.m in Sources */,
+				04D70489238942C900E88123 /* MaximumSpacingFlowLayout.m in Sources */,
+				04D7048C2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m in Sources */,
 				046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */,
+				04D7048023893ED000E88123 /* UIView+GlowView.m in Sources */,
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
 				046C5D822382E0E1005A12E4 /* LDNetTraceRoute.m in Sources */,
 				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,
@@ -1173,6 +1257,7 @@
 				04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
+				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
 				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
 				04C302562382D59A00356991 /* BoomBoomBoomAnimationDemoViewController.m in Sources */,
@@ -1189,6 +1274,7 @@
 				04083E25237FAE44002702C6 /* VCTimeProfiler.m in Sources */,
 				046C5D872382E0E1005A12E4 /* LDNetDiagnoService.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
+				04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */,
 				0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */,
 				04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */,
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,

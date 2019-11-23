@@ -1,12 +1,12 @@
 //
-// LayoutDemoListViewController.m
+// WGBSpecialEffectDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/11/23
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,38 +31,32 @@ THE SOFTWARE.
 */
     
 
-#import "LayoutDemoListViewController.h"
-#import "WGBRepairedOrientationLabelDemoViewController.h"
-#import "NSLayoutAnchorDemoViewController.h"
-#import "YYTextDemoViewController.h"
-#import "YogaKitDemoViewController.h"
-#import "WGBShowCollectionLayoutListDemoViewController.h"
+#import "WGBSpecialEffectDemoViewController.h"
+#import "WGBGlowEffectViewController.h"
+#import "WGBGlowEffectLabelViewController.h"
+#import "WGBPersonEffectViewController.h"
 
-
-@interface LayoutDemoListViewController ()
+@interface WGBSpecialEffectDemoViewController ()
 
 @end
 
-@implementation LayoutDemoListViewController
+@implementation WGBSpecialEffectDemoViewController
 
 - (NSArray<Class> *)demoClassArray{
     return @[
-        [WGBRepairedOrientationLabelDemoViewController class], 
-        [NSLayoutAnchorDemoViewController class],
-        [YYTextDemoViewController class],
-        [YogaKitDemoViewController class],
-        [WGBShowCollectionLayoutListDemoViewController class]
+        [WGBGlowEffectViewController class],
+        [WGBGlowEffectLabelViewController class],
+        [WGBPersonEffectViewController class]
+
     ];
 }
 
 
 - (NSArray *)demoTitleArray{
     return @[
-        @"WGBRepairedOrientationLabel",
-        @"iOS 布局约束`NSLayoutAnchor`学习",
-        @"YYTextDemoViewController测试学习",
-        @"YogaKit Demo (FlexBox布局)",
-        @"collectionView布局"
+        @"辉光效果",
+        @"辉光Label效果",
+        @"个人中心或者详情页下拉展开上推收缩效果"
     ];
 }
 
@@ -73,5 +67,6 @@ THE SOFTWARE.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.tableView reloadData];
 }
+
 
 @end

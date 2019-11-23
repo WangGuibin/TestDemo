@@ -1,12 +1,12 @@
 //
-// LayoutDemoListViewController.m
+// WGBGlowEffectLabelViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/11/23
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,47 +31,44 @@ THE SOFTWARE.
 */
     
 
-#import "LayoutDemoListViewController.h"
-#import "WGBRepairedOrientationLabelDemoViewController.h"
-#import "NSLayoutAnchorDemoViewController.h"
-#import "YYTextDemoViewController.h"
-#import "YogaKitDemoViewController.h"
-#import "WGBShowCollectionLayoutListDemoViewController.h"
+#import "WGBGlowEffectLabelViewController.h"
+#import "FBGlowLabel.h"
 
-
-@interface LayoutDemoListViewController ()
+@interface WGBGlowEffectLabelViewController ()
 
 @end
 
-@implementation LayoutDemoListViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBRepairedOrientationLabelDemoViewController class], 
-        [NSLayoutAnchorDemoViewController class],
-        [YYTextDemoViewController class],
-        [YogaKitDemoViewController class],
-        [WGBShowCollectionLayoutListDemoViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"WGBRepairedOrientationLabel",
-        @"iOS 布局约束`NSLayoutAnchor`学习",
-        @"YYTextDemoViewController测试学习",
-        @"YogaKit Demo (FlexBox布局)",
-        @"collectionView布局"
-    ];
-}
-
+@implementation WGBGlowEffectLabelViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    self.view.backgroundColor = [UIColor blackColor];
+    
+    FBGlowLabel *glowLabel    = [[FBGlowLabel alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:glowLabel];
+    
+    glowLabel.text            = @"壹擊必殺";
+    glowLabel.textAlignment   = NSTextAlignmentCenter;
+    glowLabel.backgroundColor = [UIColor clearColor];
+    glowLabel.font            = [UIFont fontWithName:@"Heiti SC" size:40.f];
+    glowLabel.textColor       = [[UIColor whiteColor] colorWithAlphaComponent:0.95f];
+    
+    glowLabel.glowSize       = 6;
+    glowLabel.glowColor      = [UIColor redColor];
+    
+    glowLabel.innerGlowSize  = 3;
+    glowLabel.innerGlowColor = [[UIColor blackColor] colorWithAlphaComponent:0.25f];
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
