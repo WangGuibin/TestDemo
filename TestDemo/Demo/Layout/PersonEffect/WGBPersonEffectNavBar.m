@@ -122,7 +122,7 @@ THE SOFTWARE.
 - (UIButton *)carEntranceButton{
     if (!_carEntranceButton) {
         _carEntranceButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_carEntranceButton setTitle:@"TA的车友圈" forState:UIControlStateNormal];
+        [_carEntranceButton setTitle:@"TA的朋友圈" forState:UIControlStateNormal];
         _carEntranceButton.titleLabel.font = KFontSize(12);
         _carEntranceButton.backgroundColor = RGBA(255, 255, 255, 0.2);
         [_carEntranceButton addTarget:self action:@selector(watchCarCycleAction) forControlEvents:UIControlEventTouchUpInside];

@@ -24,6 +24,10 @@ target 'TestDemo' do
   pod 'YYModel'
   pod 'YSQRCodeGenerator' #花式二维码
   pod 'YogaKit','~> 1.7'#FlexBox布局
+  #标签栏组件
+  pod 'JXCategoryView'
+  pod 'JXPagingView/Pager'
+
     
   pod 'WGBCustomPopUpView','~>1.0.1'
   pod 'WGBCommonAlertSheetView'

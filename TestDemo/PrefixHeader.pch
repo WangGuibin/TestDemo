@@ -19,6 +19,8 @@
 #import <YYText.h>
 #import <YYModel.h>
 #import <ReactiveObjC.h>
+#import <JXCategoryView.h>
+#import <JXPagerView.h> 
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <WGBCocoa.h>
 #import <WGBCustomPopUpView/WGBCustomPopUpView.h>

@@ -14,6 +14,7 @@
 #import "AlertDemoViewController.h"
 #import "LayoutDemoListViewController.h"
 #import "WGBCustomComponentDemoViewController.h"
+#import "JXCategoryDemoViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,7 +37,8 @@
         [DebugDemoViewController class],
         [AlertDemoViewController class],
         [LayoutDemoListViewController class],
-        [WGBCustomComponentDemoViewController class]
+        [WGBCustomComponentDemoViewController class],
+        [JXCategoryDemoViewController class]
     ];
 }
 
@@ -48,7 +50,8 @@
         @"Debug相关Demo",
         @"弹窗相关Demo",
         @"布局相关demo",
-        @"自定义组件或者工具"
+        @"自定义组件或者工具",
+        @"JXCategoryView的一些demo实践"
     ];
 }
 

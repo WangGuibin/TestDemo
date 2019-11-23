@@ -34,6 +34,10 @@
 		0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453FDC7236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m */; };
 		0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453FDCA236C36D100D8B2A5 /* HPCannonBottomOperationView.m */; };
 		0453FDCD236C36D100D8B2A5 /* HPCannonBottomOperationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0453FDCB236C36D100D8B2A5 /* HPCannonBottomOperationView.xib */; };
+		0454E5C123891AFB0000D62C /* WGBRankBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454E5C023891AFB0000D62C /* WGBRankBaseViewController.m */; };
+		0454E5C523891B340000D62C /* WGBRankSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454E5C423891B340000D62C /* WGBRankSubViewController.m */; };
+		0454E5C823891B790000D62C /* JXCategoryDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454E5C723891B790000D62C /* JXCategoryDemoViewController.m */; };
+		0454E5CB23891C320000D62C /* WGBRankTopBgHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454E5CA23891C320000D62C /* WGBRankTopBgHeader.m */; };
 		046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046098D52359EBFB00A673D6 /* WebCommonDemoViewController.m */; };
 		0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461CBA8235EA85200F43B61 /* UIApplication+TouchHints.m */; };
 		046C5D822382E0E1005A12E4 /* LDNetTraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C5D752382E0E1005A12E4 /* LDNetTraceRoute.m */; };
@@ -157,6 +161,14 @@
 		0453FDC9236C36D100D8B2A5 /* HPCannonBottomOperationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCannonBottomOperationView.h; sourceTree = "<group>"; };
 		0453FDCA236C36D100D8B2A5 /* HPCannonBottomOperationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCannonBottomOperationView.m; sourceTree = "<group>"; };
 		0453FDCB236C36D100D8B2A5 /* HPCannonBottomOperationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPCannonBottomOperationView.xib; sourceTree = "<group>"; };
+		0454E5BF23891AFB0000D62C /* WGBRankBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBRankBaseViewController.h; sourceTree = "<group>"; };
+		0454E5C023891AFB0000D62C /* WGBRankBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRankBaseViewController.m; sourceTree = "<group>"; };
+		0454E5C323891B340000D62C /* WGBRankSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBRankSubViewController.h; sourceTree = "<group>"; };
+		0454E5C423891B340000D62C /* WGBRankSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRankSubViewController.m; sourceTree = "<group>"; };
+		0454E5C623891B790000D62C /* JXCategoryDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXCategoryDemoViewController.h; sourceTree = "<group>"; };
+		0454E5C723891B790000D62C /* JXCategoryDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXCategoryDemoViewController.m; sourceTree = "<group>"; };
+		0454E5C923891C320000D62C /* WGBRankTopBgHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBRankTopBgHeader.h; sourceTree = "<group>"; };
+		0454E5CA23891C320000D62C /* WGBRankTopBgHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRankTopBgHeader.m; sourceTree = "<group>"; };
 		046098D42359EBFB00A673D6 /* WebCommonDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebCommonDemoViewController.h; sourceTree = "<group>"; };
 		046098D52359EBFB00A673D6 /* WebCommonDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebCommonDemoViewController.m; sourceTree = "<group>"; };
 		0461CBA7235EA85200F43B61 /* UIApplication+TouchHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TouchHints.h"; sourceTree = "<group>"; };
@@ -462,6 +474,29 @@
 			path = UITableViewMultipleSelection;
 			sourceTree = "<group>";
 		};
+		0454E5BE23891ACD0000D62C /* JXCategoryViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0454E5C223891B0E0000D62C /* MaskBgImageEffect */,
+				0454E5C623891B790000D62C /* JXCategoryDemoViewController.h */,
+				0454E5C723891B790000D62C /* JXCategoryDemoViewController.m */,
+			);
+			path = JXCategoryViewDemo;
+			sourceTree = "<group>";
+		};
+		0454E5C223891B0E0000D62C /* MaskBgImageEffect */ = {
+			isa = PBXGroup;
+			children = (
+				0454E5BF23891AFB0000D62C /* WGBRankBaseViewController.h */,
+				0454E5C023891AFB0000D62C /* WGBRankBaseViewController.m */,
+				0454E5C323891B340000D62C /* WGBRankSubViewController.h */,
+				0454E5C423891B340000D62C /* WGBRankSubViewController.m */,
+				0454E5C923891C320000D62C /* WGBRankTopBgHeader.h */,
+				0454E5CA23891C320000D62C /* WGBRankTopBgHeader.m */,
+			);
+			path = MaskBgImageEffect;
+			sourceTree = "<group>";
+		};
 		046098C22359EA7000A673D6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +648,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				0454E5BE23891ACD0000D62C /* JXCategoryViewDemo */,
 				047BA68F2383CE63008B6FC8 /* CustomComponent */,
 				04C302622382DA5800356991 /* Layout */,
 				04C3025E2382D7A100356991 /* Alert */,
@@ -1072,12 +1108,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0454E5CB23891C320000D62C /* WGBRankTopBgHeader.m in Sources */,
 				04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */,
 				04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */,
 				0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */,
 				04C3024B2382D21A00356991 /* TestDemoBaseTableViewController.m in Sources */,
+				0454E5C123891AFB0000D62C /* WGBRankBaseViewController.m in Sources */,
 				04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */,
 				04B0CA882340C5C4007B2AD2 /* WGBRewardAlertView.m in Sources */,
+				0454E5C823891B790000D62C /* JXCategoryDemoViewController.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */,
@@ -1091,6 +1130,7 @@
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
+				0454E5C523891B340000D62C /* WGBRankSubViewController.m in Sources */,
 				04C302612382D7B500356991 /* AlertDemoViewController.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
 				04BF7A35237FD8F2003D99CF /* Constants.m in Sources */,

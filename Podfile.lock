@@ -15,6 +15,8 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - IQKeyboardManager (6.4.2)
+  - JXCategoryView (1.5.2)
+  - JXPagingView/Pager (1.1.19)
   - Masonry (1.1.0)
   - ReactiveObjC (3.1.1)
   - SDWebImage (5.0.6):
@@ -55,6 +57,8 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - IQKeyboardManager
+  - JXCategoryView
+  - JXPagingView/Pager
   - Masonry
   - ReactiveObjC (~> 3.1.1)
   - SDWebImage
@@ -74,32 +78,35 @@ DEPENDENCIES:
   - YYText
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AFNetworking
     - IQKeyboardManager
+    - JXCategoryView
+    - JXPagingView
     - Masonry
     - ReactiveObjC
     - SDWebImage
     - TZImagePickerController
     - WGBCocoaKit
     - WGBCommonAlertSheetView
+    - WGBCustomPopUpView
     - WGBEasyMarqueeView
     - WGBRepairedOrientationLabel
+    - WGBSelectPhotoView
     - WGBWaveLayerButton
     - YBImageBrowser
+    - Yoga
+    - YogaKit
     - YSQRCodeGenerator
     - YYImage
     - YYModel
     - YYText
-  trunk:
-    - WGBCustomPopUpView
-    - WGBSelectPhotoView
-    - Yoga
-    - YogaKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
+  JXCategoryView: b284d35a7a8772eada05dd78642233e1eb763ea8
+  JXPagingView: d28c0e245b850cdb47e3f04c07d8c35e30c18531
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
@@ -119,6 +126,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 341734f92ddce62424a39dd47dc28a39e9e1c177
+PODFILE CHECKSUM: cf52f7e12cfa13cc8df9c32ec9c21132b3c48332
 
 COCOAPODS: 1.8.4
