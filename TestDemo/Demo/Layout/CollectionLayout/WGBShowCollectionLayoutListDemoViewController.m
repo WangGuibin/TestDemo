@@ -35,6 +35,7 @@ THE SOFTWARE.
 #import "WGBCollectionLayoutDemoViewController.h"
 #import "WGBCollectionItemCenterFlowLayout.h"
 #import "WGBZoomScaleFlowLayout.h"
+#import "MaximumSpacingFlowLayout.h"
 
 @interface WGBShowCollectionLayoutListDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -106,8 +107,8 @@ THE SOFTWARE.
     return @[
         @"居中布局",
         @"普通布局",
-        @"两边小中间变大布局"
-    
+        @"两边小中间变大布局",
+        @"居左自适应布局"
     ];
 }
 
@@ -122,6 +123,7 @@ THE SOFTWARE.
         layout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
         WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
         layoutVC.layout = layout;
+        layoutVC.navigationItem.title = title;
         [self.navigationController pushViewController:layoutVC animated:YES];
     }else if ([title isEqualToString:@"普通布局"]) {
         UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
@@ -131,6 +133,7 @@ THE SOFTWARE.
         layout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
         WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
         layoutVC.layout = layout;
+        layoutVC.navigationItem.title = title;
         [self.navigationController pushViewController:layoutVC animated:YES];
     }else if ([title isEqualToString:@"两边小中间变大布局"]) {
         WGBZoomScaleFlowLayout *layout = [WGBZoomScaleFlowLayout new];
@@ -140,10 +143,19 @@ THE SOFTWARE.
         layout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
         WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
         layoutVC.layout = layout;
+        layoutVC.navigationItem.title = title;
+        [self.navigationController pushViewController:layoutVC animated:YES];
+    }else if([title isEqualToString:@"居左自适应布局"]){
+        MaximumSpacingFlowLayout *layout = [MaximumSpacingFlowLayout new];
+        layout.itemSize = CGSizeMake(100, 100);
+        layout.minimumLineSpacing = 15;
+        layout.minimumInteritemSpacing = 15;
+        layout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
+        WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
+        layoutVC.layout = layout;
+        layoutVC.navigationItem.title = title;
         [self.navigationController pushViewController:layoutVC animated:YES];
     }
-    
-    
 }
 
 - (UITableView *)tableView{
