@@ -39,13 +39,6 @@ THE SOFTWARE.
 
 @implementation YogaDemoOneViewController
 
-///MARK:- 热重载调用方法
-- (void)injected{
-    [self viewDidLoad];
-    NSLog(@"I've been injected: %@", self);
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

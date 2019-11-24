@@ -34,6 +34,9 @@ THE SOFTWARE.
 #import "YogaKitDemoViewController.h"
 #import "YogaDemoOneViewController.h"
 #import "YogaScrollViewDemoViewController.h"
+#import "YogaKitFlexDirectionDemoViewController.h"
+#import "YogaKitJustifyContentViewController.h"
+#import "YogaKitAlignItemsViewController.h"
 
 @interface YogaKitDemoViewController () 
 
@@ -41,20 +44,23 @@ THE SOFTWARE.
 
 @implementation YogaKitDemoViewController
 
-
 - (NSArray<Class> *)demoClassArray{
     return @[
         [YogaDemoOneViewController class],
-        [YogaScrollViewDemoViewController class]
+        [YogaScrollViewDemoViewController class],
+        [YogaKitFlexDirectionDemoViewController class],
+        [YogaKitJustifyContentViewController class],
+        [YogaKitAlignItemsViewController class]
      ];
 }
-
 
 - (NSArray *)demoTitleArray{
     return @[
              @"试试水而已",
-             @"测试UIScrollView"
-             
+             @"测试UIScrollView",
+             @"FlexboxDirection布局方向",
+             @"justifyContent主轴(水平)上的对齐方式",
+             @"alignItems交叉轴(垂直)上的对齐方式",
              ];
 }
 
