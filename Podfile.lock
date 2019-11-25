@@ -17,7 +17,13 @@ PODS:
   - IQKeyboardManager (6.4.2)
   - JXCategoryView (1.5.2)
   - JXPagingView/Pager (1.1.19)
+  - LBXScan/LBXZXing (2.3):
+    - LBXScan/Types (~> 2.2)
+  - LBXScan/Types (2.3)
+  - LBXScan/UI (2.3):
+    - LBXScan/Types (~> 2.2)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
   - ReactiveObjC (3.1.1)
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
@@ -59,7 +65,10 @@ DEPENDENCIES:
   - IQKeyboardManager
   - JXCategoryView
   - JXPagingView/Pager
+  - LBXScan/LBXZXing (~> 2.3)
+  - LBXScan/UI (~> 2.3)
   - Masonry
+  - MBProgressHUD
   - ReactiveObjC (~> 3.1.1)
   - SDWebImage
   - TZImagePickerController
@@ -83,7 +92,9 @@ SPEC REPOS:
     - IQKeyboardManager
     - JXCategoryView
     - JXPagingView
+    - LBXScan
     - Masonry
+    - MBProgressHUD
     - ReactiveObjC
     - SDWebImage
     - TZImagePickerController
@@ -107,7 +118,9 @@ SPEC CHECKSUMS:
   IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
   JXCategoryView: b284d35a7a8772eada05dd78642233e1eb763ea8
   JXPagingView: d28c0e245b850cdb47e3f04c07d8c35e30c18531
+  LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   TZImagePickerController: d259369c5c2cc96299e53da868ae5be1b24353cd
@@ -126,6 +139,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: cf52f7e12cfa13cc8df9c32ec9c21132b3c48332
+PODFILE CHECKSUM: 5d999161642e1627a1e555df766bd0194e60fe85
 
 COCOAPODS: 1.8.4

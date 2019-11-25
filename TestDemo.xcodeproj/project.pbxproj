@@ -19,6 +19,16 @@
 		04083E32237FB72C002702C6 /* XDAppFluencyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E30237FB72C002702C6 /* XDAppFluencyMonitor.m */; };
 		04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */; };
 		04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */; };
+		040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A786D238C03A100E1D2B7 /* LBXPermissionSetting.m */; };
+		040A7874238C03A100E1D2B7 /* LBXPermissionPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A786E238C03A100E1D2B7 /* LBXPermissionPhotos.m */; };
+		040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A786F238C03A100E1D2B7 /* LBXPermissionCamera.m */; };
+		040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A7870238C03A100E1D2B7 /* LBXPermission.m */; };
+		040A787D238C051900E1D2B7 /* DIYScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A7878238C051900E1D2B7 /* DIYScanViewController.m */; };
+		040A787E238C051900E1D2B7 /* ScanResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A7879238C051900E1D2B7 /* ScanResultViewController.xib */; };
+		040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A787C238C051900E1D2B7 /* ScanResultViewController.m */; };
+		040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A7881238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m */; };
+		040A7887238C0AB600E1D2B7 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A7885238C0AB600E1D2B7 /* MBProgressHUD+MJ.m */; };
+		040A7888238C0AB600E1D2B7 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 040A7886238C0AB600E1D2B7 /* MBProgressHUD.bundle */; };
 		041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */; };
 		0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */; };
 		0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */; };
@@ -153,6 +163,24 @@
 		04083E34237FB73D002702C6 /* AppFluencyMonitorTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFluencyMonitorTestViewController.h; sourceTree = "<group>"; };
 		04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppFluencyMonitorTestViewController.m; sourceTree = "<group>"; };
 		04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XDMachThreadBacktrace.c; sourceTree = "<group>"; };
+		040A786B238C03A100E1D2B7 /* LBXPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermission.h; sourceTree = "<group>"; };
+		040A786C238C03A100E1D2B7 /* LBXPermissionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermissionCamera.h; sourceTree = "<group>"; };
+		040A786D238C03A100E1D2B7 /* LBXPermissionSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionSetting.m; sourceTree = "<group>"; };
+		040A786E238C03A100E1D2B7 /* LBXPermissionPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionPhotos.m; sourceTree = "<group>"; };
+		040A786F238C03A100E1D2B7 /* LBXPermissionCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionCamera.m; sourceTree = "<group>"; };
+		040A7870238C03A100E1D2B7 /* LBXPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermission.m; sourceTree = "<group>"; };
+		040A7871238C03A100E1D2B7 /* LBXPermissionPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermissionPhotos.h; sourceTree = "<group>"; };
+		040A7872238C03A100E1D2B7 /* LBXPermissionSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermissionSetting.h; sourceTree = "<group>"; };
+		040A7878238C051900E1D2B7 /* DIYScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYScanViewController.m; sourceTree = "<group>"; };
+		040A7879238C051900E1D2B7 /* ScanResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanResultViewController.xib; sourceTree = "<group>"; };
+		040A787A238C051900E1D2B7 /* ScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
+		040A787B238C051900E1D2B7 /* DIYScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYScanViewController.h; sourceTree = "<group>"; };
+		040A787C238C051900E1D2B7 /* ScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
+		040A7880238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDIYScanQRCodeDemoViewController.h; sourceTree = "<group>"; };
+		040A7881238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDIYScanQRCodeDemoViewController.m; sourceTree = "<group>"; };
+		040A7884238C0AB600E1D2B7 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		040A7885238C0AB600E1D2B7 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		040A7886238C0AB600E1D2B7 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		041D64762384279600FB5337 /* WGBCallStackDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCallStackDemoViewController.h; sourceTree = "<group>"; };
 		041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCallStackDemoViewController.m; sourceTree = "<group>"; };
 		0439C9EB234C940A00E9D9AB /* YYTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
@@ -444,6 +472,43 @@
 			path = AppFluencyMonitor;
 			sourceTree = "<group>";
 		};
+		040A786A238C03A100E1D2B7 /* LBXPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				040A786B238C03A100E1D2B7 /* LBXPermission.h */,
+				040A7870238C03A100E1D2B7 /* LBXPermission.m */,
+				040A786C238C03A100E1D2B7 /* LBXPermissionCamera.h */,
+				040A786F238C03A100E1D2B7 /* LBXPermissionCamera.m */,
+				040A7871238C03A100E1D2B7 /* LBXPermissionPhotos.h */,
+				040A786E238C03A100E1D2B7 /* LBXPermissionPhotos.m */,
+				040A7872238C03A100E1D2B7 /* LBXPermissionSetting.h */,
+				040A786D238C03A100E1D2B7 /* LBXPermissionSetting.m */,
+			);
+			path = LBXPermissions;
+			sourceTree = "<group>";
+		};
+		040A7877238C04FD00E1D2B7 /* DIYScan */ = {
+			isa = PBXGroup;
+			children = (
+				040A787B238C051900E1D2B7 /* DIYScanViewController.h */,
+				040A7878238C051900E1D2B7 /* DIYScanViewController.m */,
+				040A787A238C051900E1D2B7 /* ScanResultViewController.h */,
+				040A787C238C051900E1D2B7 /* ScanResultViewController.m */,
+				040A7879238C051900E1D2B7 /* ScanResultViewController.xib */,
+			);
+			path = DIYScan;
+			sourceTree = "<group>";
+		};
+		040A7883238C0AB600E1D2B7 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				040A7884238C0AB600E1D2B7 /* MBProgressHUD+MJ.h */,
+				040A7885238C0AB600E1D2B7 /* MBProgressHUD+MJ.m */,
+				040A7886238C0AB600E1D2B7 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		041D64752384276D00FB5337 /* CallStack */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,6 +705,8 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				040A7883238C0AB600E1D2B7 /* MBProgressHUD */,
+				040A786A238C03A100E1D2B7 /* LBXPermissions */,
 				047BA6882383CE40008B6FC8 /* XDVerticalGradientColorSlider */,
 				046C5D722382E0E1005A12E4 /* LDNetDiagnoService */,
 				04083E2D237FB72C002702C6 /* AppFluencyMonitor */,
@@ -918,11 +985,14 @@
 		04CA01FA2351816B009C8C22 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				040A7877238C04FD00E1D2B7 /* DIYScan */,
 				0450C8C6235187D90069AC4D /* DemoImages */,
 				04CA01FB235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.h */,
 				04CA01FC235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m */,
 				04CA01FE23518530009C8C22 /* WGBShowQRCodeViewController.h */,
 				04CA01FF23518530009C8C22 /* WGBShowQRCodeViewController.m */,
+				040A7880238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.h */,
+				040A7881238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -1193,6 +1263,7 @@
 			files = (
 				04F735A522CDAA8D007CB0D0 /* LaunchScreen.storyboard in Resources */,
 				04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */,
+				040A787E238C051900E1D2B7 /* ScanResultViewController.xib in Resources */,
 				04083E2B237FAF4F002702C6 /* ZombieTestViewController.xib in Resources */,
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
@@ -1202,6 +1273,7 @@
 				0453FDCD236C36D100D8B2A5 /* HPCannonBottomOperationView.xib in Resources */,
 				04CA01F323517BE2009C8C22 /* HPEditSignatureAlertView.xib in Resources */,
 				0450C8CC235187EC0069AC4D /* github.png in Resources */,
+				040A7888238C0AB600E1D2B7 /* MBProgressHUD.bundle in Resources */,
 				04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */,
 				04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */,
 				0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */,
@@ -1269,7 +1341,9 @@
 				04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */,
 				04B0CA882340C5C4007B2AD2 /* WGBRewardAlertView.m in Sources */,
 				0454E5C823891B790000D62C /* JXCategoryDemoViewController.m in Sources */,
+				040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
+				040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */,
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */,
 				04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */,
@@ -1303,7 +1377,9 @@
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
 				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,
+				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
+				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
@@ -1322,13 +1398,16 @@
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
+				040A787D238C051900E1D2B7 /* DIYScanViewController.m in Sources */,
 				048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */,
 				046C5D852382E0E1005A12E4 /* LDNetPing.m in Sources */,
 				04B0CA912340CF4F007B2AD2 /* WGBEasyMarqueeViewDemoViewController.m in Sources */,
 				04D70489238942C900E88123 /* MaximumSpacingFlowLayout.m in Sources */,
 				04D7048C2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m in Sources */,
+				040A7887238C0AB600E1D2B7 /* MBProgressHUD+MJ.m in Sources */,
 				046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */,
 				04D7048023893ED000E88123 /* UIView+GlowView.m in Sources */,
+				040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */,
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
 				046C5D822382E0E1005A12E4 /* LDNetTraceRoute.m in Sources */,
 				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,
@@ -1339,6 +1418,7 @@
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
 				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
+				040A7874238C03A100E1D2B7 /* LBXPermissionPhotos.m in Sources */,
 				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
 				04C302562382D59A00356991 /* BoomBoomBoomAnimationDemoViewController.m in Sources */,
 				04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */,

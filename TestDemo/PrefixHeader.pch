@@ -33,6 +33,10 @@
 #import "NSArray+Sudoku.h"
 #import "WebCommonDemoViewController.h"
 #import "Constants.h"
+#import "LBXPermission.h"
+#import <LBXScanView.h>
+#import <LBXScanViewController.h>
+#import "MBProgressHUD+MJ.h"
 
 #endif
 

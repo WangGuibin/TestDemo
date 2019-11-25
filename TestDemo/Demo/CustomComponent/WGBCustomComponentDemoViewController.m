@@ -38,6 +38,7 @@ THE SOFTWARE.
 #import "WGBColorSliderPickerDemoViewController.h"
 #import "WGBWaveLayerButtonDemoViewController.h"
 #import "WGBEasyMarqueeViewDemoViewController.h"
+#import "WGBDIYScanQRCodeDemoViewController.h"
 
 @interface WGBCustomComponentDemoViewController ()
 
@@ -51,7 +52,8 @@ THE SOFTWARE.
         [WGBGradientProgressDemoViewController class],
         [WGBColorSliderPickerDemoViewController class],
         [WGBWaveLayerButtonDemoViewController class], 
-        [WGBEasyMarqueeViewDemoViewController class]
+        [WGBEasyMarqueeViewDemoViewController class],
+        [WGBDIYScanQRCodeDemoViewController class]
     ];
 }
 
@@ -62,7 +64,8 @@ THE SOFTWARE.
         @"渐变进度条Demo",
         @"颜色选择控件",
         @"WGBWaveLayerButton涟漪按钮",
-        @"WGBEasyMarqueeVie跑马灯实践"
+        @"WGBEasyMarqueeVie跑马灯实践",
+        @"DIY扫描二维码"
     ];
 }
 

@@ -22,13 +22,18 @@ target 'TestDemo' do
   pod 'WGBCocoaKit'
   pod 'YYText'
   pod 'YYModel'
+  pod 'MBProgressHUD'
   pod 'YSQRCodeGenerator' #花式二维码
   pod 'YogaKit','~> 1.7'#FlexBox布局
   #标签栏组件
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager'
-
-    
+  
+  #扫描二维码
+  pod 'LBXScan/LBXZXing','~> 2.3'
+  pod 'LBXScan/UI','~> 2.3'
+  
+  
   pod 'WGBCustomPopUpView','~>1.0.1'
   pod 'WGBCommonAlertSheetView'
   pod 'WGBEasyMarqueeView'
