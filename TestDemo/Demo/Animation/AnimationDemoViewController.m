@@ -34,6 +34,7 @@ THE SOFTWARE.
 #import "AnimationDemoViewController.h"
 #import "GlowingAnimationDemoViewController.h"
 #import "BoomBoomBoomAnimationDemoViewController.h"
+#import "WGBSpringAnimationDemoViewController.h"
 
 @interface AnimationDemoViewController ()
 
@@ -44,7 +45,8 @@ THE SOFTWARE.
 - (NSArray<Class> *)demoClassArray{
     return @[
         [GlowingAnimationDemoViewController class],
-        [BoomBoomBoomAnimationDemoViewController class]
+        [BoomBoomBoomAnimationDemoViewController class],
+        [WGBSpringAnimationDemoViewController class]
      ];
 }
 
@@ -52,10 +54,14 @@ THE SOFTWARE.
 - (NSArray *)demoTitleArray{
     return @[
              @"发光动画",
-             @"炸裂动画"
+             @"炸裂动画",
+             @"Spring弹性动画"
              ];
 }
 
+//UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 3.0, options: UIView.AnimationOptions.curveEaseInOut, animations: ({
+//    // do stuff
+//}), completion: nil)
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -125,6 +125,8 @@
 		04D704AF238A83F900E88123 /* YogaKitAlignItemsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D704AE238A83F900E88123 /* YogaKitAlignItemsDemoViewController.m */; };
 		04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */; };
 		04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */; };
+		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
+		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
 		04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359C22CDAA8B007CB0D0 /* ViewController.m */; };
 		04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F7359E22CDAA8B007CB0D0 /* Main.storyboard */; };
@@ -361,6 +363,9 @@
 		04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPersonEffectViewController.m; sourceTree = "<group>"; };
 		04DCE45B2388157B00D380D9 /* WGBPersonEffectNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPersonEffectNavBar.h; sourceTree = "<group>"; };
 		04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPersonEffectNavBar.m; sourceTree = "<group>"; };
+		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
+		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
+		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
 		04F7359522CDAA8B007CB0D0 /* Demo集合.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo集合.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F7359822CDAA8B007CB0D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04F7359922CDAA8B007CB0D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -882,6 +887,7 @@
 		04C302482382D19500356991 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				04F50724238FF1CE000D2DFB /* Spring */,
 				04C302532382D55800356991 /* BoomBoomBoom */,
 				0450C8CD23547E210069AC4D /* GlowingAnimation */,
 				04C3024C2382D35800356991 /* AnimationDemoViewController.h */,
@@ -1108,6 +1114,16 @@
 			path = PersonEffect;
 			sourceTree = "<group>";
 		};
+		04F50724238FF1CE000D2DFB /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */,
+				04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */,
+				04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
 		04F7358C22CDAA8B007CB0D0 = {
 			isa = PBXGroup;
 			children = (
@@ -1269,6 +1285,7 @@
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
 				047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */,
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
+				04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */,
 				049973522374307900FBFC1E /* 666.png in Resources */,
 				0453FDCD236C36D100D8B2A5 /* HPCannonBottomOperationView.xib in Resources */,
 				04CA01F323517BE2009C8C22 /* HPEditSignatureAlertView.xib in Resources */,
@@ -1402,6 +1419,7 @@
 				048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */,
 				046C5D852382E0E1005A12E4 /* LDNetPing.m in Sources */,
 				04B0CA912340CF4F007B2AD2 /* WGBEasyMarqueeViewDemoViewController.m in Sources */,
+				04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */,
 				04D70489238942C900E88123 /* MaximumSpacingFlowLayout.m in Sources */,
 				04D7048C2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m in Sources */,
 				040A7887238C0AB600E1D2B7 /* MBProgressHUD+MJ.m in Sources */,

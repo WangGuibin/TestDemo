@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WGBSpringAnimationDemoViewController">
+            <connections>
+                <outlet property="bgView" destination="uQP-g6-r4D" id="RU8-Gl-e8b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdQ-7X-HRp">
+                    <rect key="frame" x="157" y="104" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2b1-tl-13n"/>
+                        <constraint firstAttribute="width" constant="100" id="XId-df-sSl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="exec"/>
+                    <connections>
+                        <action selector="show:" destination="-1" eventType="touchUpInside" id="EWw-cA-kFd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5e-xM-mhu">
+                    <rect key="frame" x="157" y="154" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="exit"/>
+                    <connections>
+                        <action selector="exitAction:" destination="-1" eventType="touchUpInside" id="bmj-gc-88u"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQP-g6-r4D">
+                    <rect key="frame" x="0.0" y="204" width="414" height="658"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="uQP-g6-r4D" secondAttribute="bottom" id="Dkp-eI-jUB"/>
+                <constraint firstItem="D5e-xM-mhu" firstAttribute="height" secondItem="hdQ-7X-HRp" secondAttribute="height" id="K1J-h5-zsw"/>
+                <constraint firstItem="hdQ-7X-HRp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PNI-O1-vda"/>
+                <constraint firstItem="uQP-g6-r4D" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="RaV-Qz-Kwk"/>
+                <constraint firstItem="D5e-xM-mhu" firstAttribute="width" secondItem="hdQ-7X-HRp" secondAttribute="width" id="SnH-dx-4vM"/>
+                <constraint firstItem="D5e-xM-mhu" firstAttribute="top" secondItem="hdQ-7X-HRp" secondAttribute="bottom" constant="20" id="aFr-1K-q3S"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="uQP-g6-r4D" secondAttribute="trailing" id="icV-eB-Bpg"/>
+                <constraint firstItem="D5e-xM-mhu" firstAttribute="centerX" secondItem="hdQ-7X-HRp" secondAttribute="centerX" id="kxA-Ht-hcn"/>
+                <constraint firstItem="hdQ-7X-HRp" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="60" id="mp8-je-XTe"/>
+                <constraint firstItem="uQP-g6-r4D" firstAttribute="top" secondItem="D5e-xM-mhu" secondAttribute="bottom" constant="20" id="uzb-42-KHV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>
