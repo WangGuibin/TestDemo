@@ -1,12 +1,12 @@
 //
-// WGBSpecialEffectDemoViewController.m
+// WGBCircleMaskLayerEffectViewController.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/23
+// Created by CoderWGB on 2019/11/29
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,44 +31,12 @@ THE SOFTWARE.
 */
     
 
-#import "WGBSpecialEffectDemoViewController.h"
-#import "WGBGlowEffectViewController.h"
-#import "WGBGlowEffectLabelViewController.h"
-#import "WGBPersonEffectViewController.h"
-#import "WGBCircleMaskLayerEffectViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface WGBSpecialEffectDemoViewController ()
+NS_ASSUME_NONNULL_BEGIN
+
+@interface WGBCircleMaskLayerEffectViewController : UIViewController
 
 @end
 
-@implementation WGBSpecialEffectDemoViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBGlowEffectViewController class],
-        [WGBGlowEffectLabelViewController class],
-        [WGBPersonEffectViewController class],
-        [WGBCircleMaskLayerEffectViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"辉光效果",
-        @"辉光Label效果",
-        @"个人中心或者详情页下拉展开上推收缩效果",
-        @"下拉放大&绘制圆弧效果"
-    ];
-}
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
-}
-
-
-@end
+NS_ASSUME_NONNULL_END

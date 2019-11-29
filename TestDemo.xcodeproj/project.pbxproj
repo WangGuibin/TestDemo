@@ -68,6 +68,7 @@
 		048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048600CF2363421200B63EDE /* PopverDemoViewController.m */; };
 		048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048600D22363432200B63EDE /* TestPopverContentViewController.m */; };
 		048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A796822D397DC00A0E38F /* JPQRCodeTool.m */; };
+		048DB1D223912432007701EC /* WGBCircleMaskLayerEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DB1D123912432007701EC /* WGBCircleMaskLayerEffectViewController.m */; };
 		0496021122CF7BBF00404432 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0496021022CF7BBF00404432 /* SDWebImage.framework */; };
 		049973522374307900FBFC1E /* 666.png in Resources */ = {isa = PBXBuildFile; fileRef = 049973512374307900FBFC1E /* 666.png */; };
 		04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */; };
@@ -254,6 +255,8 @@
 		048600D22363432200B63EDE /* TestPopverContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPopverContentViewController.m; sourceTree = "<group>"; };
 		048A796722D397DC00A0E38F /* JPQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPQRCodeTool.h; sourceTree = "<group>"; };
 		048A796822D397DC00A0E38F /* JPQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPQRCodeTool.m; sourceTree = "<group>"; };
+		048DB1D023912432007701EC /* WGBCircleMaskLayerEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCircleMaskLayerEffectViewController.h; sourceTree = "<group>"; };
+		048DB1D123912432007701EC /* WGBCircleMaskLayerEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCircleMaskLayerEffectViewController.m; sourceTree = "<group>"; };
 		0496021022CF7BBF00404432 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		049973512374307900FBFC1E /* 666.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 666.png; sourceTree = "<group>"; };
 		04A78F7B2361B9C500915493 /* UIImage+MaskExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MaskExtension.h"; sourceTree = "<group>"; };
@@ -754,6 +757,15 @@
 			path = JPQRCodeTool;
 			sourceTree = "<group>";
 		};
+		048DB1CF23912405007701EC /* CircleMaskLayerEffect */ = {
+			isa = PBXGroup;
+			children = (
+				048DB1D023912432007701EC /* WGBCircleMaskLayerEffectViewController.h */,
+				048DB1D123912432007701EC /* WGBCircleMaskLayerEffectViewController.m */,
+			);
+			path = CircleMaskLayerEffect;
+			sourceTree = "<group>";
+		};
 		04A78F7A2361B99F00915493 /* MaskLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1006,6 +1018,7 @@
 		04D7047323893D9E00E88123 /* SpecialEffect */ = {
 			isa = PBXGroup;
 			children = (
+				048DB1CF23912405007701EC /* CircleMaskLayerEffect */,
 				04DCE457238814C200D380D9 /* PersonEffect */,
 				04D7047423893DBC00E88123 /* GlowEffect */,
 				04D7047523893DF600E88123 /* WGBSpecialEffectDemoViewController.h */,
@@ -1437,6 +1450,7 @@
 				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
 				040A7874238C03A100E1D2B7 /* LBXPermissionPhotos.m in Sources */,
+				048DB1D223912432007701EC /* WGBCircleMaskLayerEffectViewController.m in Sources */,
 				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
 				04C302562382D59A00356991 /* BoomBoomBoomAnimationDemoViewController.m in Sources */,
 				04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */,
