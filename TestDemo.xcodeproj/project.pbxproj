@@ -74,6 +74,12 @@
 		04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */; };
 		04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */; };
 		04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE01982392252400B7D0D4 /* WGBPullScaleEffectViewController.m */; };
+		04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE019B23924F1000B7D0D4 /* CCParallaxView.m */; };
+		04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE01A323924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m */; };
+		04AE01A623924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AE01A423924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.xib */; };
+		04AE01AA2392502100B7D0D4 /* bird1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04AE01A72392502000B7D0D4 /* bird1.png */; };
+		04AE01AB2392502100B7D0D4 /* bird2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04AE01A82392502000B7D0D4 /* bird2.png */; };
+		04AE01AC2392502100B7D0D4 /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04AE01A92392502000B7D0D4 /* sky.jpg */; };
 		04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */; };
 		04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7E2340C5C4007B2AD2 /* WGBAlertTool.m */; };
 		04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0CA7F2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib */; };
@@ -266,6 +272,14 @@
 		04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMaskDemoViewController.m; sourceTree = "<group>"; };
 		04AE01972392252400B7D0D4 /* WGBPullScaleEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPullScaleEffectViewController.h; sourceTree = "<group>"; };
 		04AE01982392252400B7D0D4 /* WGBPullScaleEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPullScaleEffectViewController.m; sourceTree = "<group>"; };
+		04AE019B23924F1000B7D0D4 /* CCParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCParallaxView.m; sourceTree = "<group>"; };
+		04AE019C23924F1000B7D0D4 /* CCParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCParallaxView.h; sourceTree = "<group>"; };
+		04AE01A223924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCCParallaxViewDemoViewController.h; sourceTree = "<group>"; };
+		04AE01A323924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCCParallaxViewDemoViewController.m; sourceTree = "<group>"; };
+		04AE01A423924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBCCParallaxViewDemoViewController.xib; sourceTree = "<group>"; };
+		04AE01A72392502000B7D0D4 /* bird1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird1.png; sourceTree = "<group>"; };
+		04AE01A82392502000B7D0D4 /* bird2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird2.png; sourceTree = "<group>"; };
+		04AE01A92392502000B7D0D4 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
 		04B0CA7C2340C5C4007B2AD2 /* WGBAlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGBAlertTool.h; sourceTree = "<group>"; };
 		04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBCommonLeftRightButtonAlertView.m; sourceTree = "<group>"; };
 		04B0CA7E2340C5C4007B2AD2 /* WGBAlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBAlertTool.m; sourceTree = "<group>"; };
@@ -716,6 +730,7 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04AE019A23924F1000B7D0D4 /* CCParallaxView */,
 				040A7883238C0AB600E1D2B7 /* MBProgressHUD */,
 				040A786A238C03A100E1D2B7 /* LBXPermissions */,
 				047BA6882383CE40008B6FC8 /* XDVerticalGradientColorSlider */,
@@ -787,6 +802,28 @@
 				04AE01982392252400B7D0D4 /* WGBPullScaleEffectViewController.m */,
 			);
 			path = PullScaleEffect;
+			sourceTree = "<group>";
+		};
+		04AE019A23924F1000B7D0D4 /* CCParallaxView */ = {
+			isa = PBXGroup;
+			children = (
+				04AE019B23924F1000B7D0D4 /* CCParallaxView.m */,
+				04AE019C23924F1000B7D0D4 /* CCParallaxView.h */,
+			);
+			path = CCParallaxView;
+			sourceTree = "<group>";
+		};
+		04AE019E23924F2400B7D0D4 /* CCParallaxView */ = {
+			isa = PBXGroup;
+			children = (
+				04AE01A72392502000B7D0D4 /* bird1.png */,
+				04AE01A82392502000B7D0D4 /* bird2.png */,
+				04AE01A92392502000B7D0D4 /* sky.jpg */,
+				04AE01A223924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.h */,
+				04AE01A323924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m */,
+				04AE01A423924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.xib */,
+			);
+			path = CCParallaxView;
 			sourceTree = "<group>";
 		};
 		04B0CA782340C557007B2AD2 /* Demo */ = {
@@ -1030,6 +1067,7 @@
 		04D7047323893D9E00E88123 /* SpecialEffect */ = {
 			isa = PBXGroup;
 			children = (
+				04AE019E23924F2400B7D0D4 /* CCParallaxView */,
 				04AE01962392250400B7D0D4 /* PullScaleEffect */,
 				048DB1CF23912405007701EC /* CircleMaskLayerEffect */,
 				04DCE457238814C200D380D9 /* PersonEffect */,
@@ -1303,11 +1341,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AE01AB2392502100B7D0D4 /* bird2.png in Resources */,
 				04F735A522CDAA8D007CB0D0 /* LaunchScreen.storyboard in Resources */,
 				04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */,
 				040A787E238C051900E1D2B7 /* ScanResultViewController.xib in Resources */,
 				04083E2B237FAF4F002702C6 /* ZombieTestViewController.xib in Resources */,
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
+				04AE01A623924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.xib in Resources */,
+				04AE01AA2392502100B7D0D4 /* bird1.png in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
 				047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */,
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
@@ -1321,6 +1362,7 @@
 				04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */,
 				0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */,
 				0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */,
+				04AE01AC2392502100B7D0D4 /* sky.jpg in Resources */,
 				04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */,
 				0453FDC4236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.xib in Resources */,
 			);
@@ -1424,6 +1466,7 @@
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
+				04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
@@ -1459,6 +1502,7 @@
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */,
 				04D70495238950B900E88123 /* WGBZoomScaleFlowLayout.m in Sources */,
+				04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
 				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,

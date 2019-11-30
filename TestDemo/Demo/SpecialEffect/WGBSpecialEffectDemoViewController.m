@@ -37,6 +37,7 @@ THE SOFTWARE.
 #import "WGBPersonEffectViewController.h"
 #import "WGBCircleMaskLayerEffectViewController.h"
 #import "WGBPullScaleEffectViewController.h"
+#import "WGBCCParallaxViewDemoViewController.h"
 
 @interface WGBSpecialEffectDemoViewController ()
 
@@ -50,7 +51,8 @@ THE SOFTWARE.
         [WGBGlowEffectLabelViewController class],
         [WGBPersonEffectViewController class],
         [WGBCircleMaskLayerEffectViewController class],
-        [WGBPullScaleEffectViewController class]
+        [WGBPullScaleEffectViewController class],
+        [WGBCCParallaxViewDemoViewController class]
     ];
 }
 
@@ -61,7 +63,8 @@ THE SOFTWARE.
         @"辉光Label效果",
         @"个人中心或者详情页下拉展开上推收缩效果",
         @"下拉放大&绘制圆弧效果",
-        @"下拉放大"
+        @"下拉放大",
+        @"ParallaxView视差视图"
     ];
 }
 
