@@ -1,12 +1,12 @@
 //
-// WGBCircleMaskLayerEffectViewController.m
+// WGBPullScaleEffectViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/29
+// Created by CoderWGB on 2019/11/30
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,29 +31,33 @@ THE SOFTWARE.
 */
     
 
-#import "WGBCircleMaskLayerEffectViewController.h"
+#import "WGBPullScaleEffectViewController.h"
 
-#define kHeaderHeight 200
+#define kHeadHeight  200
 
-@interface WGBCircleMaskLayerEffectViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface WGBPullScaleEffectViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIImageView *headerView;
+@property (nonatomic,strong) UIImageView *headImageView;
 
 @end
 
-@implementation WGBCircleMaskLayerEffectViewController
+@implementation WGBPullScaleEffectViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor cyanColor];
-    [self headerView];
-    self.tableView.contentInset = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
-    [self.tableView setContentOffset:CGPointMake(0, -kHeaderHeight)];
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,-kHeadHeight, [UIScreen mainScreen].bounds.size.width, kHeadHeight)];
+    self.headImageView = imageView;
+    self.tableView.contentInset = UIEdgeInsetsMake(kHeadHeight, 0, 0, 0);
+    [self.tableView setContentOffset:CGPointMake(0, -kHeadHeight)];
+    
+    imageView.image = [UIImage imageNamed:@"cat.jpg"];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.clipsToBounds = YES;
+    [self.tableView addSubview:imageView];
     [self.tableView reloadData];
-    [self refreshLayer];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -66,39 +70,15 @@ THE SOFTWARE.
     self.navigationController.navigationBar.hidden = NO;
 }
 
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    CGFloat offsetY = scrollView.contentOffset.y;
-    if (offsetY <= -kHeaderHeight ) {
-        CGRect frame = self.headerView.frame;
-        frame.origin.y = offsetY;
-        frame.size.height = -offsetY;
-        //左右放大
-        frame.origin.x = (offsetY * KWIDTH / kHeaderHeight + KWIDTH) / 2;
-        frame.size.width = -offsetY * KWIDTH / kHeaderHeight;
-        //改变头部视图的frame
-        self.headerView.frame = frame;
-        [self refreshLayer];
-    }else{
-        scrollView.bounces = YES;
+    CGPoint point = scrollView.contentOffset;
+    if (point.y < -kHeadHeight) {
+        CGRect rect = self.headImageView.frame;
+        rect.origin.y = point.y;
+        rect.size.height = -point.y;
+        self.headImageView.frame = rect;
     }
-}
-
-
-- (void)refreshLayer{
-    CGFloat headerHeight = self.headerView.height;
-    CGFloat headWidth = self.headerView.width;
-    CAShapeLayer *maskLayer = [CAShapeLayer layer];
-    maskLayer.backgroundColor = [UIColor whiteColor].CGColor;
-    UIBezierPath *bezierPath = [UIBezierPath new];
-    [bezierPath moveToPoint:CGPointMake(headWidth,headerHeight/3.0 *2)];
-    [bezierPath addLineToPoint:CGPointMake(headWidth, 0)];
-    [bezierPath addLineToPoint:CGPointMake(0, 0)];
-    [bezierPath addLineToPoint:CGPointMake(0, headerHeight/3.0 *2)];
-    [bezierPath addQuadCurveToPoint:CGPointMake(headWidth, headerHeight/3.0 *2) controlPoint:CGPointMake(headWidth/2.0, headerHeight)];
-    [bezierPath closePath];
-    maskLayer.path = bezierPath.CGPath;
-    _headerView.layer.mask = maskLayer;
-
 }
 
 #pragma mark - tableView DataSource
@@ -150,18 +130,5 @@ THE SOFTWARE.
     return _tableView;
 }
 
-
-
-- (UIImageView *)headerView {
-    if (!_headerView) {
-        _headerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -kHeaderHeight, KWIDTH , kHeaderHeight)];
-        _headerView.backgroundColor = [UIColor redColor];
-        _headerView.image = [UIImage imageNamed:@"cat.jpg"];
-        _headerView.contentMode = UIViewContentModeScaleAspectFill;
-        _headerView.clipsToBounds = YES;
-        [self.tableView addSubview:_headerView];
-    }
-    return _headerView;
-}
 
 @end

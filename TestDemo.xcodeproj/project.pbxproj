@@ -73,6 +73,7 @@
 		049973522374307900FBFC1E /* 666.png in Resources */ = {isa = PBXBuildFile; fileRef = 049973512374307900FBFC1E /* 666.png */; };
 		04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */; };
 		04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */; };
+		04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE01982392252400B7D0D4 /* WGBPullScaleEffectViewController.m */; };
 		04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */; };
 		04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7E2340C5C4007B2AD2 /* WGBAlertTool.m */; };
 		04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0CA7F2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib */; };
@@ -263,6 +264,8 @@
 		04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MaskExtension.m"; sourceTree = "<group>"; };
 		04A78F7E2361BAB700915493 /* WGBMaskDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMaskDemoViewController.h; sourceTree = "<group>"; };
 		04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMaskDemoViewController.m; sourceTree = "<group>"; };
+		04AE01972392252400B7D0D4 /* WGBPullScaleEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPullScaleEffectViewController.h; sourceTree = "<group>"; };
+		04AE01982392252400B7D0D4 /* WGBPullScaleEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPullScaleEffectViewController.m; sourceTree = "<group>"; };
 		04B0CA7C2340C5C4007B2AD2 /* WGBAlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGBAlertTool.h; sourceTree = "<group>"; };
 		04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBCommonLeftRightButtonAlertView.m; sourceTree = "<group>"; };
 		04B0CA7E2340C5C4007B2AD2 /* WGBAlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBAlertTool.m; sourceTree = "<group>"; };
@@ -777,6 +780,15 @@
 			path = MaskLayer;
 			sourceTree = "<group>";
 		};
+		04AE01962392250400B7D0D4 /* PullScaleEffect */ = {
+			isa = PBXGroup;
+			children = (
+				04AE01972392252400B7D0D4 /* WGBPullScaleEffectViewController.h */,
+				04AE01982392252400B7D0D4 /* WGBPullScaleEffectViewController.m */,
+			);
+			path = PullScaleEffect;
+			sourceTree = "<group>";
+		};
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1018,6 +1030,7 @@
 		04D7047323893D9E00E88123 /* SpecialEffect */ = {
 			isa = PBXGroup;
 			children = (
+				04AE01962392250400B7D0D4 /* PullScaleEffect */,
 				048DB1CF23912405007701EC /* CircleMaskLayerEffect */,
 				04DCE457238814C200D380D9 /* PersonEffect */,
 				04D7047423893DBC00E88123 /* GlowEffect */,
@@ -1407,6 +1420,7 @@
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
 				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,
+				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
