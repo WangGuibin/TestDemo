@@ -80,6 +80,8 @@
 		04AE01AA2392502100B7D0D4 /* bird1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04AE01A72392502000B7D0D4 /* bird1.png */; };
 		04AE01AB2392502100B7D0D4 /* bird2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04AE01A82392502000B7D0D4 /* bird2.png */; };
 		04AE01AC2392502100B7D0D4 /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04AE01A92392502000B7D0D4 /* sky.jpg */; };
+		04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE01BD2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m */; };
+		04AE01C12394B26100B7D0D4 /* GXUpvoteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE01C02394B26100B7D0D4 /* GXUpvoteButton.m */; };
 		04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */; };
 		04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CA7E2340C5C4007B2AD2 /* WGBAlertTool.m */; };
 		04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0CA7F2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib */; };
@@ -280,6 +282,10 @@
 		04AE01A72392502000B7D0D4 /* bird1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird1.png; sourceTree = "<group>"; };
 		04AE01A82392502000B7D0D4 /* bird2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird2.png; sourceTree = "<group>"; };
 		04AE01A92392502000B7D0D4 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
+		04AE01BC2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBLikeAnimationDemoViewController.h; sourceTree = "<group>"; };
+		04AE01BD2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBLikeAnimationDemoViewController.m; sourceTree = "<group>"; };
+		04AE01BF2394B26000B7D0D4 /* GXUpvoteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXUpvoteButton.h; sourceTree = "<group>"; };
+		04AE01C02394B26100B7D0D4 /* GXUpvoteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXUpvoteButton.m; sourceTree = "<group>"; };
 		04B0CA7C2340C5C4007B2AD2 /* WGBAlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGBAlertTool.h; sourceTree = "<group>"; };
 		04B0CA7D2340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBCommonLeftRightButtonAlertView.m; sourceTree = "<group>"; };
 		04B0CA7E2340C5C4007B2AD2 /* WGBAlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBAlertTool.m; sourceTree = "<group>"; };
@@ -826,6 +832,17 @@
 			path = CCParallaxView;
 			sourceTree = "<group>";
 		};
+		04AE01BB2394B1D700B7D0D4 /* LikeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				04AE01BF2394B26000B7D0D4 /* GXUpvoteButton.h */,
+				04AE01C02394B26100B7D0D4 /* GXUpvoteButton.m */,
+				04AE01BC2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.h */,
+				04AE01BD2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m */,
+			);
+			path = LikeAnimation;
+			sourceTree = "<group>";
+		};
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -948,6 +965,7 @@
 		04C302482382D19500356991 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				04AE01BB2394B1D700B7D0D4 /* LikeAnimation */,
 				04F50724238FF1CE000D2DFB /* Spring */,
 				04C302532382D55800356991 /* BoomBoomBoom */,
 				0450C8CD23547E210069AC4D /* GlowingAnimation */,
@@ -1456,9 +1474,11 @@
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
 				04C302592382D5B300356991 /* UIView+BoomBoomBoom.m in Sources */,
+				04AE01C12394B26100B7D0D4 /* GXUpvoteButton.m in Sources */,
 				04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */,
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
+				04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */,
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
 				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,

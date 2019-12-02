@@ -1,12 +1,12 @@
 //
-// AnimationDemoViewController.m
+// WGBLikeAnimationDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/12/2
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,46 +31,26 @@ THE SOFTWARE.
 */
     
 
-#import "AnimationDemoViewController.h"
-#import "GlowingAnimationDemoViewController.h"
-#import "BoomBoomBoomAnimationDemoViewController.h"
-#import "WGBSpringAnimationDemoViewController.h"
 #import "WGBLikeAnimationDemoViewController.h"
+#import "GXUpvoteButton.h"
 
-@interface AnimationDemoViewController ()
+@interface WGBLikeAnimationDemoViewController ()
+
+@property (nonatomic, strong) GXUpvoteButton *upvoteButton;
 
 @end
 
-@implementation AnimationDemoViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [GlowingAnimationDemoViewController class],
-        [BoomBoomBoomAnimationDemoViewController class],
-        [WGBSpringAnimationDemoViewController class],
-        [WGBLikeAnimationDemoViewController class]
-     ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-             @"发光动画",
-             @"炸裂动画",
-             @"Spring弹性动画",
-             @"点赞动画"
-             ];
-}
-
-//UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 3.0, options: UIView.AnimationOptions.curveEaseInOut, animations: ({
-//    // do stuff
-//}), completion: nil)
+@implementation WGBLikeAnimationDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    self.view.backgroundColor = [UIColor blackColor];
+    self.upvoteButton = [GXUpvoteButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:self.upvoteButton];
+    self.upvoteButton.frame = CGRectMake(0, 0, 50, 50);
+    self.upvoteButton.center = self.view.center;
+    
 }
 
 /*
