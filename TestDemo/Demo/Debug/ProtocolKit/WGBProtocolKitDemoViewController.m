@@ -1,12 +1,12 @@
 //
-// DebugDemoViewController.m
+// WGBProtocolKitDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/12/5
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,48 +31,57 @@ THE SOFTWARE.
 */
     
 
-#import "DebugDemoViewController.h"
-#import "VCTimeProfilerViewController.h"
-#import "ZombieTestViewController.h"
-#import "AppFluencyMonitorTestViewController.h"
-#import "NetDiagnoServiceDemoViewController.h"
-#import "WGBCallStackDemoViewController.h"
 #import "WGBProtocolKitDemoViewController.h"
+#import "ProtocolKit.h"
 
-@interface DebugDemoViewController ()
+
+@protocol Forkable <NSObject>
+
+@optional
+- (void)fork;
+
+@required
+- (NSString *)github;
 
 @end
 
-@implementation DebugDemoViewController
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [VCTimeProfilerViewController class],
-        [ZombieTestViewController class],
-        [AppFluencyMonitorTestViewController class],
-        [NetDiagnoServiceDemoViewController class],
-        [WGBCallStackDemoViewController class],
-        [WGBProtocolKitDemoViewController class]
-    ];
+// Protocol Extension
+@defs(Forkable)
+
+- (void)fork {
+    NSLog(@"Forkable protocol extension: I'm forking (%@).", self.github);
 }
 
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"页面耗时统计",
-        @"野指针检测",
-        @"卡顿检测",
-        @"网络诊断",
-        @"获取堆栈日志",
-        @"面向协议编程~"
-    ];
+- (NSString *)github {
+    return @"This is a required method, concrete class must override me.";
 }
 
+@end
+
+// Concrete Class
+@interface Forkingdog : NSObject <Forkable>
+
+@end
+
+@implementation Forkingdog
+
+- (NSString *)github {
+    return @"https://github.com/forkingdog";
+}
+@end
+
+
+@interface WGBProtocolKitDemoViewController ()
+
+@end
+
+@implementation WGBProtocolKitDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    self.view.backgroundColor = [UIColor colorWithRed:arc4random()%256/255.0f green:arc4random()%256/255.0f  blue:arc4random()%256/255.0f alpha:1.0f];
+    [[Forkingdog new] fork];
 }
 
 @end

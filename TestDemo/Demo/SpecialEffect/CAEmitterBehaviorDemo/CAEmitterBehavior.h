@@ -10,7 +10,7 @@
    Copyright (c) 2013 Apple Inc.
    All rights reserved. */
 
-//此乃苹果私有API
+//此乃苹果私有API 参考 https://github.com/Lves/CAEmitterBehaviorDemo
 
 #import <QuartzCore/CALayer.h>
 

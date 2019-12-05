@@ -23,7 +23,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     
-    UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
+    UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(100, 400, 100, 100)];
     testView.backgroundColor = [UIColor cyanColor];
     [self.view addSubview: testView];
     self.testView = testView;
@@ -32,6 +32,7 @@
     
     [self addShadow];
     [self setupAnimation];
+    [self setupScaleAnimation];
 }
 
 
@@ -56,6 +57,22 @@
     animation.removedOnCompletion = NO;
     animation.repeatCount = INFINITY;
     [self.testView.layer addAnimation: animation forKey:@"glowingAnimation"];
+}
+
+- (void)setupScaleAnimation{
+    UIView *demoView = [[UIView alloc] initWithFrame:CGRectMake(200, 200, 100, 100)];
+    demoView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview: demoView];
+    
+    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    scaleAnimation.duration = 1.0f;
+    scaleAnimation.fromValue = @(1.0);
+    scaleAnimation.toValue = @(1.3);
+    scaleAnimation.repeatCount = MAXFLOAT;
+    scaleAnimation.autoreverses = YES;
+    scaleAnimation.removedOnCompletion = NO;
+    scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [demoView.layer addAnimation:scaleAnimation forKey:@"scaleAnimationDemo"];
 }
 
 

@@ -55,7 +55,7 @@ THE SOFTWARE.
 
 - (NSArray *)demoTitleArray{
     return @[
-             @"发光动画",
+             @"发光放大缩小动画",
              @"炸裂动画",
              @"Spring弹性动画",
              @"点赞动画"

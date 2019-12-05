@@ -19,6 +19,8 @@
 		04083E32237FB72C002702C6 /* XDAppFluencyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E30237FB72C002702C6 /* XDAppFluencyMonitor.m */; };
 		04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */; };
 		04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */; };
+		0408B8DD2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408B8DC2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m */; };
+		0408B8E22398A2140032C2A3 /* PKProtocolExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408B8DF2398A2140032C2A3 /* PKProtocolExtension.m */; };
 		040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A786D238C03A100E1D2B7 /* LBXPermissionSetting.m */; };
 		040A7874238C03A100E1D2B7 /* LBXPermissionPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A786E238C03A100E1D2B7 /* LBXPermissionPhotos.m */; };
 		040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A786F238C03A100E1D2B7 /* LBXPermissionCamera.m */; };
@@ -177,6 +179,11 @@
 		04083E34237FB73D002702C6 /* AppFluencyMonitorTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFluencyMonitorTestViewController.h; sourceTree = "<group>"; };
 		04083E35237FB73D002702C6 /* AppFluencyMonitorTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppFluencyMonitorTestViewController.m; sourceTree = "<group>"; };
 		04083E3D237FD6C4002702C6 /* XDMachThreadBacktrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XDMachThreadBacktrace.c; sourceTree = "<group>"; };
+		0408B8DB2398A2090032C2A3 /* WGBProtocolKitDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBProtocolKitDemoViewController.h; sourceTree = "<group>"; };
+		0408B8DC2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBProtocolKitDemoViewController.m; sourceTree = "<group>"; };
+		0408B8DF2398A2140032C2A3 /* PKProtocolExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKProtocolExtension.m; sourceTree = "<group>"; };
+		0408B8E02398A2140032C2A3 /* PKProtocolExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKProtocolExtension.h; sourceTree = "<group>"; };
+		0408B8E12398A2140032C2A3 /* ProtocolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolKit.h; sourceTree = "<group>"; };
 		040A786B238C03A100E1D2B7 /* LBXPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermission.h; sourceTree = "<group>"; };
 		040A786C238C03A100E1D2B7 /* LBXPermissionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermissionCamera.h; sourceTree = "<group>"; };
 		040A786D238C03A100E1D2B7 /* LBXPermissionSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionSetting.m; sourceTree = "<group>"; };
@@ -508,6 +515,26 @@
 				04083E2F237FB72C002702C6 /* XDMachThreadBacktrace.h */,
 			);
 			path = AppFluencyMonitor;
+			sourceTree = "<group>";
+		};
+		0408B8DA2398A1ED0032C2A3 /* ProtocolKit */ = {
+			isa = PBXGroup;
+			children = (
+				0408B8DE2398A2140032C2A3 /* ProtocolKit */,
+				0408B8DB2398A2090032C2A3 /* WGBProtocolKitDemoViewController.h */,
+				0408B8DC2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m */,
+			);
+			path = ProtocolKit;
+			sourceTree = "<group>";
+		};
+		0408B8DE2398A2140032C2A3 /* ProtocolKit */ = {
+			isa = PBXGroup;
+			children = (
+				0408B8E02398A2140032C2A3 /* PKProtocolExtension.h */,
+				0408B8DF2398A2140032C2A3 /* PKProtocolExtension.m */,
+				0408B8E12398A2140032C2A3 /* ProtocolKit.h */,
+			);
+			path = ProtocolKit;
 			sourceTree = "<group>";
 		};
 		040A786A238C03A100E1D2B7 /* LBXPermissions */ = {
@@ -1020,6 +1047,7 @@
 		04C3025A2382D6B400356991 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				0408B8DA2398A1ED0032C2A3 /* ProtocolKit */,
 				041D64752384276D00FB5337 /* CallStack */,
 				04C302662382DDCC00356991 /* NetDiagnoService */,
 				04083E2C237FB71A002702C6 /* AppFluencyMonitor */,
@@ -1506,6 +1534,7 @@
 				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
+				0408B8DD2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
 				04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
@@ -1567,6 +1596,7 @@
 				04083E25237FAE44002702C6 /* VCTimeProfiler.m in Sources */,
 				046C5D872382E0E1005A12E4 /* LDNetDiagnoService.m in Sources */,
 				04D704AB238A839700E88123 /* YogaKitAlignItemsViewController.m in Sources */,
+				0408B8E22398A2140032C2A3 /* PKProtocolExtension.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
 				04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */,
 				0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */,
