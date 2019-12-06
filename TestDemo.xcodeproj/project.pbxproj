@@ -64,6 +64,7 @@
 		046D95872399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95862399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m */; };
 		046D958A2399FFEE00D79801 /* PushPopSimpleDemoToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95892399FFEE00D79801 /* PushPopSimpleDemoToViewController.m */; };
 		046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */; };
+		046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D9596239A39DF00D79801 /* TenderCrashHandler.m */; };
 		047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */; };
 		047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */; };
 		047BA6922383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA6912383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m */; };
@@ -266,6 +267,8 @@
 		046D95892399FFEE00D79801 /* PushPopSimpleDemoToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushPopSimpleDemoToViewController.m; sourceTree = "<group>"; };
 		046D958B239A002600D79801 /* WGBPushPopSimpleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPushPopSimpleTransition.h; sourceTree = "<group>"; };
 		046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPushPopSimpleTransition.m; sourceTree = "<group>"; };
+		046D9596239A39DF00D79801 /* TenderCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenderCrashHandler.m; sourceTree = "<group>"; };
+		046D9597239A39DF00D79801 /* TenderCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenderCrashHandler.h; sourceTree = "<group>"; };
 		047BA6892383CE40008B6FC8 /* XDVerticalGradientColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDVerticalGradientColorSlider.h; sourceTree = "<group>"; };
 		047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XDVerticalGradientColorSlider.bundle; sourceTree = "<group>"; };
 		047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDVerticalGradientColorSlider.m; sourceTree = "<group>"; };
@@ -749,6 +752,15 @@
 			path = "Nav-BaseTransition";
 			sourceTree = "<group>";
 		};
+		046D9595239A39DF00D79801 /* TenderCrashHandler */ = {
+			isa = PBXGroup;
+			children = (
+				046D9596239A39DF00D79801 /* TenderCrashHandler.m */,
+				046D9597239A39DF00D79801 /* TenderCrashHandler.h */,
+			);
+			path = TenderCrashHandler;
+			sourceTree = "<group>";
+		};
 		047BA6882383CE40008B6FC8 /* XDVerticalGradientColorSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -805,6 +817,7 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				046D9595239A39DF00D79801 /* TenderCrashHandler */,
 				04AE019A23924F1000B7D0D4 /* CCParallaxView */,
 				040A7883238C0AB600E1D2B7 /* MBProgressHUD */,
 				040A786A238C03A100E1D2B7 /* LBXPermissions */,
@@ -1579,6 +1592,7 @@
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
+				046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */,
 				04D704A8238A7FD500E88123 /* YogaJustifyContentDemoBaseViewController.m in Sources */,
 				041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */,
 				04083E22237FAE44002702C6 /* VCTimeProfilerViewController.m in Sources */,

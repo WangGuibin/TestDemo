@@ -56,6 +56,12 @@ THE SOFTWARE.
     [self.view addSubview:button];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.pushPopAnimator = nil;
+    self.navigationController.delegate = nil;
+}
+
 - (void)gotoNextVC{
     self.navigationController.delegate = self;
     PushPopSimpleDemoToViewController *toVC = [PushPopSimpleDemoToViewController new];

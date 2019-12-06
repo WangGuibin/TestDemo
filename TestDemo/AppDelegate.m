@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "VCTimeProfiler.h"
 #import "XDAppFluencyMonitor.h"
+#import "TenderCrashHandler.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,7 @@
     //页面耗时统计
     [[VCTimeProfiler shared] start];
     [[XDAppFluencyMonitor sharedInstance] startMonitoring];
-
+    RegisterTenderCrashHandler();
     return YES;
 }
 
