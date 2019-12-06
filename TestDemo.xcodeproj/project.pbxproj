@@ -60,6 +60,10 @@
 		046C5D872382E0E1005A12E4 /* LDNetDiagnoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C5D7D2382E0E1005A12E4 /* LDNetDiagnoService.m */; };
 		046C5D882382E0E1005A12E4 /* LDNetConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C5D812382E0E1005A12E4 /* LDNetConnect.m */; };
 		046C5D8A2382E159005A12E4 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 046C5D892382E159005A12E4 /* libresolv.9.tbd */; };
+		046D95832399FF4000D79801 /* WGBTransitionDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95822399FF4000D79801 /* WGBTransitionDemoListViewController.m */; };
+		046D95872399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95862399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m */; };
+		046D958A2399FFEE00D79801 /* PushPopSimpleDemoToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95892399FFEE00D79801 /* PushPopSimpleDemoToViewController.m */; };
+		046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */; };
 		047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */; };
 		047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */; };
 		047BA6922383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA6912383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m */; };
@@ -254,6 +258,14 @@
 		046C5D802382E0E1005A12E4 /* LDNetPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetPing.h; sourceTree = "<group>"; };
 		046C5D812382E0E1005A12E4 /* LDNetConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetConnect.m; sourceTree = "<group>"; };
 		046C5D892382E159005A12E4 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		046D95812399FF4000D79801 /* WGBTransitionDemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTransitionDemoListViewController.h; sourceTree = "<group>"; };
+		046D95822399FF4000D79801 /* WGBTransitionDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTransitionDemoListViewController.m; sourceTree = "<group>"; };
+		046D95852399FFDE00D79801 /* PushPopSimpleDemoFromViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushPopSimpleDemoFromViewController.h; sourceTree = "<group>"; };
+		046D95862399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushPopSimpleDemoFromViewController.m; sourceTree = "<group>"; };
+		046D95882399FFEE00D79801 /* PushPopSimpleDemoToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushPopSimpleDemoToViewController.h; sourceTree = "<group>"; };
+		046D95892399FFEE00D79801 /* PushPopSimpleDemoToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushPopSimpleDemoToViewController.m; sourceTree = "<group>"; };
+		046D958B239A002600D79801 /* WGBPushPopSimpleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPushPopSimpleTransition.h; sourceTree = "<group>"; };
+		046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPushPopSimpleTransition.m; sourceTree = "<group>"; };
 		047BA6892383CE40008B6FC8 /* XDVerticalGradientColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDVerticalGradientColorSlider.h; sourceTree = "<group>"; };
 		047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XDVerticalGradientColorSlider.bundle; sourceTree = "<group>"; };
 		047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDVerticalGradientColorSlider.m; sourceTree = "<group>"; };
@@ -714,6 +726,29 @@
 			path = LDNetDiagnoService;
 			sourceTree = "<group>";
 		};
+		046D95802399FEF200D79801 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				046D95842399FF4C00D79801 /* Nav-BaseTransition */,
+				046D95812399FF4000D79801 /* WGBTransitionDemoListViewController.h */,
+				046D95822399FF4000D79801 /* WGBTransitionDemoListViewController.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		046D95842399FF4C00D79801 /* Nav-BaseTransition */ = {
+			isa = PBXGroup;
+			children = (
+				046D95852399FFDE00D79801 /* PushPopSimpleDemoFromViewController.h */,
+				046D95862399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m */,
+				046D95882399FFEE00D79801 /* PushPopSimpleDemoToViewController.h */,
+				046D95892399FFEE00D79801 /* PushPopSimpleDemoToViewController.m */,
+				046D958B239A002600D79801 /* WGBPushPopSimpleTransition.h */,
+				046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */,
+			);
+			path = "Nav-BaseTransition";
+			sourceTree = "<group>";
+		};
 		047BA6882383CE40008B6FC8 /* XDVerticalGradientColorSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -1011,6 +1046,7 @@
 		04C302482382D19500356991 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				046D95802399FEF200D79801 /* Transition */,
 				04AE01BB2394B1D700B7D0D4 /* LikeAnimation */,
 				04F50724238FF1CE000D2DFB /* Spring */,
 				04C302532382D55800356991 /* BoomBoomBoom */,
@@ -1513,9 +1549,11 @@
 				04C302612382D7B500356991 /* AlertDemoViewController.m in Sources */,
 				04D704AF238A83F900E88123 /* YogaKitAlignItemsDemoViewController.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
+				046D95872399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m in Sources */,
 				04BF7A35237FD8F2003D99CF /* Constants.m in Sources */,
 				04083E32237FB72C002702C6 /* XDAppFluencyMonitor.m in Sources */,
 				04D7049C238A73B100E88123 /* YogaKitFlexDirectionDemoSubViewController.m in Sources */,
+				046D958A2399FFEE00D79801 /* PushPopSimpleDemoToViewController.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
 				047BA6962383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m in Sources */,
 				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
@@ -1549,7 +1587,9 @@
 				04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
+				046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */,
 				04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */,
+				046D95832399FF4000D79801 /* WGBTransitionDemoListViewController.m in Sources */,
 				04C302652382DA7300356991 /* LayoutDemoListViewController.m in Sources */,
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,

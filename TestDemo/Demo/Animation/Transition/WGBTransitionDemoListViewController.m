@@ -1,12 +1,12 @@
 //
-// AnimationDemoViewController.m
+// WGBTransitionDemoListViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/12/6
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,37 +31,25 @@ THE SOFTWARE.
 */
     
 
-#import "AnimationDemoViewController.h"
-#import "GlowingAnimationDemoViewController.h"
-#import "BoomBoomBoomAnimationDemoViewController.h"
-#import "WGBSpringAnimationDemoViewController.h"
-#import "WGBLikeAnimationDemoViewController.h"
-#import "WGBTransitionDemoListViewController.h" 
+#import "WGBTransitionDemoListViewController.h"
+#import "PushPopSimpleDemoFromViewController.h"
 
-@interface AnimationDemoViewController ()
+@interface WGBTransitionDemoListViewController ()
 
 @end
 
-@implementation AnimationDemoViewController
+@implementation WGBTransitionDemoListViewController
 
 - (NSArray<Class> *)demoClassArray{
     return @[
-        [WGBTransitionDemoListViewController class],
-        [GlowingAnimationDemoViewController class],
-        [BoomBoomBoomAnimationDemoViewController class],
-        [WGBSpringAnimationDemoViewController class],
-        [WGBLikeAnimationDemoViewController class]
-     ];
+        [PushPopSimpleDemoFromViewController class]
+    ];
 }
 
 
 - (NSArray *)demoTitleArray{
     return @[
-        @"转场动画",
-        @"发光放大缩小动画",
-        @"炸裂动画",
-        @"Spring弹性动画",
-        @"点赞动画"
+        @"基本操作-简称基操",
     ];
 }
 
@@ -76,14 +64,5 @@ THE SOFTWARE.
     [self.tableView reloadData];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
