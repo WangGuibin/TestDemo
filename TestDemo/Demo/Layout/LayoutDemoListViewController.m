@@ -37,6 +37,7 @@ THE SOFTWARE.
 #import "YYTextDemoViewController.h"
 #import "YogaKitDemoViewController.h"
 #import "WGBShowCollectionLayoutListDemoViewController.h"
+#import "WGBHighLightLabelViewController.h"
 
 
 @interface LayoutDemoListViewController ()
@@ -51,7 +52,8 @@ THE SOFTWARE.
         [NSLayoutAnchorDemoViewController class],
         [YYTextDemoViewController class],
         [YogaKitDemoViewController class],
-        [WGBShowCollectionLayoutListDemoViewController class]
+        [WGBShowCollectionLayoutListDemoViewController class],
+        [WGBHighLightLabelViewController class]
     ];
 }
 
@@ -62,7 +64,8 @@ THE SOFTWARE.
         @"iOS 布局约束`NSLayoutAnchor`学习",
         @"YYTextDemoViewController测试学习",
         @"YogaKit Demo (FlexBox布局)",
-        @"collectionView布局"
+        @"collectionView布局",
+        @"UILabel高亮文字点击"
     ];
 }
 

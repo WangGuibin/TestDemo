@@ -14,6 +14,7 @@ target 'TestDemo' do
   pod 'ReactiveObjC','~>3.1.1'
   pod 'AFNetworking'
   pod 'SDWebImage'
+  pod 'MJRefresh'
   pod 'Masonry'
   pod 'IQKeyboardManager'
   pod 'TZImagePickerController'

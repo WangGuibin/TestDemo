@@ -62,7 +62,7 @@ THE SOFTWARE.
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.tableView reloadData];
+    
 }
-
 
 @end

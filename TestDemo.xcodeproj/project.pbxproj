@@ -65,6 +65,9 @@
 		046D958A2399FFEE00D79801 /* PushPopSimpleDemoToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95892399FFEE00D79801 /* PushPopSimpleDemoToViewController.m */; };
 		046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */; };
 		046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D9596239A39DF00D79801 /* TenderCrashHandler.m */; };
+		046D95A8239B4CD600D79801 /* WGBHighLightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95A7239B4CD600D79801 /* WGBHighLightLabelViewController.m */; };
+		046D95AB239B4D0200D79801 /* UILabel+WGBStringAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95AA239B4D0200D79801 /* UILabel+WGBStringAction.m */; };
+		046D95AF239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95AE239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m */; };
 		047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */; };
 		047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */; };
 		047BA6922383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BA6912383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m */; };
@@ -269,6 +272,12 @@
 		046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPushPopSimpleTransition.m; sourceTree = "<group>"; };
 		046D9596239A39DF00D79801 /* TenderCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenderCrashHandler.m; sourceTree = "<group>"; };
 		046D9597239A39DF00D79801 /* TenderCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenderCrashHandler.h; sourceTree = "<group>"; };
+		046D95A6239B4CD600D79801 /* WGBHighLightLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHighLightLabelViewController.h; sourceTree = "<group>"; };
+		046D95A7239B4CD600D79801 /* WGBHighLightLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHighLightLabelViewController.m; sourceTree = "<group>"; };
+		046D95A9239B4D0200D79801 /* UILabel+WGBStringAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+WGBStringAction.h"; sourceTree = "<group>"; };
+		046D95AA239B4D0200D79801 /* UILabel+WGBStringAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WGBStringAction.m"; sourceTree = "<group>"; };
+		046D95AD239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPreLoadDataLogicDemoViewController.h; sourceTree = "<group>"; };
+		046D95AE239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPreLoadDataLogicDemoViewController.m; sourceTree = "<group>"; };
 		047BA6892383CE40008B6FC8 /* XDVerticalGradientColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDVerticalGradientColorSlider.h; sourceTree = "<group>"; };
 		047BA68B2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XDVerticalGradientColorSlider.bundle; sourceTree = "<group>"; };
 		047BA68C2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDVerticalGradientColorSlider.m; sourceTree = "<group>"; };
@@ -761,6 +770,26 @@
 			path = TenderCrashHandler;
 			sourceTree = "<group>";
 		};
+		046D95A5239B4C8C00D79801 /* HighLightLabel */ = {
+			isa = PBXGroup;
+			children = (
+				046D95A6239B4CD600D79801 /* WGBHighLightLabelViewController.h */,
+				046D95A7239B4CD600D79801 /* WGBHighLightLabelViewController.m */,
+				046D95A9239B4D0200D79801 /* UILabel+WGBStringAction.h */,
+				046D95AA239B4D0200D79801 /* UILabel+WGBStringAction.m */,
+			);
+			path = HighLightLabel;
+			sourceTree = "<group>";
+		};
+		046D95AC239B539C00D79801 /* WGBPreLoadDataLogic */ = {
+			isa = PBXGroup;
+			children = (
+				046D95AD239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.h */,
+				046D95AE239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m */,
+			);
+			path = WGBPreLoadDataLogic;
+			sourceTree = "<group>";
+		};
 		047BA6882383CE40008B6FC8 /* XDVerticalGradientColorSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -1073,6 +1102,7 @@
 		04C3024F2382D41F00356991 /* TableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				046D95AC239B539C00D79801 /* WGBPreLoadDataLogic */,
 				04F914EA2375997E006E8B77 /* UITableViewSigleSelection */,
 				0453FDC5236C343000D8B2A5 /* UITableViewMultipleSelection */,
 				0453FDBC236C2B4C00D8B2A5 /* TableViewCustomDeleteButton */,
@@ -1124,6 +1154,7 @@
 		04C302622382DA5800356991 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				046D95A5239B4C8C00D79801 /* HighLightLabel */,
 				04D704842389427200E88123 /* CollectionLayout */,
 				04F9150323769E26006E8B77 /* YogaKitDemo */,
 				0439C9EA234C93F100E9D9AB /* YYText */,
@@ -1541,6 +1572,7 @@
 				0454E5C123891AFB0000D62C /* WGBRankBaseViewController.m in Sources */,
 				04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */,
 				04B0CA882340C5C4007B2AD2 /* WGBRewardAlertView.m in Sources */,
+				046D95A8239B4CD600D79801 /* WGBHighLightLabelViewController.m in Sources */,
 				0454E5C823891B790000D62C /* JXCategoryDemoViewController.m in Sources */,
 				040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
@@ -1558,6 +1590,7 @@
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
+				046D95AF239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m in Sources */,
 				0454E5C523891B340000D62C /* WGBRankSubViewController.m in Sources */,
 				04C302612382D7B500356991 /* AlertDemoViewController.m in Sources */,
 				04D704AF238A83F900E88123 /* YogaKitAlignItemsDemoViewController.m in Sources */,
@@ -1641,6 +1674,7 @@
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				04D70498238A737F00E88123 /* YogaKitFlexDirectionDemoViewController.m in Sources */,
+				046D95AB239B4D0200D79801 /* UILabel+WGBStringAction.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m in Sources */,
 				046C5D832382E0E1005A12E4 /* LDNetTimer.m in Sources */,
 				0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */,
