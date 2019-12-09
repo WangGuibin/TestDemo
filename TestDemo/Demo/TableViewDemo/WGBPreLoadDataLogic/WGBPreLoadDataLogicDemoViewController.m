@@ -38,7 +38,6 @@ THE SOFTWARE.
 #define kDataMaxCount 100
 @interface WGBPreLoadDataLogicDemoViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic,assign) NSInteger page;
 

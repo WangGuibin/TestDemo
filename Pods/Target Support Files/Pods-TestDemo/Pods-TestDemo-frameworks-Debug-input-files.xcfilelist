@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-TestDemo/Pods-TestDemo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/IMYAOPTableView/IMYAOPTableView.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework
 ${BUILT_PRODUCTS_DIR}/JXPagingView/JXPagingView.framework

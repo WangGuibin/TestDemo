@@ -29,7 +29,8 @@ target 'TestDemo' do
   #标签栏组件
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager'
-  
+  #AOP切面编程
+  pod 'IMYAOPTableView'
   #扫描二维码
   pod 'LBXScan/LBXZXing','~> 2.3'
   pod 'LBXScan/UI','~> 2.3'

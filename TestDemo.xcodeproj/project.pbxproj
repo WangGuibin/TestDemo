@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04034BBF239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04034BBE239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m */; };
+		04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04034BC1239E96210063E0A5 /* IMYAOPTableDemo.m */; };
+		04034BC4239E969A0063E0A5 /* aop_ad_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04034BC3239E96990063E0A5 /* aop_ad_image.jpeg */; };
 		04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */; };
 		04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E12237FAE1B002702C6 /* XDZombieProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E14237FAE1B002702C6 /* XDZombieDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -169,6 +172,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04034BBD239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAOPTableViewDemoViewController.h; sourceTree = "<group>"; };
+		04034BBE239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBAOPTableViewDemoViewController.m; sourceTree = "<group>"; };
+		04034BC0239E96210063E0A5 /* IMYAOPTableDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMYAOPTableDemo.h; sourceTree = "<group>"; };
+		04034BC1239E96210063E0A5 /* IMYAOPTableDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMYAOPTableDemo.m; sourceTree = "<group>"; };
+		04034BC3239E96990063E0A5 /* aop_ad_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aop_ad_image.jpeg; sourceTree = "<group>"; };
 		04083DD1237C3E2C002702C6 /* YogaScrollViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaScrollViewDemoViewController.h; sourceTree = "<group>"; };
 		04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaScrollViewDemoViewController.m; sourceTree = "<group>"; };
 		04083E11237FAE1B002702C6 /* XDZombieDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDZombieDetector.h; sourceTree = "<group>"; };
@@ -484,6 +492,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04034BBC239E94EC0063E0A5 /* AOP */ = {
+			isa = PBXGroup;
+			children = (
+				04034BC3239E96990063E0A5 /* aop_ad_image.jpeg */,
+				04034BBD239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.h */,
+				04034BBE239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m */,
+				04034BC0239E96210063E0A5 /* IMYAOPTableDemo.h */,
+				04034BC1239E96210063E0A5 /* IMYAOPTableDemo.m */,
+			);
+			path = AOP;
+			sourceTree = "<group>";
+		};
 		04083E10237FAE1B002702C6 /* XDZombieDetector */ = {
 			isa = PBXGroup;
 			children = (
@@ -1117,6 +1137,7 @@
 		04C3024F2382D41F00356991 /* TableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04034BBC239E94EC0063E0A5 /* AOP */,
 				046D95AC239B539C00D79801 /* WGBPreLoadDataLogic */,
 				04F914EA2375997E006E8B77 /* UITableViewSigleSelection */,
 				0453FDC5236C343000D8B2A5 /* UITableViewMultipleSelection */,
@@ -1545,6 +1566,7 @@
 				04AE01A623924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.xib in Resources */,
 				04AE01AA2392502100B7D0D4 /* bird1.png in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
+				04034BC4239E969A0063E0A5 /* aop_ad_image.jpeg in Resources */,
 				047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */,
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
 				04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */,
@@ -1692,6 +1714,7 @@
 				04C302652382DA7300356991 /* LayoutDemoListViewController.m in Sources */,
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
+				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
 				04C4393C239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m in Sources */,
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
@@ -1712,6 +1735,7 @@
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */,
 				04D70495238950B900E88123 /* WGBZoomScaleFlowLayout.m in Sources */,
+				04034BBF239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m in Sources */,
 				04C43935239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m in Sources */,
 				04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,

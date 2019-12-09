@@ -1,0 +1,6 @@
+framework module IMYAOPTableView {
+  umbrella header "IMYAOPTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

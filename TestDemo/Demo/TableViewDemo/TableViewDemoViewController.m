@@ -36,6 +36,7 @@ THE SOFTWARE.
 #import "TableViewMultipleSelectionDemoViewController.h"
 #import "TableViewSigleSelectionViewController.h"
 #import "WGBPreLoadDataLogicDemoViewController.h"
+#import "WGBAOPTableViewDemoViewController.h"
 
 @interface TableViewDemoViewController ()
 
@@ -48,7 +49,8 @@ THE SOFTWARE.
         [TableViewMultipleSelectionDemoViewController class],
         [TableViewSigleSelectionViewController class],
         [TableViewCustomDeleteButtonDemoViewController class],
-        [WGBPreLoadDataLogicDemoViewController class]
+        [WGBPreLoadDataLogicDemoViewController class],
+        [WGBAOPTableViewDemoViewController class]
      ];
 }
 
@@ -58,7 +60,8 @@ THE SOFTWARE.
         @"tableView多选",
         @"tableView单选",
         @"tableView自定义删除按钮",
-        @"智能预加载基本逻辑"
+        @"智能预加载基本逻辑",
+        @"AOP切面编程"
     ];
 }
 
