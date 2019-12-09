@@ -1,12 +1,12 @@
 //
-// LayoutDemoListViewController.m
+// WGBFloatViewDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/12/9
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,53 +31,30 @@ THE SOFTWARE.
 */
     
 
-#import "LayoutDemoListViewController.h"
-#import "WGBRepairedOrientationLabelDemoViewController.h"
-#import "NSLayoutAnchorDemoViewController.h"
-#import "YYTextDemoViewController.h"
-#import "YogaKitDemoViewController.h"
-#import "WGBShowCollectionLayoutListDemoViewController.h"
-#import "WGBHighLightLabelViewController.h"
 #import "WGBFloatViewDemoViewController.h"
+#import "WGBFloatView.h"
+
+@interface WGBFloatViewDemoViewController ()
 
 
-@interface LayoutDemoListViewController ()
 
 @end
 
-@implementation LayoutDemoListViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBRepairedOrientationLabelDemoViewController class], 
-        [NSLayoutAnchorDemoViewController class],
-        [YYTextDemoViewController class],
-        [YogaKitDemoViewController class],
-        [WGBShowCollectionLayoutListDemoViewController class],
-        [WGBHighLightLabelViewController class],
-        [WGBFloatViewDemoViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"WGBRepairedOrientationLabel",
-        @"iOS 布局约束`NSLayoutAnchor`学习",
-        @"YYTextDemoViewController测试学习",
-        @"YogaKit Demo (FlexBox布局)",
-        @"collectionView布局",
-        @"UILabel高亮文字点击",
-        @"类似苹果的小圆点---漂浮的View"
-    ];
-}
-
+@implementation WGBFloatViewDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    [self testFloatView];
 }
+
+- (void)testFloatView{
+    WGBFloatView *floatView = [[WGBFloatView alloc] initWithFrame:CGRectMake(KWIDTH - 50, 200, 50 , 50)];
+    floatView.backgroundColor = [UIColor orangeColor];
+    ViewRadius(floatView, 25);
+    [self.view addSubview:floatView];
+}
+
 
 @end

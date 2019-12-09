@@ -119,6 +119,11 @@
 		04C302612382D7B500356991 /* AlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C302602382D7B500356991 /* AlertDemoViewController.m */; };
 		04C302652382DA7300356991 /* LayoutDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C302642382DA7300356991 /* LayoutDemoListViewController.m */; };
 		04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C302682382DDDC00356991 /* NetDiagnoServiceDemoViewController.m */; };
+		04C43935239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C43934239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m */; };
+		04C43938239E519800A8BEC0 /* WGBFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C43937239E519800A8BEC0 /* WGBFloatView.m */; };
+		04C4393C239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4393B239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m */; };
+		04C43940239E55E100A8BEC0 /* WGBDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4393F239E55E100A8BEC0 /* WGBDatePickerViewController.m */; };
+		04C43943239E55F400A8BEC0 /* WGBTitlePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C43942239E55F400A8BEC0 /* WGBTitlePickerViewController.m */; };
 		04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6B235F083600A8671B /* WGBGradientProgressDemoViewController.m */; };
 		04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C5CF6F235F08D500A8671B /* WGBGradientProgressView.m */; };
 		04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA01EB23517BC0009C8C22 /* HPSelectSexAlertView.xib */; };
@@ -374,6 +379,16 @@
 		04C302642382DA7300356991 /* LayoutDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutDemoListViewController.m; sourceTree = "<group>"; };
 		04C302672382DDDC00356991 /* NetDiagnoServiceDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDiagnoServiceDemoViewController.h; sourceTree = "<group>"; };
 		04C302682382DDDC00356991 /* NetDiagnoServiceDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetDiagnoServiceDemoViewController.m; sourceTree = "<group>"; };
+		04C43933239E517B00A8BEC0 /* WGBFloatViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBFloatViewDemoViewController.h; sourceTree = "<group>"; };
+		04C43934239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFloatViewDemoViewController.m; sourceTree = "<group>"; };
+		04C43936239E519800A8BEC0 /* WGBFloatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBFloatView.h; sourceTree = "<group>"; };
+		04C43937239E519800A8BEC0 /* WGBFloatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFloatView.m; sourceTree = "<group>"; };
+		04C4393A239E558400A8BEC0 /* WGBPresentAlertDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPresentAlertDemoViewController.h; sourceTree = "<group>"; };
+		04C4393B239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPresentAlertDemoViewController.m; sourceTree = "<group>"; };
+		04C4393E239E55E100A8BEC0 /* WGBDatePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDatePickerViewController.h; sourceTree = "<group>"; };
+		04C4393F239E55E100A8BEC0 /* WGBDatePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDatePickerViewController.m; sourceTree = "<group>"; };
+		04C43941239E55F400A8BEC0 /* WGBTitlePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTitlePickerViewController.h; sourceTree = "<group>"; };
+		04C43942239E55F400A8BEC0 /* WGBTitlePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTitlePickerViewController.m; sourceTree = "<group>"; };
 		04C5CF6A235F083600A8671B /* WGBGradientProgressDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientProgressDemoViewController.h; sourceTree = "<group>"; };
 		04C5CF6B235F083600A8671B /* WGBGradientProgressDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGradientProgressDemoViewController.m; sourceTree = "<group>"; };
 		04C5CF6E235F08D500A8671B /* WGBGradientProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientProgressView.h; sourceTree = "<group>"; };
@@ -1140,6 +1155,7 @@
 		04C3025E2382D7A100356991 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				04C43939239E54B700A8BEC0 /* PresentAlert */,
 				048600CD236341ED00B63EDE /* Popver */,
 				04A78F7A2361B99F00915493 /* MaskLayer */,
 				047F05E82358C0B60009301D /* FSPopDialogViewController */,
@@ -1154,6 +1170,7 @@
 		04C302622382DA5800356991 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				04C43932239E515A00A8BEC0 /* FloatView */,
 				046D95A5239B4C8C00D79801 /* HighLightLabel */,
 				04D704842389427200E88123 /* CollectionLayout */,
 				04F9150323769E26006E8B77 /* YogaKitDemo */,
@@ -1173,6 +1190,38 @@
 				04C302682382DDDC00356991 /* NetDiagnoServiceDemoViewController.m */,
 			);
 			path = NetDiagnoService;
+			sourceTree = "<group>";
+		};
+		04C43932239E515A00A8BEC0 /* FloatView */ = {
+			isa = PBXGroup;
+			children = (
+				04C43933239E517B00A8BEC0 /* WGBFloatViewDemoViewController.h */,
+				04C43934239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m */,
+				04C43936239E519800A8BEC0 /* WGBFloatView.h */,
+				04C43937239E519800A8BEC0 /* WGBFloatView.m */,
+			);
+			path = FloatView;
+			sourceTree = "<group>";
+		};
+		04C43939239E54B700A8BEC0 /* PresentAlert */ = {
+			isa = PBXGroup;
+			children = (
+				04C4393D239E55CA00A8BEC0 /* Piceker */,
+				04C4393A239E558400A8BEC0 /* WGBPresentAlertDemoViewController.h */,
+				04C4393B239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m */,
+			);
+			path = PresentAlert;
+			sourceTree = "<group>";
+		};
+		04C4393D239E55CA00A8BEC0 /* Piceker */ = {
+			isa = PBXGroup;
+			children = (
+				04C4393E239E55E100A8BEC0 /* WGBDatePickerViewController.h */,
+				04C4393F239E55E100A8BEC0 /* WGBDatePickerViewController.m */,
+				04C43941239E55F400A8BEC0 /* WGBTitlePickerViewController.h */,
+				04C43942239E55F400A8BEC0 /* WGBTitlePickerViewController.m */,
+			);
+			path = Piceker;
 			sourceTree = "<group>";
 		};
 		04C5CF69235F07EB00A8671B /* GradientProgress */ = {
@@ -1606,6 +1655,7 @@
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
+				04C43940239E55E100A8BEC0 /* WGBDatePickerViewController.m in Sources */,
 				04C302592382D5B300356991 /* UIView+BoomBoomBoom.m in Sources */,
 				04AE01C12394B26100B7D0D4 /* GXUpvoteButton.m in Sources */,
 				04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */,
@@ -1618,12 +1668,14 @@
 				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
+				04C43943239E55F400A8BEC0 /* WGBTitlePickerViewController.m in Sources */,
 				0408B8DD2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
 				04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
+				04C43938239E519800A8BEC0 /* WGBFloatView.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
 				046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */,
 				04D704A8238A7FD500E88123 /* YogaJustifyContentDemoBaseViewController.m in Sources */,
@@ -1641,6 +1693,7 @@
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
+				04C4393C239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m in Sources */,
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
 				040A787D238C051900E1D2B7 /* DIYScanViewController.m in Sources */,
 				048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */,
@@ -1659,6 +1712,7 @@
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */,
 				04D70495238950B900E88123 /* WGBZoomScaleFlowLayout.m in Sources */,
+				04C43935239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m in Sources */,
 				04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,

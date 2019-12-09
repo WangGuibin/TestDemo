@@ -37,6 +37,7 @@ THE SOFTWARE.
 #import "WGBCommonAlertSheetViewDemoViewController.h"
 #import "WGBMaskDemoViewController.h"
 #import "PopverDemoViewController.h"
+#import "WGBPresentAlertDemoViewController.h"
 
 @interface AlertDemoViewController ()
 
@@ -51,7 +52,7 @@ THE SOFTWARE.
         [WGBCommonAlertSheetViewDemoViewController class],
         [WGBMaskDemoViewController class],
         [PopverDemoViewController class],
-
+        [WGBPresentAlertDemoViewController class]
     ];
 }
 
@@ -63,7 +64,7 @@ THE SOFTWARE.
         @"WGBCommonAlertSheetView仿抖音评论",
         @"mask使用",
         @"系统`UIPopoverPresentationController`带箭头弹窗",
-
+        @"利用VC present转场做弹窗"
     ];
 }
 
