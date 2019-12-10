@@ -1,12 +1,12 @@
 //
-// WGBTransitionDemoListViewController.m
+// WGBTestCATransitionDemoViewController.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/6
+// Created by CoderWGB on 2019/12/10
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,41 +31,14 @@ THE SOFTWARE.
 */
     
 
-#import "WGBTransitionDemoListViewController.h"
-#import "PushPopSimpleDemoFromViewController.h"
-#import "WGBCATransitionAnimationTypeDemoViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface WGBTransitionDemoListViewController ()
+NS_ASSUME_NONNULL_BEGIN
 
-@end
+@interface WGBTestCATransitionDemoViewController : UIViewController
 
-@implementation WGBTransitionDemoListViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [PushPopSimpleDemoFromViewController class],
-        [WGBCATransitionAnimationTypeDemoViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"基本操作-简称基操",
-        @"CATransition转场"
-    ];
-}
-
-//UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 3.0, options: UIView.AnimationOptions.curveEaseInOut, animations: ({
-//    // do stuff
-//}), completion: nil)
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
-    
-}
+@property (nonatomic,assign) WGBTransitionAnimationSubType subType;
 
 @end
+
+NS_ASSUME_NONNULL_END

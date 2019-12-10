@@ -1,12 +1,12 @@
 //
-// WGBTransitionDemoListViewController.m
+// WGBTestCATransitionDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/6
+// Created by CoderWGB on 2019/12/10
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,41 +31,32 @@ THE SOFTWARE.
 */
     
 
-#import "WGBTransitionDemoListViewController.h"
-#import "PushPopSimpleDemoFromViewController.h"
-#import "WGBCATransitionAnimationTypeDemoViewController.h"
+#import "WGBTestCATransitionDemoViewController.h"
 
-@interface WGBTransitionDemoListViewController ()
+@interface WGBTestCATransitionDemoViewController ()
 
 @end
 
-@implementation WGBTransitionDemoListViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [PushPopSimpleDemoFromViewController class],
-        [WGBCATransitionAnimationTypeDemoViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"基本操作-简称基操",
-        @"CATransition转场"
-    ];
-}
-
-//UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 3.0, options: UIView.AnimationOptions.curveEaseInOut, animations: ({
-//    // do stuff
-//}), completion: nil)
+@implementation WGBTestCATransitionDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
-    
+    CGFloat hue = ( arc4random() % 256 / 256.0 );
+    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;
+    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;
+    UIColor *ranColor = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+    self.view.backgroundColor = ranColor;
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

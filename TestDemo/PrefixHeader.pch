@@ -38,6 +38,7 @@
 #import <LBXScanView.h>
 #import <LBXScanViewController.h>
 #import "MBProgressHUD+MJ.h"
+#import "CATransition+WGBExtension.h"
 
 #endif
 
