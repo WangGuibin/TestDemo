@@ -155,6 +155,17 @@
 		04D704AF238A83F900E88123 /* YogaKitAlignItemsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D704AE238A83F900E88123 /* YogaKitAlignItemsDemoViewController.m */; };
 		04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */; };
 		04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */; };
+		04E890F0239F56320081F833 /* PaletteColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890E1239F56320081F833 /* PaletteColorUtils.m */; };
+		04E890F1239F56320081F833 /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890E2239F56320081F833 /* Palette.m */; };
+		04E890F2239F56320081F833 /* PaletteSwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890E3239F56320081F833 /* PaletteSwatch.m */; };
+		04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890E5239F56320081F833 /* UIImage+Palette.m */; };
+		04E890F4239F56320081F833 /* PaletteColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890EC239F56320081F833 /* PaletteColorModel.m */; };
+		04E890F5239F56320081F833 /* PriorityBoxArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890ED239F56320081F833 /* PriorityBoxArray.m */; };
+		04E890F6239F56320081F833 /* PaletteTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890EE239F56320081F833 /* PaletteTarget.m */; };
+		04E890F9239F56880081F833 /* WGBRecognitionPictureColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890F8239F56880081F833 /* WGBRecognitionPictureColorViewController.m */; };
+		04E890FC239F58B80081F833 /* DemoShowColorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890FB239F58B80081F833 /* DemoShowColorViewCell.m */; };
+		04E89101239F59010081F833 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E890FE239F59010081F833 /* UIView+Geometry.m */; };
+		04E89102239F59010081F833 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E89100239F59010081F833 /* UIColor+Hex.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -450,6 +461,29 @@
 		04DCE459238814E900D380D9 /* WGBPersonEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPersonEffectViewController.m; sourceTree = "<group>"; };
 		04DCE45B2388157B00D380D9 /* WGBPersonEffectNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPersonEffectNavBar.h; sourceTree = "<group>"; };
 		04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPersonEffectNavBar.m; sourceTree = "<group>"; };
+		04E890DF239F56320081F833 /* iOSPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPalette.h; sourceTree = "<group>"; };
+		04E890E1239F56320081F833 /* PaletteColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteColorUtils.m; sourceTree = "<group>"; };
+		04E890E2239F56320081F833 /* Palette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palette.m; sourceTree = "<group>"; };
+		04E890E3239F56320081F833 /* PaletteSwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteSwatch.m; sourceTree = "<group>"; };
+		04E890E4239F56320081F833 /* PriorityBoxArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityBoxArray.h; sourceTree = "<group>"; };
+		04E890E5239F56320081F833 /* UIImage+Palette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Palette.m"; sourceTree = "<group>"; };
+		04E890E6239F56320081F833 /* PaletteTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteTarget.h; sourceTree = "<group>"; };
+		04E890E7239F56320081F833 /* PaletteSwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteSwatch.h; sourceTree = "<group>"; };
+		04E890E8239F56320081F833 /* Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palette.h; sourceTree = "<group>"; };
+		04E890E9239F56320081F833 /* PaletteColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteColorUtils.h; sourceTree = "<group>"; };
+		04E890EB239F56320081F833 /* PaletteColorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteColorModel.h; sourceTree = "<group>"; };
+		04E890EC239F56320081F833 /* PaletteColorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteColorModel.m; sourceTree = "<group>"; };
+		04E890ED239F56320081F833 /* PriorityBoxArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityBoxArray.m; sourceTree = "<group>"; };
+		04E890EE239F56320081F833 /* PaletteTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteTarget.m; sourceTree = "<group>"; };
+		04E890EF239F56320081F833 /* UIImage+Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Palette.h"; sourceTree = "<group>"; };
+		04E890F7239F56880081F833 /* WGBRecognitionPictureColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBRecognitionPictureColorViewController.h; sourceTree = "<group>"; };
+		04E890F8239F56880081F833 /* WGBRecognitionPictureColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRecognitionPictureColorViewController.m; sourceTree = "<group>"; };
+		04E890FA239F58B80081F833 /* DemoShowColorViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoShowColorViewCell.h; sourceTree = "<group>"; };
+		04E890FB239F58B80081F833 /* DemoShowColorViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoShowColorViewCell.m; sourceTree = "<group>"; };
+		04E890FD239F59010081F833 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		04E890FE239F59010081F833 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		04E890FF239F59010081F833 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		04E89100239F59010081F833 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -881,6 +915,7 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04E890DE239F56320081F833 /* iOSPalette */,
 				046D9595239A39DF00D79801 /* TenderCrashHandler */,
 				04AE019A23924F1000B7D0D4 /* CCParallaxView */,
 				040A7883238C0AB600E1D2B7 /* MBProgressHUD */,
@@ -1282,6 +1317,7 @@
 		04D7047323893D9E00E88123 /* SpecialEffect */ = {
 			isa = PBXGroup;
 			children = (
+				04E890DD239F561A0081F833 /* RecognitionPictureColor */,
 				048353B1239750BB00454141 /* CAEmitterBehaviorDemo */,
 				04AE019E23924F2400B7D0D4 /* CCParallaxView */,
 				04AE01962392250400B7D0D4 /* PullScaleEffect */,
@@ -1392,6 +1428,59 @@
 				04DCE45C2388157B00D380D9 /* WGBPersonEffectNavBar.m */,
 			);
 			path = PersonEffect;
+			sourceTree = "<group>";
+		};
+		04E890DD239F561A0081F833 /* RecognitionPictureColor */ = {
+			isa = PBXGroup;
+			children = (
+				04E890F7239F56880081F833 /* WGBRecognitionPictureColorViewController.h */,
+				04E890F8239F56880081F833 /* WGBRecognitionPictureColorViewController.m */,
+				04E890FD239F59010081F833 /* UIColor+Hex.h */,
+				04E89100239F59010081F833 /* UIColor+Hex.m */,
+				04E890FF239F59010081F833 /* UIView+Geometry.h */,
+				04E890FE239F59010081F833 /* UIView+Geometry.m */,
+				04E890FA239F58B80081F833 /* DemoShowColorViewCell.h */,
+				04E890FB239F58B80081F833 /* DemoShowColorViewCell.m */,
+			);
+			path = RecognitionPictureColor;
+			sourceTree = "<group>";
+		};
+		04E890DE239F56320081F833 /* iOSPalette */ = {
+			isa = PBXGroup;
+			children = (
+				04E890DF239F56320081F833 /* iOSPalette.h */,
+				04E890E0239F56320081F833 /* Source */,
+			);
+			path = iOSPalette;
+			sourceTree = "<group>";
+		};
+		04E890E0239F56320081F833 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				04E890EA239F56320081F833 /* Model */,
+				04E890E8239F56320081F833 /* Palette.h */,
+				04E890E2239F56320081F833 /* Palette.m */,
+				04E890E9239F56320081F833 /* PaletteColorUtils.h */,
+				04E890E1239F56320081F833 /* PaletteColorUtils.m */,
+				04E890E7239F56320081F833 /* PaletteSwatch.h */,
+				04E890E3239F56320081F833 /* PaletteSwatch.m */,
+				04E890E6239F56320081F833 /* PaletteTarget.h */,
+				04E890EE239F56320081F833 /* PaletteTarget.m */,
+				04E890E4239F56320081F833 /* PriorityBoxArray.h */,
+				04E890ED239F56320081F833 /* PriorityBoxArray.m */,
+				04E890EF239F56320081F833 /* UIImage+Palette.h */,
+				04E890E5239F56320081F833 /* UIImage+Palette.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		04E890EA239F56320081F833 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E890EB239F56320081F833 /* PaletteColorModel.h */,
+				04E890EC239F56320081F833 /* PaletteColorModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
@@ -1657,8 +1746,10 @@
 				046C5D882382E0E1005A12E4 /* LDNetConnect.m in Sources */,
 				047BA6922383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m in Sources */,
 				04C3024E2382D35800356991 /* AnimationDemoViewController.m in Sources */,
+				04E890F6239F56320081F833 /* PaletteTarget.m in Sources */,
 				047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */,
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
+				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
 				046D95AF239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m in Sources */,
@@ -1668,6 +1759,7 @@
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
 				046D95872399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m in Sources */,
 				04BF7A35237FD8F2003D99CF /* Constants.m in Sources */,
+				04E89102239F59010081F833 /* UIColor+Hex.m in Sources */,
 				04083E32237FB72C002702C6 /* XDAppFluencyMonitor.m in Sources */,
 				04D7049C238A73B100E88123 /* YogaKitFlexDirectionDemoSubViewController.m in Sources */,
 				046D958A2399FFEE00D79801 /* PushPopSimpleDemoToViewController.m in Sources */,
@@ -1684,6 +1776,7 @@
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */,
+				04E890F5239F56320081F833 /* PriorityBoxArray.m in Sources */,
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
 				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,
@@ -1693,10 +1786,13 @@
 				04C43943239E55F400A8BEC0 /* WGBTitlePickerViewController.m in Sources */,
 				0408B8DD2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
+				04E890F9239F56880081F833 /* WGBRecognitionPictureColorViewController.m in Sources */,
 				04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
+				04E890FC239F58B80081F833 /* DemoShowColorViewCell.m in Sources */,
 				047F05F12358C12E0009301D /* FSPopDialogViewController.m in Sources */,
+				04E890F2239F56320081F833 /* PaletteSwatch.m in Sources */,
 				04C43938239E519800A8BEC0 /* WGBFloatView.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
 				046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */,
@@ -1709,6 +1805,7 @@
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
 				046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */,
+				04E890F1239F56320081F833 /* Palette.m in Sources */,
 				04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */,
 				046D95832399FF4000D79801 /* WGBTransitionDemoListViewController.m in Sources */,
 				04C302652382DA7300356991 /* LayoutDemoListViewController.m in Sources */,
@@ -1716,6 +1813,7 @@
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
 				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
+				04E890F4239F56320081F833 /* PaletteColorModel.m in Sources */,
 				04C4393C239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m in Sources */,
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
 				040A787D238C051900E1D2B7 /* DIYScanViewController.m in Sources */,
@@ -1726,6 +1824,7 @@
 				04D70489238942C900E88123 /* MaximumSpacingFlowLayout.m in Sources */,
 				04D7048C2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m in Sources */,
 				040A7887238C0AB600E1D2B7 /* MBProgressHUD+MJ.m in Sources */,
+				04E890F0239F56320081F833 /* PaletteColorUtils.m in Sources */,
 				046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */,
 				04D7048023893ED000E88123 /* UIView+GlowView.m in Sources */,
 				040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */,
@@ -1749,6 +1848,7 @@
 				04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */,
 				04083E24237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m in Sources */,
 				048353B4239750D200454141 /* WGBCAEmitterBehaviorDemoViewController.m in Sources */,
+				04E89101239F59010081F833 /* UIView+Geometry.m in Sources */,
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				04D70498238A737F00E88123 /* YogaKitFlexDirectionDemoViewController.m in Sources */,

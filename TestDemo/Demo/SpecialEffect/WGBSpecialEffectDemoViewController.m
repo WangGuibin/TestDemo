@@ -39,6 +39,7 @@ THE SOFTWARE.
 #import "WGBPullScaleEffectViewController.h"
 #import "WGBCCParallaxViewDemoViewController.h"
 #import "WGBCAEmitterBehaviorDemoViewController.h"
+#import "WGBRecognitionPictureColorViewController.h"
 
 @interface WGBSpecialEffectDemoViewController ()
 
@@ -54,7 +55,8 @@ THE SOFTWARE.
         [WGBCircleMaskLayerEffectViewController class],
         [WGBPullScaleEffectViewController class],
         [WGBCCParallaxViewDemoViewController class],
-        [WGBCAEmitterBehaviorDemoViewController class] 
+        [WGBCAEmitterBehaviorDemoViewController class],
+        [WGBRecognitionPictureColorViewController class]
     ];
 }
 
@@ -67,7 +69,8 @@ THE SOFTWARE.
         @"下拉放大&绘制圆弧效果",
         @"下拉放大",
         @"ParallaxView视差视图",
-        @"粒子五彩飞花效果"
+        @"粒子五彩飞花效果",
+        @"识别图片主色调"
     ];
 }
 
