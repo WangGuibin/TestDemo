@@ -40,6 +40,7 @@ THE SOFTWARE.
 #import "WGBCCParallaxViewDemoViewController.h"
 #import "WGBCAEmitterBehaviorDemoViewController.h"
 #import "WGBRecognitionPictureColorViewController.h"
+#import "WGBTestMenuViewController.h"
 
 @interface WGBSpecialEffectDemoViewController ()
 
@@ -56,7 +57,8 @@ THE SOFTWARE.
         [WGBPullScaleEffectViewController class],
         [WGBCCParallaxViewDemoViewController class],
         [WGBCAEmitterBehaviorDemoViewController class],
-        [WGBRecognitionPictureColorViewController class]
+        [WGBRecognitionPictureColorViewController class],
+        [WGBTestMenuViewController class]
     ];
 }
 
@@ -70,7 +72,8 @@ THE SOFTWARE.
         @"下拉放大",
         @"ParallaxView视差视图",
         @"粒子五彩飞花效果",
-        @"识别图片主色调"
+        @"识别图片主色调",
+        @"抽屉菜单效果"
     ];
 }
 

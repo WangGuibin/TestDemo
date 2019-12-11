@@ -1,5 +1,5 @@
 //
-// WGBCustomNavgationViewController.h
+// WGBLoadingView.h
 // TestDemo
 //
 // Author:  @CoderWGB
@@ -35,9 +35,9 @@ THE SOFTWARE.
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WGBCustomNavgationViewController : UINavigationController
-//默认打开为YES 
-@property (nonatomic,assign) BOOL popGestureEnable;
+@interface WGBLoadingView : UIView
+
+@property (nonatomic,strong) CALayer *loadingLayer;
 
 @end
 

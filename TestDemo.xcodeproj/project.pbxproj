@@ -174,6 +174,10 @@
 		04E8911D23A0A9B80081F833 /* WGBSlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8911C23A0A9B80081F833 /* WGBSlideMenuViewController.m */; };
 		04E8912023A0AA4D0081F833 /* WGBTestMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8911F23A0AA4D0081F833 /* WGBTestMenuViewController.m */; };
 		04E8912423A0E3110081F833 /* NSMutableAttributedString+WGBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8912323A0E3110081F833 /* NSMutableAttributedString+WGBExtension.m */; };
+		04E8912723A0ED340081F833 /* WGBTestSlideDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8912623A0ED340081F833 /* WGBTestSlideDemoViewController.m */; };
+		04E8912B23A11B170081F833 /* WGBHoleAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8912A23A11B170081F833 /* WGBHoleAnimatedTransitioning.m */; };
+		04E8912E23A11C7D0081F833 /* WGBTestHoleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8912D23A11C7D0081F833 /* WGBTestHoleDemoViewController.m */; };
+		04E8913223A12D860081F833 /* WGBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8913123A12D860081F833 /* WGBLoadingView.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -508,6 +512,14 @@
 		04E8911F23A0AA4D0081F833 /* WGBTestMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestMenuViewController.m; sourceTree = "<group>"; };
 		04E8912223A0E3110081F833 /* NSMutableAttributedString+WGBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+WGBExtension.h"; sourceTree = "<group>"; };
 		04E8912323A0E3110081F833 /* NSMutableAttributedString+WGBExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+WGBExtension.m"; sourceTree = "<group>"; };
+		04E8912523A0ED340081F833 /* WGBTestSlideDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTestSlideDemoViewController.h; sourceTree = "<group>"; };
+		04E8912623A0ED340081F833 /* WGBTestSlideDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestSlideDemoViewController.m; sourceTree = "<group>"; };
+		04E8912923A11B170081F833 /* WGBHoleAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHoleAnimatedTransitioning.h; sourceTree = "<group>"; };
+		04E8912A23A11B170081F833 /* WGBHoleAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHoleAnimatedTransitioning.m; sourceTree = "<group>"; };
+		04E8912C23A11C7D0081F833 /* WGBTestHoleDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTestHoleDemoViewController.h; sourceTree = "<group>"; };
+		04E8912D23A11C7D0081F833 /* WGBTestHoleDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestHoleDemoViewController.m; sourceTree = "<group>"; };
+		04E8913023A12D860081F833 /* WGBLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBLoadingView.h; sourceTree = "<group>"; };
+		04E8913123A12D860081F833 /* WGBLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBLoadingView.m; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -836,6 +848,7 @@
 		046D95802399FEF200D79801 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				04E8912823A11B090081F833 /* Hole */,
 				04E89108239FADD30081F833 /* CATransition */,
 				046D95842399FF4C00D79801 /* Nav-BaseTransition */,
 				046D95812399FF4000D79801 /* WGBTransitionDemoListViewController.h */,
@@ -907,6 +920,7 @@
 		047BA68F2383CE63008B6FC8 /* CustomComponent */ = {
 			isa = PBXGroup;
 			children = (
+				04E8912F23A12D5C0081F833 /* LoadingView */,
 				04B0CA9C2340D12F007B2AD2 /* WGBWaveLayerButton */,
 				04B0CA8E2340CF40007B2AD2 /* WGBEasyMarqueeView */,
 				047BA6932383CFCD008B6FC8 /* ColorSliderPicker */,
@@ -1549,6 +1563,8 @@
 				04E8911C23A0A9B80081F833 /* WGBSlideMenuViewController.m */,
 				04E8911E23A0AA4D0081F833 /* WGBTestMenuViewController.h */,
 				04E8911F23A0AA4D0081F833 /* WGBTestMenuViewController.m */,
+				04E8912523A0ED340081F833 /* WGBTestSlideDemoViewController.h */,
+				04E8912623A0ED340081F833 /* WGBTestSlideDemoViewController.m */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -1560,6 +1576,26 @@
 				04E8912323A0E3110081F833 /* NSMutableAttributedString+WGBExtension.m */,
 			);
 			path = NSMutableAttributedString;
+			sourceTree = "<group>";
+		};
+		04E8912823A11B090081F833 /* Hole */ = {
+			isa = PBXGroup;
+			children = (
+				04E8912923A11B170081F833 /* WGBHoleAnimatedTransitioning.h */,
+				04E8912A23A11B170081F833 /* WGBHoleAnimatedTransitioning.m */,
+				04E8912C23A11C7D0081F833 /* WGBTestHoleDemoViewController.h */,
+				04E8912D23A11C7D0081F833 /* WGBTestHoleDemoViewController.m */,
+			);
+			path = Hole;
+			sourceTree = "<group>";
+		};
+		04E8912F23A12D5C0081F833 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				04E8913023A12D860081F833 /* WGBLoadingView.h */,
+				04E8913123A12D860081F833 /* WGBLoadingView.m */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
@@ -1853,6 +1889,7 @@
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
 				04C43940239E55E100A8BEC0 /* WGBDatePickerViewController.m in Sources */,
+				04E8912E23A11C7D0081F833 /* WGBTestHoleDemoViewController.m in Sources */,
 				04C302592382D5B300356991 /* UIView+BoomBoomBoom.m in Sources */,
 				04AE01C12394B26100B7D0D4 /* GXUpvoteButton.m in Sources */,
 				04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */,
@@ -1869,6 +1906,7 @@
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
 				04C43943239E55F400A8BEC0 /* WGBTitlePickerViewController.m in Sources */,
 				0408B8DD2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m in Sources */,
+				04E8912723A0ED340081F833 /* WGBTestSlideDemoViewController.m in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
 				04E890F9239F56880081F833 /* WGBRecognitionPictureColorViewController.m in Sources */,
 				04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */,
@@ -1896,6 +1934,7 @@
 				04C302652382DA7300356991 /* LayoutDemoListViewController.m in Sources */,
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
+				04E8912B23A11B170081F833 /* WGBHoleAnimatedTransitioning.m in Sources */,
 				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
 				04E890F4239F56320081F833 /* PaletteColorModel.m in Sources */,
@@ -1912,6 +1951,7 @@
 				040A7887238C0AB600E1D2B7 /* MBProgressHUD+MJ.m in Sources */,
 				04E890F0239F56320081F833 /* PaletteColorUtils.m in Sources */,
 				046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */,
+				04E8913223A12D860081F833 /* WGBLoadingView.m in Sources */,
 				04D7048023893ED000E88123 /* UIView+GlowView.m in Sources */,
 				040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */,
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
@@ -2063,7 +2103,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Debug";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Test";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

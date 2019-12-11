@@ -49,6 +49,15 @@ THE SOFTWARE.
     self.view.backgroundColor = ranColor;
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+        }];
+    }
+}
+
 /*
 #pragma mark - Navigation
 

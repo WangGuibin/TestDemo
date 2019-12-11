@@ -1,5 +1,5 @@
 //
-// WGBCustomNavgationViewController.h
+// WGBHoleAnimatedTransitioning.h
 // TestDemo
 //
 // Author:  @CoderWGB
@@ -31,13 +31,13 @@ THE SOFTWARE.
 */
     
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+//管中窥豹 由点切入到面
+@interface WGBHoleAnimatedTransitioning : NSObject<UIViewControllerAnimatedTransitioning>
 
-@interface WGBCustomNavgationViewController : UINavigationController
-//默认打开为YES 
-@property (nonatomic,assign) BOOL popGestureEnable;
+@property (nonatomic,assign) CGRect entranceFrame;
 
 @end
 

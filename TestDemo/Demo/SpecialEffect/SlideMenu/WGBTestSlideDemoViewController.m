@@ -1,5 +1,5 @@
 //
-// WGBTestMenuViewController.m
+// WGBTestSlideDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
@@ -31,53 +31,20 @@ THE SOFTWARE.
 */
     
 
-#import "WGBTestMenuViewController.h"
-#import "WGBSlideMenuViewController.h"
 #import "WGBTestSlideDemoViewController.h"
 
-@interface WGBTestMenuViewController ()
+@interface WGBTestSlideDemoViewController ()
 
 @end
 
-@implementation WGBTestMenuViewController
+@implementation WGBTestSlideDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(50, 100, 150 , 30);
-    [button setTitle:@"点击" forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor blackColor];
-    [button addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview: button];
-    
+    self.view.backgroundColor = [UIColor colorWithRed:arc4random()%256/255.0f green:arc4random()%256/255.0f  blue:arc4random()%256/255.0f alpha:1.0f];
+
 }
-
-
-- (void)clickAction{
-    //presentedViewController 弹出此控制器的源控制器或者距离此控制器最远的起始控制器
-    //presentingViewController 弹出此控制器的源控制器或者距离此控制器最近的起始控制器
-//    https://www.jianshu.com/p/4070131158e5
-    if (self.presentingViewController) {//判断是present出来的依据
-        CATransition *transition = [CATransition wgb_createTransitionWithAnimationType:(WGBTransitionAnimationTypePrivatePageUnCurl) subType:(WGBTransitionAnimationSubTypeFromTop) duration:0.5];
-        [self.view.window.layer addAnimation:transition forKey:nil];
-        [self dismissViewControllerAnimated:NO completion:^{
-            
-        }];
-        return;
-    }
-    WGBSlideMenuViewController *menuVC = [WGBSlideMenuViewController controllerWithViewController:[WGBTestMenuViewController new] sidebarViewController:[WGBTestSlideDemoViewController new]];
-    menuVC.view.backgroundColor = [UIColor orangeColor];
-    [self presentViewController:menuVC animated:YES completion:^{
-        
-    }];
-}
-
-
-
-
 
 /*
 #pragma mark - Navigation

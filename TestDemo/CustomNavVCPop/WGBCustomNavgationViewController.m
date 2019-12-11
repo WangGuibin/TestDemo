@@ -41,25 +41,33 @@ THE SOFTWARE.
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.popGestureEnable = YES;
     //全屏pop手势 
     id target = self.interactivePopGestureRecognizer.delegate;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-    UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc]initWithTarget:target action:@selector(handleNavigationTransition:)];
+    UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
 #pragma clang diagnostic pop
     pan.delegate = self;
     [self.view addGestureRecognizer:pan];
     [self.interactivePopGestureRecognizer setEnabled:NO];
 }
 
+- (void)setPopGestureEnable:(BOOL)popGestureEnable{
+    _popGestureEnable = popGestureEnable;
+}
+
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    return self.childViewControllers.count == 1 ? NO : YES;
+    if (self.popGestureEnable) {
+        return self.childViewControllers.count == 1 ? NO : YES;
+    }
+    return NO;
 }
 
 ///MARK:- 当push的时候调用这个方法
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if(self.viewControllers.count){
-        viewController.hidesBottomBarWhenPushed=YES;
+        viewController.hidesBottomBarWhenPushed = YES;
     }
     [super pushViewController:viewController animated:animated];
 }
