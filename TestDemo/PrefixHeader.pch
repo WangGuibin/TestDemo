@@ -23,6 +23,13 @@
 #import <JXCategoryView.h>
 #import <JXPagerView.h> 
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import "LBXPermission.h"
+#import <LBXScanView.h>
+#import <LBXScanViewController.h>
+#import "MBProgressHUD+MJ.h"
+#import "NSArray+Sudoku.h"
+
+
 #import <WGBCocoa.h>
 #import <WGBCustomPopUpView/WGBCustomPopUpView.h>
 #import <WGBEasyMarqueeView/WGBEasyMarqueeView.h>
@@ -31,14 +38,10 @@
 #import <WGBRepairedOrientationLabel/WGBRepairedOrientationLabel.h>
 #import "WGBCustomButton.h"
 #import "WGBAlertTool.h"
-#import "NSArray+Sudoku.h"
+#import "CATransition+WGBExtension.h"
+#import "NSMutableAttributedString+WGBExtension.h"
 #import "WebCommonDemoViewController.h"
 #import "Constants.h"
-#import "LBXPermission.h"
-#import <LBXScanView.h>
-#import <LBXScanViewController.h>
-#import "MBProgressHUD+MJ.h"
-#import "CATransition+WGBExtension.h"
 
 #endif
 
