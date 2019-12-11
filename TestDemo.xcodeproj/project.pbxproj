@@ -170,6 +170,7 @@
 		04E8910E239FAF360081F833 /* WGBCATransitionAnimationSubTypeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8910D239FAF360081F833 /* WGBCATransitionAnimationSubTypeDemoViewController.m */; };
 		04E89112239FAF930081F833 /* CATransition+WGBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E89111239FAF930081F833 /* CATransition+WGBExtension.m */; };
 		04E89115239FB1F10081F833 /* WGBTestCATransitionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E89114239FB1F10081F833 /* WGBTestCATransitionDemoViewController.m */; };
+		04E8911923A09D160081F833 /* WGBCustomNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8911823A09D160081F833 /* WGBCustomNavgationViewController.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -496,6 +497,8 @@
 		04E89111239FAF930081F833 /* CATransition+WGBExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CATransition+WGBExtension.m"; sourceTree = "<group>"; };
 		04E89113239FB1F10081F833 /* WGBTestCATransitionDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTestCATransitionDemoViewController.h; sourceTree = "<group>"; };
 		04E89114239FB1F10081F833 /* WGBTestCATransitionDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestCATransitionDemoViewController.m; sourceTree = "<group>"; };
+		04E8911723A09D160081F833 /* WGBCustomNavgationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomNavgationViewController.h; sourceTree = "<group>"; };
+		04E8911823A09D160081F833 /* WGBCustomNavgationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomNavgationViewController.m; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -1519,6 +1522,15 @@
 			path = CATransition;
 			sourceTree = "<group>";
 		};
+		04E8911623A09C950081F833 /* CustomNavVCPop */ = {
+			isa = PBXGroup;
+			children = (
+				04E8911723A09D160081F833 /* WGBCustomNavgationViewController.h */,
+				04E8911823A09D160081F833 /* WGBCustomNavgationViewController.m */,
+			);
+			path = CustomNavVCPop;
+			sourceTree = "<group>";
+		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
 			isa = PBXGroup;
 			children = (
@@ -1550,6 +1562,7 @@
 		04F7359722CDAA8B007CB0D0 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04E8911623A09C950081F833 /* CustomNavVCPop */,
 				047F05F22358C19E0009301D /* Tools */,
 				04B0CA782340C557007B2AD2 /* Demo */,
 				04F7359822CDAA8B007CB0D0 /* AppDelegate.h */,
@@ -1811,6 +1824,7 @@
 				04C302592382D5B300356991 /* UIView+BoomBoomBoom.m in Sources */,
 				04AE01C12394B26100B7D0D4 /* GXUpvoteButton.m in Sources */,
 				04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */,
+				04E8911923A09D160081F833 /* WGBCustomNavgationViewController.m in Sources */,
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */,
