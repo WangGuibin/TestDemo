@@ -1,12 +1,12 @@
 //
-// WGBTestHoleDemoViewController.m
+// WGBDropDownTestDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/11
+// Created by CoderWGB on 2019/12/12
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,21 +31,17 @@ THE SOFTWARE.
 */
     
 
-#import "WGBTestHoleDemoViewController.h"
-#import "WGBTestCATransitionDemoViewController.h"
-#import "WGBHoleAnimatedTransitioning.h"
+#import "WGBDropDownTestDemoViewController.h"
+#import "WGBDropDownTransition.h"
 
-@interface WGBTestHoleDemoViewController ()<UIViewControllerTransitioningDelegate>
-
-@property (nonatomic, strong) WGBHoleAnimatedTransitioning *animatedTransitioning;
-
+@interface WGBDropDownTestDemoViewController ()<WGBDropDownTransitionDelegate>
+@property (nonatomic, strong) WGBDropDownTransition *animationTransition;
 @end
 
-@implementation WGBTestHoleDemoViewController
+@implementation WGBDropDownTestDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(50, 100, 50 , 50);
@@ -59,31 +55,33 @@ THE SOFTWARE.
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
-    self.animatedTransitioning = nil;
+//    self.animationTransition = nil;
 }
 
 - (void)clickAction{
-//    present弹出一个UIViewController，可以和用户交互的Controller叫做PresentedViewController，而后面那个被部分遮挡的UIViewController叫做PresentingViewController.
-//    https://catchzeng.com/2018/01/11/iOS-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%B9%E5%87%BA%E8%A7%86%E5%9B%BE%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/
-    WGBTestCATransitionDemoViewController *testVC = [WGBTestCATransitionDemoViewController new];
-    testVC.transitioningDelegate = self;
-    testVC.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:testVC animated:YES completion:^{
+    UITableViewController *tabVC = [UITableViewController new];
+    tabVC.view.backgroundColor = [UIColor colorWithRed:arc4random()%256/255.0f green:arc4random()%256/255.0f  blue:arc4random()%256/255.0f alpha:1.0f];
+    UINavigationController *rootVC = [[UINavigationController alloc] initWithRootViewController:tabVC];
+    rootVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    rootVC.navigationBar.hidden = YES;
+    rootVC.transitioningDelegate = self.animationTransition;
+    [self presentViewController:rootVC animated:YES completion:^{
         
     }];
 }
 
-///MARK:- <UIViewControllerTransitioningDelegate>
-- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return self.animatedTransitioning;
+- (void)dismiss{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
-- (WGBHoleAnimatedTransitioning *)animatedTransitioning {
-    if (!_animatedTransitioning) {
-        _animatedTransitioning = [[WGBHoleAnimatedTransitioning alloc] init];
-        _animatedTransitioning.entranceFrame = CGRectMake(50, 100, 50 , 50);
+- (WGBDropDownTransition *)animationTransition {
+    if (!_animationTransition) {
+        _animationTransition = [[WGBDropDownTransition alloc] init];
+        _animationTransition.delegate = self;
     }
-    return _animatedTransitioning;
+    return _animationTransition;
 }
 
 @end
