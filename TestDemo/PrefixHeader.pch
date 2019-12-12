@@ -20,6 +20,7 @@
 #import <YYText.h>
 #import <YYModel.h>
 #import <ReactiveObjC.h>
+#import <IGListKit/IGListKit.h>
 #import <JXCategoryView.h>
 #import <JXPagerView.h> 
 #import <IQKeyboardManager/IQKeyboardManager.h>

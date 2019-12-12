@@ -34,7 +34,8 @@ target 'TestDemo' do
   #扫描二维码
   pod 'LBXScan/LBXZXing','~> 2.3'
   pod 'LBXScan/UI','~> 2.3'
-  
+  #列表解藕方案
+  pod 'IGListKit', '~> 3.0'
   
   pod 'WGBCustomPopUpView','~>1.0.1'
   pod 'WGBCommonAlertSheetView'
