@@ -195,6 +195,7 @@
 		04E8916923A332DD0081F833 /* WGBPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916823A332DD0081F833 /* WGBPhotoCell.m */; };
 		04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916B23A3330F0081F833 /* WGBUserInfoCell.m */; };
 		04E8916F23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916E23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m */; };
+		04E8917623A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8917523A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -571,6 +572,8 @@
 		04E8916B23A3330F0081F833 /* WGBUserInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBUserInfoCell.m; sourceTree = "<group>"; };
 		04E8916D23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBIGListKitDemoPostFeedListSection.h; sourceTree = "<group>"; };
 		04E8916E23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBIGListKitDemoPostFeedListSection.m; sourceTree = "<group>"; };
+		04E8917423A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		04E8917523A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -1461,6 +1464,8 @@
 				04D7048B2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m */,
 				04D70493238950B900E88123 /* WGBZoomScaleFlowLayout.h */,
 				04D70494238950B900E88123 /* WGBZoomScaleFlowLayout.m */,
+				04E8917423A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.h */,
+				04E8917523A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -2052,6 +2057,7 @@
 				04E8911923A09D160081F833 /* WGBCustomNavgationViewController.m in Sources */,
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
+				04E8917623A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */,
 				04E890F5239F56320081F833 /* PriorityBoxArray.m in Sources */,
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,

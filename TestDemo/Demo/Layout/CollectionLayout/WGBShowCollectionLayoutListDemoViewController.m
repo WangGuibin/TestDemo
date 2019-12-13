@@ -36,6 +36,7 @@ THE SOFTWARE.
 #import "WGBCollectionItemCenterFlowLayout.h"
 #import "WGBZoomScaleFlowLayout.h"
 #import "MaximumSpacingFlowLayout.h"
+#import "UICollectionViewLeftAlignedLayout.h"
 
 @interface WGBShowCollectionLayoutListDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -108,7 +109,8 @@ THE SOFTWARE.
         @"居中布局",
         @"普通布局",
         @"两边小中间变大布局",
-        @"居左自适应布局"
+        @"居左自适应布局",
+        @"左对齐布局"
     ];
 }
 
@@ -147,6 +149,16 @@ THE SOFTWARE.
         [self.navigationController pushViewController:layoutVC animated:YES];
     }else if([title isEqualToString:@"居左自适应布局"]){
         MaximumSpacingFlowLayout *layout = [MaximumSpacingFlowLayout new];
+        layout.itemSize = CGSizeMake(100, 100);
+        layout.minimumLineSpacing = 15;
+        layout.minimumInteritemSpacing = 15;
+        layout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
+        WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
+        layoutVC.layout = layout;
+        layoutVC.navigationItem.title = title;
+        [self.navigationController pushViewController:layoutVC animated:YES];
+    }else if ([title isEqualToString:@"左对齐布局"]){
+        UICollectionViewLeftAlignedLayout *layout = [UICollectionViewLeftAlignedLayout new];
         layout.itemSize = CGSizeMake(100, 100);
         layout.minimumLineSpacing = 15;
         layout.minimumInteritemSpacing = 15;
