@@ -188,6 +188,13 @@
 		04E8915123A1FF450081F833 /* NSArray+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8915023A1FF450081F833 /* NSArray+Number.m */; };
 		04E8915523A267AF0081F833 /* WGBDropDownTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8915423A267AF0081F833 /* WGBDropDownTransition.m */; };
 		04E8915823A26D4F0081F833 /* WGBDropDownTestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8915723A26D4F0081F833 /* WGBDropDownTestDemoViewController.m */; };
+		04E8915D23A331260081F833 /* WGBPostFeedListDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8915C23A331260081F833 /* WGBPostFeedListDemoVC.m */; };
+		04E8916023A331560081F833 /* WGBPostItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8915F23A331560081F833 /* WGBPostItemModel.m */; };
+		04E8916323A332570081F833 /* WGBCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916223A332570081F833 /* WGBCommentCell.m */; };
+		04E8916623A3329C0081F833 /* WGBInteractiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916523A3329C0081F833 /* WGBInteractiveCell.m */; };
+		04E8916923A332DD0081F833 /* WGBPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916823A332DD0081F833 /* WGBPhotoCell.m */; };
+		04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916B23A3330F0081F833 /* WGBUserInfoCell.m */; };
+		04E8916F23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916E23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -550,6 +557,20 @@
 		04E8915423A267AF0081F833 /* WGBDropDownTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDropDownTransition.m; sourceTree = "<group>"; };
 		04E8915623A26D4F0081F833 /* WGBDropDownTestDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDropDownTestDemoViewController.h; sourceTree = "<group>"; };
 		04E8915723A26D4F0081F833 /* WGBDropDownTestDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDropDownTestDemoViewController.m; sourceTree = "<group>"; };
+		04E8915B23A331260081F833 /* WGBPostFeedListDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPostFeedListDemoVC.h; sourceTree = "<group>"; };
+		04E8915C23A331260081F833 /* WGBPostFeedListDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPostFeedListDemoVC.m; sourceTree = "<group>"; };
+		04E8915E23A331560081F833 /* WGBPostItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPostItemModel.h; sourceTree = "<group>"; };
+		04E8915F23A331560081F833 /* WGBPostItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPostItemModel.m; sourceTree = "<group>"; };
+		04E8916123A332570081F833 /* WGBCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCommentCell.h; sourceTree = "<group>"; };
+		04E8916223A332570081F833 /* WGBCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCommentCell.m; sourceTree = "<group>"; };
+		04E8916423A3329C0081F833 /* WGBInteractiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBInteractiveCell.h; sourceTree = "<group>"; };
+		04E8916523A3329C0081F833 /* WGBInteractiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBInteractiveCell.m; sourceTree = "<group>"; };
+		04E8916723A332DD0081F833 /* WGBPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPhotoCell.h; sourceTree = "<group>"; };
+		04E8916823A332DD0081F833 /* WGBPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPhotoCell.m; sourceTree = "<group>"; };
+		04E8916A23A3330F0081F833 /* WGBUserInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBUserInfoCell.h; sourceTree = "<group>"; };
+		04E8916B23A3330F0081F833 /* WGBUserInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBUserInfoCell.m; sourceTree = "<group>"; };
+		04E8916D23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBIGListKitDemoPostFeedListSection.h; sourceTree = "<group>"; };
+		04E8916E23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBIGListKitDemoPostFeedListSection.m; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -1647,6 +1668,8 @@
 			children = (
 				04E8913B23A1F3A40081F833 /* IGListDemoItemModel.h */,
 				04E8913C23A1F3A40081F833 /* IGListDemoItemModel.m */,
+				04E8915E23A331560081F833 /* WGBPostItemModel.h */,
+				04E8915F23A331560081F833 /* WGBPostItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1656,6 +1679,14 @@
 			children = (
 				04E8914123A1F7550081F833 /* WGBIGListDemoLabelCell.h */,
 				04E8914223A1F7550081F833 /* WGBIGListDemoLabelCell.m */,
+				04E8916123A332570081F833 /* WGBCommentCell.h */,
+				04E8916223A332570081F833 /* WGBCommentCell.m */,
+				04E8916423A3329C0081F833 /* WGBInteractiveCell.h */,
+				04E8916523A3329C0081F833 /* WGBInteractiveCell.m */,
+				04E8916723A332DD0081F833 /* WGBPhotoCell.h */,
+				04E8916823A332DD0081F833 /* WGBPhotoCell.m */,
+				04E8916A23A3330F0081F833 /* WGBUserInfoCell.h */,
+				04E8916B23A3330F0081F833 /* WGBUserInfoCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1679,6 +1710,8 @@
 				04E8913F23A1F67D0081F833 /* IGListDemoListSection.m */,
 				04E8914B23A1FE640081F833 /* WGBSingleLabelTextSection.h */,
 				04E8914C23A1FE640081F833 /* WGBSingleLabelTextSection.m */,
+				04E8916D23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.h */,
+				04E8916E23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -1688,6 +1721,8 @@
 			children = (
 				04E8914823A1FC2C0081F833 /* WGBSingleLabelTextCellDemoVC.h */,
 				04E8914923A1FC2C0081F833 /* WGBSingleLabelTextCellDemoVC.m */,
+				04E8915B23A331260081F833 /* WGBPostFeedListDemoVC.h */,
+				04E8915C23A331260081F833 /* WGBPostFeedListDemoVC.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -1967,6 +2002,7 @@
 				046D95A8239B4CD600D79801 /* WGBHighLightLabelViewController.m in Sources */,
 				0454E5C823891B790000D62C /* JXCategoryDemoViewController.m in Sources */,
 				040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */,
+				04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
 				040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */,
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
@@ -1980,11 +2016,13 @@
 				046C5D882382E0E1005A12E4 /* LDNetConnect.m in Sources */,
 				047BA6922383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m in Sources */,
 				04C3024E2382D35800356991 /* AnimationDemoViewController.m in Sources */,
+				04E8916623A3329C0081F833 /* WGBInteractiveCell.m in Sources */,
 				04E890F6239F56320081F833 /* PaletteTarget.m in Sources */,
 				047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */,
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
+				04E8916323A332570081F833 /* WGBCommentCell.m in Sources */,
 				04E89115239FB1F10081F833 /* WGBTestCATransitionDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
 				046D95AF239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m in Sources */,
@@ -2023,10 +2061,12 @@
 				04E8915823A26D4F0081F833 /* WGBDropDownTestDemoViewController.m in Sources */,
 				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
+				04E8915D23A331260081F833 /* WGBPostFeedListDemoVC.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
 				04C43943239E55F400A8BEC0 /* WGBTitlePickerViewController.m in Sources */,
 				04E8914D23A1FE640081F833 /* WGBSingleLabelTextSection.m in Sources */,
 				0408B8DD2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m in Sources */,
+				04E8916F23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m in Sources */,
 				04E8912723A0ED340081F833 /* WGBTestSlideDemoViewController.m in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
 				04E890F9239F56880081F833 /* WGBRecognitionPictureColorViewController.m in Sources */,
@@ -2078,6 +2118,7 @@
 				040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */,
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
 				046C5D822382E0E1005A12E4 /* LDNetTraceRoute.m in Sources */,
+				04E8916023A331560081F833 /* WGBPostItemModel.m in Sources */,
 				0450C8D023547E3A0069AC4D /* GlowingAnimationDemoViewController.m in Sources */,
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */,
@@ -2108,6 +2149,7 @@
 				0450C8D92354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m in Sources */,
 				046C5D832382E0E1005A12E4 /* LDNetTimer.m in Sources */,
 				0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */,
+				04E8916923A332DD0081F833 /* WGBPhotoCell.m in Sources */,
 				04CA01FD235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m in Sources */,
 				04F735A822CDAA8D007CB0D0 /* main.m in Sources */,
 				04083E2A237FAF4F002702C6 /* ZombieTestViewController.m in Sources */,

@@ -35,6 +35,7 @@ THE SOFTWARE.
 #import "IGListDemoItemModel.h"
 #import "IGListDemoListSection.h"
 #import "WGBSingleLabelTextCellDemoVC.h"
+#import "WGBPostFeedListDemoVC.h"
 
 @interface WGBIGListKitDemoViewController ()<IGListAdapterDataSource>
 
@@ -58,6 +59,8 @@ THE SOFTWARE.
     self.adapter = [[IGListAdapter alloc] initWithUpdater:adapterUpdater viewController:self];
     self.dataSource = @[
                [IGListDemoItemModel DemoItemWithName:@"Demo列表" controllerClass:[WGBSingleLabelTextCellDemoVC class]],
+               [IGListDemoItemModel DemoItemWithName:@"高仿instram列表demo" controllerClass:[WGBPostFeedListDemoVC class]],
+
                ];
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;

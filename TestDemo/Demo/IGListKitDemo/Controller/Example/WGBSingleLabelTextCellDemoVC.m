@@ -61,11 +61,6 @@ THE SOFTWARE.
 }
 
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
 #pragma mark - IGListAdapterDataSource
 - (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
     return self.dataSource;

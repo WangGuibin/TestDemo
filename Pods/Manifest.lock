@@ -14,11 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - IGListKit (3.4.0):
-    - IGListKit/Default (= 3.4.0)
-  - IGListKit/Default (3.4.0):
-    - IGListKit/Diffing
-  - IGListKit/Diffing (3.4.0)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
   - IMYAOPTableView (2.1.1)
   - IQKeyboardManager (6.4.2)
   - JXCategoryView (1.5.2)
@@ -69,7 +67,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - IGListKit (~> 3.0)
+  - IGListKit (~> 4.0.0)
   - IMYAOPTableView
   - IQKeyboardManager
   - JXCategoryView
@@ -99,6 +97,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - IGListDiffKit
     - IGListKit
     - IMYAOPTableView
     - IQKeyboardManager
@@ -128,7 +127,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   IMYAOPTableView: 9e5779267080be32e963c42d392ac36719569764
   IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
   JXCategoryView: b284d35a7a8772eada05dd78642233e1eb763ea8
@@ -155,6 +155,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 5eaa8fc5db0681ebdb780dae268787e3f1eed743
+PODFILE CHECKSUM: b2f133bf1de94819257be04068ff14cb05f54b71
 
 COCOAPODS: 1.8.4

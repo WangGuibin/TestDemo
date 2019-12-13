@@ -21,6 +21,7 @@
 #import <YYModel.h>
 #import <ReactiveObjC.h>
 #import <IGListKit/IGListKit.h>
+#import <IGListDiffKit/IGListDiffable.h>
 #import <JXCategoryView.h>
 #import <JXPagerView.h> 
 #import <IQKeyboardManager/IQKeyboardManager.h>

@@ -35,7 +35,7 @@ target 'TestDemo' do
   pod 'LBXScan/LBXZXing','~> 2.3'
   pod 'LBXScan/UI','~> 2.3'
   #列表解藕方案
-  pod 'IGListKit', '~> 3.0'
+  pod 'IGListKit', '~> 4.0.0'
   
   pod 'WGBCustomPopUpView','~>1.0.1'
   pod 'WGBCommonAlertSheetView'
