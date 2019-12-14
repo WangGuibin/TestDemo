@@ -1,12 +1,12 @@
 //
-// AnimationDemoViewController.m
+// WGBDrawTextDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/12/14
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,52 +31,19 @@ THE SOFTWARE.
 */
     
 
-#import "AnimationDemoViewController.h"
-#import "GlowingAnimationDemoViewController.h"
-#import "BoomBoomBoomAnimationDemoViewController.h"
-#import "WGBSpringAnimationDemoViewController.h"
-#import "WGBLikeAnimationDemoViewController.h"
-#import "WGBTransitionDemoListViewController.h" 
 #import "WGBDrawTextDemoViewController.h"
+#import "WGBDrawTextAnimationLayer.h"
 
-@interface AnimationDemoViewController ()
+@interface WGBDrawTextDemoViewController ()
 
 @end
 
-@implementation AnimationDemoViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBTransitionDemoListViewController class],
-        [GlowingAnimationDemoViewController class],
-        [BoomBoomBoomAnimationDemoViewController class],
-        [WGBSpringAnimationDemoViewController class],
-        [WGBLikeAnimationDemoViewController class],
-        [WGBDrawTextDemoViewController class]
-     ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"转场动画",
-        @"发光放大缩小动画",
-        @"炸裂动画",
-        @"Spring弹性动画",
-        @"点赞动画",
-        @"绘制文字动画"
-    ];
-}
-
-//UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 3.0, options: UIView.AnimationOptions.curveEaseInOut, animations: ({
-//    // do stuff
-//}), completion: nil)
+@implementation WGBDrawTextDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    [WGBDrawTextAnimationLayer drawTextAnimationWithSuperView:self.view textAreaRect:CGRectMake(50, 200, KWIDTH-40 , 100) textString:@"CoderWGB测试测试" textFont:kBoldPingFang(30) textStrokeColor:[UIColor orangeColor]];
 }
 
 /*

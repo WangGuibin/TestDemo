@@ -196,6 +196,9 @@
 		04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916B23A3330F0081F833 /* WGBUserInfoCell.m */; };
 		04E8916F23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8916E23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m */; };
 		04E8917623A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8917523A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m */; };
+		04E8917A23A4EC120081F833 /* WGBDrawTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8917923A4EC120081F833 /* WGBDrawTextDemoViewController.m */; };
+		04E8917D23A4EC690081F833 /* WGBDrawTextAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8917C23A4EC690081F833 /* WGBDrawTextAnimationLayer.m */; };
+		04E8917F23A4ED8A0081F833 /* draw_text_icon_pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E8917E23A4ED8A0081F833 /* draw_text_icon_pen.png */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -574,6 +577,11 @@
 		04E8916E23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBIGListKitDemoPostFeedListSection.m; sourceTree = "<group>"; };
 		04E8917423A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
 		04E8917523A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		04E8917823A4EC120081F833 /* WGBDrawTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDrawTextDemoViewController.h; sourceTree = "<group>"; };
+		04E8917923A4EC120081F833 /* WGBDrawTextDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDrawTextDemoViewController.m; sourceTree = "<group>"; };
+		04E8917B23A4EC690081F833 /* WGBDrawTextAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDrawTextAnimationLayer.h; sourceTree = "<group>"; };
+		04E8917C23A4EC690081F833 /* WGBDrawTextAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDrawTextAnimationLayer.m; sourceTree = "<group>"; };
+		04E8917E23A4ED8A0081F833 /* draw_text_icon_pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = draw_text_icon_pen.png; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -1255,6 +1263,7 @@
 		04C302482382D19500356991 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				04E8917723A4EBF10081F833 /* DrawText */,
 				046D95802399FEF200D79801 /* Transition */,
 				04AE01BB2394B1D700B7D0D4 /* LikeAnimation */,
 				04F50724238FF1CE000D2DFB /* Spring */,
@@ -1752,6 +1761,18 @@
 			path = DropDown;
 			sourceTree = "<group>";
 		};
+		04E8917723A4EBF10081F833 /* DrawText */ = {
+			isa = PBXGroup;
+			children = (
+				04E8917823A4EC120081F833 /* WGBDrawTextDemoViewController.h */,
+				04E8917923A4EC120081F833 /* WGBDrawTextDemoViewController.m */,
+				04E8917E23A4ED8A0081F833 /* draw_text_icon_pen.png */,
+				04E8917B23A4EC690081F833 /* WGBDrawTextAnimationLayer.h */,
+				04E8917C23A4EC690081F833 /* WGBDrawTextAnimationLayer.m */,
+			);
+			path = DrawText;
+			sourceTree = "<group>";
+		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
 			isa = PBXGroup;
 			children = (
@@ -1937,6 +1958,7 @@
 				04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */,
 				04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */,
 				0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */,
+				04E8917F23A4ED8A0081F833 /* draw_text_icon_pen.png in Resources */,
 				0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */,
 				04AE01AC2392502100B7D0D4 /* sky.jpg in Resources */,
 				04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */,
@@ -1994,6 +2016,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0454E5CB23891C320000D62C /* WGBRankTopBgHeader.m in Sources */,
+				04E8917D23A4EC690081F833 /* WGBDrawTextAnimationLayer.m in Sources */,
 				04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */,
 				04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */,
 				0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */,
@@ -2106,6 +2129,7 @@
 				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
 				04E890F4239F56320081F833 /* PaletteColorModel.m in Sources */,
+				04E8917A23A4EC120081F833 /* WGBDrawTextDemoViewController.m in Sources */,
 				04C4393C239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m in Sources */,
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
 				040A787D238C051900E1D2B7 /* DIYScanViewController.m in Sources */,
