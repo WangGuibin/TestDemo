@@ -38,6 +38,7 @@ THE SOFTWARE.
 #import "WGBLikeAnimationDemoViewController.h"
 #import "WGBTransitionDemoListViewController.h" 
 #import "WGBDrawTextDemoViewController.h"
+#import "WGBEmitterDemoViewController.h"
 
 @interface AnimationDemoViewController ()
 
@@ -52,7 +53,8 @@ THE SOFTWARE.
         [BoomBoomBoomAnimationDemoViewController class],
         [WGBSpringAnimationDemoViewController class],
         [WGBLikeAnimationDemoViewController class],
-        [WGBDrawTextDemoViewController class]
+        [WGBDrawTextDemoViewController class],
+        [WGBEmitterDemoViewController class]
      ];
 }
 
@@ -64,7 +66,8 @@ THE SOFTWARE.
         @"炸裂动画",
         @"Spring弹性动画",
         @"点赞动画",
-        @"绘制文字动画"
+        @"绘制文字动画",
+        @"粒子动画效果"
     ];
 }
 
