@@ -200,6 +200,10 @@
 		04E8917D23A4EC690081F833 /* WGBDrawTextAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8917C23A4EC690081F833 /* WGBDrawTextAnimationLayer.m */; };
 		04E8917F23A4ED8A0081F833 /* draw_text_icon_pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E8917E23A4ED8A0081F833 /* draw_text_icon_pen.png */; };
 		04E8918323A4F09C0081F833 /* WGBEmitterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8918223A4F09C0081F833 /* WGBEmitterDemoViewController.m */; };
+		04E8918E23A727020081F833 /* WGBColorChangeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8918C23A727020081F833 /* WGBColorChangeDemoViewController.m */; };
+		04E8918F23A727020081F833 /* WGBColorChangeDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E8918D23A727020081F833 /* WGBColorChangeDemoViewController.xib */; };
+		04E8919223A72DE10081F833 /* WGBHoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8919123A72DE10081F833 /* WGBHoverFlowLayout.m */; };
+		04E8919523A741A70081F833 /* WGBPageEnableFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8919423A741A70081F833 /* WGBPageEnableFlowLayout.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -585,6 +589,13 @@
 		04E8917E23A4ED8A0081F833 /* draw_text_icon_pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = draw_text_icon_pen.png; sourceTree = "<group>"; };
 		04E8918123A4F09C0081F833 /* WGBEmitterDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBEmitterDemoViewController.h; sourceTree = "<group>"; };
 		04E8918223A4F09C0081F833 /* WGBEmitterDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBEmitterDemoViewController.m; sourceTree = "<group>"; };
+		04E8918B23A727020081F833 /* WGBColorChangeDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBColorChangeDemoViewController.h; sourceTree = "<group>"; };
+		04E8918C23A727020081F833 /* WGBColorChangeDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBColorChangeDemoViewController.m; sourceTree = "<group>"; };
+		04E8918D23A727020081F833 /* WGBColorChangeDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBColorChangeDemoViewController.xib; sourceTree = "<group>"; };
+		04E8919023A72DE10081F833 /* WGBHoverFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHoverFlowLayout.h; sourceTree = "<group>"; };
+		04E8919123A72DE10081F833 /* WGBHoverFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHoverFlowLayout.m; sourceTree = "<group>"; };
+		04E8919323A741A70081F833 /* WGBPageEnableFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPageEnableFlowLayout.h; sourceTree = "<group>"; };
+		04E8919423A741A70081F833 /* WGBPageEnableFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPageEnableFlowLayout.m; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -986,6 +997,7 @@
 		047BA68F2383CE63008B6FC8 /* CustomComponent */ = {
 			isa = PBXGroup;
 			children = (
+				04E8918A23A726DC0081F833 /* UIColorChange */,
 				04E8912F23A12D5C0081F833 /* LoadingView */,
 				04B0CA9C2340D12F007B2AD2 /* WGBWaveLayerButton */,
 				04B0CA8E2340CF40007B2AD2 /* WGBEasyMarqueeView */,
@@ -1471,12 +1483,15 @@
 		04D704862389428400E88123 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				04E8918423A722440081F833 /* PageEnable */,
 				04D70487238942C900E88123 /* MaximumSpacingFlowLayout.h */,
 				04D70488238942C900E88123 /* MaximumSpacingFlowLayout.m */,
 				04D7048A2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.h */,
 				04D7048B2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m */,
 				04D70493238950B900E88123 /* WGBZoomScaleFlowLayout.h */,
 				04D70494238950B900E88123 /* WGBZoomScaleFlowLayout.m */,
+				04E8919023A72DE10081F833 /* WGBHoverFlowLayout.h */,
+				04E8919123A72DE10081F833 /* WGBHoverFlowLayout.m */,
 				04E8917423A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.h */,
 				04E8917523A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m */,
 			);
@@ -1786,6 +1801,25 @@
 			path = EmitterAnimation;
 			sourceTree = "<group>";
 		};
+		04E8918423A722440081F833 /* PageEnable */ = {
+			isa = PBXGroup;
+			children = (
+				04E8919323A741A70081F833 /* WGBPageEnableFlowLayout.h */,
+				04E8919423A741A70081F833 /* WGBPageEnableFlowLayout.m */,
+			);
+			path = PageEnable;
+			sourceTree = "<group>";
+		};
+		04E8918A23A726DC0081F833 /* UIColorChange */ = {
+			isa = PBXGroup;
+			children = (
+				04E8918B23A727020081F833 /* WGBColorChangeDemoViewController.h */,
+				04E8918C23A727020081F833 /* WGBColorChangeDemoViewController.m */,
+				04E8918D23A727020081F833 /* WGBColorChangeDemoViewController.xib */,
+			);
+			path = UIColorChange;
+			sourceTree = "<group>";
+		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
 			isa = PBXGroup;
 			children = (
@@ -1969,6 +2003,7 @@
 				0450C8CC235187EC0069AC4D /* github.png in Resources */,
 				040A7888238C0AB600E1D2B7 /* MBProgressHUD.bundle in Resources */,
 				04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */,
+				04E8918F23A727020081F833 /* WGBColorChangeDemoViewController.xib in Resources */,
 				04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */,
 				0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */,
 				04E8917F23A4ED8A0081F833 /* draw_text_icon_pen.png in Resources */,
@@ -2064,6 +2099,7 @@
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04E8916323A332570081F833 /* WGBCommentCell.m in Sources */,
+				04E8919523A741A70081F833 /* WGBPageEnableFlowLayout.m in Sources */,
 				04E89115239FB1F10081F833 /* WGBTestCATransitionDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
 				046D95AF239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m in Sources */,
@@ -2125,6 +2161,7 @@
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
 				046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */,
 				04D704A8238A7FD500E88123 /* YogaJustifyContentDemoBaseViewController.m in Sources */,
+				04E8919223A72DE10081F833 /* WGBHoverFlowLayout.m in Sources */,
 				041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */,
 				04083E22237FAE44002702C6 /* VCTimeProfilerViewController.m in Sources */,
 				04D7047723893DF600E88123 /* WGBSpecialEffectDemoViewController.m in Sources */,
@@ -2167,6 +2204,7 @@
 				04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */,
 				04C302692382DDDC00356991 /* NetDiagnoServiceDemoViewController.m in Sources */,
 				04D70495238950B900E88123 /* WGBZoomScaleFlowLayout.m in Sources */,
+				04E8918E23A727020081F833 /* WGBColorChangeDemoViewController.m in Sources */,
 				04034BBF239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m in Sources */,
 				04C43935239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m in Sources */,
 				04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */,

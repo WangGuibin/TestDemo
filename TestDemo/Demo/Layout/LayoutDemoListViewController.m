@@ -72,6 +72,15 @@ THE SOFTWARE.
     ];
 }
 
+//NSInteger pageNum = (NSInteger)scrollView.contentOffset.x / (NSInteger)MSWIDTH;
+//NSInteger remainder1 = (NSInteger)scrollView.contentOffset.x % (NSInteger)MSWIDTH;
+//if (remainder1 > MSWIDTH/2) {
+//    pageNum = pageNum + 1;
+//}
+//if (self.currentPage != pageNum) {
+//    self.currentPage = pageNum;
+//    self.pageCtrl.currentPage = pageNum;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,12 +1,12 @@
 //
-// WGBZoomScaleFlowLayout.h
+// WGBHoverFlowLayout.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/23
+// Created by CoderWGB on 2019/12/16
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -32,10 +32,12 @@ THE SOFTWARE.
     
 
 #import <UIKit/UIKit.h>
-
+//组头悬停
 NS_ASSUME_NONNULL_BEGIN
-//中间变大 俩边小
-@interface WGBZoomScaleFlowLayout : UICollectionViewFlowLayout
+
+@interface WGBHoverFlowLayout : UICollectionViewFlowLayout
+
+@property (nonatomic,assign) CGFloat hoverDistance;//悬停默认距离 状态栏+44
 
 @end
 

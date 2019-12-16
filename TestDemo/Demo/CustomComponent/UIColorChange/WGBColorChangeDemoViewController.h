@@ -1,12 +1,12 @@
 //
-// WGBZoomScaleFlowLayout.h
+// WGBColorChangeDemoViewController.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/23
+// Created by CoderWGB on 2019/12/16
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -34,8 +34,8 @@ THE SOFTWARE.
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-//中间变大 俩边小
-@interface WGBZoomScaleFlowLayout : UICollectionViewFlowLayout
+
+@interface WGBColorChangeDemoViewController : UIViewController
 
 @end
 
