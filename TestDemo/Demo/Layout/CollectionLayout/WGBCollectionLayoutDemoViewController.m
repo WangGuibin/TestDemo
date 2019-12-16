@@ -64,6 +64,13 @@ THE SOFTWARE.
     return cell;
 }
 
+-(CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout     *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if ([NSStringFromClass(self.layout.class) isEqualToString:@"FBLikeLayout"]) {
+        return CGSizeMake(100*0.1*(arc4random()%9 + 100), 100 + arc4random()%200);
+    }
+    return self.layout.itemSize;
+}
+
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     

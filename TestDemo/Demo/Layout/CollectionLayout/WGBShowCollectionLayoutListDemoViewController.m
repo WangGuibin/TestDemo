@@ -38,6 +38,7 @@ THE SOFTWARE.
 #import "MaximumSpacingFlowLayout.h"
 #import "UICollectionViewLeftAlignedLayout.h"
 #import "WGBHoverFlowLayout.h"
+#import "FBLikeLayout.h"
 
 @interface WGBShowCollectionLayoutListDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -112,8 +113,19 @@ THE SOFTWARE.
         @"两边小中间变大布局",
         @"居左自适应布局",
         @"左对齐布局",
-        @"增加悬停距离"
+        @"增加悬停距离",
+        @"FBLikeLayout瀑布流"
     ];
+/**
+  item交换位置布局 https://github.com/lxcid/LXReorderableCollectionViewFlowLayout 和 https://github.com/ra1028/RACollectionViewReorderableTripletLayout
+ 
+ 卡片布局 https://github.com/terminatorover/RGCardViewLayout
+ 栈布局 https://github.com/gleue/TGLStackedViewController
+ 悬停堆叠 https://github.com/matbeich/StickyCollectionView
+ 嵌入不同cell布局 https://github.com/fmitech/FMMosaicLayout
+ 滚动带弹性spring动画 https://github.com/onevcat/VVSpringCollectionViewFlowLayout
+ */
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -170,6 +182,7 @@ THE SOFTWARE.
         layoutVC.navigationItem.title = title;
         [self.navigationController pushViewController:layoutVC animated:YES];
     }else if ([title isEqualToString:@"增加悬停距离"]){
+        //https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout
         WGBHoverFlowLayout *layout = [WGBHoverFlowLayout new];
         layout.itemSize = CGSizeMake(100, 100);
         layout.minimumLineSpacing = 15;
@@ -179,7 +192,22 @@ THE SOFTWARE.
         layoutVC.layout = layout;
         layoutVC.navigationItem.title = title;
         [self.navigationController pushViewController:layoutVC animated:YES];
+    }else if ([title isEqualToString:@"FBLikeLayout瀑布流"]){
+        FBLikeLayout *layout = [FBLikeLayout new];
+        layout.sectionInset = UIEdgeInsetsZero;
+        layout.minimumInteritemSpacing = 4;
+        layout.singleCellWidth = (MIN(self.view.bounds.size.width, self.view.bounds.size.height))/3.0;
+        layout.maxCellSpace = 3;
+        layout.forceCellWidthForMinimumInteritemSpacing = YES;
+        layout.fullImagePercentageOfOccurrency = 50;
+//        layout.itemSize = CGSizeMake(KWIDTH*0.1*(arc4random()%9), 100 + arc4random()%200);
+        WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
+        layoutVC.layout = layout;
+        layoutVC.navigationItem.title = title;
+        [self.navigationController pushViewController:layoutVC animated:YES];
     }
+    
+    
 }
 
 - (UITableView *)tableView{

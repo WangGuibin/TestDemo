@@ -32,7 +32,7 @@ THE SOFTWARE.
     
 
 #import <UIKit/UIKit.h>
-//组头悬停
+//组头悬停 也可参考 https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WGBHoverFlowLayout : UICollectionViewFlowLayout

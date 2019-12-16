@@ -207,6 +207,7 @@
 		04E8919D23A7711C0081F833 /* UIView+WGBCornerCliper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8919C23A7711C0081F833 /* UIView+WGBCornerCliper.m */; };
 		04E891A123A778980081F833 /* WGBDrawGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891A023A778980081F833 /* WGBDrawGridView.m */; };
 		04E891A423A778B00081F833 /* WGBDrawGridViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891A323A778B00081F833 /* WGBDrawGridViewDemoViewController.m */; };
+		04E891AF23A7C5AE0081F833 /* FBLikeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891AD23A7C5AE0081F833 /* FBLikeLayout.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -605,6 +606,8 @@
 		04E891A023A778980081F833 /* WGBDrawGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDrawGridView.m; sourceTree = "<group>"; };
 		04E891A223A778B00081F833 /* WGBDrawGridViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDrawGridViewDemoViewController.h; sourceTree = "<group>"; };
 		04E891A323A778B00081F833 /* WGBDrawGridViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDrawGridViewDemoViewController.m; sourceTree = "<group>"; };
+		04E891AD23A7C5AE0081F833 /* FBLikeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLikeLayout.m; sourceTree = "<group>"; };
+		04E891AE23A7C5AE0081F833 /* FBLikeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLikeLayout.h; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -1494,6 +1497,7 @@
 		04D704862389428400E88123 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				04E891AC23A7C5AE0081F833 /* FBLikeLayout */,
 				04E8918423A722440081F833 /* PageEnable */,
 				04D70487238942C900E88123 /* MaximumSpacingFlowLayout.h */,
 				04D70488238942C900E88123 /* MaximumSpacingFlowLayout.m */,
@@ -1851,6 +1855,15 @@
 			path = DrawGridView;
 			sourceTree = "<group>";
 		};
+		04E891AC23A7C5AE0081F833 /* FBLikeLayout */ = {
+			isa = PBXGroup;
+			children = (
+				04E891AE23A7C5AE0081F833 /* FBLikeLayout.h */,
+				04E891AD23A7C5AE0081F833 /* FBLikeLayout.m */,
+			);
+			path = FBLikeLayout;
+			sourceTree = "<group>";
+		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
 			isa = PBXGroup;
 			children = (
@@ -2112,6 +2125,7 @@
 				04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
 				040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */,
+				04E891AF23A7C5AE0081F833 /* FBLikeLayout.m in Sources */,
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */,
 				04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */,

@@ -33,6 +33,8 @@ THE SOFTWARE.
 
 #import "WGBPullScaleEffectViewController.h"
 
+//视差效果 https://github.com/stoprocent/VGParallaxHeader
+
 #define kHeadHeight  200
 
 @interface WGBPullScaleEffectViewController ()<UITableViewDelegate, UITableViewDataSource>
