@@ -204,6 +204,9 @@
 		04E8918F23A727020081F833 /* WGBColorChangeDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E8918D23A727020081F833 /* WGBColorChangeDemoViewController.xib */; };
 		04E8919223A72DE10081F833 /* WGBHoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8919123A72DE10081F833 /* WGBHoverFlowLayout.m */; };
 		04E8919523A741A70081F833 /* WGBPageEnableFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8919423A741A70081F833 /* WGBPageEnableFlowLayout.m */; };
+		04E8919D23A7711C0081F833 /* UIView+WGBCornerCliper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8919C23A7711C0081F833 /* UIView+WGBCornerCliper.m */; };
+		04E891A123A778980081F833 /* WGBDrawGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891A023A778980081F833 /* WGBDrawGridView.m */; };
+		04E891A423A778B00081F833 /* WGBDrawGridViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891A323A778B00081F833 /* WGBDrawGridViewDemoViewController.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -596,6 +599,12 @@
 		04E8919123A72DE10081F833 /* WGBHoverFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHoverFlowLayout.m; sourceTree = "<group>"; };
 		04E8919323A741A70081F833 /* WGBPageEnableFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPageEnableFlowLayout.h; sourceTree = "<group>"; };
 		04E8919423A741A70081F833 /* WGBPageEnableFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPageEnableFlowLayout.m; sourceTree = "<group>"; };
+		04E8919B23A7711C0081F833 /* UIView+WGBCornerCliper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WGBCornerCliper.h"; sourceTree = "<group>"; };
+		04E8919C23A7711C0081F833 /* UIView+WGBCornerCliper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WGBCornerCliper.m"; sourceTree = "<group>"; };
+		04E8919F23A778980081F833 /* WGBDrawGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDrawGridView.h; sourceTree = "<group>"; };
+		04E891A023A778980081F833 /* WGBDrawGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDrawGridView.m; sourceTree = "<group>"; };
+		04E891A223A778B00081F833 /* WGBDrawGridViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDrawGridViewDemoViewController.h; sourceTree = "<group>"; };
+		04E891A323A778B00081F833 /* WGBDrawGridViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDrawGridViewDemoViewController.m; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -883,6 +892,7 @@
 		046098C22359EA7000A673D6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				04E8919A23A771000081F833 /* UIView */,
 				04E8912123A0E2F40081F833 /* NSMutableAttributedString */,
 				04E8910F239FAF4A0081F833 /* CATransition */,
 				047F05F32358C1D10009301D /* NSArray */,
@@ -1348,6 +1358,7 @@
 		04C302622382DA5800356991 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				04E8919E23A7787C0081F833 /* DrawGridView */,
 				04C43932239E515A00A8BEC0 /* FloatView */,
 				046D95A5239B4C8C00D79801 /* HighLightLabel */,
 				04D704842389427200E88123 /* CollectionLayout */,
@@ -1820,6 +1831,26 @@
 			path = UIColorChange;
 			sourceTree = "<group>";
 		};
+		04E8919A23A771000081F833 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				04E8919B23A7711C0081F833 /* UIView+WGBCornerCliper.h */,
+				04E8919C23A7711C0081F833 /* UIView+WGBCornerCliper.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		04E8919E23A7787C0081F833 /* DrawGridView */ = {
+			isa = PBXGroup;
+			children = (
+				04E8919F23A778980081F833 /* WGBDrawGridView.h */,
+				04E891A023A778980081F833 /* WGBDrawGridView.m */,
+				04E891A223A778B00081F833 /* WGBDrawGridViewDemoViewController.h */,
+				04E891A323A778B00081F833 /* WGBDrawGridViewDemoViewController.m */,
+			);
+			path = DrawGridView;
+			sourceTree = "<group>";
+		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
 			isa = PBXGroup;
 			children = (
@@ -2136,6 +2167,7 @@
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
 				04E8913D23A1F3A40081F833 /* IGListDemoItemModel.m in Sources */,
 				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,
+				04E8919D23A7711C0081F833 /* UIView+WGBCornerCliper.m in Sources */,
 				04E8915823A26D4F0081F833 /* WGBDropDownTestDemoViewController.m in Sources */,
 				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
@@ -2194,6 +2226,7 @@
 				040A7887238C0AB600E1D2B7 /* MBProgressHUD+MJ.m in Sources */,
 				04E890F0239F56320081F833 /* PaletteColorUtils.m in Sources */,
 				046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */,
+				04E891A123A778980081F833 /* WGBDrawGridView.m in Sources */,
 				04E8913223A12D860081F833 /* WGBLoadingView.m in Sources */,
 				04D7048023893ED000E88123 /* UIView+GlowView.m in Sources */,
 				040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */,
@@ -2214,6 +2247,7 @@
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
 				040A7874238C03A100E1D2B7 /* LBXPermissionPhotos.m in Sources */,
 				04E8914323A1F7550081F833 /* WGBIGListDemoLabelCell.m in Sources */,
+				04E891A423A778B00081F833 /* WGBDrawGridViewDemoViewController.m in Sources */,
 				048DB1D223912432007701EC /* WGBCircleMaskLayerEffectViewController.m in Sources */,
 				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
 				04C302562382D59A00356991 /* BoomBoomBoomAnimationDemoViewController.m in Sources */,

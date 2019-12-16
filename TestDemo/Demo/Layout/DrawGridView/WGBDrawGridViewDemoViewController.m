@@ -1,12 +1,12 @@
 //
-// WGBFloatViewDemoViewController.m
+// WGBDrawGridViewDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/9
+// Created by CoderWGB on 2019/12/16
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,37 +31,38 @@ THE SOFTWARE.
 */
     
 
-#import "WGBFloatViewDemoViewController.h"
-#import "WGBFloatView.h"
+#import "WGBDrawGridViewDemoViewController.h"
+#import "WGBDrawGridView.h"
 
-@interface WGBFloatViewDemoViewController ()
+@interface WGBDrawGridViewDemoViewController ()
 
-
+@property (nonatomic, strong) WGBDrawGridView *gridView;
 
 @end
 
-@implementation WGBFloatViewDemoViewController
+@implementation WGBDrawGridViewDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self testFloatView];
+    
 }
 
-- (void)testFloatView{
-    //测UIView利用贝塞尔曲线maskLayer实现圆角边框
-    UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(50, 300, 200 , 200)];
-    redView.backgroundColor = [UIColor redColor];
-    [self.view addSubview: redView];
-    [redView wgb_clipCorners:(UIRectCornerTopLeft|UIRectCornerBottomRight) radius:15 border:2.0 borderColor:[UIColor cyanColor]];
-
-    //浮动可移动位置的View
-    WGBFloatView *floatView = [[WGBFloatView alloc] initWithFrame:CGRectMake(KWIDTH - 50, 200, 50 , 50)];
-    floatView.backgroundColor = [UIColor orangeColor];
-    ViewRadius(floatView, 25);
-    [self.view addSubview:floatView];
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.gridView.frame = CGRectMake(10, 100, KWIDTH-20 , KHIGHT - 250);
 }
 
+
+
+- (WGBDrawGridView *)gridView {
+    if (!_gridView) {
+        _gridView = [[WGBDrawGridView alloc] initWithFrame:CGRectZero];
+        _gridView.backgroundColor = [UIColor blackColor];
+        [self.view addSubview:_gridView];
+    }
+    return _gridView;
+}
 
 @end

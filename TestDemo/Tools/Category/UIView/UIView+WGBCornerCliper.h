@@ -1,12 +1,12 @@
 //
-// WGBFloatViewDemoViewController.m
+// UIView+WGBCornerCliper.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/9
+// Created by CoderWGB on 2019/12/16
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,37 +31,40 @@ THE SOFTWARE.
 */
     
 
-#import "WGBFloatViewDemoViewController.h"
-#import "WGBFloatView.h"
-
-@interface WGBFloatViewDemoViewController ()
 
 
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UIView (WGBCornerCliper)
+
+
+
+/// 添加圆角 调用时机：设置好布局之后调用 或者 调用`layoutIfNeed`之后使用
+/// @param corners 圆角位置设置
+/// @param radius 圆角大小
+- (void)wgb_clipCorners:(UIRectCorner)corners
+                 radius:(CGFloat)radius;
+
+/// 添加圆角和边框, 调用时机：设置好布局之后调用 或者 调用`layoutIfNeed`之后使用
+/// @param corners 圆角位置设置
+/// @param radius 圆角大小
+/// @param width 边框宽度
+/// @param borderColor 边框颜色
+/**
+@code
+
+[self.testView wgb_clipCorners:(UIRectCornerAllCorners) radius:5.0 border:1.0 borderColor:[UIColor redColor]];
+
+@endcode
+*/
+
+- (void)wgb_clipCorners:(UIRectCorner)corners
+                 radius:(CGFloat)radius
+                 border:(CGFloat)width
+            borderColor:(UIColor *)borderColor;
 
 @end
 
-@implementation WGBFloatViewDemoViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self testFloatView];
-}
-
-- (void)testFloatView{
-    //测UIView利用贝塞尔曲线maskLayer实现圆角边框
-    UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(50, 300, 200 , 200)];
-    redView.backgroundColor = [UIColor redColor];
-    [self.view addSubview: redView];
-    [redView wgb_clipCorners:(UIRectCornerTopLeft|UIRectCornerBottomRight) radius:15 border:2.0 borderColor:[UIColor cyanColor]];
-
-    //浮动可移动位置的View
-    WGBFloatView *floatView = [[WGBFloatView alloc] initWithFrame:CGRectMake(KWIDTH - 50, 200, 50 , 50)];
-    floatView.backgroundColor = [UIColor orangeColor];
-    ViewRadius(floatView, 25);
-    [self.view addSubview:floatView];
-}
-
-
-@end
+NS_ASSUME_NONNULL_END

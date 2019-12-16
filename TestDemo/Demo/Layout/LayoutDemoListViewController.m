@@ -39,6 +39,7 @@ THE SOFTWARE.
 #import "WGBShowCollectionLayoutListDemoViewController.h"
 #import "WGBHighLightLabelViewController.h"
 #import "WGBFloatViewDemoViewController.h"
+#import "WGBDrawGridViewDemoViewController.h"
 
 
 @interface LayoutDemoListViewController ()
@@ -55,7 +56,8 @@ THE SOFTWARE.
         [YogaKitDemoViewController class],
         [WGBShowCollectionLayoutListDemoViewController class],
         [WGBHighLightLabelViewController class],
-        [WGBFloatViewDemoViewController class]
+        [WGBFloatViewDemoViewController class],
+        [WGBDrawGridViewDemoViewController class]
     ];
 }
 
@@ -68,7 +70,8 @@ THE SOFTWARE.
         @"YogaKit Demo (FlexBox布局)",
         @"collectionView布局",
         @"UILabel高亮文字点击",
-        @"类似苹果的小圆点---漂浮的View"
+        @"类似苹果的小圆点---漂浮的View",
+        @"绘制网格"
     ];
 }
 

@@ -42,6 +42,7 @@
 #import "WGBAlertTool.h"
 #import "CATransition+WGBExtension.h"
 #import "NSMutableAttributedString+WGBExtension.h"
+#import "UIView+WGBCornerCliper.h"
 #import "WebCommonDemoViewController.h"
 #import "WGBCustomNavgationViewController.h"
 #import "Constants.h"
