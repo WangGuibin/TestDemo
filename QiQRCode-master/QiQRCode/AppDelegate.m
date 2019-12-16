@@ -1,15 +1,12 @@
 //
 //  AppDelegate.m
-//  TestDemo
+//  QiQRCode
 //
-//  Created by mac on 2019/7/4.
-//  Copyright © 2019 mac. All rights reserved.
+//  Created by huangxianshuai on 2018/11/13.
+//  Copyright © 2018年 QiShare. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "VCTimeProfiler.h"
-#import "XDAppFluencyMonitor.h"
-#import "TenderCrashHandler.h"
 
 @interface AppDelegate ()
 
@@ -20,12 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //调试插件 UI热重载
-    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
-    //页面耗时统计
-    [[VCTimeProfiler shared] start];
-    [[XDAppFluencyMonitor sharedInstance] startMonitoring];
-//    RegisterTenderCrashHandler();
     return YES;
 }
 
