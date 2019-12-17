@@ -208,6 +208,9 @@
 		04E891A123A778980081F833 /* WGBDrawGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891A023A778980081F833 /* WGBDrawGridView.m */; };
 		04E891A423A778B00081F833 /* WGBDrawGridViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891A323A778B00081F833 /* WGBDrawGridViewDemoViewController.m */; };
 		04E891AF23A7C5AE0081F833 /* FBLikeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891AD23A7C5AE0081F833 /* FBLikeLayout.m */; };
+		04E891B323A877080081F833 /* DesignPatternsDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891B223A877080081F833 /* DesignPatternsDemoListViewController.m */; };
+		04E891B723A877B70081F833 /* WGBGenericTestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891B623A877B70081F833 /* WGBGenericTestDemoViewController.m */; };
+		04E891BD23A87B360081F833 /* WGBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891BC23A87B360081F833 /* WGBPerson.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -608,6 +611,12 @@
 		04E891A323A778B00081F833 /* WGBDrawGridViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDrawGridViewDemoViewController.m; sourceTree = "<group>"; };
 		04E891AD23A7C5AE0081F833 /* FBLikeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLikeLayout.m; sourceTree = "<group>"; };
 		04E891AE23A7C5AE0081F833 /* FBLikeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLikeLayout.h; sourceTree = "<group>"; };
+		04E891B123A877080081F833 /* DesignPatternsDemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignPatternsDemoListViewController.h; sourceTree = "<group>"; };
+		04E891B223A877080081F833 /* DesignPatternsDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternsDemoListViewController.m; sourceTree = "<group>"; };
+		04E891B523A877B70081F833 /* WGBGenericTestDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGenericTestDemoViewController.h; sourceTree = "<group>"; };
+		04E891B623A877B70081F833 /* WGBGenericTestDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGenericTestDemoViewController.m; sourceTree = "<group>"; };
+		04E891BB23A87B360081F833 /* WGBPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPerson.h; sourceTree = "<group>"; };
+		04E891BC23A87B360081F833 /* WGBPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPerson.m; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -1171,6 +1180,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				04E891B023A876BF0081F833 /* Design Patterns */,
 				04E8913323A1F16F0081F833 /* IGListKitDemo */,
 				04D7047323893D9E00E88123 /* SpecialEffect */,
 				0454E5BE23891ACD0000D62C /* JXCategoryViewDemo */,
@@ -1864,6 +1874,27 @@
 			path = FBLikeLayout;
 			sourceTree = "<group>";
 		};
+		04E891B023A876BF0081F833 /* Design Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				04E891B423A877690081F833 /* Generic&&Inverter&&Covariance */,
+				04E891B123A877080081F833 /* DesignPatternsDemoListViewController.h */,
+				04E891B223A877080081F833 /* DesignPatternsDemoListViewController.m */,
+			);
+			path = "Design Patterns";
+			sourceTree = "<group>";
+		};
+		04E891B423A877690081F833 /* Generic&&Inverter&&Covariance */ = {
+			isa = PBXGroup;
+			children = (
+				04E891B523A877B70081F833 /* WGBGenericTestDemoViewController.h */,
+				04E891B623A877B70081F833 /* WGBGenericTestDemoViewController.m */,
+				04E891BB23A87B360081F833 /* WGBPerson.h */,
+				04E891BC23A87B360081F833 /* WGBPerson.m */,
+			);
+			path = "Generic&&Inverter&&Covariance";
+			sourceTree = "<group>";
+		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
 			isa = PBXGroup;
 			children = (
@@ -2128,6 +2159,7 @@
 				04E891AF23A7C5AE0081F833 /* FBLikeLayout.m in Sources */,
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */,
+				04E891BD23A87B360081F833 /* WGBPerson.m in Sources */,
 				04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */,
 				04D7047A23893E5800E88123 /* WGBGlowEffectViewController.m in Sources */,
 				04B0CA9F2340D13B007B2AD2 /* WGBWaveLayerButtonDemoViewController.m in Sources */,
@@ -2231,6 +2263,7 @@
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
 				040A787D238C051900E1D2B7 /* DIYScanViewController.m in Sources */,
 				048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */,
+				04E891B323A877080081F833 /* DesignPatternsDemoListViewController.m in Sources */,
 				046C5D852382E0E1005A12E4 /* LDNetPing.m in Sources */,
 				04B0CA912340CF4F007B2AD2 /* WGBEasyMarqueeViewDemoViewController.m in Sources */,
 				04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */,
@@ -2277,6 +2310,7 @@
 				046D95AB239B4D0200D79801 /* UILabel+WGBStringAction.m in Sources */,
 				04E8915523A267AF0081F833 /* WGBDropDownTransition.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m in Sources */,
+				04E891B723A877B70081F833 /* WGBGenericTestDemoViewController.m in Sources */,
 				046C5D832382E0E1005A12E4 /* LDNetTimer.m in Sources */,
 				0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */,
 				04E8916923A332DD0081F833 /* WGBPhotoCell.m in Sources */,
