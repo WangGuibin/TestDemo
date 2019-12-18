@@ -18,6 +18,7 @@
 #import "WGBSpecialEffectDemoViewController.h"
 #import "WGBIGListKitDemoViewController.h"
 #import "DesignPatternsDemoListViewController.h"
+#import "WGBOptimizationDemoListViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -44,7 +45,8 @@
         [JXCategoryDemoViewController class],
         [WGBSpecialEffectDemoViewController class],
         [WGBIGListKitDemoViewController class],
-        [DesignPatternsDemoListViewController class]
+        [DesignPatternsDemoListViewController class],
+        [WGBOptimizationDemoListViewController class]
     ];
 }
 
@@ -60,7 +62,8 @@
         @"JXCategoryView的一些demo实践",
         @"特殊效果demo",
         @"IGListKit Demo",
-        @"设计模式相关"
+        @"设计模式相关",
+        @"性能调优相关"
     ];
 }
 

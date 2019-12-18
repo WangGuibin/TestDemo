@@ -34,7 +34,7 @@ THE SOFTWARE.
 
 
 #import <QuartzCore/QuartzCore.h>
-
+//注意: 有几个特殊效果需要真机才会有效果
 typedef NS_ENUM(NSUInteger, WGBTransitionAnimationType) {
     //public api
     WGBTransitionAnimationTypePublicFade = 0, //淡入淡出

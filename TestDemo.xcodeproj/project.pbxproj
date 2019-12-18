@@ -211,6 +211,11 @@
 		04E891B323A877080081F833 /* DesignPatternsDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891B223A877080081F833 /* DesignPatternsDemoListViewController.m */; };
 		04E891B723A877B70081F833 /* WGBGenericTestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891B623A877B70081F833 /* WGBGenericTestDemoViewController.m */; };
 		04E891BD23A87B360081F833 /* WGBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E891BC23A87B360081F833 /* WGBPerson.m */; };
+		04E8925923AA09D20081F833 /* El Capitan 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04E8925623AA09D20081F833 /* El Capitan 2.jpg */; };
+		04E8925A23AA09D20081F833 /* El Capitan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04E8925723AA09D20081F833 /* El Capitan.jpg */; };
+		04E8925B23AA09D20081F833 /* Blue Pond.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04E8925823AA09D20081F833 /* Blue Pond.jpg */; };
+		04E8925E23AA0A080081F833 /* WGBRunLoopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8925D23AA0A080081F833 /* WGBRunLoopDemoViewController.m */; };
+		04E8926123AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8926023AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m */; };
 		04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */; };
 		04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */; };
 		04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7359922CDAA8B007CB0D0 /* AppDelegate.m */; };
@@ -617,6 +622,13 @@
 		04E891B623A877B70081F833 /* WGBGenericTestDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGenericTestDemoViewController.m; sourceTree = "<group>"; };
 		04E891BB23A87B360081F833 /* WGBPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPerson.h; sourceTree = "<group>"; };
 		04E891BC23A87B360081F833 /* WGBPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPerson.m; sourceTree = "<group>"; };
+		04E8925623AA09D20081F833 /* El Capitan 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El Capitan 2.jpg"; sourceTree = "<group>"; };
+		04E8925723AA09D20081F833 /* El Capitan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El Capitan.jpg"; sourceTree = "<group>"; };
+		04E8925823AA09D20081F833 /* Blue Pond.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blue Pond.jpg"; sourceTree = "<group>"; };
+		04E8925C23AA0A080081F833 /* WGBRunLoopDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBRunLoopDemoViewController.h; sourceTree = "<group>"; };
+		04E8925D23AA0A080081F833 /* WGBRunLoopDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRunLoopDemoViewController.m; sourceTree = "<group>"; };
+		04E8925F23AA0A2D0081F833 /* WGBOptimizationDemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBOptimizationDemoListViewController.h; sourceTree = "<group>"; };
+		04E8926023AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBOptimizationDemoListViewController.m; sourceTree = "<group>"; };
 		04F50728238FF253000D2DFB /* WGBSpringAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpringAnimationDemoViewController.h; sourceTree = "<group>"; };
 		04F50729238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpringAnimationDemoViewController.m; sourceTree = "<group>"; };
 		04F5072A238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGBSpringAnimationDemoViewController.xib; sourceTree = "<group>"; };
@@ -1180,6 +1192,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				04E8925423AA098C0081F833 /* Optimization */,
 				04E891B023A876BF0081F833 /* Design Patterns */,
 				04E8913323A1F16F0081F833 /* IGListKitDemo */,
 				04D7047323893D9E00E88123 /* SpecialEffect */,
@@ -1895,6 +1908,28 @@
 			path = "Generic&&Inverter&&Covariance";
 			sourceTree = "<group>";
 		};
+		04E8925423AA098C0081F833 /* Optimization */ = {
+			isa = PBXGroup;
+			children = (
+				04E8925523AA09A40081F833 /* RunLoop */,
+				04E8925F23AA0A2D0081F833 /* WGBOptimizationDemoListViewController.h */,
+				04E8926023AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m */,
+			);
+			path = Optimization;
+			sourceTree = "<group>";
+		};
+		04E8925523AA09A40081F833 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				04E8925823AA09D20081F833 /* Blue Pond.jpg */,
+				04E8925623AA09D20081F833 /* El Capitan 2.jpg */,
+				04E8925723AA09D20081F833 /* El Capitan.jpg */,
+				04E8925C23AA0A080081F833 /* WGBRunLoopDemoViewController.h */,
+				04E8925D23AA0A080081F833 /* WGBRunLoopDemoViewController.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
 		04F50724238FF1CE000D2DFB /* Spring */ = {
 			isa = PBXGroup;
 			children = (
@@ -2073,6 +2108,7 @@
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
 				04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */,
 				049973522374307900FBFC1E /* 666.png in Resources */,
+				04E8925923AA09D20081F833 /* El Capitan 2.jpg in Resources */,
 				0453FDCD236C36D100D8B2A5 /* HPCannonBottomOperationView.xib in Resources */,
 				04CA01F323517BE2009C8C22 /* HPEditSignatureAlertView.xib in Resources */,
 				0450C8CC235187EC0069AC4D /* github.png in Resources */,
@@ -2083,7 +2119,9 @@
 				0450C92A2355FC4B0069AC4D /* HPPublishAlertView.xib in Resources */,
 				04E8917F23A4ED8A0081F833 /* draw_text_icon_pen.png in Resources */,
 				0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */,
+				04E8925A23AA09D20081F833 /* El Capitan.jpg in Resources */,
 				04AE01AC2392502100B7D0D4 /* sky.jpg in Resources */,
+				04E8925B23AA09D20081F833 /* Blue Pond.jpg in Resources */,
 				04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */,
 				0453FDC4236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.xib in Resources */,
 			);
@@ -2173,6 +2211,7 @@
 				04E890F6239F56320081F833 /* PaletteTarget.m in Sources */,
 				047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */,
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
+				04E8926123AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m in Sources */,
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04E8916323A332570081F833 /* WGBCommentCell.m in Sources */,
@@ -2261,6 +2300,7 @@
 				04E8917A23A4EC120081F833 /* WGBDrawTextDemoViewController.m in Sources */,
 				04C4393C239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m in Sources */,
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
+				04E8925E23AA0A080081F833 /* WGBRunLoopDemoViewController.m in Sources */,
 				040A787D238C051900E1D2B7 /* DIYScanViewController.m in Sources */,
 				048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */,
 				04E891B323A877080081F833 /* DesignPatternsDemoListViewController.m in Sources */,

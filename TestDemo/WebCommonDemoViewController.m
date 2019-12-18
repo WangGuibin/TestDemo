@@ -171,6 +171,7 @@
     NSLog(@"加载完成");
     //加载完成后隐藏progressView
     self.progressView.hidden = YES;
+    self.navigationItem.title = self.webView.title;
 }
 
 ///MARK:- 加载失败
