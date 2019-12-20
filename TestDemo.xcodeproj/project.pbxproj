@@ -112,6 +112,7 @@
 		04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAA62340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m */; };
 		04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */; };
 		04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */; };
+		04B7C2DD23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2DC23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m */; };
 		04BF7A35237FD8F2003D99CF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF7A34237FD8F2003D99CF /* Constants.m */; };
 		04C3024B2382D21A00356991 /* TestDemoBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3024A2382D21A00356991 /* TestDemoBaseTableViewController.m */; };
 		04C3024E2382D35800356991 /* AnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3024D2382D35800356991 /* AnimationDemoViewController.m */; };
@@ -428,6 +429,8 @@
 		04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLayoutAnchorDemoViewController.m; sourceTree = "<group>"; };
 		04B13FBB2376A6D700583B63 /* YogaDemoOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaDemoOneViewController.h; sourceTree = "<group>"; };
 		04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaDemoOneViewController.m; sourceTree = "<group>"; };
+		04B7C2DB23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBImageTransitionDemoViewController.h; sourceTree = "<group>"; };
+		04B7C2DC23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBImageTransitionDemoViewController.m; sourceTree = "<group>"; };
 		04BF7A33237FD8F2003D99CF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		04BF7A34237FD8F2003D99CF /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		04C302492382D21A00356991 /* TestDemoBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDemoBaseTableViewController.h; sourceTree = "<group>"; };
@@ -958,6 +961,7 @@
 		046D95802399FEF200D79801 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				04B7C2DA23AC778D00F6BB2C /* ImageTransition */,
 				04E8915223A267750081F833 /* DropDown */,
 				04E8912823A11B090081F833 /* Hole */,
 				04E89108239FADD30081F833 /* CATransition */,
@@ -1309,6 +1313,15 @@
 				04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */,
 			);
 			path = NSLayoutAnchor;
+			sourceTree = "<group>";
+		};
+		04B7C2DA23AC778D00F6BB2C /* ImageTransition */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C2DB23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.h */,
+				04B7C2DC23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m */,
+			);
+			path = ImageTransition;
 			sourceTree = "<group>";
 		};
 		04C302482382D19500356991 /* Animation */ = {
@@ -2210,6 +2223,7 @@
 				04E8916623A3329C0081F833 /* WGBInteractiveCell.m in Sources */,
 				04E890F6239F56320081F833 /* PaletteTarget.m in Sources */,
 				047BA68E2383CE40008B6FC8 /* XDVerticalGradientColorSlider.m in Sources */,
+				04B7C2DD23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m in Sources */,
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04E8926123AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m in Sources */,
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,

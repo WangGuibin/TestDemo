@@ -36,6 +36,7 @@ THE SOFTWARE.
 #import "WGBCATransitionAnimationTypeDemoViewController.h"
 #import "WGBTestHoleDemoViewController.h"
 #import "WGBDropDownTestDemoViewController.h"
+#import "WGBImageTransitionDemoViewController.h"
 
 @interface WGBTransitionDemoListViewController ()
 
@@ -48,7 +49,8 @@ THE SOFTWARE.
         [PushPopSimpleDemoFromViewController class],
         [WGBCATransitionAnimationTypeDemoViewController class],
         [WGBTestHoleDemoViewController class],
-        [WGBDropDownTestDemoViewController class]
+        [WGBDropDownTestDemoViewController class],
+        [WGBImageTransitionDemoViewController class]
     ];
 }
 
@@ -58,7 +60,8 @@ THE SOFTWARE.
         @"基本操作-简称基操",
         @"CATransition转场",
         @"管中窥豹-以点到面(有点bug)",
-        @"下拉转场"
+        @"下拉转场",
+        @"图片转场动画"
     ];
 }
 
