@@ -1,12 +1,12 @@
 //
-// TableViewDemoViewController.m
+// WGBHttpProxyDemoViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/12/23
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,48 +31,41 @@ THE SOFTWARE.
 */
     
 
-#import "TableViewDemoViewController.h"
-#import "TableViewCustomDeleteButtonDemoViewController.h"
-#import "TableViewMultipleSelectionDemoViewController.h"
-#import "TableViewSigleSelectionViewController.h"
-#import "WGBPreLoadDataLogicDemoViewController.h"
-#import "WGBAOPTableViewDemoViewController.h"
-#import "WGBDotLineCellDemoViewController.h"
+#import "WGBHttpProxyDemoViewController.h"
+#import "HttpProxy.h"
+#import "UserHttpHandlerImp.h"
+#import "CommentHttpHandlerImp.h"
 
-@interface TableViewDemoViewController ()
+@interface WGBHttpProxyDemoViewController ()
 
 @end
 
-@implementation TableViewDemoViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [TableViewMultipleSelectionDemoViewController class],
-        [TableViewSigleSelectionViewController class],
-        [TableViewCustomDeleteButtonDemoViewController class],
-        [WGBPreLoadDataLogicDemoViewController class],
-        [WGBAOPTableViewDemoViewController class],
-        [WGBDotLineCellDemoViewController class]
-     ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"tableView多选",
-        @"tableView单选",
-        @"tableView自定义删除按钮",
-        @"智能预加载基本逻辑",
-        @"AOP切面编程",
-        @"点连成线的进度节点cell"
-    ];
-}
-
+@implementation WGBHttpProxyDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    
+    //Init and register http handler
+    [[HttpProxy sharedInstance] registerHttpProtocol:@protocol(UserHttpHandler) handler:[UserHttpHandlerImp new]];
+    [[HttpProxy sharedInstance] registerHttpProtocol:@protocol(CommentHttpHandler) handler:[CommentHttpHandlerImp new]];
+    
+    //Call
+    [[HttpProxy sharedInstance] getUserWithID:@100];
+    [[HttpProxy sharedInstance] getCommentsWithDate:[NSDate new]];
+
+    
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
 @end

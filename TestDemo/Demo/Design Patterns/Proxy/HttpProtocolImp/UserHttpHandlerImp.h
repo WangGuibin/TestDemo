@@ -1,12 +1,12 @@
 //
-// DesignPatternsDemoListViewController.m
+// UserHttpHandlerImp.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/17
+// Created by CoderWGB on 2019/12/23
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,35 +31,13 @@ THE SOFTWARE.
 */
     
 
-#import "DesignPatternsDemoListViewController.h"
-#import "WGBGenericTestDemoViewController.h"
-#import "WGBHttpProxyDemoViewController.h"
+#import <Foundation/Foundation.h>
+#import "HttpProtocol.h"
 
-@interface DesignPatternsDemoListViewController ()
+NS_ASSUME_NONNULL_BEGIN
 
-@end
-
-@implementation DesignPatternsDemoListViewController
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBGenericTestDemoViewController class],
-        [WGBHttpProxyDemoViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"泛型 - 逆变和协变",
-        @"利用NSProxy实现消息转发-模块解藕"
-    ];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
-}
+@interface UserHttpHandlerImp : NSObject<UserHttpHandler>
 
 @end
+
+NS_ASSUME_NONNULL_END

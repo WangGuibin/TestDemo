@@ -36,6 +36,10 @@
 		040A7888238C0AB600E1D2B7 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 040A7886238C0AB600E1D2B7 /* MBProgressHUD.bundle */; };
 		041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */; };
 		0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */; };
+		043C2C8B23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C8A23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m */; };
+		043C2C8E23B0C9A7005AF423 /* WGBCreateQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C8D23B0C9A7005AF423 /* WGBCreateQRCodeTool.m */; };
+		043C2C9123B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C9023B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m */; };
+		043C2C9423B0CBE6005AF423 /* WGBGradientCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C9323B0CBE6005AF423 /* WGBGradientCodeView.m */; };
 		0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */; };
 		0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C8235187EC0069AC4D /* Miku.jpg */; };
 		0450C8CC235187EC0069AC4D /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C9235187EC0069AC4D /* github.png */; };
@@ -113,6 +117,14 @@
 		04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0CAB62341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m */; };
 		04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */; };
 		04B7C2DD23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2DC23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m */; };
+		04B7C2E523AD11C600F6BB2C /* WGBDotDiffusionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2E423AD11C600F6BB2C /* WGBDotDiffusionDemoViewController.m */; };
+		04B7C2E823AD120C00F6BB2C /* WGBDotDiffusionDemoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2E723AD120C00F6BB2C /* WGBDotDiffusionDemoDetailViewController.m */; };
+		04B7C2EC23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2EB23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.m */; };
+		04B7C2EF23AE6E9400F6BB2C /* WGBDotLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2EE23AE6E9400F6BB2C /* WGBDotLineCell.m */; };
+		04B7C2F623B070E500F6BB2C /* HttpProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2F523B070E500F6BB2C /* HttpProxy.m */; };
+		04B7C2FA23B071A700F6BB2C /* CommentHttpHandlerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2F923B071A700F6BB2C /* CommentHttpHandlerImp.m */; };
+		04B7C2FD23B071C300F6BB2C /* UserHttpHandlerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2FC23B071C300F6BB2C /* UserHttpHandlerImp.m */; };
+		04B7C30023B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2FF23B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m */; };
 		04BF7A35237FD8F2003D99CF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF7A34237FD8F2003D99CF /* Constants.m */; };
 		04C3024B2382D21A00356991 /* TestDemoBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3024A2382D21A00356991 /* TestDemoBaseTableViewController.m */; };
 		04C3024E2382D35800356991 /* AnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3024D2382D35800356991 /* AnimationDemoViewController.m */; };
@@ -289,6 +301,14 @@
 		041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCallStackDemoViewController.m; sourceTree = "<group>"; };
 		0439C9EB234C940A00E9D9AB /* YYTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
 		0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextDemoViewController.m; sourceTree = "<group>"; };
+		043C2C8923B0C989005AF423 /* WGBCreateQRCodeDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCreateQRCodeDemoViewController.h; sourceTree = "<group>"; };
+		043C2C8A23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCreateQRCodeDemoViewController.m; sourceTree = "<group>"; };
+		043C2C8C23B0C9A7005AF423 /* WGBCreateQRCodeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCreateQRCodeTool.h; sourceTree = "<group>"; };
+		043C2C8D23B0C9A7005AF423 /* WGBCreateQRCodeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCreateQRCodeTool.m; sourceTree = "<group>"; };
+		043C2C8F23B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBShowCodeImageDemoViewController.h; sourceTree = "<group>"; };
+		043C2C9023B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBShowCodeImageDemoViewController.m; sourceTree = "<group>"; };
+		043C2C9223B0CBE6005AF423 /* WGBGradientCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientCodeView.h; sourceTree = "<group>"; };
+		043C2C9323B0CBE6005AF423 /* WGBGradientCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGradientCodeView.m; sourceTree = "<group>"; };
 		0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 74766_811947_358458.gif; sourceTree = "<group>"; };
 		0450C8C8235187EC0069AC4D /* Miku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Miku.jpg; sourceTree = "<group>"; };
 		0450C8C9235187EC0069AC4D /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
@@ -431,6 +451,23 @@
 		04B13FBC2376A6D700583B63 /* YogaDemoOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaDemoOneViewController.m; sourceTree = "<group>"; };
 		04B7C2DB23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBImageTransitionDemoViewController.h; sourceTree = "<group>"; };
 		04B7C2DC23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBImageTransitionDemoViewController.m; sourceTree = "<group>"; };
+		04B7C2E323AD11C600F6BB2C /* WGBDotDiffusionDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDotDiffusionDemoViewController.h; sourceTree = "<group>"; };
+		04B7C2E423AD11C600F6BB2C /* WGBDotDiffusionDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDotDiffusionDemoViewController.m; sourceTree = "<group>"; };
+		04B7C2E623AD120C00F6BB2C /* WGBDotDiffusionDemoDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDotDiffusionDemoDetailViewController.h; sourceTree = "<group>"; };
+		04B7C2E723AD120C00F6BB2C /* WGBDotDiffusionDemoDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDotDiffusionDemoDetailViewController.m; sourceTree = "<group>"; };
+		04B7C2EA23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDotLineCellDemoViewController.h; sourceTree = "<group>"; };
+		04B7C2EB23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDotLineCellDemoViewController.m; sourceTree = "<group>"; };
+		04B7C2ED23AE6E9400F6BB2C /* WGBDotLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDotLineCell.h; sourceTree = "<group>"; };
+		04B7C2EE23AE6E9400F6BB2C /* WGBDotLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDotLineCell.m; sourceTree = "<group>"; };
+		04B7C2F423B070E500F6BB2C /* HttpProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpProxy.h; sourceTree = "<group>"; };
+		04B7C2F523B070E500F6BB2C /* HttpProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpProxy.m; sourceTree = "<group>"; };
+		04B7C2F723B0711700F6BB2C /* HttpProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpProtocol.h; sourceTree = "<group>"; };
+		04B7C2F823B071A700F6BB2C /* CommentHttpHandlerImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentHttpHandlerImp.h; sourceTree = "<group>"; };
+		04B7C2F923B071A700F6BB2C /* CommentHttpHandlerImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentHttpHandlerImp.m; sourceTree = "<group>"; };
+		04B7C2FB23B071C300F6BB2C /* UserHttpHandlerImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserHttpHandlerImp.h; sourceTree = "<group>"; };
+		04B7C2FC23B071C300F6BB2C /* UserHttpHandlerImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserHttpHandlerImp.m; sourceTree = "<group>"; };
+		04B7C2FE23B0726B00F6BB2C /* WGBHttpProxyDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHttpProxyDemoViewController.h; sourceTree = "<group>"; };
+		04B7C2FF23B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHttpProxyDemoViewController.m; sourceTree = "<group>"; };
 		04BF7A33237FD8F2003D99CF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		04BF7A34237FD8F2003D99CF /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		04C302492382D21A00356991 /* TestDemoBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDemoBaseTableViewController.h; sourceTree = "<group>"; };
@@ -833,6 +870,21 @@
 			path = YYText;
 			sourceTree = "<group>";
 		};
+		043C2C8823B0C96D005AF423 /* CreateQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				043C2C8C23B0C9A7005AF423 /* WGBCreateQRCodeTool.h */,
+				043C2C8D23B0C9A7005AF423 /* WGBCreateQRCodeTool.m */,
+				043C2C9223B0CBE6005AF423 /* WGBGradientCodeView.h */,
+				043C2C9323B0CBE6005AF423 /* WGBGradientCodeView.m */,
+				043C2C8923B0C989005AF423 /* WGBCreateQRCodeDemoViewController.h */,
+				043C2C8A23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m */,
+				043C2C8F23B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.h */,
+				043C2C9023B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m */,
+			);
+			path = CreateQRCode;
+			sourceTree = "<group>";
+		};
 		0450C8C6235187D90069AC4D /* DemoImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -961,6 +1013,7 @@
 		046D95802399FEF200D79801 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				04B7C2E223AD119900F6BB2C /* DotDiffusion */,
 				04B7C2DA23AC778D00F6BB2C /* ImageTransition */,
 				04E8915223A267750081F833 /* DropDown */,
 				04E8912823A11B090081F833 /* Hole */,
@@ -1324,6 +1377,68 @@
 			path = ImageTransition;
 			sourceTree = "<group>";
 		};
+		04B7C2E223AD119900F6BB2C /* DotDiffusion */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C2E323AD11C600F6BB2C /* WGBDotDiffusionDemoViewController.h */,
+				04B7C2E423AD11C600F6BB2C /* WGBDotDiffusionDemoViewController.m */,
+				04B7C2E623AD120C00F6BB2C /* WGBDotDiffusionDemoDetailViewController.h */,
+				04B7C2E723AD120C00F6BB2C /* WGBDotDiffusionDemoDetailViewController.m */,
+			);
+			path = DotDiffusion;
+			sourceTree = "<group>";
+		};
+		04B7C2E923AE6E5D00F6BB2C /* DotLineCell */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C2EA23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.h */,
+				04B7C2EB23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.m */,
+				04B7C2ED23AE6E9400F6BB2C /* WGBDotLineCell.h */,
+				04B7C2EE23AE6E9400F6BB2C /* WGBDotLineCell.m */,
+			);
+			path = DotLineCell;
+			sourceTree = "<group>";
+		};
+		04B7C2F023B06F7B00F6BB2C /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C2F323B070C000F6BB2C /* HttpProtocolImp */,
+				04B7C2F223B070B600F6BB2C /* HttpProtocol */,
+				04B7C2F123B06F9600F6BB2C /* HttpProxy */,
+				04B7C2FE23B0726B00F6BB2C /* WGBHttpProxyDemoViewController.h */,
+				04B7C2FF23B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		04B7C2F123B06F9600F6BB2C /* HttpProxy */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C2F423B070E500F6BB2C /* HttpProxy.h */,
+				04B7C2F523B070E500F6BB2C /* HttpProxy.m */,
+			);
+			path = HttpProxy;
+			sourceTree = "<group>";
+		};
+		04B7C2F223B070B600F6BB2C /* HttpProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C2F723B0711700F6BB2C /* HttpProtocol.h */,
+			);
+			path = HttpProtocol;
+			sourceTree = "<group>";
+		};
+		04B7C2F323B070C000F6BB2C /* HttpProtocolImp */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C2F823B071A700F6BB2C /* CommentHttpHandlerImp.h */,
+				04B7C2F923B071A700F6BB2C /* CommentHttpHandlerImp.m */,
+				04B7C2FB23B071C300F6BB2C /* UserHttpHandlerImp.h */,
+				04B7C2FC23B071C300F6BB2C /* UserHttpHandlerImp.m */,
+			);
+			path = HttpProtocolImp;
+			sourceTree = "<group>";
+		};
 		04C302482382D19500356991 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1343,6 +1458,7 @@
 		04C3024F2382D41F00356991 /* TableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04B7C2E923AE6E5D00F6BB2C /* DotLineCell */,
 				04034BBC239E94EC0063E0A5 /* AOP */,
 				046D95AC239B539C00D79801 /* WGBPreLoadDataLogic */,
 				04F914EA2375997E006E8B77 /* UITableViewSigleSelection */,
@@ -1474,6 +1590,7 @@
 		04CA01FA2351816B009C8C22 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				043C2C8823B0C96D005AF423 /* CreateQRCode */,
 				040A7877238C04FD00E1D2B7 /* DIYScan */,
 				0450C8C6235187D90069AC4D /* DemoImages */,
 				04CA01FB235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.h */,
@@ -1903,6 +2020,7 @@
 		04E891B023A876BF0081F833 /* Design Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				04B7C2F023B06F7B00F6BB2C /* Proxy */,
 				04E891B423A877690081F833 /* Generic&&Inverter&&Covariance */,
 				04E891B123A877080081F833 /* DesignPatternsDemoListViewController.h */,
 				04E891B223A877080081F833 /* DesignPatternsDemoListViewController.m */,
@@ -2203,8 +2321,10 @@
 				04E8912423A0E3110081F833 /* NSMutableAttributedString+WGBExtension.m in Sources */,
 				046D95A8239B4CD600D79801 /* WGBHighLightLabelViewController.m in Sources */,
 				0454E5C823891B790000D62C /* JXCategoryDemoViewController.m in Sources */,
+				043C2C9123B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m in Sources */,
 				040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */,
 				04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */,
+				04B7C30023B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
 				040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */,
 				04E891AF23A7C5AE0081F833 /* FBLikeLayout.m in Sources */,
@@ -2229,6 +2349,7 @@
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04E8916323A332570081F833 /* WGBCommentCell.m in Sources */,
+				04B7C2F623B070E500F6BB2C /* HttpProxy.m in Sources */,
 				04E8919523A741A70081F833 /* WGBPageEnableFlowLayout.m in Sources */,
 				04E89115239FB1F10081F833 /* WGBTestCATransitionDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
@@ -2237,6 +2358,7 @@
 				04C302612382D7B500356991 /* AlertDemoViewController.m in Sources */,
 				04D704AF238A83F900E88123 /* YogaKitAlignItemsDemoViewController.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
+				04B7C2E523AD11C600F6BB2C /* WGBDotDiffusionDemoViewController.m in Sources */,
 				046D95872399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m in Sources */,
 				04BF7A35237FD8F2003D99CF /* Constants.m in Sources */,
 				04E89102239F59010081F833 /* UIColor+Hex.m in Sources */,
@@ -2269,6 +2391,7 @@
 				04E8919D23A7711C0081F833 /* UIView+WGBCornerCliper.m in Sources */,
 				04E8915823A26D4F0081F833 /* WGBDropDownTestDemoViewController.m in Sources */,
 				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
+				043C2C9423B0CBE6005AF423 /* WGBGradientCodeView.m in Sources */,
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
 				04E8915D23A331260081F833 /* WGBPostFeedListDemoVC.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
@@ -2276,7 +2399,9 @@
 				04E8914D23A1FE640081F833 /* WGBSingleLabelTextSection.m in Sources */,
 				0408B8DD2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m in Sources */,
 				04E8916F23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m in Sources */,
+				04B7C2EC23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.m in Sources */,
 				04E8918323A4F09C0081F833 /* WGBEmitterDemoViewController.m in Sources */,
+				043C2C8B23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m in Sources */,
 				04E8912723A0ED340081F833 /* WGBTestSlideDemoViewController.m in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
 				04E890F9239F56880081F833 /* WGBRecognitionPictureColorViewController.m in Sources */,
@@ -2289,6 +2414,7 @@
 				04E890F2239F56320081F833 /* PaletteSwatch.m in Sources */,
 				04E8914623A1F9040081F833 /* WGBIGListKitDemoViewController.m in Sources */,
 				04C43938239E519800A8BEC0 /* WGBFloatView.m in Sources */,
+				043C2C8E23B0C9A7005AF423 /* WGBCreateQRCodeTool.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
 				046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */,
 				04D704A8238A7FD500E88123 /* YogaJustifyContentDemoBaseViewController.m in Sources */,
@@ -2300,6 +2426,7 @@
 				04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
+				04B7C2EF23AE6E9400F6BB2C /* WGBDotLineCell.m in Sources */,
 				046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */,
 				04E890F1239F56320081F833 /* Palette.m in Sources */,
 				04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */,
@@ -2311,6 +2438,7 @@
 				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
 				04E890F4239F56320081F833 /* PaletteColorModel.m in Sources */,
+				04B7C2FD23B071C300F6BB2C /* UserHttpHandlerImp.m in Sources */,
 				04E8917A23A4EC120081F833 /* WGBDrawTextDemoViewController.m in Sources */,
 				04C4393C239E558400A8BEC0 /* WGBPresentAlertDemoViewController.m in Sources */,
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
@@ -2351,6 +2479,7 @@
 				04E891A423A778B00081F833 /* WGBDrawGridViewDemoViewController.m in Sources */,
 				048DB1D223912432007701EC /* WGBCircleMaskLayerEffectViewController.m in Sources */,
 				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
+				04B7C2E823AD120C00F6BB2C /* WGBDotDiffusionDemoDetailViewController.m in Sources */,
 				04C302562382D59A00356991 /* BoomBoomBoomAnimationDemoViewController.m in Sources */,
 				04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */,
 				04083E24237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m in Sources */,
@@ -2375,6 +2504,7 @@
 				046C5D872382E0E1005A12E4 /* LDNetDiagnoService.m in Sources */,
 				04D704AB238A839700E88123 /* YogaKitAlignItemsViewController.m in Sources */,
 				0408B8E22398A2140032C2A3 /* PKProtocolExtension.m in Sources */,
+				04B7C2FA23B071A700F6BB2C /* CommentHttpHandlerImp.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
 				04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */,
 				0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */,

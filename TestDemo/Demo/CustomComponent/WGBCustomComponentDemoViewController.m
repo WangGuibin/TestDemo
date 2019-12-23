@@ -40,6 +40,7 @@ THE SOFTWARE.
 #import "WGBEasyMarqueeViewDemoViewController.h"
 #import "WGBDIYScanQRCodeDemoViewController.h"
 #import "WGBColorChangeDemoViewController.h"
+#import "WGBCreateQRCodeDemoViewController.h"
 
 @interface WGBCustomComponentDemoViewController ()
 
@@ -48,6 +49,7 @@ THE SOFTWARE.
 @implementation WGBCustomComponentDemoViewController
 - (NSArray<Class> *)demoClassArray{
     return @[
+        [WGBCreateQRCodeDemoViewController class],
         [WGBFancyQRCodeToolDemoViewController class],
         [WGBSelectImagesDemoViewController class],   
         [WGBGradientProgressDemoViewController class],
@@ -61,6 +63,7 @@ THE SOFTWARE.
 
 - (NSArray *)demoTitleArray{
     return @[
+        @"创建二维码和条形码",
         @"花式二维码",
         @"选择相册-发布",
         @"渐变进度条Demo",

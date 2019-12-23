@@ -1,12 +1,12 @@
 //
-// TableViewDemoViewController.m
+// WGBDotDiffusionDemoDetailViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/18
+// Created by CoderWGB on 2019/12/20
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,48 +31,38 @@ THE SOFTWARE.
 */
     
 
-#import "TableViewDemoViewController.h"
-#import "TableViewCustomDeleteButtonDemoViewController.h"
-#import "TableViewMultipleSelectionDemoViewController.h"
-#import "TableViewSigleSelectionViewController.h"
-#import "WGBPreLoadDataLogicDemoViewController.h"
-#import "WGBAOPTableViewDemoViewController.h"
-#import "WGBDotLineCellDemoViewController.h"
+#import "WGBDotDiffusionDemoDetailViewController.h"
 
-@interface TableViewDemoViewController ()
+@interface WGBDotDiffusionDemoDetailViewController ()
+
+@property (nonatomic, strong) UIImageView *bgImageView;
 
 @end
 
-@implementation TableViewDemoViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [TableViewMultipleSelectionDemoViewController class],
-        [TableViewSigleSelectionViewController class],
-        [TableViewCustomDeleteButtonDemoViewController class],
-        [WGBPreLoadDataLogicDemoViewController class],
-        [WGBAOPTableViewDemoViewController class],
-        [WGBDotLineCellDemoViewController class]
-     ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"tableView多选",
-        @"tableView单选",
-        @"tableView自定义删除按钮",
-        @"智能预加载基本逻辑",
-        @"AOP切面编程",
-        @"点连成线的进度节点cell"
-    ];
-}
-
+@implementation WGBDotDiffusionDemoDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    [self.view addSubview: self.bgImageView];
+    self.bgImageView.frame = self.view.bounds;
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:YES completion:nil];        
+    }
+}
+
+- (UIImageView *)bgImageView {
+    if (!_bgImageView) {
+        _bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"landscape.jpg"]];
+        _bgImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _bgImageView.clipsToBounds = YES;
+    }
+    return _bgImageView;
+}
+
 @end

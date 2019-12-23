@@ -1,12 +1,12 @@
 //
-// DesignPatternsDemoListViewController.m
+// WGBDotLineCell.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/17
+// Created by CoderWGB on 2019/12/21
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,35 +31,19 @@ THE SOFTWARE.
 */
     
 
-#import "DesignPatternsDemoListViewController.h"
-#import "WGBGenericTestDemoViewController.h"
-#import "WGBHttpProxyDemoViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface DesignPatternsDemoListViewController ()
+NS_ASSUME_NONNULL_BEGIN
 
-@end
-
-@implementation DesignPatternsDemoListViewController
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBGenericTestDemoViewController class],
-        [WGBHttpProxyDemoViewController class]
-    ];
-}
+@interface WGBDotLineCell : UITableViewCell
 
 
-- (NSArray *)demoTitleArray{
-    return @[
-        @"泛型 - 逆变和协变",
-        @"利用NSProxy实现消息转发-模块解藕"
-    ];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
-}
+/// 隐藏一些线
+/// @param indexRow 当前下标
+/// @param rowCount cell总数
+- (void)isHiddenSomeLineByIndex:(NSInteger)indexRow
+                       rowCount:(NSInteger)rowCount;
 
 @end
+
+NS_ASSUME_NONNULL_END
