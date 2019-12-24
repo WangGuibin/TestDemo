@@ -1,12 +1,12 @@
 //
-// WGBOptimizationDemoListViewController.m
+// WGBUnicodeTransformTool.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/18
+// Created by CoderWGB on 2019/12/24
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,35 +31,24 @@ THE SOFTWARE.
 */
     
 
-#import "WGBOptimizationDemoListViewController.h"
-#import "WGBRunLoopDemoViewController.h"
-#import "WGBIconFontDemoViewController.h"
+#import <Foundation/Foundation.h>
 
-@interface WGBOptimizationDemoListViewController ()
+NS_ASSUME_NONNULL_BEGIN
 
-@end
+@interface WGBUnicodeTransformTool : NSObject
 
-@implementation WGBOptimizationDemoListViewController
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBRunLoopDemoViewController class],
-        [WGBIconFontDemoViewController class]
-    ];
-}
++(NSString *)decodeFromPercentEscapeString: (NSString *) input;
++(NSString *)encodeToPercentEscapeString: (NSString *) input;
 
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"RunLoop优化UITableView滚动丝般顺滑",
-        @"iconfont代替图标优化包大小"
-    ];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
-}
+/**
+ *  Unicode转UTF-8
+ */
++(NSString*)replaceUnicode:(NSString*)aUnicodeString;
+/**
+ *  UTF-8转Unicode
+ */
++(NSString *) utf8ToUnicode:(NSString *)string;
 
 @end
+
+NS_ASSUME_NONNULL_END

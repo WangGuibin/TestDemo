@@ -1,12 +1,12 @@
 //
-// WGBOptimizationDemoListViewController.m
+// WGBIconFontDemoViewController.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/18
+// Created by CoderWGB on 2019/12/24
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,35 +31,12 @@ THE SOFTWARE.
 */
     
 
-#import "WGBOptimizationDemoListViewController.h"
-#import "WGBRunLoopDemoViewController.h"
-#import "WGBIconFontDemoViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface WGBOptimizationDemoListViewController ()
+NS_ASSUME_NONNULL_BEGIN
 
-@end
-
-@implementation WGBOptimizationDemoListViewController
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBRunLoopDemoViewController class],
-        [WGBIconFontDemoViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"RunLoop优化UITableView滚动丝般顺滑",
-        @"iconfont代替图标优化包大小"
-    ];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
-}
+@interface WGBIconFontDemoViewController : UIViewController
 
 @end
+
+NS_ASSUME_NONNULL_END

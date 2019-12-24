@@ -40,6 +40,21 @@
 		043C2C8E23B0C9A7005AF423 /* WGBCreateQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C8D23B0C9A7005AF423 /* WGBCreateQRCodeTool.m */; };
 		043C2C9123B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C9023B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m */; };
 		043C2C9423B0CBE6005AF423 /* WGBGradientCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C9323B0CBE6005AF423 /* WGBGradientCodeView.m */; };
+		043C30DF23B1F96A005AF423 /* WGBIconFontDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C30DE23B1F96A005AF423 /* WGBIconFontDemoViewController.m */; };
+		043C30E723B1FA52005AF423 /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C30E123B1FA52005AF423 /* TBCityIconFont.m */; };
+		043C30E823B1FA52005AF423 /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C30E223B1FA52005AF423 /* TBCityIconInfo.m */; };
+		043C30E923B1FA52005AF423 /* UIImage+TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C30E323B1FA52005AF423 /* UIImage+TBCityIconFont.m */; };
+		043C310223B1FF60005AF423 /* WGBUnicodeTransformTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C310123B1FF60005AF423 /* WGBUnicodeTransformTool.m */; };
+		043C310D23B21F12005AF423 /* iconfontData.json in Resources */ = {isa = PBXBuildFile; fileRef = 043C310323B21F10005AF423 /* iconfontData.json */; };
+		043C310E23B21F12005AF423 /* iconfont.css in Resources */ = {isa = PBXBuildFile; fileRef = 043C310423B21F10005AF423 /* iconfont.css */; };
+		043C310F23B21F12005AF423 /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 043C310523B21F10005AF423 /* demo.css */; };
+		043C311023B21F12005AF423 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043C310623B21F11005AF423 /* iconfont.ttf */; };
+		043C311123B21F12005AF423 /* iconfont.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 043C310723B21F11005AF423 /* iconfont.woff2 */; };
+		043C311223B21F12005AF423 /* iconfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = 043C310823B21F11005AF423 /* iconfont.svg */; };
+		043C311323B21F12005AF423 /* iconfont.js in Resources */ = {isa = PBXBuildFile; fileRef = 043C310923B21F11005AF423 /* iconfont.js */; };
+		043C311423B21F12005AF423 /* iconfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 043C310A23B21F12005AF423 /* iconfont.woff */; };
+		043C311523B21F12005AF423 /* demo_index.html in Resources */ = {isa = PBXBuildFile; fileRef = 043C310B23B21F12005AF423 /* demo_index.html */; };
+		043C311623B21F12005AF423 /* iconfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = 043C310C23B21F12005AF423 /* iconfont.eot */; };
 		0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */; };
 		0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C8235187EC0069AC4D /* Miku.jpg */; };
 		0450C8CC235187EC0069AC4D /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450C8C9235187EC0069AC4D /* github.png */; };
@@ -309,6 +324,26 @@
 		043C2C9023B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBShowCodeImageDemoViewController.m; sourceTree = "<group>"; };
 		043C2C9223B0CBE6005AF423 /* WGBGradientCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientCodeView.h; sourceTree = "<group>"; };
 		043C2C9323B0CBE6005AF423 /* WGBGradientCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGradientCodeView.m; sourceTree = "<group>"; };
+		043C30DD23B1F96A005AF423 /* WGBIconFontDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBIconFontDemoViewController.h; sourceTree = "<group>"; };
+		043C30DE23B1F96A005AF423 /* WGBIconFontDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBIconFontDemoViewController.m; sourceTree = "<group>"; };
+		043C30E123B1FA52005AF423 /* TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconFont.m; sourceTree = "<group>"; };
+		043C30E223B1FA52005AF423 /* TBCityIconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconInfo.m; sourceTree = "<group>"; };
+		043C30E323B1FA52005AF423 /* UIImage+TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBCityIconFont.m"; sourceTree = "<group>"; };
+		043C30E423B1FA52005AF423 /* TBCityIconInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconInfo.h; sourceTree = "<group>"; };
+		043C30E523B1FA52005AF423 /* TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconFont.h; sourceTree = "<group>"; };
+		043C30E623B1FA52005AF423 /* UIImage+TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBCityIconFont.h"; sourceTree = "<group>"; };
+		043C310023B1FF60005AF423 /* WGBUnicodeTransformTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBUnicodeTransformTool.h; sourceTree = "<group>"; };
+		043C310123B1FF60005AF423 /* WGBUnicodeTransformTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBUnicodeTransformTool.m; sourceTree = "<group>"; };
+		043C310323B21F10005AF423 /* iconfontData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iconfontData.json; sourceTree = "<group>"; };
+		043C310423B21F10005AF423 /* iconfont.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iconfont.css; sourceTree = "<group>"; };
+		043C310523B21F10005AF423 /* demo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
+		043C310623B21F11005AF423 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		043C310723B21F11005AF423 /* iconfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.woff2; sourceTree = "<group>"; };
+		043C310823B21F11005AF423 /* iconfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iconfont.svg; sourceTree = "<group>"; };
+		043C310923B21F11005AF423 /* iconfont.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = iconfont.js; sourceTree = "<group>"; };
+		043C310A23B21F12005AF423 /* iconfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.woff; sourceTree = "<group>"; };
+		043C310B23B21F12005AF423 /* demo_index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_index.html; sourceTree = "<group>"; };
+		043C310C23B21F12005AF423 /* iconfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.eot; sourceTree = "<group>"; };
 		0450C8C7235187EC0069AC4D /* 74766_811947_358458.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 74766_811947_358458.gif; sourceTree = "<group>"; };
 		0450C8C8235187EC0069AC4D /* Miku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Miku.jpg; sourceTree = "<group>"; };
 		0450C8C9235187EC0069AC4D /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
@@ -883,6 +918,49 @@
 				043C2C9023B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m */,
 			);
 			path = CreateQRCode;
+			sourceTree = "<group>";
+		};
+		043C30DC23B1F94F005AF423 /* iconFont */ = {
+			isa = PBXGroup;
+			children = (
+				043C30EB23B1FAF3005AF423 /* iconfont */,
+				043C30E023B1FA52005AF423 /* TBIconFont */,
+				043C30DD23B1F96A005AF423 /* WGBIconFontDemoViewController.h */,
+				043C30DE23B1F96A005AF423 /* WGBIconFontDemoViewController.m */,
+				043C310023B1FF60005AF423 /* WGBUnicodeTransformTool.h */,
+				043C310123B1FF60005AF423 /* WGBUnicodeTransformTool.m */,
+			);
+			path = iconFont;
+			sourceTree = "<group>";
+		};
+		043C30E023B1FA52005AF423 /* TBIconFont */ = {
+			isa = PBXGroup;
+			children = (
+				043C30E523B1FA52005AF423 /* TBCityIconFont.h */,
+				043C30E123B1FA52005AF423 /* TBCityIconFont.m */,
+				043C30E423B1FA52005AF423 /* TBCityIconInfo.h */,
+				043C30E223B1FA52005AF423 /* TBCityIconInfo.m */,
+				043C30E623B1FA52005AF423 /* UIImage+TBCityIconFont.h */,
+				043C30E323B1FA52005AF423 /* UIImage+TBCityIconFont.m */,
+			);
+			path = TBIconFont;
+			sourceTree = "<group>";
+		};
+		043C30EB23B1FAF3005AF423 /* iconfont */ = {
+			isa = PBXGroup;
+			children = (
+				043C310B23B21F12005AF423 /* demo_index.html */,
+				043C310523B21F10005AF423 /* demo.css */,
+				043C310423B21F10005AF423 /* iconfont.css */,
+				043C310C23B21F12005AF423 /* iconfont.eot */,
+				043C310923B21F11005AF423 /* iconfont.js */,
+				043C310323B21F10005AF423 /* iconfontData.json */,
+				043C310823B21F11005AF423 /* iconfont.svg */,
+				043C310623B21F11005AF423 /* iconfont.ttf */,
+				043C310A23B21F12005AF423 /* iconfont.woff */,
+				043C310723B21F11005AF423 /* iconfont.woff2 */,
+			);
+			path = iconfont;
 			sourceTree = "<group>";
 		};
 		0450C8C6235187D90069AC4D /* DemoImages */ = {
@@ -2042,6 +2120,7 @@
 		04E8925423AA098C0081F833 /* Optimization */ = {
 			isa = PBXGroup;
 			children = (
+				043C30DC23B1F94F005AF423 /* iconFont */,
 				04E8925523AA09A40081F833 /* RunLoop */,
 				04E8925F23AA0A2D0081F833 /* WGBOptimizationDemoListViewController.h */,
 				04E8926023AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m */,
@@ -2226,15 +2305,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AE01AB2392502100B7D0D4 /* bird2.png in Resources */,
+				043C311423B21F12005AF423 /* iconfont.woff in Resources */,
 				04F735A522CDAA8D007CB0D0 /* LaunchScreen.storyboard in Resources */,
 				04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */,
+				043C311123B21F12005AF423 /* iconfont.woff2 in Resources */,
+				043C310E23B21F12005AF423 /* iconfont.css in Resources */,
 				040A787E238C051900E1D2B7 /* ScanResultViewController.xib in Resources */,
 				04083E2B237FAF4F002702C6 /* ZombieTestViewController.xib in Resources */,
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
 				04AE01A623924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.xib in Resources */,
 				04AE01AA2392502100B7D0D4 /* bird1.png in Resources */,
+				043C311223B21F12005AF423 /* iconfont.svg in Resources */,
 				04F735A222CDAA8D007CB0D0 /* Assets.xcassets in Resources */,
 				04034BC4239E969A0063E0A5 /* aop_ad_image.jpeg in Resources */,
+				043C310D23B21F12005AF423 /* iconfontData.json in Resources */,
 				047BA68D2383CE40008B6FC8 /* XDVerticalGradientColorSlider.bundle in Resources */,
 				04CA01EE23517BC1009C8C22 /* HPSelectSexAlertView.xib in Resources */,
 				04F5072C238FF253000D2DFB /* WGBSpringAnimationDemoViewController.xib in Resources */,
@@ -2242,7 +2326,11 @@
 				04E8925923AA09D20081F833 /* El Capitan 2.jpg in Resources */,
 				0453FDCD236C36D100D8B2A5 /* HPCannonBottomOperationView.xib in Resources */,
 				04CA01F323517BE2009C8C22 /* HPEditSignatureAlertView.xib in Resources */,
+				043C311523B21F12005AF423 /* demo_index.html in Resources */,
 				0450C8CC235187EC0069AC4D /* github.png in Resources */,
+				043C311023B21F12005AF423 /* iconfont.ttf in Resources */,
+				043C310F23B21F12005AF423 /* demo.css in Resources */,
+				043C311623B21F12005AF423 /* iconfont.eot in Resources */,
 				040A7888238C0AB600E1D2B7 /* MBProgressHUD.bundle in Resources */,
 				04F735A022CDAA8B007CB0D0 /* Main.storyboard in Resources */,
 				04E8918F23A727020081F833 /* WGBColorChangeDemoViewController.xib in Resources */,
@@ -2251,6 +2339,7 @@
 				04E8917F23A4ED8A0081F833 /* draw_text_icon_pen.png in Resources */,
 				0450C8CA235187EC0069AC4D /* 74766_811947_358458.gif in Resources */,
 				04E8925A23AA09D20081F833 /* El Capitan.jpg in Resources */,
+				043C311323B21F12005AF423 /* iconfont.js in Resources */,
 				04AE01AC2392502100B7D0D4 /* sky.jpg in Resources */,
 				04E8925B23AA09D20081F833 /* Blue Pond.jpg in Resources */,
 				04CA01F923517E20009C8C22 /* HPCommonCancelConfirmAlertView.xib in Resources */,
@@ -2350,6 +2439,7 @@
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04E8916323A332570081F833 /* WGBCommentCell.m in Sources */,
 				04B7C2F623B070E500F6BB2C /* HttpProxy.m in Sources */,
+				043C30E923B1FA52005AF423 /* UIImage+TBCityIconFont.m in Sources */,
 				04E8919523A741A70081F833 /* WGBPageEnableFlowLayout.m in Sources */,
 				04E89115239FB1F10081F833 /* WGBTestCATransitionDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
@@ -2380,7 +2470,9 @@
 				04083E36237FB73D002702C6 /* AppFluencyMonitorTestViewController.m in Sources */,
 				04E8911923A09D160081F833 /* WGBCustomNavgationViewController.m in Sources */,
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
+				043C30E723B1FA52005AF423 /* TBCityIconFont.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
+				043C30DF23B1F96A005AF423 /* WGBIconFontDemoViewController.m in Sources */,
 				04E8917623A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */,
 				04E890F5239F56320081F833 /* PriorityBoxArray.m in Sources */,
@@ -2437,6 +2529,7 @@
 				04E8912B23A11B170081F833 /* WGBHoleAnimatedTransitioning.m in Sources */,
 				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
+				043C310223B1FF60005AF423 /* WGBUnicodeTransformTool.m in Sources */,
 				04E890F4239F56320081F833 /* PaletteColorModel.m in Sources */,
 				04B7C2FD23B071C300F6BB2C /* UserHttpHandlerImp.m in Sources */,
 				04E8917A23A4EC120081F833 /* WGBDrawTextDemoViewController.m in Sources */,
@@ -2472,6 +2565,7 @@
 				04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
+				043C30E823B1FA52005AF423 /* TBCityIconInfo.m in Sources */,
 				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
 				040A7874238C03A100E1D2B7 /* LBXPermissionPhotos.m in Sources */,

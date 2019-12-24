@@ -10,6 +10,7 @@
 #import "VCTimeProfiler.h"
 #import "XDAppFluencyMonitor.h"
 #import "TenderCrashHandler.h"
+#import "TBCityIconFont.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +27,8 @@
     [[VCTimeProfiler shared] start];
     [[XDAppFluencyMonitor sharedInstance] startMonitoring];
 //    RegisterTenderCrashHandler();
+    //iconfont 资源初始化
+    [TBCityIconFont setFontName:@"iconfont"];
     return YES;
 }
 
