@@ -10,6 +10,8 @@
 		04034BBF239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04034BBE239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m */; };
 		04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04034BC1239E96210063E0A5 /* IMYAOPTableDemo.m */; };
 		04034BC4239E969A0063E0A5 /* aop_ad_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04034BC3239E96990063E0A5 /* aop_ad_image.jpeg */; };
+		0408101623B4B1A2002EA9E1 /* WGBCustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408101523B4B1A2002EA9E1 /* WGBCustomWindow.m */; };
+		0408101A23B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408101923B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m */; };
 		04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */; };
 		04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E12237FAE1B002702C6 /* XDZombieProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E14237FAE1B002702C6 /* XDZombieDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -266,6 +268,10 @@
 		04034BC0239E96210063E0A5 /* IMYAOPTableDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMYAOPTableDemo.h; sourceTree = "<group>"; };
 		04034BC1239E96210063E0A5 /* IMYAOPTableDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMYAOPTableDemo.m; sourceTree = "<group>"; };
 		04034BC3239E96990063E0A5 /* aop_ad_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aop_ad_image.jpeg; sourceTree = "<group>"; };
+		0408101423B4B1A2002EA9E1 /* WGBCustomWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomWindow.h; sourceTree = "<group>"; };
+		0408101523B4B1A2002EA9E1 /* WGBCustomWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomWindow.m; sourceTree = "<group>"; };
+		0408101823B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomWindowDemoViewController.h; sourceTree = "<group>"; };
+		0408101923B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomWindowDemoViewController.m; sourceTree = "<group>"; };
 		04083DD1237C3E2C002702C6 /* YogaScrollViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaScrollViewDemoViewController.h; sourceTree = "<group>"; };
 		04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaScrollViewDemoViewController.m; sourceTree = "<group>"; };
 		04083E11237FAE1B002702C6 /* XDZombieDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDZombieDetector.h; sourceTree = "<group>"; };
@@ -756,6 +762,24 @@
 				04034BC1239E96210063E0A5 /* IMYAOPTableDemo.m */,
 			);
 			path = AOP;
+			sourceTree = "<group>";
+		};
+		0408101323B4B143002EA9E1 /* CustomWindow */ = {
+			isa = PBXGroup;
+			children = (
+				0408101423B4B1A2002EA9E1 /* WGBCustomWindow.h */,
+				0408101523B4B1A2002EA9E1 /* WGBCustomWindow.m */,
+			);
+			path = CustomWindow;
+			sourceTree = "<group>";
+		};
+		0408101723B4B6B1002EA9E1 /* CustomWindow */ = {
+			isa = PBXGroup;
+			children = (
+				0408101823B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.h */,
+				0408101923B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m */,
+			);
+			path = CustomWindow;
 			sourceTree = "<group>";
 		};
 		04083E10237FAE1B002702C6 /* XDZombieDetector */ = {
@@ -1576,6 +1600,7 @@
 		04C3025E2382D7A100356991 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				0408101723B4B6B1002EA9E1 /* CustomWindow */,
 				04C43939239E54B700A8BEC0 /* PresentAlert */,
 				048600CD236341ED00B63EDE /* Popver */,
 				04A78F7A2361B99F00915493 /* MaskLayer */,
@@ -2171,6 +2196,7 @@
 		04F7359722CDAA8B007CB0D0 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0408101323B4B143002EA9E1 /* CustomWindow */,
 				04E8911623A09C950081F833 /* CustomNavVCPop */,
 				047F05F22358C19E0009301D /* Tools */,
 				04B0CA782340C557007B2AD2 /* Demo */,
@@ -2574,6 +2600,7 @@
 				048DB1D223912432007701EC /* WGBCircleMaskLayerEffectViewController.m in Sources */,
 				04F914F023759BEF006E8B77 /* TestSigleSelectModel.m in Sources */,
 				04B7C2E823AD120C00F6BB2C /* WGBDotDiffusionDemoDetailViewController.m in Sources */,
+				0408101623B4B1A2002EA9E1 /* WGBCustomWindow.m in Sources */,
 				04C302562382D59A00356991 /* BoomBoomBoomAnimationDemoViewController.m in Sources */,
 				04B13FBD2376A6D700583B63 /* YogaDemoOneViewController.m in Sources */,
 				04083E24237FAE44002702C6 /* UIViewController+ViewControllerTimeProfiler.m in Sources */,
@@ -2602,6 +2629,7 @@
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
 				04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */,
 				0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */,
+				0408101A23B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m in Sources */,
 				04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */,
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,
 			);
