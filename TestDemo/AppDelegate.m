@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "VCTimeProfiler.h"
 #import "XDAppFluencyMonitor.h"
-#import "TenderCrashHandler.h"
 #import "TBCityIconFont.h"
 
 @interface AppDelegate ()

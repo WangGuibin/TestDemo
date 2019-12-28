@@ -12,6 +12,8 @@
 		04034BC4239E969A0063E0A5 /* aop_ad_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04034BC3239E96990063E0A5 /* aop_ad_image.jpeg */; };
 		0408101623B4B1A2002EA9E1 /* WGBCustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408101523B4B1A2002EA9E1 /* WGBCustomWindow.m */; };
 		0408101A23B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408101923B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m */; };
+		0408106223B6F999002EA9E1 /* WGBGradientTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408106123B6F999002EA9E1 /* WGBGradientTextDemoViewController.m */; };
+		0408106623B70A5C002EA9E1 /* WHGradientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408106423B70A5C002EA9E1 /* WHGradientHelper.m */; };
 		04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */; };
 		04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E12237FAE1B002702C6 /* XDZombieProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 04083E14237FAE1B002702C6 /* XDZombieDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -88,7 +90,6 @@
 		046D95872399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95862399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m */; };
 		046D958A2399FFEE00D79801 /* PushPopSimpleDemoToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95892399FFEE00D79801 /* PushPopSimpleDemoToViewController.m */; };
 		046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */; };
-		046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D9596239A39DF00D79801 /* TenderCrashHandler.m */; };
 		046D95A8239B4CD600D79801 /* WGBHighLightLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95A7239B4CD600D79801 /* WGBHighLightLabelViewController.m */; };
 		046D95AB239B4D0200D79801 /* UILabel+WGBStringAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95AA239B4D0200D79801 /* UILabel+WGBStringAction.m */; };
 		046D95AF239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D95AE239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m */; };
@@ -272,6 +273,10 @@
 		0408101523B4B1A2002EA9E1 /* WGBCustomWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomWindow.m; sourceTree = "<group>"; };
 		0408101823B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomWindowDemoViewController.h; sourceTree = "<group>"; };
 		0408101923B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomWindowDemoViewController.m; sourceTree = "<group>"; };
+		0408106023B6F999002EA9E1 /* WGBGradientTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGradientTextDemoViewController.h; sourceTree = "<group>"; };
+		0408106123B6F999002EA9E1 /* WGBGradientTextDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGradientTextDemoViewController.m; sourceTree = "<group>"; };
+		0408106423B70A5C002EA9E1 /* WHGradientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHGradientHelper.m; sourceTree = "<group>"; };
+		0408106523B70A5C002EA9E1 /* WHGradientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHGradientHelper.h; sourceTree = "<group>"; };
 		04083DD1237C3E2C002702C6 /* YogaScrollViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaScrollViewDemoViewController.h; sourceTree = "<group>"; };
 		04083DD2237C3E2C002702C6 /* YogaScrollViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaScrollViewDemoViewController.m; sourceTree = "<group>"; };
 		04083E11237FAE1B002702C6 /* XDZombieDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDZombieDetector.h; sourceTree = "<group>"; };
@@ -406,8 +411,6 @@
 		046D95892399FFEE00D79801 /* PushPopSimpleDemoToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushPopSimpleDemoToViewController.m; sourceTree = "<group>"; };
 		046D958B239A002600D79801 /* WGBPushPopSimpleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPushPopSimpleTransition.h; sourceTree = "<group>"; };
 		046D958C239A002600D79801 /* WGBPushPopSimpleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPushPopSimpleTransition.m; sourceTree = "<group>"; };
-		046D9596239A39DF00D79801 /* TenderCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenderCrashHandler.m; sourceTree = "<group>"; };
-		046D9597239A39DF00D79801 /* TenderCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenderCrashHandler.h; sourceTree = "<group>"; };
 		046D95A6239B4CD600D79801 /* WGBHighLightLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHighLightLabelViewController.h; sourceTree = "<group>"; };
 		046D95A7239B4CD600D79801 /* WGBHighLightLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHighLightLabelViewController.m; sourceTree = "<group>"; };
 		046D95A9239B4D0200D79801 /* UILabel+WGBStringAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+WGBStringAction.h"; sourceTree = "<group>"; };
@@ -782,6 +785,24 @@
 			path = CustomWindow;
 			sourceTree = "<group>";
 		};
+		0408105F23B6F97C002EA9E1 /* GradientText */ = {
+			isa = PBXGroup;
+			children = (
+				0408106023B6F999002EA9E1 /* WGBGradientTextDemoViewController.h */,
+				0408106123B6F999002EA9E1 /* WGBGradientTextDemoViewController.m */,
+			);
+			path = GradientText;
+			sourceTree = "<group>";
+		};
+		0408106323B70A5C002EA9E1 /* WHGradientHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0408106423B70A5C002EA9E1 /* WHGradientHelper.m */,
+				0408106523B70A5C002EA9E1 /* WHGradientHelper.h */,
+			);
+			path = WHGradientHelper;
+			sourceTree = "<group>";
+		};
 		04083E10237FAE1B002702C6 /* XDZombieDetector */ = {
 			isa = PBXGroup;
 			children = (
@@ -1140,15 +1161,6 @@
 			path = "Nav-BaseTransition";
 			sourceTree = "<group>";
 		};
-		046D9595239A39DF00D79801 /* TenderCrashHandler */ = {
-			isa = PBXGroup;
-			children = (
-				046D9596239A39DF00D79801 /* TenderCrashHandler.m */,
-				046D9597239A39DF00D79801 /* TenderCrashHandler.h */,
-			);
-			path = TenderCrashHandler;
-			sourceTree = "<group>";
-		};
 		046D95A5239B4C8C00D79801 /* HighLightLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1227,8 +1239,8 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0408106323B70A5C002EA9E1 /* WHGradientHelper */,
 				04E890DE239F56320081F833 /* iOSPalette */,
-				046D9595239A39DF00D79801 /* TenderCrashHandler */,
 				04AE019A23924F1000B7D0D4 /* CCParallaxView */,
 				040A7883238C0AB600E1D2B7 /* MBProgressHUD */,
 				040A786A238C03A100E1D2B7 /* LBXPermissions */,
@@ -1616,6 +1628,7 @@
 		04C302622382DA5800356991 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				0408105F23B6F97C002EA9E1 /* GradientText */,
 				04E8919E23A7787C0081F833 /* DrawGridView */,
 				04C43932239E515A00A8BEC0 /* FloatView */,
 				046D95A5239B4C8C00D79801 /* HighLightLabel */,
@@ -2485,6 +2498,7 @@
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
 				04E8910E239FAF360081F833 /* WGBCATransitionAnimationSubTypeDemoViewController.m in Sources */,
 				047BA6962383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m in Sources */,
+				0408106623B70A5C002EA9E1 /* WHGradientHelper.m in Sources */,
 				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
@@ -2522,6 +2536,7 @@
 				043C2C8B23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m in Sources */,
 				04E8912723A0ED340081F833 /* WGBTestSlideDemoViewController.m in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
+				0408106223B6F999002EA9E1 /* WGBGradientTextDemoViewController.m in Sources */,
 				04E890F9239F56880081F833 /* WGBRecognitionPictureColorViewController.m in Sources */,
 				04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
@@ -2534,7 +2549,6 @@
 				04C43938239E519800A8BEC0 /* WGBFloatView.m in Sources */,
 				043C2C8E23B0C9A7005AF423 /* WGBCreateQRCodeTool.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
-				046D9598239A39DF00D79801 /* TenderCrashHandler.m in Sources */,
 				04D704A8238A7FD500E88123 /* YogaJustifyContentDemoBaseViewController.m in Sources */,
 				04E8919223A72DE10081F833 /* WGBHoverFlowLayout.m in Sources */,
 				041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */,
