@@ -38,6 +38,12 @@
 		040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A7881238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m */; };
 		040A7887238C0AB600E1D2B7 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A7885238C0AB600E1D2B7 /* MBProgressHUD+MJ.m */; };
 		040A7888238C0AB600E1D2B7 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 040A7886238C0AB600E1D2B7 /* MBProgressHUD.bundle */; };
+		04157B7D23C4B8400069FC15 /* WGBClipBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B7C23C4B8400069FC15 /* WGBClipBorderView.m */; };
+		04157B8023C4BB800069FC15 /* WGBClipImageContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B7F23C4BB800069FC15 /* WGBClipImageContainerView.m */; };
+		04157B8323C4BD930069FC15 /* WGBClipFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B8223C4BD930069FC15 /* WGBClipFrameView.m */; };
+		04157B8623C4BDAC0069FC15 /* WGBClipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B8523C4BDAC0069FC15 /* WGBClipImageView.m */; };
+		04157B8A23C4CA810069FC15 /* WGBClipImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B8923C4CA810069FC15 /* WGBClipImageDemoViewController.m */; };
+		04157B8D23C4CA9C0069FC15 /* WGBClipImageShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B8C23C4CA9C0069FC15 /* WGBClipImageShowViewController.m */; };
 		041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */; };
 		0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */; };
 		043C2C8B23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C8A23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m */; };
@@ -323,6 +329,20 @@
 		040A7884238C0AB600E1D2B7 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		040A7885238C0AB600E1D2B7 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		040A7886238C0AB600E1D2B7 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		04157B7923C4B6560069FC15 /* WGBClipImageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipImageProtocol.h; sourceTree = "<group>"; };
+		04157B7A23C4B71F0069FC15 /* WGBClipEnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipEnumHeader.h; sourceTree = "<group>"; };
+		04157B7B23C4B8400069FC15 /* WGBClipBorderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipBorderView.h; sourceTree = "<group>"; };
+		04157B7C23C4B8400069FC15 /* WGBClipBorderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBClipBorderView.m; sourceTree = "<group>"; };
+		04157B7E23C4BB800069FC15 /* WGBClipImageContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipImageContainerView.h; sourceTree = "<group>"; };
+		04157B7F23C4BB800069FC15 /* WGBClipImageContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBClipImageContainerView.m; sourceTree = "<group>"; };
+		04157B8123C4BD930069FC15 /* WGBClipFrameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipFrameView.h; sourceTree = "<group>"; };
+		04157B8223C4BD930069FC15 /* WGBClipFrameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBClipFrameView.m; sourceTree = "<group>"; };
+		04157B8423C4BDAC0069FC15 /* WGBClipImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipImageView.h; sourceTree = "<group>"; };
+		04157B8523C4BDAC0069FC15 /* WGBClipImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBClipImageView.m; sourceTree = "<group>"; };
+		04157B8823C4CA810069FC15 /* WGBClipImageDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipImageDemoViewController.h; sourceTree = "<group>"; };
+		04157B8923C4CA810069FC15 /* WGBClipImageDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBClipImageDemoViewController.m; sourceTree = "<group>"; };
+		04157B8B23C4CA9C0069FC15 /* WGBClipImageShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipImageShowViewController.h; sourceTree = "<group>"; };
+		04157B8C23C4CA9C0069FC15 /* WGBClipImageShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBClipImageShowViewController.m; sourceTree = "<group>"; };
 		041D64762384279600FB5337 /* WGBCallStackDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCallStackDemoViewController.h; sourceTree = "<group>"; };
 		041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCallStackDemoViewController.m; sourceTree = "<group>"; };
 		0439C9EB234C940A00E9D9AB /* YYTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
@@ -932,6 +952,35 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		04157B7823C4B6130069FC15 /* ClipImage */ = {
+			isa = PBXGroup;
+			children = (
+				04157B8723C4CA420069FC15 /* ClipTool */,
+				04157B8823C4CA810069FC15 /* WGBClipImageDemoViewController.h */,
+				04157B8923C4CA810069FC15 /* WGBClipImageDemoViewController.m */,
+				04157B8B23C4CA9C0069FC15 /* WGBClipImageShowViewController.h */,
+				04157B8C23C4CA9C0069FC15 /* WGBClipImageShowViewController.m */,
+			);
+			path = ClipImage;
+			sourceTree = "<group>";
+		};
+		04157B8723C4CA420069FC15 /* ClipTool */ = {
+			isa = PBXGroup;
+			children = (
+				04157B7B23C4B8400069FC15 /* WGBClipBorderView.h */,
+				04157B7C23C4B8400069FC15 /* WGBClipBorderView.m */,
+				04157B7A23C4B71F0069FC15 /* WGBClipEnumHeader.h */,
+				04157B8123C4BD930069FC15 /* WGBClipFrameView.h */,
+				04157B8223C4BD930069FC15 /* WGBClipFrameView.m */,
+				04157B7E23C4BB800069FC15 /* WGBClipImageContainerView.h */,
+				04157B7F23C4BB800069FC15 /* WGBClipImageContainerView.m */,
+				04157B7923C4B6560069FC15 /* WGBClipImageProtocol.h */,
+				04157B8423C4BDAC0069FC15 /* WGBClipImageView.h */,
+				04157B8523C4BDAC0069FC15 /* WGBClipImageView.m */,
+			);
+			path = ClipTool;
+			sourceTree = "<group>";
+		};
 		041D64752384276D00FB5337 /* CallStack */ = {
 			isa = PBXGroup;
 			children = (
@@ -1202,6 +1251,7 @@
 		047BA68F2383CE63008B6FC8 /* CustomComponent */ = {
 			isa = PBXGroup;
 			children = (
+				04157B7823C4B6130069FC15 /* ClipImage */,
 				04E8918A23A726DC0081F833 /* UIColorChange */,
 				04E8912F23A12D5C0081F833 /* LoadingView */,
 				04B0CA9C2340D12F007B2AD2 /* WGBWaveLayerButton */,
@@ -2452,6 +2502,7 @@
 				043C2C9123B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m in Sources */,
 				040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */,
 				04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */,
+				04157B8323C4BD930069FC15 /* WGBClipFrameView.m in Sources */,
 				04B7C30023B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
 				040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */,
@@ -2480,6 +2531,7 @@
 				04B7C2F623B070E500F6BB2C /* HttpProxy.m in Sources */,
 				043C30E923B1FA52005AF423 /* UIImage+TBCityIconFont.m in Sources */,
 				04E8919523A741A70081F833 /* WGBPageEnableFlowLayout.m in Sources */,
+				04157B8623C4BDAC0069FC15 /* WGBClipImageView.m in Sources */,
 				04E89115239FB1F10081F833 /* WGBTestCATransitionDemoViewController.m in Sources */,
 				04B0CAA72340D323007B2AD2 /* WGBRepairedOrientationLabelDemoViewController.m in Sources */,
 				046D95AF239B53D200D79801 /* WGBPreLoadDataLogicDemoViewController.m in Sources */,
@@ -2496,6 +2548,7 @@
 				04D7049C238A73B100E88123 /* YogaKitFlexDirectionDemoSubViewController.m in Sources */,
 				046D958A2399FFEE00D79801 /* PushPopSimpleDemoToViewController.m in Sources */,
 				04B0CAA32340D24B007B2AD2 /* WGBCommonAlertSheetViewDemoViewController.m in Sources */,
+				04157B8D23C4CA9C0069FC15 /* WGBClipImageShowViewController.m in Sources */,
 				04E8910E239FAF360081F833 /* WGBCATransitionAnimationSubTypeDemoViewController.m in Sources */,
 				047BA6962383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m in Sources */,
 				0408106623B70A5C002EA9E1 /* WHGradientHelper.m in Sources */,
@@ -2531,6 +2584,7 @@
 				04E8914D23A1FE640081F833 /* WGBSingleLabelTextSection.m in Sources */,
 				0408B8DD2398A2090032C2A3 /* WGBProtocolKitDemoViewController.m in Sources */,
 				04E8916F23A333700081F833 /* WGBIGListKitDemoPostFeedListSection.m in Sources */,
+				04157B8023C4BB800069FC15 /* WGBClipImageContainerView.m in Sources */,
 				04B7C2EC23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.m in Sources */,
 				04E8918323A4F09C0081F833 /* WGBEmitterDemoViewController.m in Sources */,
 				043C2C8B23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m in Sources */,
@@ -2556,6 +2610,7 @@
 				04D7047723893DF600E88123 /* WGBSpecialEffectDemoViewController.m in Sources */,
 				04D704A4238A7E5D00E88123 /* YogaKitJustifyContentViewController.m in Sources */,
 				04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */,
+				04157B8A23C4CA810069FC15 /* WGBClipImageDemoViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
 				04B7C2EF23AE6E9400F6BB2C /* WGBDotLineCell.m in Sources */,
@@ -2646,6 +2701,7 @@
 				0408101A23B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m in Sources */,
 				04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */,
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,
+				04157B7D23C4B8400069FC15 /* WGBClipBorderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

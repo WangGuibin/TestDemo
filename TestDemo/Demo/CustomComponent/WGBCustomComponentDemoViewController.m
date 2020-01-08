@@ -41,6 +41,7 @@ THE SOFTWARE.
 #import "WGBDIYScanQRCodeDemoViewController.h"
 #import "WGBColorChangeDemoViewController.h"
 #import "WGBCreateQRCodeDemoViewController.h"
+#import "WGBClipImageDemoViewController.h"
 
 @interface WGBCustomComponentDemoViewController ()
 
@@ -57,7 +58,8 @@ THE SOFTWARE.
         [WGBWaveLayerButtonDemoViewController class], 
         [WGBEasyMarqueeViewDemoViewController class],
         [WGBDIYScanQRCodeDemoViewController class],
-        [WGBColorChangeDemoViewController class]
+        [WGBColorChangeDemoViewController class],
+        [WGBClipImageDemoViewController class]
     ];
 }
 
@@ -71,7 +73,8 @@ THE SOFTWARE.
         @"WGBWaveLayerButton涟漪按钮",
         @"WGBEasyMarqueeVie跑马灯实践",
         @"DIY扫描二维码",
-        @"loading && 颜色过渡算法"
+        @"loading && 颜色过渡算法",
+        @"图片裁剪"
     ];
 }
 
