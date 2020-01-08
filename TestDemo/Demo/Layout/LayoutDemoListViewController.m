@@ -41,6 +41,7 @@ THE SOFTWARE.
 #import "WGBFloatViewDemoViewController.h"
 #import "WGBDrawGridViewDemoViewController.h"
 #import "WGBGradientTextDemoViewController.h"
+#import "WGBFloatingHeaderDemoViewController.h"
 
 
 @interface LayoutDemoListViewController ()
@@ -59,7 +60,8 @@ THE SOFTWARE.
         [WGBHighLightLabelViewController class],
         [WGBFloatViewDemoViewController class],
         [WGBDrawGridViewDemoViewController class],
-        [WGBGradientTextDemoViewController class]
+        [WGBGradientTextDemoViewController class],
+        [WGBFloatingHeaderDemoViewController class]
     ];
 }
 
@@ -74,7 +76,8 @@ THE SOFTWARE.
         @"UILabel高亮文字点击",
         @"类似苹果的小圆点---漂浮的View",
         @"绘制网格",
-        @"渐变文字实现方式"
+        @"渐变文字实现方式",
+        @"悬浮的header"
     ];
 }
 

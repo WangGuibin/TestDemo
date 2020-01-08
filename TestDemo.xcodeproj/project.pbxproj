@@ -44,6 +44,8 @@
 		04157B8623C4BDAC0069FC15 /* WGBClipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B8523C4BDAC0069FC15 /* WGBClipImageView.m */; };
 		04157B8A23C4CA810069FC15 /* WGBClipImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B8923C4CA810069FC15 /* WGBClipImageDemoViewController.m */; };
 		04157B8D23C4CA9C0069FC15 /* WGBClipImageShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B8C23C4CA9C0069FC15 /* WGBClipImageShowViewController.m */; };
+		04157B9B23C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B9A23C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.m */; };
+		04157B9E23C5DF5C0069FC15 /* WGBFloatingHeaderDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04157B9D23C5DF5C0069FC15 /* WGBFloatingHeaderDemoViewController.m */; };
 		041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */; };
 		0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C9EC234C940A00E9D9AB /* YYTextDemoViewController.m */; };
 		043C2C8B23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C2C8A23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m */; };
@@ -343,6 +345,10 @@
 		04157B8923C4CA810069FC15 /* WGBClipImageDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBClipImageDemoViewController.m; sourceTree = "<group>"; };
 		04157B8B23C4CA9C0069FC15 /* WGBClipImageShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBClipImageShowViewController.h; sourceTree = "<group>"; };
 		04157B8C23C4CA9C0069FC15 /* WGBClipImageShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBClipImageShowViewController.m; sourceTree = "<group>"; };
+		04157B9923C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+WGBFloatingHeader.h"; sourceTree = "<group>"; };
+		04157B9A23C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+WGBFloatingHeader.m"; sourceTree = "<group>"; };
+		04157B9C23C5DF5C0069FC15 /* WGBFloatingHeaderDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBFloatingHeaderDemoViewController.h; sourceTree = "<group>"; };
+		04157B9D23C5DF5C0069FC15 /* WGBFloatingHeaderDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFloatingHeaderDemoViewController.m; sourceTree = "<group>"; };
 		041D64762384279600FB5337 /* WGBCallStackDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCallStackDemoViewController.h; sourceTree = "<group>"; };
 		041D64772384279600FB5337 /* WGBCallStackDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCallStackDemoViewController.m; sourceTree = "<group>"; };
 		0439C9EB234C940A00E9D9AB /* YYTextDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
@@ -979,6 +985,17 @@
 				04157B8523C4BDAC0069FC15 /* WGBClipImageView.m */,
 			);
 			path = ClipTool;
+			sourceTree = "<group>";
+		};
+		04157B9823C5DE7D0069FC15 /* FloatingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				04157B9923C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.h */,
+				04157B9A23C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.m */,
+				04157B9C23C5DF5C0069FC15 /* WGBFloatingHeaderDemoViewController.h */,
+				04157B9D23C5DF5C0069FC15 /* WGBFloatingHeaderDemoViewController.m */,
+			);
+			path = FloatingHeader;
 			sourceTree = "<group>";
 		};
 		041D64752384276D00FB5337 /* CallStack */ = {
@@ -1678,6 +1695,7 @@
 		04C302622382DA5800356991 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				04157B9823C5DE7D0069FC15 /* FloatingHeader */,
 				0408105F23B6F97C002EA9E1 /* GradientText */,
 				04E8919E23A7787C0081F833 /* DrawGridView */,
 				04C43932239E515A00A8BEC0 /* FloatView */,
@@ -2509,6 +2527,7 @@
 				04E891AF23A7C5AE0081F833 /* FBLikeLayout.m in Sources */,
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */,
+				04157B9E23C5DF5C0069FC15 /* WGBFloatingHeaderDemoViewController.m in Sources */,
 				04E891BD23A87B360081F833 /* WGBPerson.m in Sources */,
 				04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */,
 				04D7047A23893E5800E88123 /* WGBGlowEffectViewController.m in Sources */,
@@ -2659,6 +2678,7 @@
 				04C43935239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m in Sources */,
 				04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
+				04157B9B23C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.m in Sources */,
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
 				043C30E823B1FA52005AF423 /* TBCityIconInfo.m in Sources */,
 				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,
