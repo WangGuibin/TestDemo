@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    http://tool.chacuo.net/cryptaes  何不在线工具调试一番?
     // Do any additional setup after loading the view.
     NSString *key = @"ffffffff66666666";
     NSString *iv = @"6666ffffeeeedddd";
