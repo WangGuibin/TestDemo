@@ -1,12 +1,12 @@
 //
-// JXCategoryDemoViewController.m
+// WGBNestSubViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/11/23
+// Created by CoderWGB on 2020/4/14
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,38 +31,28 @@ THE SOFTWARE.
 */
     
 
-#import "JXCategoryDemoViewController.h"
-#import "WGBRankBaseViewController.h"
-#import "WGBNestBaseViewController.h"
+#import "WGBNestSubViewController.h"
 
-@interface JXCategoryDemoViewController ()
+@interface WGBNestSubViewController ()
 
 @end
 
-@implementation JXCategoryDemoViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBRankBaseViewController class],
-        [WGBNestBaseViewController class]
-    ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"榜单精选背景色变换效果",
-        @"标题嵌套效果"
-    ];
-}
-
+@implementation WGBNestSubViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
+    self.view.backgroundColor = [UIColor colorWithRed:arc4random()%256/255.0f green:arc4random()%256/255.0f  blue:arc4random()%256/255.0f alpha:1.0f];
 }
 
+
+///<JXCategoryListContentViewDelegate>
+- (UIView *)listView {
+    return self.view;
+}
+
+- (void)listDidAppear{
+    
+}
 
 @end

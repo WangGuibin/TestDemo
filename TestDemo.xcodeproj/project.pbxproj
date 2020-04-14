@@ -268,6 +268,8 @@
 		04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */; };
 		04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */; };
 		04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */; };
+		CA0CD88B24455271006FE97C /* WGBNestBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */; };
+		CA0CD88E244552EE006FE97C /* WGBNestSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0CD88D244552EE006FE97C /* WGBNestSubViewController.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -764,6 +766,10 @@
 		1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAA866633D4A46C1BE8B538 /* Pods-TestDemo.testrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.testrelease.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.testrelease.xcconfig"; sourceTree = "<group>"; };
+		CA0CD88924455271006FE97C /* WGBNestBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBNestBaseViewController.h; sourceTree = "<group>"; };
+		CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBNestBaseViewController.m; sourceTree = "<group>"; };
+		CA0CD88C244552EE006FE97C /* WGBNestSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBNestSubViewController.h; sourceTree = "<group>"; };
+		CA0CD88D244552EE006FE97C /* WGBNestSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBNestSubViewController.m; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1137,6 +1143,7 @@
 		0454E5BE23891ACD0000D62C /* JXCategoryViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA0CD88824455232006FE97C /* NestTitleDemo */,
 				0454E5C223891B0E0000D62C /* MaskBgImageEffect */,
 				0454E5C623891B790000D62C /* JXCategoryDemoViewController.h */,
 				0454E5C723891B790000D62C /* JXCategoryDemoViewController.m */,
@@ -2342,6 +2349,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CA0CD88824455232006FE97C /* NestTitleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CA0CD88924455271006FE97C /* WGBNestBaseViewController.h */,
+				CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */,
+				CA0CD88C244552EE006FE97C /* WGBNestSubViewController.h */,
+				CA0CD88D244552EE006FE97C /* WGBNestSubViewController.m */,
+			);
+			path = NestTitleDemo;
+			sourceTree = "<group>";
+		};
 		D9398FDE5E01946B8CFE7939 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2537,6 +2555,7 @@
 				04E8913A23A1F29E0081F833 /* IGListKitDemoBaseViewController.m in Sources */,
 				046C5D882382E0E1005A12E4 /* LDNetConnect.m in Sources */,
 				047BA6922383CEB0008B6FC8 /* WGBCustomComponentDemoViewController.m in Sources */,
+				CA0CD88B24455271006FE97C /* WGBNestBaseViewController.m in Sources */,
 				04C3024E2382D35800356991 /* AnimationDemoViewController.m in Sources */,
 				04E8916623A3329C0081F833 /* WGBInteractiveCell.m in Sources */,
 				04E890F6239F56320081F833 /* PaletteTarget.m in Sources */,
@@ -2587,6 +2606,7 @@
 				043C30DF23B1F96A005AF423 /* WGBIconFontDemoViewController.m in Sources */,
 				04E8917623A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */,
+				CA0CD88E244552EE006FE97C /* WGBNestSubViewController.m in Sources */,
 				04E890F5239F56320081F833 /* PriorityBoxArray.m in Sources */,
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
