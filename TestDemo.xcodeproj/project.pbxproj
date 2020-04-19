@@ -268,6 +268,11 @@
 		04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */; };
 		04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */; };
 		04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */; };
+		CA06000C244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06000B244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m */; };
+		CA06000F244C2DD2001BE692 /* WGBImageBrowerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06000E244C2DD2001BE692 /* WGBImageBrowerModel.m */; };
+		CA060016244C2DFC001BE692 /* WMImageBrowerUnitImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA060010244C2DFC001BE692 /* WMImageBrowerUnitImageView.m */; };
+		CA060017244C2DFC001BE692 /* WMImageBrowerTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA060011244C2DFC001BE692 /* WMImageBrowerTransitionView.m */; };
+		CA060018244C2DFC001BE692 /* WMImageBrowerUniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA060013244C2DFC001BE692 /* WMImageBrowerUniteView.m */; };
 		CA0CD88B24455271006FE97C /* WGBNestBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */; };
 		CA0CD88E244552EE006FE97C /* WGBNestSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0CD88D244552EE006FE97C /* WGBNestSubViewController.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
@@ -766,6 +771,16 @@
 		1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAA866633D4A46C1BE8B538 /* Pods-TestDemo.testrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.testrelease.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.testrelease.xcconfig"; sourceTree = "<group>"; };
+		CA06000A244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAspectFitImageBrowerViewController.h; sourceTree = "<group>"; };
+		CA06000B244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBAspectFitImageBrowerViewController.m; sourceTree = "<group>"; };
+		CA06000D244C2DD2001BE692 /* WGBImageBrowerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBImageBrowerModel.h; sourceTree = "<group>"; };
+		CA06000E244C2DD2001BE692 /* WGBImageBrowerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBImageBrowerModel.m; sourceTree = "<group>"; };
+		CA060010244C2DFC001BE692 /* WMImageBrowerUnitImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMImageBrowerUnitImageView.m; sourceTree = "<group>"; };
+		CA060011244C2DFC001BE692 /* WMImageBrowerTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMImageBrowerTransitionView.m; sourceTree = "<group>"; };
+		CA060012244C2DFC001BE692 /* WMImageBrowerUniteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMImageBrowerUniteView.h; sourceTree = "<group>"; };
+		CA060013244C2DFC001BE692 /* WMImageBrowerUniteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMImageBrowerUniteView.m; sourceTree = "<group>"; };
+		CA060014244C2DFC001BE692 /* WMImageBrowerUnitImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMImageBrowerUnitImageView.h; sourceTree = "<group>"; };
+		CA060015244C2DFC001BE692 /* WMImageBrowerTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMImageBrowerTransitionView.h; sourceTree = "<group>"; };
 		CA0CD88924455271006FE97C /* WGBNestBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBNestBaseViewController.h; sourceTree = "<group>"; };
 		CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBNestBaseViewController.m; sourceTree = "<group>"; };
 		CA0CD88C244552EE006FE97C /* WGBNestSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBNestSubViewController.h; sourceTree = "<group>"; };
@@ -1275,6 +1290,7 @@
 		047BA68F2383CE63008B6FC8 /* CustomComponent */ = {
 			isa = PBXGroup;
 			children = (
+				CA060007244C2D3D001BE692 /* AspectFitImageBrower */,
 				04157B7823C4B6130069FC15 /* ClipImage */,
 				04E8918A23A726DC0081F833 /* UIColorChange */,
 				04E8912F23A12D5C0081F833 /* LoadingView */,
@@ -2349,6 +2365,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CA060007244C2D3D001BE692 /* AspectFitImageBrower */ = {
+			isa = PBXGroup;
+			children = (
+				CA060009244C2D8F001BE692 /* View */,
+				CA060008244C2D86001BE692 /* Model */,
+				CA06000A244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.h */,
+				CA06000B244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m */,
+			);
+			path = AspectFitImageBrower;
+			sourceTree = "<group>";
+		};
+		CA060008244C2D86001BE692 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA06000D244C2DD2001BE692 /* WGBImageBrowerModel.h */,
+				CA06000E244C2DD2001BE692 /* WGBImageBrowerModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA060009244C2D8F001BE692 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA060015244C2DFC001BE692 /* WMImageBrowerTransitionView.h */,
+				CA060011244C2DFC001BE692 /* WMImageBrowerTransitionView.m */,
+				CA060012244C2DFC001BE692 /* WMImageBrowerUniteView.h */,
+				CA060013244C2DFC001BE692 /* WMImageBrowerUniteView.m */,
+				CA060014244C2DFC001BE692 /* WMImageBrowerUnitImageView.h */,
+				CA060010244C2DFC001BE692 /* WMImageBrowerUnitImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CA0CD88824455232006FE97C /* NestTitleDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -2551,6 +2600,7 @@
 				04D7047A23893E5800E88123 /* WGBGlowEffectViewController.m in Sources */,
 				04B0CA9F2340D13B007B2AD2 /* WGBWaveLayerButtonDemoViewController.m in Sources */,
 				04E8914023A1F67D0081F833 /* IGListDemoListSection.m in Sources */,
+				CA06000F244C2DD2001BE692 /* WGBImageBrowerModel.m in Sources */,
 				046C5D862382E0E1005A12E4 /* LDNetGetAddress.m in Sources */,
 				04E8913A23A1F29E0081F833 /* IGListKitDemoBaseViewController.m in Sources */,
 				046C5D882382E0E1005A12E4 /* LDNetConnect.m in Sources */,
@@ -2591,6 +2641,7 @@
 				047BA6962383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m in Sources */,
 				0408106623B70A5C002EA9E1 /* WHGradientHelper.m in Sources */,
 				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
+				CA06000C244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m in Sources */,
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
@@ -2642,6 +2693,7 @@
 				04C43938239E519800A8BEC0 /* WGBFloatView.m in Sources */,
 				043C2C8E23B0C9A7005AF423 /* WGBCreateQRCodeTool.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
+				CA060018244C2DFC001BE692 /* WMImageBrowerUniteView.m in Sources */,
 				04D704A8238A7FD500E88123 /* YogaJustifyContentDemoBaseViewController.m in Sources */,
 				04E8919223A72DE10081F833 /* WGBHoverFlowLayout.m in Sources */,
 				041D64782384279600FB5337 /* WGBCallStackDemoViewController.m in Sources */,
@@ -2649,6 +2701,7 @@
 				04D7047723893DF600E88123 /* WGBSpecialEffectDemoViewController.m in Sources */,
 				04D704A4238A7E5D00E88123 /* YogaKitJustifyContentViewController.m in Sources */,
 				04CA020023518530009C8C22 /* WGBShowQRCodeViewController.m in Sources */,
+				CA060017244C2DFC001BE692 /* WMImageBrowerTransitionView.m in Sources */,
 				04157B8A23C4CA810069FC15 /* WGBClipImageDemoViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
@@ -2724,6 +2777,7 @@
 				04E8915523A267AF0081F833 /* WGBDropDownTransition.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m in Sources */,
 				04E891B723A877B70081F833 /* WGBGenericTestDemoViewController.m in Sources */,
+				CA060016244C2DFC001BE692 /* WMImageBrowerUnitImageView.m in Sources */,
 				046C5D832382E0E1005A12E4 /* LDNetTimer.m in Sources */,
 				0453FDCC236C36D100D8B2A5 /* HPCannonBottomOperationView.m in Sources */,
 				04E8916923A332DD0081F833 /* WGBPhotoCell.m in Sources */,

@@ -42,6 +42,7 @@ THE SOFTWARE.
 #import "WGBColorChangeDemoViewController.h"
 #import "WGBCreateQRCodeDemoViewController.h"
 #import "WGBClipImageDemoViewController.h"
+#import "WGBAspectFitImageBrowerViewController.h"
 
 @interface WGBCustomComponentDemoViewController ()
 
@@ -59,7 +60,8 @@ THE SOFTWARE.
         [WGBEasyMarqueeViewDemoViewController class],
         [WGBDIYScanQRCodeDemoViewController class],
         [WGBColorChangeDemoViewController class],
-        [WGBClipImageDemoViewController class]
+        [WGBClipImageDemoViewController class],
+        [WGBAspectFitImageBrowerViewController class]
     ];
 }
 
@@ -74,7 +76,8 @@ THE SOFTWARE.
         @"WGBEasyMarqueeVie跑马灯实践",
         @"DIY扫描二维码",
         @"loading && 颜色过渡算法",
-        @"图片裁剪"
+        @"图片裁剪",
+        @"图片组自适应大小浏览左右切换"
     ];
 }
 
