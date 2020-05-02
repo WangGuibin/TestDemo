@@ -41,6 +41,7 @@ THE SOFTWARE.
 #import "WGBCAEmitterBehaviorDemoViewController.h"
 #import "WGBRecognitionPictureColorViewController.h"
 #import "WGBTestMenuViewController.h"
+#import "WGBScrollTrackingViewController.h"
 
 @interface WGBSpecialEffectDemoViewController ()
 
@@ -58,7 +59,8 @@ THE SOFTWARE.
         [WGBCCParallaxViewDemoViewController class],
         [WGBCAEmitterBehaviorDemoViewController class],
         [WGBRecognitionPictureColorViewController class],
-        [WGBTestMenuViewController class]
+        [WGBTestMenuViewController class],
+        [WGBScrollTrackingViewController class]
     ];
 }
 
@@ -71,9 +73,10 @@ THE SOFTWARE.
         @"下拉放大&绘制圆弧效果",
         @"下拉放大",
         @"ParallaxView视差视图",
-        @"粒子五彩飞花效果",
+        @"粒子五彩飞花效果(私有api)",
         @"识别图片主色调",
-        @"抽屉菜单效果"
+        @"抽屉菜单效果",
+        @"滚动跟随"
     ];
 }
 

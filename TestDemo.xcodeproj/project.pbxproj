@@ -275,6 +275,9 @@
 		CA060018244C2DFC001BE692 /* WMImageBrowerUniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA060013244C2DFC001BE692 /* WMImageBrowerUniteView.m */; };
 		CA0CD88B24455271006FE97C /* WGBNestBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */; };
 		CA0CD88E244552EE006FE97C /* WGBNestSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0CD88D244552EE006FE97C /* WGBNestSubViewController.m */; };
+		CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */; };
+		CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */; };
+		CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -785,6 +788,12 @@
 		CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBNestBaseViewController.m; sourceTree = "<group>"; };
 		CA0CD88C244552EE006FE97C /* WGBNestSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBNestSubViewController.h; sourceTree = "<group>"; };
 		CA0CD88D244552EE006FE97C /* WGBNestSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBNestSubViewController.m; sourceTree = "<group>"; };
+		CA59E3352459D57B00066333 /* WGBScrollTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBScrollTrackingViewController.h; sourceTree = "<group>"; };
+		CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBScrollTrackingViewController.m; sourceTree = "<group>"; };
+		CA59E338245D2B1F00066333 /* WGBAttentionListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAttentionListHeaderView.h; sourceTree = "<group>"; };
+		CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBAttentionListHeaderView.m; sourceTree = "<group>"; };
+		CA59E33B245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTestTableListDataDemoSubVC.h; sourceTree = "<group>"; };
+		CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestTableListDataDemoSubVC.m; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1813,6 +1822,7 @@
 		04D7047323893D9E00E88123 /* SpecialEffect */ = {
 			isa = PBXGroup;
 			children = (
+				CA59E3342459D54400066333 /* ScrollTracking */,
 				04E8911A23A0A9930081F833 /* SlideMenu */,
 				04E890DD239F561A0081F833 /* RecognitionPictureColor */,
 				048353B1239750BB00454141 /* CAEmitterBehaviorDemo */,
@@ -2409,6 +2419,19 @@
 			path = NestTitleDemo;
 			sourceTree = "<group>";
 		};
+		CA59E3342459D54400066333 /* ScrollTracking */ = {
+			isa = PBXGroup;
+			children = (
+				CA59E3352459D57B00066333 /* WGBScrollTrackingViewController.h */,
+				CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */,
+				CA59E33B245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.h */,
+				CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */,
+				CA59E338245D2B1F00066333 /* WGBAttentionListHeaderView.h */,
+				CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */,
+			);
+			path = ScrollTracking;
+			sourceTree = "<group>";
+		};
 		D9398FDE5E01946B8CFE7939 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2572,6 +2595,7 @@
 			files = (
 				0454E5CB23891C320000D62C /* WGBRankTopBgHeader.m in Sources */,
 				04E8917D23A4EC690081F833 /* WGBDrawTextAnimationLayer.m in Sources */,
+				CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */,
 				04DCE45D2388157B00D380D9 /* WGBPersonEffectNavBar.m in Sources */,
 				04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */,
 				0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */,
@@ -2591,6 +2615,7 @@
 				04B7C30023B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
 				040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */,
+				CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */,
 				04E891AF23A7C5AE0081F833 /* FBLikeLayout.m in Sources */,
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */,
@@ -2626,6 +2651,7 @@
 				0454E5C523891B340000D62C /* WGBRankSubViewController.m in Sources */,
 				04C302612382D7B500356991 /* AlertDemoViewController.m in Sources */,
 				04D704AF238A83F900E88123 /* YogaKitAlignItemsDemoViewController.m in Sources */,
+				CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */,
 				04CA01F423517BE2009C8C22 /* HPEditSignatureAlertView.m in Sources */,
 				04B7C2E523AD11C600F6BB2C /* WGBDotDiffusionDemoViewController.m in Sources */,
 				046D95872399FFDE00D79801 /* PushPopSimpleDemoFromViewController.m in Sources */,

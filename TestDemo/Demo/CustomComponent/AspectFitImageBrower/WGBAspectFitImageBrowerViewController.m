@@ -35,6 +35,8 @@ THE SOFTWARE.
 #import "WGBImageBrowerModel.h"
 #import "WMImageBrowerTransitionView.h"
 
+// 参考了开源项目 https://github.com/henyinsitan/HYDistortionlessSlidingImages
+
 @interface WGBAspectFitImageBrowerViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) WMImageBrowerTransitionView *imageBrowerView ;
