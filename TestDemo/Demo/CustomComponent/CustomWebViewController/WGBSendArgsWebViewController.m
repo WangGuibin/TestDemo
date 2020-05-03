@@ -1,0 +1,84 @@
+//
+// WGBSendArgsWebViewController.m
+// TestDemo
+//
+// Author:  @CoderWGB
+// Github:  https://github.com/WangGuibin/TestDemo
+// E-mail:  864562082@qq.com
+//
+// Created by CoderWGB on 2020/5/3
+//
+/**
+Copyright (c) 2019 Wangguibin  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+    
+
+#import "WGBSendArgsWebViewController.h"
+
+@interface WGBSendArgsWebViewController ()
+
+
+@end
+
+@implementation WGBSendArgsWebViewController
+
+- (instancetype)initWithURLString:(NSString *)URLString
+                         argsType:(WGBWebRequestSendArgsType)argsType
+                   parametersDict:(nonnull NSDictionary *)parametersDict{
+    if (self = [super init]) {
+
+        if (argsType == WGBWebRequestSendArgsTypeGET) {
+            NSMutableString * paramStr = [NSMutableString string];
+            NSArray *allKeys = parametersDict.allKeys;
+            if (allKeys.count) {
+                [allKeys enumerateObjectsUsingBlock:^(id  _Nonnull key, NSUInteger index, BOOL * _Nonnull stop) {
+                    if (index == 0) {
+                        [paramStr appendFormat:@"%@=%@",key,parametersDict[key]];
+                    }else{
+                        [paramStr appendFormat:@"&%@=%@",key,parametersDict[key]];
+                    }
+                }];
+            }
+            
+            if ([URLString containsString:@"?"]) {
+                URLString = [NSString stringWithFormat:@"%@&%@",URLString,paramStr];
+            }else{
+                URLString = [NSString stringWithFormat:@"%@?%@",URLString,paramStr];
+            }
+
+        }else{
+            NSString *body = [parametersDict yy_modelToJSONString];
+            self.URL = [NSURL URLWithString:URLString];
+            [self.request setHTTPMethod: @"POST"];
+            [self.request setHTTPBody: [body dataUsingEncoding: NSUTF8StringEncoding]];
+        }
+    }
+    return [self initWithURLString:URLString];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+
+
+@end

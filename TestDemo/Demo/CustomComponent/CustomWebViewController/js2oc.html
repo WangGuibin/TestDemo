@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> JS与OC交互 </title>
+        <style tyep="text/css">
+            button {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <button type="button" style = "font-size: 28px;" onclick="clickBtnAction()"> postMessage的方式 </button>
+        <button type="button" style = "font-size: 28px;" onclick="hookProtocol()"> 协议拦截的方式 </button>
+        
+        <!-- alert按钮  -->
+        <button onclick = "showAlert()" style = "font-size: 18px;">alert(message)</button>
+        <!-- confirm按钮 -->
+        <button onclick = "showConfirm()" style = "font-size: 18px;">confirm(message)</button>
+
+        <!--  prompt按钮 -->
+        <button onclick = "showPrompt()" style = "font-size: 18px;">prompt(prompt, defaultText)</button>
+
+        <script>
+            function clickBtnAction(){
+                var msg = "按钮被点击了,原生端弹个alert粗来吧!!!";
+                alertTips(msg);
+            }
+            
+            function alertTips(msg){
+                window.webkit.messageHandlers.showAlert.postMessage(msg);
+            }
+            
+           function hookProtocol(){
+               var url = "showHook://" +"hookProtocol"+"?"+"hello";
+                window.location.href = url;
+            }
+        
+            //! 调用alert(message)
+            function showAlert() {
+              alert("js_alertMessage");
+            }
+
+            //! 调用confirm(message)
+              function showConfirm() {
+                confirm("js_confirmMessage");
+            }
+
+            //! 调用prompt(prompt, defaultMessage)
+              function showPrompt() {
+                prompt("js_prompt", "js_prompt_defaultMessage");
+            }
+        
+        </script>
+    </body>
+</html>

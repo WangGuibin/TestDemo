@@ -278,6 +278,11 @@
 		CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */; };
 		CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */; };
 		CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */; };
+		CA59E341245E5A3900066333 /* WGBCustomWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E340245E5A3900066333 /* WGBCustomWebViewController.m */; };
+		CA59E344245E5C3400066333 /* WGBWebViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E343245E5C3400066333 /* WGBWebViewDemoViewController.m */; };
+		CA59E347245E5E8C00066333 /* WGBSendArgsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E346245E5E8C00066333 /* WGBSendArgsWebViewController.m */; };
+		CA59E34A245E6E4800066333 /* WGBJSToOCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E349245E6E4800066333 /* WGBJSToOCDemoViewController.m */; };
+		CA59E34C245E72DD00066333 /* js2oc.html in Resources */ = {isa = PBXBuildFile; fileRef = CA59E34B245E72DD00066333 /* js2oc.html */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -794,6 +799,15 @@
 		CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBAttentionListHeaderView.m; sourceTree = "<group>"; };
 		CA59E33B245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTestTableListDataDemoSubVC.h; sourceTree = "<group>"; };
 		CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestTableListDataDemoSubVC.m; sourceTree = "<group>"; };
+		CA59E33F245E5A3900066333 /* WGBCustomWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomWebViewController.h; sourceTree = "<group>"; };
+		CA59E340245E5A3900066333 /* WGBCustomWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomWebViewController.m; sourceTree = "<group>"; };
+		CA59E342245E5C3400066333 /* WGBWebViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBWebViewDemoViewController.h; sourceTree = "<group>"; };
+		CA59E343245E5C3400066333 /* WGBWebViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBWebViewDemoViewController.m; sourceTree = "<group>"; };
+		CA59E345245E5E8C00066333 /* WGBSendArgsWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSendArgsWebViewController.h; sourceTree = "<group>"; };
+		CA59E346245E5E8C00066333 /* WGBSendArgsWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSendArgsWebViewController.m; sourceTree = "<group>"; };
+		CA59E348245E6E4800066333 /* WGBJSToOCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBJSToOCDemoViewController.h; sourceTree = "<group>"; };
+		CA59E349245E6E4800066333 /* WGBJSToOCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBJSToOCDemoViewController.m; sourceTree = "<group>"; };
+		CA59E34B245E72DD00066333 /* js2oc.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = js2oc.html; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1299,6 +1313,7 @@
 		047BA68F2383CE63008B6FC8 /* CustomComponent */ = {
 			isa = PBXGroup;
 			children = (
+				CA59E33E245E5A0B00066333 /* CustomWebViewController */,
 				CA060007244C2D3D001BE692 /* AspectFitImageBrower */,
 				04157B7823C4B6130069FC15 /* ClipImage */,
 				04E8918A23A726DC0081F833 /* UIColorChange */,
@@ -2432,6 +2447,22 @@
 			path = ScrollTracking;
 			sourceTree = "<group>";
 		};
+		CA59E33E245E5A0B00066333 /* CustomWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA59E33F245E5A3900066333 /* WGBCustomWebViewController.h */,
+				CA59E340245E5A3900066333 /* WGBCustomWebViewController.m */,
+				CA59E345245E5E8C00066333 /* WGBSendArgsWebViewController.h */,
+				CA59E346245E5E8C00066333 /* WGBSendArgsWebViewController.m */,
+				CA59E34B245E72DD00066333 /* js2oc.html */,
+				CA59E348245E6E4800066333 /* WGBJSToOCDemoViewController.h */,
+				CA59E349245E6E4800066333 /* WGBJSToOCDemoViewController.m */,
+				CA59E342245E5C3400066333 /* WGBWebViewDemoViewController.h */,
+				CA59E343245E5C3400066333 /* WGBWebViewDemoViewController.m */,
+			);
+			path = CustomWebViewController;
+			sourceTree = "<group>";
+		};
 		D9398FDE5E01946B8CFE7939 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2508,6 +2539,7 @@
 				043C311123B21F12005AF423 /* iconfont.woff2 in Resources */,
 				043C310E23B21F12005AF423 /* iconfont.css in Resources */,
 				040A787E238C051900E1D2B7 /* ScanResultViewController.xib in Resources */,
+				CA59E34C245E72DD00066333 /* js2oc.html in Resources */,
 				04083E2B237FAF4F002702C6 /* ZombieTestViewController.xib in Resources */,
 				0450C8CB235187EC0069AC4D /* Miku.jpg in Resources */,
 				04AE01A623924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.xib in Resources */,
@@ -2686,6 +2718,7 @@
 				CA0CD88E244552EE006FE97C /* WGBNestSubViewController.m in Sources */,
 				04E890F5239F56320081F833 /* PriorityBoxArray.m in Sources */,
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
+				CA59E347245E5E8C00066333 /* WGBSendArgsWebViewController.m in Sources */,
 				04083E16237FAE1B002702C6 /* XDZombieDetector.m in Sources */,
 				04E8913D23A1F3A40081F833 /* IGListDemoItemModel.m in Sources */,
 				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,
@@ -2704,11 +2737,13 @@
 				04B7C2EC23AE6E7700F6BB2C /* WGBDotLineCellDemoViewController.m in Sources */,
 				04E8918323A4F09C0081F833 /* WGBEmitterDemoViewController.m in Sources */,
 				043C2C8B23B0C989005AF423 /* WGBCreateQRCodeDemoViewController.m in Sources */,
+				CA59E341245E5A3900066333 /* WGBCustomWebViewController.m in Sources */,
 				04E8912723A0ED340081F833 /* WGBTestSlideDemoViewController.m in Sources */,
 				040A787F238C051900E1D2B7 /* ScanResultViewController.m in Sources */,
 				0408106223B6F999002EA9E1 /* WGBGradientTextDemoViewController.m in Sources */,
 				04E890F9239F56880081F833 /* WGBRecognitionPictureColorViewController.m in Sources */,
 				04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */,
+				CA59E34A245E6E4800066333 /* WGBJSToOCDemoViewController.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,
 				04E890FC239F58B80081F833 /* DemoShowColorViewCell.m in Sources */,
@@ -2717,6 +2752,7 @@
 				04E890F2239F56320081F833 /* PaletteSwatch.m in Sources */,
 				04E8914623A1F9040081F833 /* WGBIGListKitDemoViewController.m in Sources */,
 				04C43938239E519800A8BEC0 /* WGBFloatView.m in Sources */,
+				CA59E344245E5C3400066333 /* WGBWebViewDemoViewController.m in Sources */,
 				043C2C8E23B0C9A7005AF423 /* WGBCreateQRCodeTool.m in Sources */,
 				04C3025D2382D6D500356991 /* DebugDemoViewController.m in Sources */,
 				CA060018244C2DFC001BE692 /* WMImageBrowerUniteView.m in Sources */,

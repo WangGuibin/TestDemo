@@ -43,6 +43,7 @@ THE SOFTWARE.
 #import "WGBCreateQRCodeDemoViewController.h"
 #import "WGBClipImageDemoViewController.h"
 #import "WGBAspectFitImageBrowerViewController.h"
+#import "WGBWebViewDemoViewController.h"
 
 @interface WGBCustomComponentDemoViewController ()
 
@@ -61,7 +62,8 @@ THE SOFTWARE.
         [WGBDIYScanQRCodeDemoViewController class],
         [WGBColorChangeDemoViewController class],
         [WGBClipImageDemoViewController class],
-        [WGBAspectFitImageBrowerViewController class]
+        [WGBAspectFitImageBrowerViewController class],
+        [WGBWebViewDemoViewController class]
     ];
 }
 
@@ -77,7 +79,8 @@ THE SOFTWARE.
         @"DIY扫描二维码",
         @"loading && 颜色过渡算法",
         @"图片裁剪",
-        @"图片组自适应大小浏览左右切换"
+        @"图片组自适应大小浏览左右切换",
+        @"webView相关"
     ];
 }
 
