@@ -283,6 +283,8 @@
 		CA59E347245E5E8C00066333 /* WGBSendArgsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E346245E5E8C00066333 /* WGBSendArgsWebViewController.m */; };
 		CA59E34A245E6E4800066333 /* WGBJSToOCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E349245E6E4800066333 /* WGBJSToOCDemoViewController.m */; };
 		CA59E34C245E72DD00066333 /* js2oc.html in Resources */ = {isa = PBXBuildFile; fileRef = CA59E34B245E72DD00066333 /* js2oc.html */; };
+		CA59E353246126F500066333 /* RFQuiltLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E352246126F500066333 /* RFQuiltLayout.m */; };
+		CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E35624612C9600066333 /* FMMosaicLayout.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -808,6 +810,10 @@
 		CA59E348245E6E4800066333 /* WGBJSToOCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBJSToOCDemoViewController.h; sourceTree = "<group>"; };
 		CA59E349245E6E4800066333 /* WGBJSToOCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBJSToOCDemoViewController.m; sourceTree = "<group>"; };
 		CA59E34B245E72DD00066333 /* js2oc.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = js2oc.html; sourceTree = "<group>"; };
+		CA59E351246126F500066333 /* RFQuiltLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFQuiltLayout.h; sourceTree = "<group>"; };
+		CA59E352246126F500066333 /* RFQuiltLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuiltLayout.m; sourceTree = "<group>"; };
+		CA59E35624612C9600066333 /* FMMosaicLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMosaicLayout.m; sourceTree = "<group>"; };
+		CA59E35724612C9600066333 /* FMMosaicLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMosaicLayout.h; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1882,6 +1888,8 @@
 		04D704862389428400E88123 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				CA59E35524612C9600066333 /* FMMosaicLayout */,
+				CA59E350246126DF00066333 /* RFQuiltLayout */,
 				04E891AC23A7C5AE0081F833 /* FBLikeLayout */,
 				04E8918423A722440081F833 /* PageEnable */,
 				04D70487238942C900E88123 /* MaximumSpacingFlowLayout.h */,
@@ -2463,6 +2471,24 @@
 			path = CustomWebViewController;
 			sourceTree = "<group>";
 		};
+		CA59E350246126DF00066333 /* RFQuiltLayout */ = {
+			isa = PBXGroup;
+			children = (
+				CA59E351246126F500066333 /* RFQuiltLayout.h */,
+				CA59E352246126F500066333 /* RFQuiltLayout.m */,
+			);
+			path = RFQuiltLayout;
+			sourceTree = "<group>";
+		};
+		CA59E35524612C9600066333 /* FMMosaicLayout */ = {
+			isa = PBXGroup;
+			children = (
+				CA59E35724612C9600066333 /* FMMosaicLayout.h */,
+				CA59E35624612C9600066333 /* FMMosaicLayout.m */,
+			);
+			path = FMMosaicLayout;
+			sourceTree = "<group>";
+		};
 		D9398FDE5E01946B8CFE7939 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2670,6 +2696,7 @@
 				04B7C2DD23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m in Sources */,
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04E8926123AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m in Sources */,
+				CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */,
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04E8916323A332570081F833 /* WGBCommentCell.m in Sources */,
@@ -2838,6 +2865,7 @@
 				046D95AB239B4D0200D79801 /* UILabel+WGBStringAction.m in Sources */,
 				04E8915523A267AF0081F833 /* WGBDropDownTransition.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m in Sources */,
+				CA59E353246126F500066333 /* RFQuiltLayout.m in Sources */,
 				04E891B723A877B70081F833 /* WGBGenericTestDemoViewController.m in Sources */,
 				CA060016244C2DFC001BE692 /* WMImageBrowerUnitImageView.m in Sources */,
 				046C5D832382E0E1005A12E4 /* LDNetTimer.m in Sources */,

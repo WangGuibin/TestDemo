@@ -32,12 +32,15 @@ THE SOFTWARE.
     
 
 #import <UIKit/UIKit.h>
+#import "RFQuiltLayout.h"
+#import "FMMosaicLayout.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WGBCollectionLayoutDemoViewController : UIViewController
+@interface WGBCollectionLayoutDemoViewController : UIViewController<RFQuiltLayoutDelegate,FMMosaicLayoutDelegate>
 
-@property (nonatomic,strong) UICollectionViewFlowLayout *layout;
+@property (nonatomic,strong) UICollectionViewLayout *layout;
+@property (nonatomic,strong) UICollectionView *collectionView;
 
 @end
 

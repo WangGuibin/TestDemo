@@ -39,6 +39,7 @@ THE SOFTWARE.
 #import "UICollectionViewLeftAlignedLayout.h"
 #import "WGBHoverFlowLayout.h"
 #import "FBLikeLayout.h"
+#import "RFQuiltLayout.h"
 
 @interface WGBShowCollectionLayoutListDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -114,16 +115,23 @@ THE SOFTWARE.
         @"居左自适应布局",
         @"左对齐布局",
         @"增加悬停距离",
-        @"FBLikeLayout瀑布流"
+        @"FBLikeLayout瀑布流",//不好驾驭 需要和图片尺寸配合使用
+        @"RFQuiltLayout横跨两列或者两行的格子布局",//灵活 需设置比例
+        @"FMMosaicLayout不同大小cell的布局", //不灵活 固定比例 自动调整
     ];
 /**
+ ## 搜罗github的一些开源项目 整理如下:
   item交换位置布局 https://github.com/lxcid/LXReorderableCollectionViewFlowLayout 和 https://github.com/ra1028/RACollectionViewReorderableTripletLayout
- 
+ 照片秀(线性和圆环) https://github.com/dsxNiubility/SXPhotoShow
  卡片布局 https://github.com/terminatorover/RGCardViewLayout
  栈布局 https://github.com/gleue/TGLStackedViewController
  悬停堆叠 https://github.com/matbeich/StickyCollectionView
- 嵌入不同cell布局 https://github.com/fmitech/FMMosaicLayout
+ 嵌入不同cell布局(固定比例) https://github.com/fmitech/FMMosaicLayout
  滚动带弹性spring动画 https://github.com/onevcat/VVSpringCollectionViewFlowLayout
+ 让UICollectionView的header也支持悬停效果，类似于tableView的Plain风格 https://github.com/HebeTienCoder/XLPlainFlowLayout
+ 平衡布局 https://github.com/njdehoog/NHBalancedFlowLayout
+ 一些可供参考的布局案例 https://github.com/NJHu/FlowLayout
+ 
  */
 
 }
@@ -194,19 +202,39 @@ THE SOFTWARE.
         [self.navigationController pushViewController:layoutVC animated:YES];
     }else if ([title isEqualToString:@"FBLikeLayout瀑布流"]){
         FBLikeLayout *layout = [FBLikeLayout new];
-        layout.sectionInset = UIEdgeInsetsZero;
-        layout.minimumInteritemSpacing = 4;
-        layout.singleCellWidth = (MIN(self.view.bounds.size.width, self.view.bounds.size.height))/3.0;
-        layout.maxCellSpace = 3;
+        layout.minimumInteritemSpacing = 3.0;
+        layout.minimumLineSpacing = 3.0;
+        layout.maxCellSpace = 2; //水平放置 允许独占几个单元格空间数量
         layout.forceCellWidthForMinimumInteritemSpacing = YES;
-        layout.fullImagePercentageOfOccurrency = 50;
+        layout.fullImagePercentageOfOccurrency = 100;
+        layout.singleCellWidth = (MIN(self.view.bounds.size.width, self.view.bounds.size.height) - 13)/2.0;
+
+
 //        layout.itemSize = CGSizeMake(KWIDTH*0.1*(arc4random()%9), 100 + arc4random()%200);
         WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
+        layoutVC.layout = layout;
+        layoutVC.collectionView.contentInset = UIEdgeInsetsMake(0, 5, 0, 5);
+        layoutVC.navigationItem.title = title;
+        [self.navigationController pushViewController:layoutVC animated:YES];
+    }else if ([title isEqualToString:@"RFQuiltLayout横跨两列或者两行的格子布局"]){
+        RFQuiltLayout *layout = [[RFQuiltLayout alloc] init];
+        layout.direction = UICollectionViewScrollDirectionVertical;
+        CGFloat itemSize = (KWIDTH-10)/3.0f;
+        layout.blockPixels = CGSizeMake(itemSize,itemSize);
+        
+        WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
+        layout.delegate = layoutVC;
+        layoutVC.layout = layout;
+        layoutVC.navigationItem.title = title;
+        [self.navigationController pushViewController:layoutVC animated:YES];
+    }else if ([title isEqualToString:@"FMMosaicLayout不同大小cell的布局"]){
+        FMMosaicLayout *layout = [FMMosaicLayout new];
+        WGBCollectionLayoutDemoViewController *layoutVC = [WGBCollectionLayoutDemoViewController new];
+        layout.delegate = layoutVC;
         layoutVC.layout = layout;
         layoutVC.navigationItem.title = title;
         [self.navigationController pushViewController:layoutVC animated:YES];
     }
-    
     
 }
 

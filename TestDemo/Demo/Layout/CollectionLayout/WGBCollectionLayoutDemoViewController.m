@@ -35,7 +35,6 @@ THE SOFTWARE.
 
 @interface WGBCollectionLayoutDemoViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
-@property (nonatomic,strong) UICollectionView *collectionView;
 
 @end
 
@@ -64,16 +63,22 @@ THE SOFTWARE.
     return cell;
 }
 
--(CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout     *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout     *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     if ([NSStringFromClass(self.layout.class) isEqualToString:@"FBLikeLayout"]) {
-        return CGSizeMake(100*0.1*(arc4random()%9 + 100), 100 + arc4random()%200);
+        CGFloat itemSize = (KWIDTH-13)/2.0f;
+        if (indexPath.row % 7 == 0) {
+            return CGSizeMake(itemSize, itemSize*2);
+        }else{
+            return CGSizeMake(itemSize, itemSize);
+        }
     }
-    return self.layout.itemSize;
+    
+    return ((UICollectionViewFlowLayout *)self.layout).itemSize;
 }
 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    [MBProgressHUD showText:@(indexPath.row).stringValue];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
@@ -105,6 +110,38 @@ THE SOFTWARE.
         return footer;
     }
     return nil;
+}
+
+#pragma mark – RFQuiltLayoutDelegate
+-(CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout blockSizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row % 10 == 0) {
+        return CGSizeMake(2, 2);
+    }
+    return CGSizeMake(1, 1);
+}
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetsForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return UIEdgeInsetsMake(2, 2, 2, 2);
+}
+
+#pragma mark <FMMosaicLayoutDelegate>
+- (NSInteger)collectionView:(UICollectionView *)collectionView layout:(FMMosaicLayout *)collectionViewLayout
+        numberOfColumnsInSection:(NSInteger)section {
+    return 2;
+}
+
+- (FMMosaicCellSize)collectionView:(UICollectionView *)collectionView layout:(FMMosaicLayout *)collectionViewLayout
+        mosaicCellSizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return (indexPath.item % 10 == 0) ? FMMosaicCellSizeBig : FMMosaicCellSizeSmall;
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(FMMosaicLayout *)collectionViewLayout
+        insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(5.0, 5.0, 5.0, 5.0);
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(FMMosaicLayout *)collectionViewLayout
+        interitemSpacingForSectionAtIndex:(NSInteger)section {
+    return 2.0;
 }
 
 
