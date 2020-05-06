@@ -87,7 +87,8 @@ THE SOFTWARE.
     self.fansListVC.view.frame = CGRectMake(KWIDTH, 0, KWIDTH, self.scrollView.height);
     [self addChildViewController: self.fansListVC];
 
-    self.scrollView.contentSize = CGSizeMake(KWIDTH*self.childViewControllers.count, self.scrollView.height);
+    ///FIXME:- 源自于一次bug 以为是父容器滚动手势与上下拉刷新手势冲突, 其实是父容器在垂直方向上的contentSize.height设置为0就好了,即禁用容器在垂直方向上的滚动,这个确实是简单却容易遗漏的问题
+    self.scrollView.contentSize = CGSizeMake(KWIDTH*self.childViewControllers.count, 0);
     //默认选中
     self.headerView.defaultSelectIndex = 0;
     [self scrollToIndex: 0 animated:NO];
