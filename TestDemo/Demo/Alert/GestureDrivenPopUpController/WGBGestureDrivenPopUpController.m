@@ -42,16 +42,6 @@ THE SOFTWARE.
 
 @implementation WGBGestureDrivenPopUpController
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.scaleToDismiss = 0.25;
-        self.spaceToTop = [UIScreen mainScreen].bounds.size.height / 3.0;
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initSubViews];
@@ -101,7 +91,7 @@ THE SOFTWARE.
         }];
     }
     if (sender.state == UIGestureRecognizerStateEnded || sender.state == UIGestureRecognizerStateFailed || sender.state == UIGestureRecognizerStateCancelled) {
-        if (offsetY >= (self.baseView.frame.size.height - top) *self.scaleToDismiss) {
+        if (offsetY >= (self.baseView.frame.size.height - top) /4.0) {
             [self dismiss];
         } else {
             [self show];

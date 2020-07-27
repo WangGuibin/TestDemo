@@ -38,7 +38,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WGBPopupControllerManager : NSObject
 
 @property (nonatomic, assign) CGFloat spaceToTop;//默认0.333333 距离屏幕顶部的三分之一
-@property (nonatomic, assign) CGFloat scaleToDismiss;//默认0.25  表示距离内容视图顶部四分之一处为分界线 超过了就会dismiss
 
 - (instancetype)initWithSuperViewController:(UIViewController *)superViewController contentView:(UIView *)contentView;
 - (void)show;

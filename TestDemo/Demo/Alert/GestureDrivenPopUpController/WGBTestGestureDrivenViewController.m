@@ -58,8 +58,7 @@
 
 - (void)clickButtonAction:(UIButton *)sender{
     WGBPopupControllerManager *popupControllerManager = [[WGBPopupControllerManager alloc] initWithSuperViewController:self contentView:self.tableView];
-    popupControllerManager.spaceToTop = 300;
-    popupControllerManager.scaleToDismiss = 0.5;
+    popupControllerManager.spaceToTop = 200;
     [popupControllerManager show];
 }
 

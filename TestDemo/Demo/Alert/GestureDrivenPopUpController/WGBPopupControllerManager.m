@@ -69,11 +69,6 @@ THE SOFTWARE.
     self.popupController.spaceToTop = spaceToTop;
 }
 
-- (void)setScaleToDismiss:(CGFloat)scaleToDismiss{
-    _scaleToDismiss = scaleToDismiss;
-    self.popupController.scaleToDismiss = scaleToDismiss;
-}
-
 - (WGBGestureDrivenPopUpController *)popupController {
     if (!_popupController) {
         _popupController = [[WGBGestureDrivenPopUpController alloc] init];
