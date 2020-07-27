@@ -1,12 +1,12 @@
 //
-// UIView+WGBCornerCliper.h
+// UIButton+WGBExtra.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/16
+// Created by CoderWGB on 2020/7/24
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,45 +31,14 @@ THE SOFTWARE.
 */
     
 
-
-
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (WGBCornerCliper)
+@interface UIButton (WGBExtra)
 
-
-
-/// 添加圆角 调用时机：设置好布局之后调用 或者 调用`layoutIfNeed`之后使用
-/// @param corners 圆角位置设置
-/// @param radius 圆角大小
-- (void)wgb_clipCorners:(UIRectCorner)corners
-                 radius:(CGFloat)radius;
-
-/// 添加圆角和边框, 调用时机：设置好布局之后调用 或者 调用`layoutIfNeed`之后使用
-/// @param corners 圆角位置设置
-/// @param radius 圆角大小
-/// @param width 边框宽度
-/// @param borderColor 边框颜色
-/**
-@code
-
-[self.testView wgb_clipCorners:(UIRectCornerAllCorners) radius:5.0 border:1.0 borderColor:[UIColor redColor]];
-
-@endcode
-*/
-
-- (void)wgb_clipCorners:(UIRectCorner)corners
-                 radius:(CGFloat)radius
-                 border:(CGFloat)width
-            borderColor:(UIColor *)borderColor;
-
-///MARK:- 右上角的尖尖
-+ (void)createMaskLayerWithView:(UIView *)view
-                               rightMargin:(CGFloat)rightMargin
-                                 topMargin:(CGFloat)topMargin
-                         radius:(CGFloat)radiusSize;
+///额外点击区域 正值为扩大 负值为缩小
+@property (nonatomic,assign) UIEdgeInsets touchAreaInsets;
 
 @end
 

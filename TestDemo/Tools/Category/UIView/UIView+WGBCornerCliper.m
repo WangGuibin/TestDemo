@@ -72,4 +72,50 @@ THE SOFTWARE.
     [self.layer addSublayer:subLayer];
 }
 
+
+///MARK:- 右上角的尖尖
++ (void)createMaskLayerWithView:(UIView *)view
+                               rightMargin:(CGFloat)rightMargin
+                                 topMargin:(CGFloat)topMargin
+                                   radius:(CGFloat)radiusSize{
+    CGFloat viewWidth = CGRectGetWidth(view.frame);
+    CGFloat viewHeight = CGRectGetHeight(view.frame);
+
+    CGFloat rightSpace = rightMargin? : 10;
+    CGFloat topSpace = topMargin? : 10;
+    CGFloat radius = radiusSize? : 10;
+    
+    CGPoint point1 = CGPointMake(0, radius);
+    CGPoint point2 = CGPointMake(radius, 0);
+    CGPoint point3 = CGPointMake(viewWidth-rightSpace-radius, 0);
+    CGPoint point4 = CGPointMake(viewWidth-rightSpace, topSpace);
+    CGPoint point5 = CGPointMake(viewWidth, topSpace);
+    CGPoint point6 = CGPointMake(viewWidth-rightSpace, topSpace+10);
+    CGPoint point7 = CGPointMake(viewWidth-rightSpace, viewHeight-radius);
+    CGPoint point8 = CGPointMake(viewWidth-rightSpace-radius, viewHeight);
+    CGPoint point9 = CGPointMake(radius, viewHeight);
+    CGPoint point10 = CGPointMake(0, viewHeight-radius);
+    
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:point1];
+    [path addArcWithCenter:CGPointMake(radius, radius) radius:radius startAngle:M_PI endAngle:M_PI*1.5 clockwise:YES];
+    [path addLineToPoint:point2];
+    [path addLineToPoint:point3];
+    [path addArcWithCenter:CGPointMake(viewWidth-2*radius, radius) radius:radius startAngle:M_PI*1.5 endAngle:0 clockwise:YES];
+    [path addLineToPoint:point4];
+    [path addLineToPoint:point5];
+    [path addLineToPoint:point6];
+    [path addLineToPoint:point7];
+    [path addArcWithCenter:CGPointMake(viewWidth-2*radius, viewHeight-radius) radius:radius startAngle:0 endAngle:M_PI*0.5 clockwise:YES];
+    [path addLineToPoint:point8];
+    [path addLineToPoint:point9];
+    [path addArcWithCenter:CGPointMake(radius, viewHeight-radius) radius:radius startAngle:M_PI*0.5 endAngle:M_PI clockwise:YES];
+    [path addLineToPoint:point10];
+    [path closePath];
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.path = path.CGPath;
+    view.layer.mask = layer;
+}
+
+
 @end

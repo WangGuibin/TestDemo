@@ -1,12 +1,12 @@
 //
-// UIView+WGBCornerCliper.h
+// WGBPopupControllerManager.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2019/12/16
+// Created by CoderWGB on 2020/7/27
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,45 +31,17 @@ THE SOFTWARE.
 */
     
 
-
-
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (WGBCornerCliper)
+@interface WGBPopupControllerManager : NSObject
 
+@property (nonatomic, assign) CGFloat spaceToTop;//默认0.333333 距离屏幕顶部的三分之一
+@property (nonatomic, assign) CGFloat scaleToDismiss;//默认0.25  表示距离内容视图顶部四分之一处为分界线 超过了就会dismiss
 
-
-/// 添加圆角 调用时机：设置好布局之后调用 或者 调用`layoutIfNeed`之后使用
-/// @param corners 圆角位置设置
-/// @param radius 圆角大小
-- (void)wgb_clipCorners:(UIRectCorner)corners
-                 radius:(CGFloat)radius;
-
-/// 添加圆角和边框, 调用时机：设置好布局之后调用 或者 调用`layoutIfNeed`之后使用
-/// @param corners 圆角位置设置
-/// @param radius 圆角大小
-/// @param width 边框宽度
-/// @param borderColor 边框颜色
-/**
-@code
-
-[self.testView wgb_clipCorners:(UIRectCornerAllCorners) radius:5.0 border:1.0 borderColor:[UIColor redColor]];
-
-@endcode
-*/
-
-- (void)wgb_clipCorners:(UIRectCorner)corners
-                 radius:(CGFloat)radius
-                 border:(CGFloat)width
-            borderColor:(UIColor *)borderColor;
-
-///MARK:- 右上角的尖尖
-+ (void)createMaskLayerWithView:(UIView *)view
-                               rightMargin:(CGFloat)rightMargin
-                                 topMargin:(CGFloat)topMargin
-                         radius:(CGFloat)radiusSize;
+- (instancetype)initWithSuperViewController:(UIViewController *)superViewController contentView:(UIView *)contentView;
+- (void)show;
 
 @end
 

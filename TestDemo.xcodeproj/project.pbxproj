@@ -268,6 +268,13 @@
 		04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */; };
 		04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */; };
 		04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */; };
+		94ABB34624CABE9500947D65 /* UIButton+WGBExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34524CABE9500947D65 /* UIButton+WGBExtra.m */; };
+		94ABB34924CABF3000947D65 /* MBProgressHUD+WM.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34824CABF3000947D65 /* MBProgressHUD+WM.m */; };
+		94ABB34D24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34C24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m */; };
+		94ABB35124CAC02000947D65 /* UIScrollView+RefreshHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB35024CAC02000947D65 /* UIScrollView+RefreshHelper.m */; };
+		94ABB39124CEBDEA00947D65 /* WGBGestureDrivenPopUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB39024CEBDEA00947D65 /* WGBGestureDrivenPopUpController.m */; };
+		94ABB39424CEBE7F00947D65 /* WGBPopupControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB39324CEBE7F00947D65 /* WGBPopupControllerManager.m */; };
+		94ABB39724CEBF1900947D65 /* WGBTestGestureDrivenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB39624CEBF1900947D65 /* WGBTestGestureDrivenViewController.m */; };
 		CA06000C244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06000B244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m */; };
 		CA06000F244C2DD2001BE692 /* WGBImageBrowerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06000E244C2DD2001BE692 /* WGBImageBrowerModel.m */; };
 		CA060016244C2DFC001BE692 /* WMImageBrowerUnitImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA060010244C2DFC001BE692 /* WMImageBrowerUnitImageView.m */; };
@@ -781,6 +788,20 @@
 		1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAA866633D4A46C1BE8B538 /* Pods-TestDemo.testrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.testrelease.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.testrelease.xcconfig"; sourceTree = "<group>"; };
+		94ABB34424CABE9500947D65 /* UIButton+WGBExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+WGBExtra.h"; sourceTree = "<group>"; };
+		94ABB34524CABE9500947D65 /* UIButton+WGBExtra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WGBExtra.m"; sourceTree = "<group>"; };
+		94ABB34724CABF3000947D65 /* MBProgressHUD+WM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+WM.h"; sourceTree = "<group>"; };
+		94ABB34824CABF3000947D65 /* MBProgressHUD+WM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+WM.m"; sourceTree = "<group>"; };
+		94ABB34B24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImpactFeedbackGenerator+FeedBack.h"; sourceTree = "<group>"; };
+		94ABB34C24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImpactFeedbackGenerator+FeedBack.m"; sourceTree = "<group>"; };
+		94ABB34F24CAC02000947D65 /* UIScrollView+RefreshHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RefreshHelper.h"; sourceTree = "<group>"; };
+		94ABB35024CAC02000947D65 /* UIScrollView+RefreshHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RefreshHelper.m"; sourceTree = "<group>"; };
+		94ABB38F24CEBDEA00947D65 /* WGBGestureDrivenPopUpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGestureDrivenPopUpController.h; sourceTree = "<group>"; };
+		94ABB39024CEBDEA00947D65 /* WGBGestureDrivenPopUpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGestureDrivenPopUpController.m; sourceTree = "<group>"; };
+		94ABB39224CEBE7F00947D65 /* WGBPopupControllerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPopupControllerManager.h; sourceTree = "<group>"; };
+		94ABB39324CEBE7F00947D65 /* WGBPopupControllerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPopupControllerManager.m; sourceTree = "<group>"; };
+		94ABB39524CEBF1900947D65 /* WGBTestGestureDrivenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTestGestureDrivenViewController.h; sourceTree = "<group>"; };
+		94ABB39624CEBF1900947D65 /* WGBTestGestureDrivenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestGestureDrivenViewController.m; sourceTree = "<group>"; };
 		CA06000A244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAspectFitImageBrowerViewController.h; sourceTree = "<group>"; };
 		CA06000B244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBAspectFitImageBrowerViewController.m; sourceTree = "<group>"; };
 		CA06000D244C2DD2001BE692 /* WGBImageBrowerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBImageBrowerModel.h; sourceTree = "<group>"; };
@@ -1003,6 +1024,8 @@
 			children = (
 				040A7884238C0AB600E1D2B7 /* MBProgressHUD+MJ.h */,
 				040A7885238C0AB600E1D2B7 /* MBProgressHUD+MJ.m */,
+				94ABB34724CABF3000947D65 /* MBProgressHUD+WM.h */,
+				94ABB34824CABF3000947D65 /* MBProgressHUD+WM.m */,
 				040A7886238C0AB600E1D2B7 /* MBProgressHUD.bundle */,
 			);
 			path = MBProgressHUD;
@@ -1211,6 +1234,9 @@
 		046098C22359EA7000A673D6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				94ABB34E24CABFF100947D65 /* UIScrollView */,
+				94ABB34A24CABF8300947D65 /* UIImpactFeedbackGenerator */,
+				94ABB34324CABE7200947D65 /* UIButton */,
 				04E8919A23A771000081F833 /* UIView */,
 				04E8912123A0E2F40081F833 /* NSMutableAttributedString */,
 				04E8910F239FAF4A0081F833 /* CATransition */,
@@ -1732,6 +1758,7 @@
 		04C3025E2382D7A100356991 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				94ABB38E24CEBDC900947D65 /* GestureDrivenPopUpController */,
 				0408101723B4B6B1002EA9E1 /* CustomWindow */,
 				04C43939239E54B700A8BEC0 /* PresentAlert */,
 				048600CD236341ED00B63EDE /* Popver */,
@@ -2388,6 +2415,46 @@
 			path = YogaKitDemo;
 			sourceTree = "<group>";
 		};
+		94ABB34324CABE7200947D65 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB34424CABE9500947D65 /* UIButton+WGBExtra.h */,
+				94ABB34524CABE9500947D65 /* UIButton+WGBExtra.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		94ABB34A24CABF8300947D65 /* UIImpactFeedbackGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB34B24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.h */,
+				94ABB34C24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m */,
+			);
+			path = UIImpactFeedbackGenerator;
+			sourceTree = "<group>";
+		};
+		94ABB34E24CABFF100947D65 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB34F24CAC02000947D65 /* UIScrollView+RefreshHelper.h */,
+				94ABB35024CAC02000947D65 /* UIScrollView+RefreshHelper.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		94ABB38E24CEBDC900947D65 /* GestureDrivenPopUpController */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB38F24CEBDEA00947D65 /* WGBGestureDrivenPopUpController.h */,
+				94ABB39024CEBDEA00947D65 /* WGBGestureDrivenPopUpController.m */,
+				94ABB39224CEBE7F00947D65 /* WGBPopupControllerManager.h */,
+				94ABB39324CEBE7F00947D65 /* WGBPopupControllerManager.m */,
+				94ABB39524CEBF1900947D65 /* WGBTestGestureDrivenViewController.h */,
+				94ABB39624CEBF1900947D65 /* WGBTestGestureDrivenViewController.m */,
+			);
+			path = GestureDrivenPopUpController;
+			sourceTree = "<group>";
+		};
 		B34E9CF01EFF6E98B196324E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2670,6 +2737,7 @@
 				040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */,
 				04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */,
 				04157B8323C4BD930069FC15 /* WGBClipFrameView.m in Sources */,
+				94ABB35124CAC02000947D65 /* UIScrollView+RefreshHelper.m in Sources */,
 				04B7C30023B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m in Sources */,
 				04F7359D22CDAA8B007CB0D0 /* ViewController.m in Sources */,
 				040A7873238C03A100E1D2B7 /* LBXPermissionSetting.m in Sources */,
@@ -2730,6 +2798,7 @@
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
+				94ABB34D24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m in Sources */,
 				04C43940239E55E100A8BEC0 /* WGBDatePickerViewController.m in Sources */,
 				04E8912E23A11C7D0081F833 /* WGBTestHoleDemoViewController.m in Sources */,
 				04C302592382D5B300356991 /* UIView+BoomBoomBoom.m in Sources */,
@@ -2750,6 +2819,7 @@
 				04E8913D23A1F3A40081F833 /* IGListDemoItemModel.m in Sources */,
 				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,
 				04E8919D23A7711C0081F833 /* UIView+WGBCornerCliper.m in Sources */,
+				94ABB34624CABE9500947D65 /* UIButton+WGBExtra.m in Sources */,
 				04E8915823A26D4F0081F833 /* WGBDropDownTestDemoViewController.m in Sources */,
 				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
 				043C2C9423B0CBE6005AF423 /* WGBGradientCodeView.m in Sources */,
@@ -2793,6 +2863,7 @@
 				CA060017244C2DFC001BE692 /* WMImageBrowerTransitionView.m in Sources */,
 				04157B8A23C4CA810069FC15 /* WGBClipImageDemoViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
+				94ABB39124CEBDEA00947D65 /* WGBGestureDrivenPopUpController.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
 				04B7C2EF23AE6E9400F6BB2C /* WGBDotLineCell.m in Sources */,
 				046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */,
@@ -2827,6 +2898,7 @@
 				04E891A123A778980081F833 /* WGBDrawGridView.m in Sources */,
 				04E8913223A12D860081F833 /* WGBLoadingView.m in Sources */,
 				04D7048023893ED000E88123 /* UIView+GlowView.m in Sources */,
+				94ABB39424CEBE7F00947D65 /* WGBPopupControllerManager.m in Sources */,
 				040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */,
 				04B0CA952340CF91007B2AD2 /* HPAutoScorllTextLabel.m in Sources */,
 				046C5D822382E0E1005A12E4 /* LDNetTraceRoute.m in Sources */,
@@ -2885,7 +2957,9 @@
 				0408101A23B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m in Sources */,
 				04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */,
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,
+				94ABB34924CABF3000947D65 /* MBProgressHUD+WM.m in Sources */,
 				04157B7D23C4B8400069FC15 /* WGBClipBorderView.m in Sources */,
+				94ABB39724CEBF1900947D65 /* WGBTestGestureDrivenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

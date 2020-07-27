@@ -39,6 +39,7 @@ THE SOFTWARE.
 #import "PopverDemoViewController.h"
 #import "WGBPresentAlertDemoViewController.h"
 #import "WGBCustomWindowDemoViewController.h"
+#import "WGBTestGestureDrivenViewController.h"
 
 @interface AlertDemoViewController ()
 
@@ -54,7 +55,8 @@ THE SOFTWARE.
         [WGBMaskDemoViewController class],
         [PopverDemoViewController class],
         [WGBPresentAlertDemoViewController class],
-        [WGBCustomWindowDemoViewController class]
+        [WGBCustomWindowDemoViewController class],
+        [WGBTestGestureDrivenViewController class]
     ];
 }
 
@@ -67,7 +69,8 @@ THE SOFTWARE.
         @"mask使用",
         @"系统`UIPopoverPresentationController`带箭头弹窗",
         @"利用VC present转场做弹窗",
-        @"自定义window"
+        @"自定义window",
+        @"手势驱动消除弹窗"
     ];
 }
 
