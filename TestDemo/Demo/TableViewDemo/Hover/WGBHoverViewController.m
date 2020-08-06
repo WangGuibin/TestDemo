@@ -75,9 +75,15 @@ THE SOFTWARE.
         self.tableView.bounces = YES;
     }
     
+//    CGFloat minAlphaOffset = - kNavBarHeight;
+//    CGFloat maxAlphaOffset = kHeaderHeight;
+//    CGFloat alpha = (offsetY - minAlphaOffset) / (maxAlphaOffset - minAlphaOffset);
     
-    
-    
+    CGFloat totalHeight = kNavBarHeight + kHeaderHeight;
+    CGFloat alpha = 1 - ((totalHeight - offsetY)/totalHeight);
+    UIImage *image = [UIImage createImageWithColor:[[UIColor cyanColor] colorWithAlphaComponent:alpha]];
+    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+
     
 }
 
