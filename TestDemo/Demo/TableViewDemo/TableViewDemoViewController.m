@@ -38,6 +38,7 @@ THE SOFTWARE.
 #import "WGBPreLoadDataLogicDemoViewController.h"
 #import "WGBAOPTableViewDemoViewController.h"
 #import "WGBDotLineCellDemoViewController.h"
+#import "WGBHoverViewController.h"
 
 @interface TableViewDemoViewController ()
 
@@ -52,7 +53,8 @@ THE SOFTWARE.
         [TableViewCustomDeleteButtonDemoViewController class],
         [WGBPreLoadDataLogicDemoViewController class],
         [WGBAOPTableViewDemoViewController class],
-        [WGBDotLineCellDemoViewController class]
+        [WGBDotLineCellDemoViewController class],
+        [WGBHoverViewController class]
      ];
 }
 
@@ -64,7 +66,8 @@ THE SOFTWARE.
         @"tableView自定义删除按钮",
         @"智能预加载基本逻辑",
         @"AOP切面编程",
-        @"点连成线的进度节点cell"
+        @"点连成线的进度节点cell",
+        @"控制tableView滚动悬停"
     ];
 }
 

@@ -292,6 +292,7 @@
 		CA59E34C245E72DD00066333 /* js2oc.html in Resources */ = {isa = PBXBuildFile; fileRef = CA59E34B245E72DD00066333 /* js2oc.html */; };
 		CA59E353246126F500066333 /* RFQuiltLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E352246126F500066333 /* RFQuiltLayout.m */; };
 		CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E35624612C9600066333 /* FMMosaicLayout.m */; };
+		CADD3C8024DC379E0033E6AD /* WGBHoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -835,6 +836,8 @@
 		CA59E352246126F500066333 /* RFQuiltLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuiltLayout.m; sourceTree = "<group>"; };
 		CA59E35624612C9600066333 /* FMMosaicLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMosaicLayout.m; sourceTree = "<group>"; };
 		CA59E35724612C9600066333 /* FMMosaicLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMosaicLayout.h; sourceTree = "<group>"; };
+		CADD3C7E24DC379E0033E6AD /* WGBHoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHoverViewController.h; sourceTree = "<group>"; };
+		CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHoverViewController.m; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1718,6 +1721,7 @@
 		04C3024F2382D41F00356991 /* TableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CADD3C7D24DC37550033E6AD /* Hover */,
 				04B7C2E923AE6E5D00F6BB2C /* DotLineCell */,
 				04034BBC239E94EC0063E0A5 /* AOP */,
 				046D95AC239B539C00D79801 /* WGBPreLoadDataLogic */,
@@ -2556,6 +2560,15 @@
 			path = FMMosaicLayout;
 			sourceTree = "<group>";
 		};
+		CADD3C7D24DC37550033E6AD /* Hover */ = {
+			isa = PBXGroup;
+			children = (
+				CADD3C7E24DC379E0033E6AD /* WGBHoverViewController.h */,
+				CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */,
+			);
+			path = Hover;
+			sourceTree = "<group>";
+		};
 		D9398FDE5E01946B8CFE7939 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2764,6 +2777,7 @@
 				04B7C2DD23AC77BA00F6BB2C /* WGBImageTransitionDemoViewController.m in Sources */,
 				04B0CA892340C5C4007B2AD2 /* WGBCustomButton.m in Sources */,
 				04E8926123AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m in Sources */,
+				CADD3C8024DC379E0033E6AD /* WGBHoverViewController.m in Sources */,
 				CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */,
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
