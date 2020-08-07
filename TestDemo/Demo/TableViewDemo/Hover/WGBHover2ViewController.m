@@ -33,12 +33,15 @@ THE SOFTWARE.
 
 #import "WGBHover2ViewController.h"
 #define kHeaderHeight 300
+#define kSectionHeaderHeignt 44
+#define kTopHeight (kHeaderHeight + kSectionHeaderHeignt)
 
 @interface WGBHover2ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, assign) BOOL isHover;//是否悬停
+@property (nonatomic, strong) UIView *sectionHeaderView;
 
 @end
 
@@ -53,15 +56,18 @@ THE SOFTWARE.
     [hoverSwitch addTarget:self action:@selector(changeHoverState:) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:hoverSwitch];
     [self.tableView reloadData];
-    self.tableView.contentInset = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
-    [self.tableView setContentOffset:CGPointMake(0, -kHeaderHeight)];
+    self.tableView.contentInset = UIEdgeInsetsMake(kTopHeight, 0, 0, 0);
+    [self.tableView setContentOffset:CGPointMake(0, -kTopHeight)];
     
     //默认悬停
     hoverSwitch.on = self.isHover;
     [self.view addSubview:self.headerView];
     [self.view bringSubviewToFront:self.headerView];
     self.headerView.frame = CGRectMake(0, kNavBarHeight, KWIDTH , kHeaderHeight);
-
+    
+    [self.view addSubview:self.sectionHeaderView];
+    [self.view bringSubviewToFront:self.sectionHeaderView];
+    self.sectionHeaderView.frame = CGRectMake(0, CGRectGetMaxY(self.headerView.frame), KWIDTH , kSectionHeaderHeignt);
 }
 
 - (void)changeHoverState:(UISwitch *)sw{
@@ -71,9 +77,13 @@ THE SOFTWARE.
         [self.view addSubview:self.headerView];
         [self.view bringSubviewToFront:self.headerView];
         self.headerView.frame = CGRectMake(0, kNavBarHeight, KWIDTH , kHeaderHeight);
+        
+        [self.view addSubview:self.sectionHeaderView];
+        [self.view bringSubviewToFront:self.sectionHeaderView];
+        self.sectionHeaderView.frame = CGRectMake(0, CGRectGetMaxY(self.headerView.frame), KWIDTH , kSectionHeaderHeignt);
     }else{
         [self.tableView addSubview:self.headerView];
-        self.headerView.frame = CGRectMake(0, -kHeaderHeight, KWIDTH , kHeaderHeight);
+        self.headerView.frame = CGRectMake(0, -kTopHeight, KWIDTH , kHeaderHeight);
     }
 }
 
@@ -81,11 +91,25 @@ THE SOFTWARE.
     CGFloat offsetY = scrollView.contentOffset.y;
     self.tableView.bounces = offsetY > 0;
     if (!self.isHover) {
-        CGFloat tempY = offsetY + kHeaderHeight;
-        CGFloat alpha = 1 - ((kHeaderHeight - tempY)/kHeaderHeight);
+        CGFloat tempY = offsetY + kTopHeight;
+        CGFloat alpha = 1 - ((kTopHeight - tempY)/kTopHeight);
         UIImage *image = [UIImage createImageWithColor:[[UIColor cyanColor] colorWithAlphaComponent:alpha]];
         [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
-        
+
+        if (offsetY >= -kTopHeight) {
+            if (offsetY < 0) {
+                [self.view addSubview:self.sectionHeaderView];
+                [self.view bringSubviewToFront:self.sectionHeaderView];
+                CGFloat sectionY = MAX(kNavBarHeight, ABS(offsetY)+kSectionHeaderHeignt);
+                self.sectionHeaderView.frame = CGRectMake(0,sectionY, KWIDTH , kSectionHeaderHeignt);
+            }
+        }else{
+            [self.tableView bringSubviewToFront:self.sectionHeaderView];
+            self.sectionHeaderView.frame = CGRectMake(0, CGRectGetMaxY(self.headerView.frame), KWIDTH , kSectionHeaderHeignt);
+        }
+    }else{
+        [self.tableView bringSubviewToFront:self.sectionHeaderView];
+        self.sectionHeaderView.frame = CGRectMake(0, CGRectGetMaxY(self.headerView.frame), KWIDTH , kSectionHeaderHeignt);
     }
 }
 
@@ -106,11 +130,17 @@ THE SOFTWARE.
 }
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-//    return self.isHover? kHeaderHeight : 0.001;
+//    return 44.0f;
 //}
 //
 //- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//    return self.isHover? self.headerView : [UIView new];
+//    UIView *sectionBg = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 44.0f)];
+//    sectionBg.backgroundColor = [UIColor orangeColor];
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, KWIDTH-40 , 44)];
+//    label.textColor = [UIColor whiteColor];
+//    label.text = @"全部评论(666)";
+//    [sectionBg addSubview:label];
+//    return sectionBg;
 //}
 
 - (UITableView *)tableView {
@@ -152,5 +182,16 @@ THE SOFTWARE.
     return _headerView;
 }
 
+- (UIView *)sectionHeaderView {
+    if (!_sectionHeaderView) {
+        _sectionHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , kSectionHeaderHeignt)];
+        _sectionHeaderView.backgroundColor = [UIColor orangeColor];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, KWIDTH-40 , kSectionHeaderHeignt)];
+        label.textColor = [UIColor whiteColor];
+        label.text = @"全部评论(666)";
+        [_sectionHeaderView addSubview:label];
+    }
+    return _sectionHeaderView;
+}
 
 @end
