@@ -39,6 +39,7 @@ THE SOFTWARE.
 #import "WGBAOPTableViewDemoViewController.h"
 #import "WGBDotLineCellDemoViewController.h"
 #import "WGBHoverViewController.h"
+#import "WGBHover2ViewController.h"
 
 @interface TableViewDemoViewController ()
 
@@ -54,7 +55,8 @@ THE SOFTWARE.
         [WGBPreLoadDataLogicDemoViewController class],
         [WGBAOPTableViewDemoViewController class],
         [WGBDotLineCellDemoViewController class],
-        [WGBHoverViewController class]
+        [WGBHoverViewController class],
+        [WGBHover2ViewController class]
      ];
 }
 
@@ -67,7 +69,8 @@ THE SOFTWARE.
         @"智能预加载基本逻辑",
         @"AOP切面编程",
         @"点连成线的进度节点cell",
-        @"控制tableView滚动悬停"
+        @"控制tableView滚动悬停①",
+        @"控制tableView滚动悬停②"
     ];
 }
 

@@ -268,6 +268,8 @@
 		04F914F723759CF8006E8B77 /* TestSigleSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F914F523759CF8006E8B77 /* TestSigleSelectTableViewCell.m */; };
 		04F914F823759CF8006E8B77 /* TestSigleSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F914F623759CF8006E8B77 /* TestSigleSelectTableViewCell.xib */; };
 		04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */; };
+		9453141624DCEB6C00665268 /* UIImage+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 9453141524DCEB6C00665268 /* UIImage+Compression.m */; };
+		9453141924DCEBE000665268 /* WGBHover2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9453141824DCEBE000665268 /* WGBHover2ViewController.m */; };
 		94ABB34624CABE9500947D65 /* UIButton+WGBExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34524CABE9500947D65 /* UIButton+WGBExtra.m */; };
 		94ABB34924CABF3000947D65 /* MBProgressHUD+WM.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34824CABF3000947D65 /* MBProgressHUD+WM.m */; };
 		94ABB34D24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34C24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m */; };
@@ -789,6 +791,10 @@
 		1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAA866633D4A46C1BE8B538 /* Pods-TestDemo.testrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.testrelease.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.testrelease.xcconfig"; sourceTree = "<group>"; };
+		9453141424DCEB6C00665268 /* UIImage+Compression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compression.h"; sourceTree = "<group>"; };
+		9453141524DCEB6C00665268 /* UIImage+Compression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compression.m"; sourceTree = "<group>"; };
+		9453141724DCEBE000665268 /* WGBHover2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHover2ViewController.h; sourceTree = "<group>"; };
+		9453141824DCEBE000665268 /* WGBHover2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHover2ViewController.m; sourceTree = "<group>"; };
 		94ABB34424CABE9500947D65 /* UIButton+WGBExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+WGBExtra.h"; sourceTree = "<group>"; };
 		94ABB34524CABE9500947D65 /* UIButton+WGBExtra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WGBExtra.m"; sourceTree = "<group>"; };
 		94ABB34724CABF3000947D65 /* MBProgressHUD+WM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+WM.h"; sourceTree = "<group>"; };
@@ -1237,6 +1243,7 @@
 		046098C22359EA7000A673D6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				9453141324DCEB3B00665268 /* UIImage */,
 				94ABB34E24CABFF100947D65 /* UIScrollView */,
 				94ABB34A24CABF8300947D65 /* UIImpactFeedbackGenerator */,
 				94ABB34324CABE7200947D65 /* UIButton */,
@@ -2419,6 +2426,15 @@
 			path = YogaKitDemo;
 			sourceTree = "<group>";
 		};
+		9453141324DCEB3B00665268 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				9453141424DCEB6C00665268 /* UIImage+Compression.h */,
+				9453141524DCEB6C00665268 /* UIImage+Compression.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		94ABB34324CABE7200947D65 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -2565,6 +2581,8 @@
 			children = (
 				CADD3C7E24DC379E0033E6AD /* WGBHoverViewController.h */,
 				CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */,
+				9453141724DCEBE000665268 /* WGBHover2ViewController.h */,
+				9453141824DCEBE000665268 /* WGBHover2ViewController.m */,
 			);
 			path = Hover;
 			sourceTree = "<group>";
@@ -2807,6 +2825,7 @@
 				04E8910E239FAF360081F833 /* WGBCATransitionAnimationSubTypeDemoViewController.m in Sources */,
 				047BA6962383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m in Sources */,
 				0408106623B70A5C002EA9E1 /* WHGradientHelper.m in Sources */,
+				9453141924DCEBE000665268 /* WGBHover2ViewController.m in Sources */,
 				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
 				CA06000C244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m in Sources */,
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
@@ -2973,6 +2992,7 @@
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,
 				94ABB34924CABF3000947D65 /* MBProgressHUD+WM.m in Sources */,
 				04157B7D23C4B8400069FC15 /* WGBClipBorderView.m in Sources */,
+				9453141624DCEB6C00665268 /* UIImage+Compression.m in Sources */,
 				94ABB39724CEBF1900947D65 /* WGBTestGestureDrivenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

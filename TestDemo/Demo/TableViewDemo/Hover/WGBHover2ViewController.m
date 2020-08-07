@@ -1,12 +1,12 @@
 //
-// WGBHoverViewController.m
+// WGBHover2ViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2020/8/6
+// Created by CoderWGB on 2020/8/7
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,13 +31,10 @@ THE SOFTWARE.
 */
     
 
-#import "WGBHoverViewController.h"
-
-///< 仿哔哩哔哩的播放悬停,暂停可上推 实现原理
-
+#import "WGBHover2ViewController.h"
 #define kHeaderHeight 300
 
-@interface WGBHoverViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface WGBHover2ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIView *headerView;
@@ -45,7 +42,7 @@ THE SOFTWARE.
 
 @end
 
-@implementation WGBHoverViewController
+@implementation WGBHover2ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,26 +52,40 @@ THE SOFTWARE.
     UISwitch *hoverSwitch = [[UISwitch alloc] init];
     [hoverSwitch addTarget:self action:@selector(changeHoverState:) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:hoverSwitch];
-    hoverSwitch.on = self.isHover;
     [self.tableView reloadData];
+    self.tableView.contentInset = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
+    [self.tableView setContentOffset:CGPointMake(0, -kHeaderHeight)];
+    
+    //默认悬停
+    hoverSwitch.on = self.isHover;
+    [self.view addSubview:self.headerView];
+    [self.view bringSubviewToFront:self.headerView];
+    self.headerView.frame = CGRectMake(0, kNavBarHeight, KWIDTH , kHeaderHeight);
+
 }
 
 - (void)changeHoverState:(UISwitch *)sw{
     self.isHover = sw.on;
     [MBProgressHUD showText:sw.on?  @"已开启悬停" : @"已关闭悬停" afterDelay:1];
-    [self.tableView reloadData];
-    self.tableView.tableHeaderView = self.isHover? [UIView new] : self.headerView;
+    if (self.isHover) {
+        [self.view addSubview:self.headerView];
+        [self.view bringSubviewToFront:self.headerView];
+        self.headerView.frame = CGRectMake(0, kNavBarHeight, KWIDTH , kHeaderHeight);
+    }else{
+        [self.tableView addSubview:self.headerView];
+        self.headerView.frame = CGRectMake(0, -kHeaderHeight, KWIDTH , kHeaderHeight);
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat offsetY = scrollView.contentOffset.y;
-    
-    self.tableView.bounces = offsetY >= kHeaderHeight;
+    self.tableView.bounces = offsetY > 0;
     if (!self.isHover) {
-        CGFloat totalHeight = kNavBarHeight + kHeaderHeight;
-        CGFloat alpha = 1 - ((totalHeight - offsetY)/totalHeight);
+        CGFloat tempY = offsetY + kHeaderHeight;
+        CGFloat alpha = 1 - ((kHeaderHeight - tempY)/kHeaderHeight);
         UIImage *image = [UIImage createImageWithColor:[[UIColor cyanColor] colorWithAlphaComponent:alpha]];
         [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+        
     }
 }
 
@@ -94,13 +105,13 @@ THE SOFTWARE.
     return 80;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return self.isHover? kHeaderHeight : 0.001;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    return self.isHover? self.headerView : [UIView new];
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    return self.isHover? kHeaderHeight : 0.001;
+//}
+//
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//    return self.isHover? self.headerView : [UIView new];
+//}
 
 - (UITableView *)tableView {
     if (!_tableView) {
@@ -115,6 +126,8 @@ THE SOFTWARE.
             _tableView.estimatedSectionHeaderHeight = 0;
             _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         }
+        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0 , 0.001)];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0 , 0.001)];
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
         [self.view addSubview: _tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -138,5 +151,6 @@ THE SOFTWARE.
     }
     return _headerView;
 }
+
 
 @end
