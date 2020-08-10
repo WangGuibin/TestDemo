@@ -295,6 +295,8 @@
 		CA59E353246126F500066333 /* RFQuiltLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E352246126F500066333 /* RFQuiltLayout.m */; };
 		CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E35624612C9600066333 /* FMMosaicLayout.m */; };
 		CADD3C8024DC379E0033E6AD /* WGBHoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */; };
+		CADD3C8824E18CFA0033E6AD /* WGBVideoDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8724E18CFA0033E6AD /* WGBVideoDemoListViewController.m */; };
+		CADD3C8C24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8B24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -844,6 +846,10 @@
 		CA59E35724612C9600066333 /* FMMosaicLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMosaicLayout.h; sourceTree = "<group>"; };
 		CADD3C7E24DC379E0033E6AD /* WGBHoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHoverViewController.h; sourceTree = "<group>"; };
 		CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHoverViewController.m; sourceTree = "<group>"; };
+		CADD3C8624E18CFA0033E6AD /* WGBVideoDemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBVideoDemoListViewController.h; sourceTree = "<group>"; };
+		CADD3C8724E18CFA0033E6AD /* WGBVideoDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBVideoDemoListViewController.m; sourceTree = "<group>"; };
+		CADD3C8A24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTestAVPlayerOrVCDemoViewController.h; sourceTree = "<group>"; };
+		CADD3C8B24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestAVPlayerOrVCDemoViewController.m; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1519,6 +1525,7 @@
 		04B0CA782340C557007B2AD2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CADD3C8524E18CCA0033E6AD /* Video */,
 				04E8925423AA098C0081F833 /* Optimization */,
 				04E891B023A876BF0081F833 /* Design Patterns */,
 				04E8913323A1F16F0081F833 /* IGListKitDemo */,
@@ -2587,6 +2594,25 @@
 			path = Hover;
 			sourceTree = "<group>";
 		};
+		CADD3C8524E18CCA0033E6AD /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				CADD3C8924E18D530033E6AD /* AVPlayer */,
+				CADD3C8624E18CFA0033E6AD /* WGBVideoDemoListViewController.h */,
+				CADD3C8724E18CFA0033E6AD /* WGBVideoDemoListViewController.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		CADD3C8924E18D530033E6AD /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CADD3C8A24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.h */,
+				CADD3C8B24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		D9398FDE5E01946B8CFE7939 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2845,6 +2871,7 @@
 				04E8917623A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */,
 				CA0CD88E244552EE006FE97C /* WGBNestSubViewController.m in Sources */,
+				CADD3C8824E18CFA0033E6AD /* WGBVideoDemoListViewController.m in Sources */,
 				04E890F5239F56320081F833 /* PriorityBoxArray.m in Sources */,
 				04C5CF6C235F083600A8671B /* WGBGradientProgressDemoViewController.m in Sources */,
 				CA59E347245E5E8C00066333 /* WGBSendArgsWebViewController.m in Sources */,
@@ -2873,6 +2900,7 @@
 				0408106223B6F999002EA9E1 /* WGBGradientTextDemoViewController.m in Sources */,
 				04E890F9239F56880081F833 /* WGBRecognitionPictureColorViewController.m in Sources */,
 				04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */,
+				CADD3C8C24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m in Sources */,
 				CA59E34A245E6E4800066333 /* WGBJSToOCDemoViewController.m in Sources */,
 				04C5CF70235F08D500A8671B /* WGBGradientProgressView.m in Sources */,
 				04B0CAB72341F607007B2AD2 /* NSLayoutAnchorDemoViewController.m in Sources */,

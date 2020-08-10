@@ -19,6 +19,7 @@
 #import "WGBIGListKitDemoViewController.h"
 #import "DesignPatternsDemoListViewController.h"
 #import "WGBOptimizationDemoListViewController.h"
+#import "WGBVideoDemoListViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -46,7 +47,8 @@
         [WGBSpecialEffectDemoViewController class],
         [WGBIGListKitDemoViewController class],
         [DesignPatternsDemoListViewController class],
-        [WGBOptimizationDemoListViewController class]
+        [WGBOptimizationDemoListViewController class],
+        [WGBVideoDemoListViewController class]
     ];
 }
 
@@ -63,7 +65,8 @@
         @"特殊效果demo",
         @"IGListKit Demo",
         @"设计模式相关",
-        @"性能调优相关"
+        @"性能调优相关",
+        @"音视频相关demo"
     ];
 }
 
