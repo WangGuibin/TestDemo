@@ -101,7 +101,7 @@
 #define kTabBarHeight  ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 
 #define IS_Iphone_X   isIphoneX()
-#define kBottomHeight IS_Iphone_X? 34 : 0
+#define kBottomHeight (IS_Iphone_X? 34 : 0)
 
 
 ///适配iOS 11 scrollView向下偏移

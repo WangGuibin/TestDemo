@@ -40,6 +40,7 @@ THE SOFTWARE.
 #import "WGBDotLineCellDemoViewController.h"
 #import "WGBHoverViewController.h"
 #import "WGBHover2ViewController.h"
+#import "WGBHover3ViewController.h"
 
 @interface TableViewDemoViewController ()
 
@@ -56,7 +57,8 @@ THE SOFTWARE.
         [WGBAOPTableViewDemoViewController class],
         [WGBDotLineCellDemoViewController class],
         [WGBHoverViewController class],
-        [WGBHover2ViewController class]
+        [WGBHover2ViewController class],
+        [WGBHover3ViewController class]
      ];
 }
 
@@ -70,7 +72,8 @@ THE SOFTWARE.
         @"AOP切面编程",
         @"点连成线的进度节点cell",
         @"控制tableView滚动悬停①",
-        @"控制tableView滚动悬停②"
+        @"控制tableView滚动悬停②",
+        @"粗略模仿哔哩哔哩播放详情页的交互"
     ];
 }
 

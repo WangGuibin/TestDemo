@@ -1,12 +1,12 @@
 //
-// WGBHoverViewController.m
+// WGBHover3ViewController.m
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2020/8/6
+// Created by CoderWGB on 2020/8/15
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,29 +31,29 @@ THE SOFTWARE.
 */
     
 
-#import "WGBHoverViewController.h"
+#import "WGBHover3ViewController.h"
 
-///< 仿哔哩哔哩的播放悬停,暂停可上推 实现原理
-/// 项目中要比这复杂得多 它的交互是这样的:
-/// 1.播放过程中,播放器悬浮在屏幕最上层,不跟随滚动,评论数量(sectionHeader)要悬停在视频底部
-/// 但是 sectionHeader上面还得要有内容 一开始想到的是这部分内容做成cell或者sectionHeader改成sectionFooter (后来想来这些都麻烦了 直接header + sectionHeader完事 只不过要调整header的内容和frame sectionHeader可不动 scrollDidScrol:也单纯只做导航渐变的交互 无需监听改变布局)
-/// 2. 暂停播放或者停止播放时,视频播放器需要跟随滚动sectionHeader悬停在屏幕顶部
-/// 3. 对于这种一开始觉得手生,有难度,其实不然,真正做起来的时候,画了画草图,分析了一下层级和交互就开干了
-///
-/// 最简单的还是利用系统的东西去实现,自己监听改变悬停位置或者布局总觉着容易出问题~ 能解决问题才是关键  黑猫白猫🐱能抓到老鼠🐀 就是好猫🐈
-///
+/// 在结合方式①和方式②的基础上修改的 粗略仿一下哔哩哔哩播放详情页的交互
 
-#define kHeaderHeight 300
+#define kVideoHeight 300
+#define kContentHeight 100
+#define kHeaderHeight (kVideoHeight+kContentHeight)
+#define kSectionHeaderHeignt 44
 
-@interface WGBHoverViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@interface WGBHover3ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) UIView *videoView;
+@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) UIView *sectionHeaderView;
+
 @property (nonatomic, assign) BOOL isHover;//是否悬停
 
 @end
 
-@implementation WGBHoverViewController
+@implementation WGBHover3ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -64,14 +64,29 @@ THE SOFTWARE.
     [hoverSwitch addTarget:self action:@selector(changeHoverState:) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:hoverSwitch];
     hoverSwitch.on = self.isHover;
-    [self.tableView reloadData];
+    [self changeHoverState:hoverSwitch];//主动调用一次
 }
 
 - (void)changeHoverState:(UISwitch *)sw{
     self.isHover = sw.on;
     [MBProgressHUD showText:sw.on?  @"已开启悬停" : @"已关闭悬停" afterDelay:1];
+    if (self.isHover) {
+        [self.view addSubview:self.videoView];
+        self.videoView.frame = CGRectMake(0, kNavBarHeight, KWIDTH , kVideoHeight);
+        self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.videoView.frame), KWIDTH , KHIGHT - kNavBarHeight - kVideoHeight - kBottomHeight);
+        self.contentView.frame = CGRectMake(0, 0, KWIDTH , kContentHeight);
+    }else{
+        [self.headerView addSubview: self.videoView];
+        self.tableView.frame = CGRectMake(0, kNavBarHeight, KWIDTH , KHIGHT - kNavBarHeight - kBottomHeight);
+        self.videoView.frame = CGRectMake(0, 0, KWIDTH , kVideoHeight);
+        self.contentView.frame = CGRectMake(0, CGRectGetMaxY(self.videoView.frame), KWIDTH , kContentHeight);
+        self.tableView.contentOffset = CGPointZero;
+    }
+    
+    self.headerView.height = CGRectGetMaxY(self.contentView.frame);
+    self.tableView.tableHeaderView = self.headerView;
     [self.tableView reloadData];
-    self.tableView.tableHeaderView = self.isHover? [UIView new] : self.headerView;
+
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -103,11 +118,11 @@ THE SOFTWARE.
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return self.isHover? kHeaderHeight : 0.001;
+    return kSectionHeaderHeignt;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    return self.isHover? self.headerView : [UIView new];
+    return self.sectionHeaderView;
 }
 
 - (UITableView *)tableView {
@@ -125,16 +140,6 @@ THE SOFTWARE.
         }
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
         [self.view addSubview: _tableView];
-        [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(kNavBarHeight);
-            make.left.right.equalTo(self.view);
-            if (@available(iOS 11.0, *)) {
-                make.bottom.equalTo(self.view.mas_safeAreaLayoutGuideBottom);
-            } else {
-                // Fallback on earlier versions
-                make.bottom.equalTo(self.view.mas_bottom);
-            }
-        }];
     }
     return _tableView;
 }
@@ -142,9 +147,41 @@ THE SOFTWARE.
 - (UIView *)headerView {
     if (!_headerView) {
         _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , kHeaderHeight)];
-        _headerView.backgroundColor = [UIColor blackColor];
+        _headerView.backgroundColor = [UIColor whiteColor];
     }
     return _headerView;
 }
+
+
+- (UIView *)videoView {
+    if (!_videoView) {
+        _videoView = [[UIView alloc] initWithFrame:CGRectZero];
+        _videoView.backgroundColor = [UIColor blackColor];
+    }
+    return _videoView;
+}
+
+
+- (UIView *)contentView {
+    if (!_contentView) {
+        _contentView = [[UIView alloc] initWithFrame:CGRectZero];
+        _contentView.backgroundColor = [UIColor brownColor];
+        [self.headerView addSubview:_contentView];
+    }
+    return _contentView;
+}
+
+- (UIView *)sectionHeaderView {
+    if (!_sectionHeaderView) {
+        _sectionHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , kSectionHeaderHeignt)];
+        _sectionHeaderView.backgroundColor = [UIColor orangeColor];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, KWIDTH-40 , kSectionHeaderHeignt)];
+        label.textColor = [UIColor whiteColor];
+        label.text = @"全部评论(666)";
+        [_sectionHeaderView addSubview:label];
+    }
+    return _sectionHeaderView;
+}
+
 
 @end

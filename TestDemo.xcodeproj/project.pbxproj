@@ -300,6 +300,7 @@
 		CADD3C8F24E789620033E6AD /* WGBTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8E24E789620033E6AD /* WGBTopWindow.m */; };
 		CADD3C9224E794340033E6AD /* UIView+DragExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C9124E794340033E6AD /* UIView+DragExtension.m */; };
 		CADD3C9524E796B00033E6AD /* WGBTopWindowRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C9424E796B00033E6AD /* WGBTopWindowRootVC.m */; };
+		CAF880AE24E7B6AA00B0154B /* WGBHover3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF880AD24E7B6AA00B0154B /* WGBHover3ViewController.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -859,6 +860,8 @@
 		CADD3C9124E794340033E6AD /* UIView+DragExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DragExtension.m"; sourceTree = "<group>"; };
 		CADD3C9324E796B00033E6AD /* WGBTopWindowRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTopWindowRootVC.h; sourceTree = "<group>"; };
 		CADD3C9424E796B00033E6AD /* WGBTopWindowRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTopWindowRootVC.m; sourceTree = "<group>"; };
+		CAF880AC24E7B6AA00B0154B /* WGBHover3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHover3ViewController.h; sourceTree = "<group>"; };
+		CAF880AD24E7B6AA00B0154B /* WGBHover3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHover3ViewController.m; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2605,6 +2608,8 @@
 				CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */,
 				9453141724DCEBE000665268 /* WGBHover2ViewController.h */,
 				9453141824DCEBE000665268 /* WGBHover2ViewController.m */,
+				CAF880AC24E7B6AA00B0154B /* WGBHover3ViewController.h */,
+				CAF880AD24E7B6AA00B0154B /* WGBHover3ViewController.m */,
 			);
 			path = Hover;
 			sourceTree = "<group>";
@@ -3031,6 +3036,7 @@
 				CADD3C8F24E789620033E6AD /* WGBTopWindow.m in Sources */,
 				04B7C2FA23B071A700F6BB2C /* CommentHttpHandlerImp.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
+				CAF880AE24E7B6AA00B0154B /* WGBHover3ViewController.m in Sources */,
 				04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */,
 				0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */,
 				0408101A23B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m in Sources */,
