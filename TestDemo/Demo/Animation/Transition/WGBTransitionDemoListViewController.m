@@ -38,6 +38,8 @@ THE SOFTWARE.
 #import "WGBDropDownTestDemoViewController.h"
 #import "WGBImageTransitionDemoViewController.h"
 #import "WGBDotDiffusionDemoViewController.h"
+#import "WGBFlipDemoViewController.h"
+#import "WGBSpreadTransitionDemoViewController.h"
 
 @interface WGBTransitionDemoListViewController ()
 
@@ -52,7 +54,10 @@ THE SOFTWARE.
         [WGBTestHoleDemoViewController class],
         [WGBDropDownTestDemoViewController class],
         [WGBImageTransitionDemoViewController class],
-        [WGBDotDiffusionDemoViewController class]
+        [WGBDotDiffusionDemoViewController class],
+        [WGBFlipDemoViewController class],
+        [WGBSpreadTransitionDemoViewController class]
+
     ];
 }
 
@@ -64,7 +69,9 @@ THE SOFTWARE.
         @"管中窥豹-以点到面(有点bug)",
         @"下拉转场",
         @"图片转场动画",
-        @"圆形扩散转场"
+        @"圆形扩散转场",
+        @"翻转动画转场",
+        @"小圆点扩散动画"
     ];
 }
 

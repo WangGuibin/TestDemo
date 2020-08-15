@@ -44,10 +44,10 @@ THE SOFTWARE.
 @interface WGBHover3ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIView *headerView;
-@property (nonatomic, strong) UIView *videoView;
-@property (nonatomic, strong) UIView *contentView;
-@property (nonatomic, strong) UIView *sectionHeaderView;
+@property (nonatomic, strong) UIView *headerView; //头部跟随滚动
+@property (nonatomic, strong) UIView *videoView;//视频播放器的容器
+@property (nonatomic, strong) UIView *contentView;//文本/描述/简介等等一些视频的信息
+@property (nonatomic, strong) UIView *sectionHeaderView;//全部评论(99+) 悬停
 
 @property (nonatomic, assign) BOOL isHover;//是否悬停
 

@@ -301,6 +301,11 @@
 		CADD3C9224E794340033E6AD /* UIView+DragExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C9124E794340033E6AD /* UIView+DragExtension.m */; };
 		CADD3C9524E796B00033E6AD /* WGBTopWindowRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C9424E796B00033E6AD /* WGBTopWindowRootVC.m */; };
 		CAF880AE24E7B6AA00B0154B /* WGBHover3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF880AD24E7B6AA00B0154B /* WGBHover3ViewController.m */; };
+		CAF880B224E7BFDD00B0154B /* WGBFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF880B124E7BFDD00B0154B /* WGBFlipTransition.m */; };
+		CAF880B524E7C21C00B0154B /* WGBFlipDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF880B424E7C21C00B0154B /* WGBFlipDemoViewController.m */; };
+		CAF880BC24E7DE3300B0154B /* WGBSpreadTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF880BB24E7DE3300B0154B /* WGBSpreadTransition.m */; };
+		CAF880BF24E7DEB400B0154B /* WGBSpreadTransitionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF880BE24E7DEB400B0154B /* WGBSpreadTransitionDemoViewController.m */; };
+		CAF880C224E7DF6600B0154B /* WGBSpreadToVCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF880C124E7DF6600B0154B /* WGBSpreadToVCDemoViewController.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -862,6 +867,16 @@
 		CADD3C9424E796B00033E6AD /* WGBTopWindowRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTopWindowRootVC.m; sourceTree = "<group>"; };
 		CAF880AC24E7B6AA00B0154B /* WGBHover3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHover3ViewController.h; sourceTree = "<group>"; };
 		CAF880AD24E7B6AA00B0154B /* WGBHover3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHover3ViewController.m; sourceTree = "<group>"; };
+		CAF880B024E7BFDD00B0154B /* WGBFlipTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBFlipTransition.h; sourceTree = "<group>"; };
+		CAF880B124E7BFDD00B0154B /* WGBFlipTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFlipTransition.m; sourceTree = "<group>"; };
+		CAF880B324E7C21C00B0154B /* WGBFlipDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBFlipDemoViewController.h; sourceTree = "<group>"; };
+		CAF880B424E7C21C00B0154B /* WGBFlipDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFlipDemoViewController.m; sourceTree = "<group>"; };
+		CAF880BA24E7DE3300B0154B /* WGBSpreadTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpreadTransition.h; sourceTree = "<group>"; };
+		CAF880BB24E7DE3300B0154B /* WGBSpreadTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpreadTransition.m; sourceTree = "<group>"; };
+		CAF880BD24E7DEB400B0154B /* WGBSpreadTransitionDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpreadTransitionDemoViewController.h; sourceTree = "<group>"; };
+		CAF880BE24E7DEB400B0154B /* WGBSpreadTransitionDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpreadTransitionDemoViewController.m; sourceTree = "<group>"; };
+		CAF880C024E7DF6600B0154B /* WGBSpreadToVCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBSpreadToVCDemoViewController.h; sourceTree = "<group>"; };
+		CAF880C124E7DF6600B0154B /* WGBSpreadToVCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBSpreadToVCDemoViewController.m; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1311,6 +1326,8 @@
 		046D95802399FEF200D79801 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				CAF880B924E7DE0200B0154B /* Spread */,
+				CAF880AF24E7BFAF00B0154B /* Flip */,
 				04B7C2E223AD119900F6BB2C /* DotDiffusion */,
 				04B7C2DA23AC778D00F6BB2C /* ImageTransition */,
 				04E8915223A267750081F833 /* DropDown */,
@@ -2633,6 +2650,30 @@
 			path = AVPlayer;
 			sourceTree = "<group>";
 		};
+		CAF880AF24E7BFAF00B0154B /* Flip */ = {
+			isa = PBXGroup;
+			children = (
+				CAF880B024E7BFDD00B0154B /* WGBFlipTransition.h */,
+				CAF880B124E7BFDD00B0154B /* WGBFlipTransition.m */,
+				CAF880B324E7C21C00B0154B /* WGBFlipDemoViewController.h */,
+				CAF880B424E7C21C00B0154B /* WGBFlipDemoViewController.m */,
+			);
+			path = Flip;
+			sourceTree = "<group>";
+		};
+		CAF880B924E7DE0200B0154B /* Spread */ = {
+			isa = PBXGroup;
+			children = (
+				CAF880BA24E7DE3300B0154B /* WGBSpreadTransition.h */,
+				CAF880BB24E7DE3300B0154B /* WGBSpreadTransition.m */,
+				CAF880BD24E7DEB400B0154B /* WGBSpreadTransitionDemoViewController.h */,
+				CAF880BE24E7DEB400B0154B /* WGBSpreadTransitionDemoViewController.m */,
+				CAF880C024E7DF6600B0154B /* WGBSpreadToVCDemoViewController.h */,
+				CAF880C124E7DF6600B0154B /* WGBSpreadToVCDemoViewController.m */,
+			);
+			path = Spread;
+			sourceTree = "<group>";
+		};
 		D9398FDE5E01946B8CFE7939 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2811,6 +2852,7 @@
 				046D95A8239B4CD600D79801 /* WGBHighLightLabelViewController.m in Sources */,
 				0454E5C823891B790000D62C /* JXCategoryDemoViewController.m in Sources */,
 				043C2C9123B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m in Sources */,
+				CAF880BC24E7DE3300B0154B /* WGBSpreadTransition.m in Sources */,
 				040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */,
 				04E8916C23A3330F0081F833 /* WGBUserInfoCell.m in Sources */,
 				04157B8323C4BD930069FC15 /* WGBClipFrameView.m in Sources */,
@@ -2843,6 +2885,7 @@
 				04E8926123AA0A2D0081F833 /* WGBOptimizationDemoListViewController.m in Sources */,
 				CADD3C8024DC379E0033E6AD /* WGBHoverViewController.m in Sources */,
 				CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */,
+				CAF880B524E7C21C00B0154B /* WGBFlipDemoViewController.m in Sources */,
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
 				04E8916323A332570081F833 /* WGBCommentCell.m in Sources */,
@@ -2972,6 +3015,7 @@
 				046C5D852382E0E1005A12E4 /* LDNetPing.m in Sources */,
 				04B0CA912340CF4F007B2AD2 /* WGBEasyMarqueeViewDemoViewController.m in Sources */,
 				04F5072B238FF253000D2DFB /* WGBSpringAnimationDemoViewController.m in Sources */,
+				CAF880BF24E7DEB400B0154B /* WGBSpreadTransitionDemoViewController.m in Sources */,
 				04D70489238942C900E88123 /* MaximumSpacingFlowLayout.m in Sources */,
 				04D7048C2389440F00E88123 /* WGBCollectionItemCenterFlowLayout.m in Sources */,
 				04E8910B239FAF1D0081F833 /* WGBCATransitionAnimationTypeDemoViewController.m in Sources */,
@@ -3001,6 +3045,7 @@
 				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,
 				040A7874238C03A100E1D2B7 /* LBXPermissionPhotos.m in Sources */,
+				CAF880C224E7DF6600B0154B /* WGBSpreadToVCDemoViewController.m in Sources */,
 				04E8914323A1F7550081F833 /* WGBIGListDemoLabelCell.m in Sources */,
 				04E891A423A778B00081F833 /* WGBDrawGridViewDemoViewController.m in Sources */,
 				048DB1D223912432007701EC /* WGBCircleMaskLayerEffectViewController.m in Sources */,
@@ -3039,6 +3084,7 @@
 				CAF880AE24E7B6AA00B0154B /* WGBHover3ViewController.m in Sources */,
 				04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */,
 				0453FDC8236C349100D8B2A5 /* TableViewMultipleSelectionDemoViewController.m in Sources */,
+				CAF880B224E7BFDD00B0154B /* WGBFlipTransition.m in Sources */,
 				0408101A23B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m in Sources */,
 				04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */,
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,
