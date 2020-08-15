@@ -10,6 +10,7 @@
 #import "VCTimeProfiler.h"
 #import "XDAppFluencyMonitor.h"
 #import "TBCityIconFont.h"
+#import "WGBTopWindow.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 添加一个window, 点击这个window, 可以让屏幕上的scrollView滚到最顶部
+    [WGBTopWindow show];
     //调试插件 UI热重载
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
     //页面耗时统计

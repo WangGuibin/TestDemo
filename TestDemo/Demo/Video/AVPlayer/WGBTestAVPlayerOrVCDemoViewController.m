@@ -34,6 +34,7 @@ THE SOFTWARE.
 #import "WGBTestAVPlayerOrVCDemoViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
+#import "UIView+DragExtension.h"
 
 #define kVideoURLString @"http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"
 
@@ -65,6 +66,9 @@ THE SOFTWARE.
     [view.layer addSublayer:preViewLayer];
     [self.view addSubview:view];
     self.palyerView = view;
+    view.wgb_canDrag = YES;
+    view.wgb_bounces = YES;
+    view.wgb_isAdsorb = YES;
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor blackColor];

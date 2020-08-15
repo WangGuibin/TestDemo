@@ -297,6 +297,9 @@
 		CADD3C8024DC379E0033E6AD /* WGBHoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */; };
 		CADD3C8824E18CFA0033E6AD /* WGBVideoDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8724E18CFA0033E6AD /* WGBVideoDemoListViewController.m */; };
 		CADD3C8C24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8B24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m */; };
+		CADD3C8F24E789620033E6AD /* WGBTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8E24E789620033E6AD /* WGBTopWindow.m */; };
+		CADD3C9224E794340033E6AD /* UIView+DragExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C9124E794340033E6AD /* UIView+DragExtension.m */; };
+		CADD3C9524E796B00033E6AD /* WGBTopWindowRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C9424E796B00033E6AD /* WGBTopWindowRootVC.m */; };
 		F029D6F6422CAC4D4AC56424 /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEDCB1A81956B0295067126 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -850,6 +853,12 @@
 		CADD3C8724E18CFA0033E6AD /* WGBVideoDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBVideoDemoListViewController.m; sourceTree = "<group>"; };
 		CADD3C8A24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTestAVPlayerOrVCDemoViewController.h; sourceTree = "<group>"; };
 		CADD3C8B24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTestAVPlayerOrVCDemoViewController.m; sourceTree = "<group>"; };
+		CADD3C8D24E789620033E6AD /* WGBTopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTopWindow.h; sourceTree = "<group>"; };
+		CADD3C8E24E789620033E6AD /* WGBTopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTopWindow.m; sourceTree = "<group>"; };
+		CADD3C9024E794340033E6AD /* UIView+DragExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DragExtension.h"; sourceTree = "<group>"; };
+		CADD3C9124E794340033E6AD /* UIView+DragExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DragExtension.m"; sourceTree = "<group>"; };
+		CADD3C9324E796B00033E6AD /* WGBTopWindowRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTopWindowRootVC.h; sourceTree = "<group>"; };
+		CADD3C9424E796B00033E6AD /* WGBTopWindowRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTopWindowRootVC.m; sourceTree = "<group>"; };
 		DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -884,6 +893,10 @@
 			children = (
 				0408101423B4B1A2002EA9E1 /* WGBCustomWindow.h */,
 				0408101523B4B1A2002EA9E1 /* WGBCustomWindow.m */,
+				CADD3C8D24E789620033E6AD /* WGBTopWindow.h */,
+				CADD3C8E24E789620033E6AD /* WGBTopWindow.m */,
+				CADD3C9324E796B00033E6AD /* WGBTopWindowRootVC.h */,
+				CADD3C9424E796B00033E6AD /* WGBTopWindowRootVC.m */,
 			);
 			path = CustomWindow;
 			sourceTree = "<group>";
@@ -2278,6 +2291,8 @@
 			children = (
 				04E8919B23A7711C0081F833 /* UIView+WGBCornerCliper.h */,
 				04E8919C23A7711C0081F833 /* UIView+WGBCornerCliper.m */,
+				CADD3C9024E794340033E6AD /* UIView+DragExtension.h */,
+				CADD3C9124E794340033E6AD /* UIView+DragExtension.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2869,6 +2884,7 @@
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				043C30DF23B1F96A005AF423 /* WGBIconFontDemoViewController.m in Sources */,
 				04E8917623A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m in Sources */,
+				CADD3C9224E794340033E6AD /* UIView+DragExtension.m in Sources */,
 				04AE01BE2394B21C00B7D0D4 /* WGBLikeAnimationDemoViewController.m in Sources */,
 				CA0CD88E244552EE006FE97C /* WGBNestSubViewController.m in Sources */,
 				CADD3C8824E18CFA0033E6AD /* WGBVideoDemoListViewController.m in Sources */,
@@ -2885,6 +2901,7 @@
 				043C2C9423B0CBE6005AF423 /* WGBGradientCodeView.m in Sources */,
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
 				04E8915D23A331260081F833 /* WGBPostFeedListDemoVC.m in Sources */,
+				CADD3C9524E796B00033E6AD /* WGBTopWindowRootVC.m in Sources */,
 				04083E3E237FD6C4002702C6 /* XDMachThreadBacktrace.c in Sources */,
 				04C43943239E55F400A8BEC0 /* WGBTitlePickerViewController.m in Sources */,
 				04E8914D23A1FE640081F833 /* WGBSingleLabelTextSection.m in Sources */,
@@ -3011,6 +3028,7 @@
 				046C5D872382E0E1005A12E4 /* LDNetDiagnoService.m in Sources */,
 				04D704AB238A839700E88123 /* YogaKitAlignItemsViewController.m in Sources */,
 				0408B8E22398A2140032C2A3 /* PKProtocolExtension.m in Sources */,
+				CADD3C8F24E789620033E6AD /* WGBTopWindow.m in Sources */,
 				04B7C2FA23B071A700F6BB2C /* CommentHttpHandlerImp.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
 				04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */,

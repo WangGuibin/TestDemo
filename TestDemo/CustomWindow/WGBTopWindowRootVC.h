@@ -1,12 +1,12 @@
 //
-// WGBVideoDemoListViewController.m
+// WGBTopWindowRootVC.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2020/8/10
+// Created by CoderWGB on 2020/8/15
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -29,42 +29,17 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-    //http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4
-
-
-#import "WGBVideoDemoListViewController.h"
-#import "WGBTestAVPlayerOrVCDemoViewController.h"
-
-@interface WGBVideoDemoListViewController ()
-
-@end
-
-@implementation WGBVideoDemoListViewController
-
-- (NSArray<Class> *)demoClassArray{
-    return @[
-        [WGBTestAVPlayerOrVCDemoViewController class],
-     ];
-}
-
-
-- (NSArray *)demoTitleArray{
-    return @[
-        @"原生视频播放器的使用",
-    ];
-}
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView reloadData];
     
-    @TODO("todo 1");
-    @TODO("todo 2");
-    @TODO("todo 3");
 
-}
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface WGBTopWindowRootVC : UIViewController
+
+@property (nonatomic, copy) dispatch_block_t clickBlock;
+
 
 @end
+
+NS_ASSUME_NONNULL_END
