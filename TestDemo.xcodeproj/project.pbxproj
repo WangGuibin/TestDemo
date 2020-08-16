@@ -284,6 +284,13 @@
 		CA060018244C2DFC001BE692 /* WMImageBrowerUniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA060013244C2DFC001BE692 /* WMImageBrowerUniteView.m */; };
 		CA0CD88B24455271006FE97C /* WGBNestBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */; };
 		CA0CD88E244552EE006FE97C /* WGBNestSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0CD88D244552EE006FE97C /* WGBNestSubViewController.m */; };
+		CA3ABFFA24E928C000389257 /* WGBMasonryDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3ABFF924E928BF00389257 /* WGBMasonryDemoListViewController.m */; };
+		CA3ABFFD24E9298F00389257 /* WGBMasonryHorizontalLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3ABFFC24E9298F00389257 /* WGBMasonryHorizontalLayoutViewController.m */; };
+		CA3AC00024E9314300389257 /* WGBMasonryItemFlexedLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3ABFFF24E9314300389257 /* WGBMasonryItemFlexedLayoutViewController.m */; };
+		CA3AC00324E9361E00389257 /* WGBMasonrySudokuDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC00224E9361E00389257 /* WGBMasonrySudokuDemoViewController.m */; };
+		CA3AC00624E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC00524E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.m */; };
+		CA3AC00924E940CA00389257 /* WGBMasonryScrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC00824E940CA00389257 /* WGBMasonryScrollViewDemoViewController.m */; };
+		CA3AC00C24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC00B24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m */; };
 		CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */; };
 		CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */; };
 		CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */; };
@@ -834,6 +841,20 @@
 		CA0CD88A24455271006FE97C /* WGBNestBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBNestBaseViewController.m; sourceTree = "<group>"; };
 		CA0CD88C244552EE006FE97C /* WGBNestSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBNestSubViewController.h; sourceTree = "<group>"; };
 		CA0CD88D244552EE006FE97C /* WGBNestSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBNestSubViewController.m; sourceTree = "<group>"; };
+		CA3ABFF824E928BF00389257 /* WGBMasonryDemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMasonryDemoListViewController.h; sourceTree = "<group>"; };
+		CA3ABFF924E928BF00389257 /* WGBMasonryDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonryDemoListViewController.m; sourceTree = "<group>"; };
+		CA3ABFFB24E9298E00389257 /* WGBMasonryHorizontalLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMasonryHorizontalLayoutViewController.h; sourceTree = "<group>"; };
+		CA3ABFFC24E9298F00389257 /* WGBMasonryHorizontalLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonryHorizontalLayoutViewController.m; sourceTree = "<group>"; };
+		CA3ABFFE24E9314300389257 /* WGBMasonryItemFlexedLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMasonryItemFlexedLayoutViewController.h; sourceTree = "<group>"; };
+		CA3ABFFF24E9314300389257 /* WGBMasonryItemFlexedLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonryItemFlexedLayoutViewController.m; sourceTree = "<group>"; };
+		CA3AC00124E9361E00389257 /* WGBMasonrySudokuDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMasonrySudokuDemoViewController.h; sourceTree = "<group>"; };
+		CA3AC00224E9361E00389257 /* WGBMasonrySudokuDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonrySudokuDemoViewController.m; sourceTree = "<group>"; };
+		CA3AC00424E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMasonrySubViewHoldUpSupViewDemoViewController.h; sourceTree = "<group>"; };
+		CA3AC00524E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonrySubViewHoldUpSupViewDemoViewController.m; sourceTree = "<group>"; };
+		CA3AC00724E940CA00389257 /* WGBMasonryScrollViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMasonryScrollViewDemoViewController.h; sourceTree = "<group>"; };
+		CA3AC00824E940CA00389257 /* WGBMasonryScrollViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonryScrollViewDemoViewController.m; sourceTree = "<group>"; };
+		CA3AC00A24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMasonryConstraintsAnimationDemoViewController.h; sourceTree = "<group>"; };
+		CA3AC00B24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonryConstraintsAnimationDemoViewController.m; sourceTree = "<group>"; };
 		CA59E3352459D57B00066333 /* WGBScrollTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBScrollTrackingViewController.h; sourceTree = "<group>"; };
 		CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBScrollTrackingViewController.m; sourceTree = "<group>"; };
 		CA59E338245D2B1F00066333 /* WGBAttentionListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAttentionListHeaderView.h; sourceTree = "<group>"; };
@@ -1826,6 +1847,7 @@
 		04C302622382DA5800356991 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				CA3ABFF724E9289B00389257 /* Masonry */,
 				04157B9823C5DE7D0069FC15 /* FloatingHeader */,
 				0408105F23B6F97C002EA9E1 /* GradientText */,
 				04E8919E23A7787C0081F833 /* DrawGridView */,
@@ -2571,6 +2593,27 @@
 			path = NestTitleDemo;
 			sourceTree = "<group>";
 		};
+		CA3ABFF724E9289B00389257 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				CA3ABFF824E928BF00389257 /* WGBMasonryDemoListViewController.h */,
+				CA3ABFF924E928BF00389257 /* WGBMasonryDemoListViewController.m */,
+				CA3ABFFB24E9298E00389257 /* WGBMasonryHorizontalLayoutViewController.h */,
+				CA3ABFFC24E9298F00389257 /* WGBMasonryHorizontalLayoutViewController.m */,
+				CA3ABFFE24E9314300389257 /* WGBMasonryItemFlexedLayoutViewController.h */,
+				CA3ABFFF24E9314300389257 /* WGBMasonryItemFlexedLayoutViewController.m */,
+				CA3AC00124E9361E00389257 /* WGBMasonrySudokuDemoViewController.h */,
+				CA3AC00224E9361E00389257 /* WGBMasonrySudokuDemoViewController.m */,
+				CA3AC00424E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.h */,
+				CA3AC00524E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.m */,
+				CA3AC00724E940CA00389257 /* WGBMasonryScrollViewDemoViewController.h */,
+				CA3AC00824E940CA00389257 /* WGBMasonryScrollViewDemoViewController.m */,
+				CA3AC00A24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.h */,
+				CA3AC00B24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 		CA59E3342459D54400066333 /* ScrollTracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -2844,6 +2887,7 @@
 				0439C9ED234C940A00E9D9AB /* YYTextDemoViewController.m in Sources */,
 				04C3024B2382D21A00356991 /* TestDemoBaseTableViewController.m in Sources */,
 				048353B72397519900454141 /* WGBConfettiTypeModel.m in Sources */,
+				CA3AC00C24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m in Sources */,
 				0454E5C123891AFB0000D62C /* WGBRankBaseViewController.m in Sources */,
 				04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */,
 				04E8915123A1FF450081F833 /* NSArray+Number.m in Sources */,
@@ -2946,6 +2990,7 @@
 				94ABB34624CABE9500947D65 /* UIButton+WGBExtra.m in Sources */,
 				04E8915823A26D4F0081F833 /* WGBDropDownTestDemoViewController.m in Sources */,
 				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
+				CA3ABFFA24E928C000389257 /* WGBMasonryDemoListViewController.m in Sources */,
 				043C2C9423B0CBE6005AF423 /* WGBGradientCodeView.m in Sources */,
 				040A7882238C064200E1D2B7 /* WGBDIYScanQRCodeDemoViewController.m in Sources */,
 				04E8915D23A331260081F833 /* WGBPostFeedListDemoVC.m in Sources */,
@@ -2992,6 +3037,7 @@
 				94ABB39124CEBDEA00947D65 /* WGBGestureDrivenPopUpController.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
 				04B7C2EF23AE6E9400F6BB2C /* WGBDotLineCell.m in Sources */,
+				CA3ABFFD24E9298F00389257 /* WGBMasonryHorizontalLayoutViewController.m in Sources */,
 				046D958D239A002600D79801 /* WGBPushPopSimpleTransition.m in Sources */,
 				04E890F1239F56320081F833 /* Palette.m in Sources */,
 				04CA01F823517E20009C8C22 /* HPCommonCancelConfirmAlertView.m in Sources */,
@@ -3010,6 +3056,7 @@
 				04D7048323893FBE00E88123 /* FBGlowLabel.m in Sources */,
 				04E8925E23AA0A080081F833 /* WGBRunLoopDemoViewController.m in Sources */,
 				040A787D238C051900E1D2B7 /* DIYScanViewController.m in Sources */,
+				CA3AC00924E940CA00389257 /* WGBMasonryScrollViewDemoViewController.m in Sources */,
 				048600D02363421200B63EDE /* PopverDemoViewController.m in Sources */,
 				04E891B323A877080081F833 /* DesignPatternsDemoListViewController.m in Sources */,
 				046C5D852382E0E1005A12E4 /* LDNetPing.m in Sources */,
@@ -3024,6 +3071,7 @@
 				046098D62359EBFB00A673D6 /* WebCommonDemoViewController.m in Sources */,
 				04E891A123A778980081F833 /* WGBDrawGridView.m in Sources */,
 				04E8913223A12D860081F833 /* WGBLoadingView.m in Sources */,
+				CA3AC00624E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.m in Sources */,
 				04D7048023893ED000E88123 /* UIView+GlowView.m in Sources */,
 				94ABB39424CEBE7F00947D65 /* WGBPopupControllerManager.m in Sources */,
 				040A7875238C03A100E1D2B7 /* LBXPermissionCamera.m in Sources */,
@@ -3037,10 +3085,12 @@
 				04E8918E23A727020081F833 /* WGBColorChangeDemoViewController.m in Sources */,
 				04034BBF239E950C0063E0A5 /* WGBAOPTableViewDemoViewController.m in Sources */,
 				04C43935239E517B00A8BEC0 /* WGBFloatViewDemoViewController.m in Sources */,
+				CA3AC00324E9361E00389257 /* WGBMasonrySudokuDemoViewController.m in Sources */,
 				04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
 				04157B9B23C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.m in Sources */,
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
+				CA3AC00024E9314300389257 /* WGBMasonryItemFlexedLayoutViewController.m in Sources */,
 				043C30E823B1FA52005AF423 /* TBCityIconInfo.m in Sources */,
 				04D7047D23893E8900E88123 /* WGBGlowEffectLabelViewController.m in Sources */,
 				04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */,

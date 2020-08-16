@@ -42,6 +42,7 @@ THE SOFTWARE.
 #import "WGBDrawGridViewDemoViewController.h"
 #import "WGBGradientTextDemoViewController.h"
 #import "WGBFloatingHeaderDemoViewController.h"
+#import "WGBMasonryDemoListViewController.h"
 
 
 @interface LayoutDemoListViewController ()
@@ -61,7 +62,8 @@ THE SOFTWARE.
         [WGBFloatViewDemoViewController class],
         [WGBDrawGridViewDemoViewController class],
         [WGBGradientTextDemoViewController class],
-        [WGBFloatingHeaderDemoViewController class]
+        [WGBFloatingHeaderDemoViewController class],
+        [WGBMasonryDemoListViewController class]
     ];
 }
 
@@ -77,19 +79,12 @@ THE SOFTWARE.
         @"类似苹果的小圆点---漂浮的View",
         @"绘制网格",
         @"渐变文字实现方式",
-        @"悬浮的header"
+        @"悬浮的header",
+        @"Masonry布局Demo"
+
     ];
 }
 
-//NSInteger pageNum = (NSInteger)scrollView.contentOffset.x / (NSInteger)MSWIDTH;
-//NSInteger remainder1 = (NSInteger)scrollView.contentOffset.x % (NSInteger)MSWIDTH;
-//if (remainder1 > MSWIDTH/2) {
-//    pageNum = pageNum + 1;
-//}
-//if (self.currentPage != pageNum) {
-//    self.currentPage = pageNum;
-//    self.pageCtrl.currentPage = pageNum;
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
