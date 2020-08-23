@@ -39,6 +39,8 @@ THE SOFTWARE.
 #import "WGBTransitionDemoListViewController.h" 
 #import "WGBDrawTextDemoViewController.h"
 #import "WGBEmitterDemoViewController.h"
+#import "WGBFlowButtonDemoViewController.h"
+#import "WGBStrokeEndDemoViewController.h"
 
 @interface AnimationDemoViewController ()
 
@@ -54,7 +56,9 @@ THE SOFTWARE.
         [WGBSpringAnimationDemoViewController class],
         [WGBLikeAnimationDemoViewController class],
         [WGBDrawTextDemoViewController class],
-        [WGBEmitterDemoViewController class]
+        [WGBEmitterDemoViewController class],
+        [WGBFlowButtonDemoViewController class],
+        [WGBStrokeEndDemoViewController class]
      ];
 }
 
@@ -67,7 +71,9 @@ THE SOFTWARE.
         @"Spring弹性动画",
         @"点赞动画",
         @"绘制文字动画",
-        @"粒子动画效果"
+        @"粒子动画效果",
+        @"按钮流光动画",
+        @"路径动画"
     ];
 }
 
