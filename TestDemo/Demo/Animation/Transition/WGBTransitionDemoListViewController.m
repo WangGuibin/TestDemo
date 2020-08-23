@@ -40,6 +40,7 @@ THE SOFTWARE.
 #import "WGBDotDiffusionDemoViewController.h"
 #import "WGBFlipDemoViewController.h"
 #import "WGBSpreadTransitionDemoViewController.h"
+#import "WGBWeixinDemoTestViewController.h"
 
 @interface WGBTransitionDemoListViewController ()
 
@@ -56,7 +57,8 @@ THE SOFTWARE.
         [WGBImageTransitionDemoViewController class],
         [WGBDotDiffusionDemoViewController class],
         [WGBFlipDemoViewController class],
-        [WGBSpreadTransitionDemoViewController class]
+        [WGBSpreadTransitionDemoViewController class],
+        [WGBWeixinDemoTestViewController class]
 
     ];
 }
@@ -71,7 +73,8 @@ THE SOFTWARE.
         @"图片转场动画",
         @"圆形扩散转场",
         @"翻转动画转场",
-        @"小圆点扩散动画"
+        @"小圆点扩散动画",
+        @"仿微信朋友圈查看视频号转场"
     ];
 }
 

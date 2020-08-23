@@ -39,6 +39,13 @@ THE SOFTWARE.
 
 @implementation WGBCustomNavgationViewController
 
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController{
+    if (self == [super initWithRootViewController:rootViewController]) {
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.popGestureEnable = YES;
@@ -62,6 +69,16 @@ THE SOFTWARE.
         return self.childViewControllers.count == 1 ? NO : YES;
     }
     return NO;
+}
+
+//触发之后是否响应手势事件
+//处理侧滑返回与UISlider的拖动手势冲突
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    //如果手势是触摸的UISlider滑块触发的，侧滑返回手势就不响应
+    if ([touch.view isKindOfClass:[UISlider class]]) {
+        return NO;
+    }
+    return YES;
 }
 
 ///MARK:- 当push的时候调用这个方法

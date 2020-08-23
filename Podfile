@@ -21,7 +21,8 @@ target 'TestDemo' do
   pod 'TZImagePickerController'
   pod 'YBImageBrowser'
   pod 'YBImageBrowser/Video'
-  pod 'WGBCocoaKit'
+  pod 'KMNavigationBarTransition' #导航栏切换顺畅转场
+
   pod 'YYText'
   pod 'YYModel'
   pod 'MBProgressHUD'
@@ -44,6 +45,9 @@ target 'TestDemo' do
   pod 'WGBWaveLayerButton'
   pod 'WGBRepairedOrientationLabel'
   pod 'WGBSelectPhotoView'
+  pod 'WGBCocoaKit'
+  
+  pod 'LookinServer', :configurations => ['Debug']
 end
 
 

@@ -291,6 +291,10 @@
 		CA3AC00624E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC00524E93F6A00389257 /* WGBMasonrySubViewHoldUpSupViewDemoViewController.m */; };
 		CA3AC00924E940CA00389257 /* WGBMasonryScrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC00824E940CA00389257 /* WGBMasonryScrollViewDemoViewController.m */; };
 		CA3AC00C24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC00B24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m */; };
+		CA4E2C5624F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C5524F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m */; };
+		CA4E2C5924F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C5824F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m */; };
+		CA4E2C5C24F160C5006DFAC5 /* WGBWeixinVideoTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C5B24F160C5006DFAC5 /* WGBWeixinVideoTransition.m */; };
+		CA4E2C5F24F2120B006DFAC5 /* WGBTransitionInteractive.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C5E24F2120B006DFAC5 /* WGBTransitionInteractive.m */; };
 		CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */; };
 		CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */; };
 		CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */; };
@@ -855,6 +859,14 @@
 		CA3AC00824E940CA00389257 /* WGBMasonryScrollViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonryScrollViewDemoViewController.m; sourceTree = "<group>"; };
 		CA3AC00A24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMasonryConstraintsAnimationDemoViewController.h; sourceTree = "<group>"; };
 		CA3AC00B24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMasonryConstraintsAnimationDemoViewController.m; sourceTree = "<group>"; };
+		CA4E2C5424F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBWeixinDemoTestViewController.h; sourceTree = "<group>"; };
+		CA4E2C5524F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBWeixinDemoTestViewController.m; sourceTree = "<group>"; };
+		CA4E2C5724F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBWeixinDemoTestToViewController.h; sourceTree = "<group>"; };
+		CA4E2C5824F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBWeixinDemoTestToViewController.m; sourceTree = "<group>"; };
+		CA4E2C5A24F160C5006DFAC5 /* WGBWeixinVideoTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBWeixinVideoTransition.h; sourceTree = "<group>"; };
+		CA4E2C5B24F160C5006DFAC5 /* WGBWeixinVideoTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBWeixinVideoTransition.m; sourceTree = "<group>"; };
+		CA4E2C5D24F2120B006DFAC5 /* WGBTransitionInteractive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTransitionInteractive.h; sourceTree = "<group>"; };
+		CA4E2C5E24F2120B006DFAC5 /* WGBTransitionInteractive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTransitionInteractive.m; sourceTree = "<group>"; };
 		CA59E3352459D57B00066333 /* WGBScrollTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBScrollTrackingViewController.h; sourceTree = "<group>"; };
 		CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBScrollTrackingViewController.m; sourceTree = "<group>"; };
 		CA59E338245D2B1F00066333 /* WGBAttentionListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAttentionListHeaderView.h; sourceTree = "<group>"; };
@@ -1347,6 +1359,7 @@
 		046D95802399FEF200D79801 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				CA4E2C5324F15EC6006DFAC5 /* Weixin */,
 				CAF880B924E7DE0200B0154B /* Spread */,
 				CAF880AF24E7BFAF00B0154B /* Flip */,
 				04B7C2E223AD119900F6BB2C /* DotDiffusion */,
@@ -2614,6 +2627,21 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		CA4E2C5324F15EC6006DFAC5 /* Weixin */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E2C5424F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.h */,
+				CA4E2C5524F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m */,
+				CA4E2C5724F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.h */,
+				CA4E2C5824F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m */,
+				CA4E2C5A24F160C5006DFAC5 /* WGBWeixinVideoTransition.h */,
+				CA4E2C5B24F160C5006DFAC5 /* WGBWeixinVideoTransition.m */,
+				CA4E2C5D24F2120B006DFAC5 /* WGBTransitionInteractive.h */,
+				CA4E2C5E24F2120B006DFAC5 /* WGBTransitionInteractive.m */,
+			);
+			path = Weixin;
+			sourceTree = "<group>";
+		};
 		CA59E3342459D54400066333 /* ScrollTracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -3035,6 +3063,7 @@
 				04157B8A23C4CA810069FC15 /* WGBClipImageDemoViewController.m in Sources */,
 				046C5D842382E0E1005A12E4 /* LDSimplePing.m in Sources */,
 				94ABB39124CEBDEA00947D65 /* WGBGestureDrivenPopUpController.m in Sources */,
+				CA4E2C5624F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m in Sources */,
 				04083DD3237C3E2C002702C6 /* YogaScrollViewDemoViewController.m in Sources */,
 				04B7C2EF23AE6E9400F6BB2C /* WGBDotLineCell.m in Sources */,
 				CA3ABFFD24E9298F00389257 /* WGBMasonryHorizontalLayoutViewController.m in Sources */,
@@ -3044,7 +3073,9 @@
 				046D95832399FF4000D79801 /* WGBTransitionDemoListViewController.m in Sources */,
 				04C302652382DA7300356991 /* LayoutDemoListViewController.m in Sources */,
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
+				CA4E2C5F24F2120B006DFAC5 /* WGBTransitionInteractive.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
+				CA4E2C5C24F160C5006DFAC5 /* WGBWeixinVideoTransition.m in Sources */,
 				04E8912B23A11B170081F833 /* WGBHoleAnimatedTransitioning.m in Sources */,
 				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
@@ -3124,6 +3155,7 @@
 				04CA01FD235181A2009C8C22 /* WGBFancyQRCodeToolDemoViewController.m in Sources */,
 				04F735A822CDAA8D007CB0D0 /* main.m in Sources */,
 				04083E2A237FAF4F002702C6 /* ZombieTestViewController.m in Sources */,
+				CA4E2C5924F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m in Sources */,
 				04083E25237FAE44002702C6 /* VCTimeProfiler.m in Sources */,
 				046C5D872382E0E1005A12E4 /* LDNetDiagnoService.m in Sources */,
 				04D704AB238A839700E88123 /* YogaKitAlignItemsViewController.m in Sources */,

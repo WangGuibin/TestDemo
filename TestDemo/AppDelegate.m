@@ -11,6 +11,7 @@
 #import "XDAppFluencyMonitor.h"
 #import "TBCityIconFont.h"
 #import "WGBTopWindow.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([ViewController class])];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[WGBCustomNavgationViewController alloc] initWithRootViewController:vc];
+    [self.window makeKeyAndVisible];
+
+    
     // 添加一个window, 点击这个window, 可以让屏幕上的scrollView滚到最顶部
     [WGBTopWindow show];
     //调试插件 UI热重载
