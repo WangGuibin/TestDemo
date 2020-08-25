@@ -270,6 +270,7 @@
 		04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9150623769EB8006E8B77 /* YogaKitDemoViewController.m */; };
 		9453141624DCEB6C00665268 /* UIImage+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 9453141524DCEB6C00665268 /* UIImage+Compression.m */; };
 		9453141924DCEBE000665268 /* WGBHover2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9453141824DCEBE000665268 /* WGBHover2ViewController.m */; };
+		949C90D324F49DB300AC0B6A /* WGBPopupViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 949C90D224F49DB300AC0B6A /* WGBPopupViewWrapper.m */; };
 		94ABB34624CABE9500947D65 /* UIButton+WGBExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34524CABE9500947D65 /* UIButton+WGBExtra.m */; };
 		94ABB34924CABF3000947D65 /* MBProgressHUD+WM.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34824CABF3000947D65 /* MBProgressHUD+WM.m */; };
 		94ABB34D24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB34C24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m */; };
@@ -821,6 +822,8 @@
 		9453141524DCEB6C00665268 /* UIImage+Compression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compression.m"; sourceTree = "<group>"; };
 		9453141724DCEBE000665268 /* WGBHover2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHover2ViewController.h; sourceTree = "<group>"; };
 		9453141824DCEBE000665268 /* WGBHover2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHover2ViewController.m; sourceTree = "<group>"; };
+		949C90D124F49DB300AC0B6A /* WGBPopupViewWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPopupViewWrapper.h; sourceTree = "<group>"; };
+		949C90D224F49DB300AC0B6A /* WGBPopupViewWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPopupViewWrapper.m; sourceTree = "<group>"; };
 		94ABB34424CABE9500947D65 /* UIButton+WGBExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+WGBExtra.h"; sourceTree = "<group>"; };
 		94ABB34524CABE9500947D65 /* UIButton+WGBExtra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WGBExtra.m"; sourceTree = "<group>"; };
 		94ABB34724CABF3000947D65 /* MBProgressHUD+WM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+WM.h"; sourceTree = "<group>"; };
@@ -1856,6 +1859,7 @@
 		04C3025E2382D7A100356991 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				949C90D024F49D8700AC0B6A /* PopUp */,
 				94ABB38E24CEBDC900947D65 /* GestureDrivenPopUpController */,
 				0408101723B4B6B1002EA9E1 /* CustomWindow */,
 				04C43939239E54B700A8BEC0 /* PresentAlert */,
@@ -2525,6 +2529,15 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		949C90D024F49D8700AC0B6A /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				949C90D124F49DB300AC0B6A /* WGBPopupViewWrapper.h */,
+				949C90D224F49DB300AC0B6A /* WGBPopupViewWrapper.m */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
 		94ABB34324CABE7200947D65 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -3178,6 +3191,7 @@
 				04E89101239F59010081F833 /* UIView+Geometry.m in Sources */,
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
+				949C90D324F49DB300AC0B6A /* WGBPopupViewWrapper.m in Sources */,
 				04E8911D23A0A9B80081F833 /* WGBSlideMenuViewController.m in Sources */,
 				04D70498238A737F00E88123 /* YogaKitFlexDirectionDemoViewController.m in Sources */,
 				046D95AB239B4D0200D79801 /* UILabel+WGBStringAction.m in Sources */,
