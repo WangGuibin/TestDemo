@@ -22,8 +22,14 @@
 
         <!--  prompt按钮 -->
         <button onclick = "showPrompt()" style = "font-size: 18px;">prompt(prompt, defaultText)</button>
-
+        
         <script>
+            
+            //类似于监听OC发来的消息
+            function getOCMessage(msg) {
+                alert("OC -> JS : " + msg);
+            }
+            
             function clickBtnAction(){
                 var msg = "按钮被点击了,原生端弹个alert粗来吧!!!";
                 alertTips(msg);

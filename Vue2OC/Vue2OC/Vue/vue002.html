@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue002</title>
+    <link rel="stylesheet" href="./element.css">
+    <script src="./vue.js"></script>
+    <script src="./element.js"></script>
+
+    <style type="text/css">
+        * {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<!-- 自定义组件  radio和按钮选择 v-for练习 -->
+
+<body>
+    <div id="app">
+        <div is="button-select"> </div>
+        <button-select></button-select>
+        <button-select></button-select>
+        <button-select></button-select>
+        <select-answer></select-answer>
+    </div>
+
+</body>
+
+<script>
+    Vue.component("button-select", {
+            data() {
+                return {
+                    count: 0
+                }
+            },
+            methods: {
+                showMsg() {
+                    this.count++;
+                    this.$message.success("你点了我" + this.count + "次了")
+                }
+            },
+            template: '<button @click="showMsg">你点了我{{count}}次了</button>'
+        }),
+
+        Vue.component("select-answer", {
+            data() {
+                return {
+                    answer: "D",
+                    selected: "",
+                    options: [{
+                        item: "A",
+                        text: "该车可右转弯"
+                    }, {
+                        item: "B",
+                        text: "该车可左转弯"
+                    }, {
+                        item: "C",
+                        text: "该车不可直行"
+                    }, {
+                        item: "D",
+                        text: "该车不允许掉头"
+                    }, ]
+                }
+
+            },
+            methods: {
+                clickItem(item) {
+                    this.selected = item;
+                    if (this.answer == this.selected) {
+                        this.$message.success("回答正确✅")
+                    } else {
+                        this.$message.error("回答错误❌")
+                    }
+                }
+            },
+            template: '<div>\
+                <ul v-for="(opt,index) in options">\
+                <li style="list-style-type:none" @click="clickItem(opt.item)"> \
+                 <input type="radio"   v-bind:id=index v-bind:value=opt.item v-model="selected">\
+                        {{opt.item}}.  {{opt.text}} \
+                </li>\
+            </ul>\
+        </div>'
+        })
+
+    new Vue({
+        el: "#app"
+    })
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue004</title>
+    <link rel="stylesheet" href="./element.css">
+    <script src="./vue.js"></script>
+    <script src="./element.js"></script>
+
+    <style type="text/css">
+        #demo {
+            margin: 0px;
+            padding: 0;
+            background-color: pink;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+
+
+        <el-row :gutter="24" v-for="row in 20" :key="row">
+            <el-col :span="4" v-for="col in 5" :key="col">
+                <el-card shadow="always" body-style="padding:'0px';margin:10px;">
+                    <div id="demo"> ({{row}},{{col}}) 卡片 </div>
+                </el-card>
+            </el-col>
+        </el-row>
+
+
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+
+        })
+    </script>
+
+
+</body>

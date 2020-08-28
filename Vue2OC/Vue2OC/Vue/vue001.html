@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue001</title>
+    <script src="./vue.js"></script>
+    <style type="text/css">
+        * {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<!-- v-for , v-model, v-if, v-else ,v-show , v-on:click ,@click ,v-bind 的使用 -->
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item in items"> 这就是一个{{item}} </li>
+        </ul>
+        <h1 v-show="show"> 哈哈哈 </h1>
+        <div v-if="type == 1"> 我是QQ </div>
+        <div v-if="type == 2"> 我是微信 </div>
+        <div v-if="type == 3"> 我是支付宝 </div>
+        <div v-if="type == 4"> 我是Google </div>
+        <button @click="greet"> Greet Hello World ! </button>
+        <button v-on:click="hello('so What?')"> {{buttonTitle}} </button>
+
+        <form action="#">
+            <label>姓名</label>
+            <input v-model="nickname" type="text" placeholder="请输入姓名">
+            <br>
+            <label> 输入内容 {{nickname}}</label>
+            <br>
+            <label>邮箱</label>
+            <input v-model="email" type="text" placeholder="请输入邮箱">
+            <br>
+            <label> 输入内容 {{email}}</label>
+            <br>
+            <input type="radio" id="1" value="亚索" v-model="picked">亚索
+            <input type="radio" id="2" value="剑圣" v-model="picked">剑圣
+            <input type="radio" id="3" value="剑魔" v-model="picked">剑魔
+            <input type="radio" id="4" value="德玛" v-model="picked">德玛
+            <br>
+            <label> 已选择 {{picked}} </label>
+            <br><br>
+            <input type="checkbox" id="1" value="天崩地裂斩" v-model="checkboxes">亚索
+            <input type="checkbox" id="2" value="万剑归宗" v-model="checkboxes">剑圣
+            <input type="checkbox" id="3" value="凤凰小田鸡" v-model="checkboxes">剑魔
+            <input type="checkbox" id="4" value="德玛之正义" v-model="checkboxes">德玛
+            <br>
+            <label> 已选择 {{checkboxes}} </label>
+            <br><br>
+            <textarea v-model="remark" placeholder="请输入简介" name="remark" id="1" cols="30" rows="10"></textarea>
+            <br><br>
+            <select v-model="selected01">
+                <option disabled value="">请选择</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <label> 选择了{{selected01}} </label>
+            <br><br>
+            <select multiple v-model="selected02" style="width: 100px; height: 100px;">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <label> 选择了{{selected02}} </label>
+            <br><br>
+            <select v-model="selected03">
+                <option v-for="opt in options" v-bind:value="opt.value">
+                    {{opt.text + ".   " + opt.value}}
+                </option>
+            </select>
+            <label> 选择了{{selected03}} </label>
+            <br><br>
+
+            <button @click="submit">提交</button>
+            <button @click="reset">重置清空</button>
+        </form>
+
+    </div>
+
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            items: ["白莲圣王", "太白金星", "太上老君", "齐天大圣"],
+            show: true,
+            type: 4,
+            buttonTitle: "修改按钮标题",
+            picked: "",
+            checkboxes: [],
+            nickname: "",
+            email: "",
+            remark: "",
+            selected01: "A",
+            selected02: [],
+            selected03: "A",
+            options: [{
+                text: "1",
+                value: "A"
+            }, {
+                text: "2",
+                value: "B"
+            }, {
+                text: "3",
+                value: "C"
+            }]
+        },
+        methods: {
+            greet(event) {
+                alert("你好,世界!")
+                if (event) {
+                    alert(event.target.tagName)
+                }
+            },
+            hello: function(msg) {
+                this.buttonTitle = prompt(msg, this.buttonTitle)
+            },
+            submit() {
+                var obj = {
+                    picked: this.picked,
+                    checkboxes: this.checkboxes
+                }
+                console.log(obj);
+                alert(JSON.stringify(obj))
+            },
+            reset() {
+                this.checkboxes = [],
+                    this.picked = "",
+                    this.nickname = "",
+                    this.email = "",
+                    this.remark = "",
+                    setTimeout(() => {
+                        alert("已清空")
+                    }, 100);
+            }
+        }
+    })
+</script>
+
+</html>

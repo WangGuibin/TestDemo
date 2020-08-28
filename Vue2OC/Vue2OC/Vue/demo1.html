@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>测试代码用的一个空的html</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <el-button @click="visible = true">Button</el-button>
+        <el-dialog :visible.sync="visible" title="Hello world">
+            <p>测试弹窗</p>
+            <p>😄哈哈哈哈哈哈😄</p>
+        </el-dialog>
+    </div>
+
+
+
+    <div id="msg">
+        <el-button @click="showWarning">警告⚠️信息</el-button>
+        <el-button :plain="true" @click="open2">成功</el-button>
+        <el-button :plain="true" @click="open3">消息</el-button>
+        <el-button :plain="true" @click="open4">错误</el-button>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                visible: false
+            }
+        }
+    })
+
+    new Vue({
+        el: '#msg',
+        methods: {
+            showWarning() {
+                this.$message({
+                    message: "你好,我是一条警告⚠️消息!",
+                    type: "warning"
+                })
+            },
+            open2() {
+                this.$message({
+                    message: "你好,我是一条成功✅消息!",
+                    type: "success"
+                })
+            },
+            open3() {
+                this.$message({
+                    message: "你好,我是一条提示消息!",
+                    center: true
+                })
+            },
+            open4() {
+                this.$message.error("你好,我是一条错误❌消息!")
+            }
+        }
+    })
+</script>
+
+</html>

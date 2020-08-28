@@ -1,5 +1,5 @@
 //
-// WGBPopupWrapperView.m
+// WGBPopupViewWrapper.m
 // TestDemo
 //
 // Author:  @CoderWGB
@@ -31,7 +31,7 @@ THE SOFTWARE.
 */
     
 
-#import "WGBPopupWrapperView.h"
+#import "WGBPopupViewWrapper.h"
 
 @protocol WGBPopupViewWrapperProtocol <NSObject>
 

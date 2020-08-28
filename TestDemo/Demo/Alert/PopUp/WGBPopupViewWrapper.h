@@ -1,5 +1,5 @@
 //
-// WGBPopupWrapperView.h
+// WGBPopupViewWrapper.h
 // TestDemo
 //
 // Author:  @CoderWGB

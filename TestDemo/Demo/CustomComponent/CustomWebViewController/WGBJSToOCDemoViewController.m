@@ -49,11 +49,14 @@ THE SOFTWARE.
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [[self.webView configuration].userContentController addScriptMessageHandler:self name:@"showAlert"];
+    [[self.webView configuration].userContentController addScriptMessageHandler:self name:@"getOCMessage"];
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [[self.webView configuration].userContentController  removeScriptMessageHandlerForName:@"showAlert"];
+    [[self.webView configuration].userContentController addScriptMessageHandler:self name:@"getOCMessage"];
 
 }
 
@@ -75,6 +78,12 @@ THE SOFTWARE.
          
          <button type="button" style = "font-size: 28px;" onclick="clickBtnAction()"> 点击按钮 </button>
          <script>
+ 
+            //类似于监听OC发来的消息
+            function getOCMessage(msg) {
+                alert("OC -> JS : " + msg);
+            }
+
              function clickBtnAction(){
                  var msg = "按钮被点击了,原生端弹个alert粗来吧!!!";
                  alertTips(msg);
@@ -95,11 +104,14 @@ THE SOFTWARE.
     id value = message.body;
     if ([message.name isEqualToString:@"showAlert"]) {
         NSString *msg = (NSString*)value;
+        //收到JS的信息 用弹窗弹出来
         [WGBAlertTool showCommitConfirmCheckReviewTips:msg callBack:^(NSInteger index) {
-            
+            //发消息给JS alert弹出来
+            [self.webView evaluateJavaScript:@"getOCMessage('你好,JS! 我是OC!!!')" completionHandler:^(id obj, NSError * _Nullable error) {
+                
+            }];
         }];
     }
-    
 }
 
 #pragma mark - WKUIDelegate  对标JS的三个弹窗方法
