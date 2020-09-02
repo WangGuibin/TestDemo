@@ -42,6 +42,8 @@ THE SOFTWARE.
 #import "WGBHover2ViewController.h"
 #import "WGBHover3ViewController.h"
 
+#import "WGBRefreshDemo1ViewController.h"
+
 @interface TableViewDemoViewController ()
 
 @end
@@ -58,7 +60,8 @@ THE SOFTWARE.
         [WGBDotLineCellDemoViewController class],
         [WGBHoverViewController class],
         [WGBHover2ViewController class],
-        [WGBHover3ViewController class]
+        [WGBHover3ViewController class],
+        [WGBRefreshDemo1ViewController class]
      ];
 }
 
@@ -73,7 +76,8 @@ THE SOFTWARE.
         @"点连成线的进度节点cell",
         @"控制tableView滚动悬停①",
         @"控制tableView滚动悬停②",
-        @"粗略模仿哔哩哔哩播放详情页的交互"
+        @"粗略模仿哔哩哔哩播放详情页的交互",
+        @"自定义刷新控件的原理"
     ];
 }
 

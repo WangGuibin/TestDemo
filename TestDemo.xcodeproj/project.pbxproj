@@ -300,6 +300,8 @@
 		CA4E2C6624F24616006DFAC5 /* WGBAnimationFlowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C6524F24616006DFAC5 /* WGBAnimationFlowButton.m */; };
 		CA4E2C6824F24655006DFAC5 /* flow_mask.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4E2C6724F24655006DFAC5 /* flow_mask.png */; };
 		CA4E2C6C24F2516F006DFAC5 /* WGBStrokeEndDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C6B24F2516E006DFAC5 /* WGBStrokeEndDemoViewController.m */; };
+		CA4E2C9A24FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9924FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m */; };
+		CA4E2C9D24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9C24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m */; };
 		CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */; };
 		CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */; };
 		CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */; };
@@ -881,6 +883,10 @@
 		CA4E2C6724F24655006DFAC5 /* flow_mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flow_mask.png; sourceTree = "<group>"; };
 		CA4E2C6A24F2516E006DFAC5 /* WGBStrokeEndDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBStrokeEndDemoViewController.h; sourceTree = "<group>"; };
 		CA4E2C6B24F2516E006DFAC5 /* WGBStrokeEndDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBStrokeEndDemoViewController.m; sourceTree = "<group>"; };
+		CA4E2C9824FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBRefreshDemo1ViewController.h; sourceTree = "<group>"; };
+		CA4E2C9924FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRefreshDemo1ViewController.m; sourceTree = "<group>"; };
+		CA4E2C9B24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDemoRefreshHeder.h; sourceTree = "<group>"; };
+		CA4E2C9C24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDemoRefreshHeder.m; sourceTree = "<group>"; };
 		CA59E3352459D57B00066333 /* WGBScrollTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBScrollTrackingViewController.h; sourceTree = "<group>"; };
 		CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBScrollTrackingViewController.m; sourceTree = "<group>"; };
 		CA59E338245D2B1F00066333 /* WGBAttentionListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAttentionListHeaderView.h; sourceTree = "<group>"; };
@@ -1818,6 +1824,7 @@
 		04C3024F2382D41F00356991 /* TableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA4E2C9724FFD886006DFAC5 /* Refresh */,
 				CADD3C7D24DC37550033E6AD /* Hover */,
 				04B7C2E923AE6E5D00F6BB2C /* DotLineCell */,
 				04034BBC239E94EC0063E0A5 /* AOP */,
@@ -2689,6 +2696,17 @@
 			path = StrokeEnd;
 			sourceTree = "<group>";
 		};
+		CA4E2C9724FFD886006DFAC5 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E2C9824FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.h */,
+				CA4E2C9924FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m */,
+				CA4E2C9B24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.h */,
+				CA4E2C9C24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
 		CA59E3342459D54400066333 /* ScrollTracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -3129,6 +3147,7 @@
 				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,
 				043C310223B1FF60005AF423 /* WGBUnicodeTransformTool.m in Sources */,
+				CA4E2C9A24FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m in Sources */,
 				04E890F4239F56320081F833 /* PaletteColorModel.m in Sources */,
 				04B7C2FD23B071C300F6BB2C /* UserHttpHandlerImp.m in Sources */,
 				04E8917A23A4EC120081F833 /* WGBDrawTextDemoViewController.m in Sources */,
@@ -3189,6 +3208,7 @@
 				048353B4239750D200454141 /* WGBCAEmitterBehaviorDemoViewController.m in Sources */,
 				04E8912023A0AA4D0081F833 /* WGBTestMenuViewController.m in Sources */,
 				04E89101239F59010081F833 /* UIView+Geometry.m in Sources */,
+				CA4E2C9D24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m in Sources */,
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				949C90D324F49DB300AC0B6A /* WGBPopupViewWrapper.m in Sources */,
