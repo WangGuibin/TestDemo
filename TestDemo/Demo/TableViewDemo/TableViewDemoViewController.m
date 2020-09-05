@@ -43,6 +43,7 @@ THE SOFTWARE.
 #import "WGBHover3ViewController.h"
 
 #import "WGBRefreshDemo1ViewController.h"
+#import "WGBRefreshDemo2ViewController.h"
 
 @interface TableViewDemoViewController ()
 
@@ -61,7 +62,8 @@ THE SOFTWARE.
         [WGBHoverViewController class],
         [WGBHover2ViewController class],
         [WGBHover3ViewController class],
-        [WGBRefreshDemo1ViewController class]
+        [WGBRefreshDemo1ViewController class],
+        [WGBRefreshDemo2ViewController class]
      ];
 }
 
@@ -77,7 +79,8 @@ THE SOFTWARE.
         @"控制tableView滚动悬停①",
         @"控制tableView滚动悬停②",
         @"粗略模仿哔哩哔哩播放详情页的交互",
-        @"自定义刷新控件的原理"
+        @"自定义刷新控件的原理",
+        @"下拉展开查看图片,上推自动吸顶"
     ];
 }
 

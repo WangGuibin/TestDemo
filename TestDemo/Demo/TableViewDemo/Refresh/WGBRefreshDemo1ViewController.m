@@ -79,9 +79,6 @@ THE SOFTWARE.
 
 //松手了
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    if (decelerate == NO) {
-        return;
-    }
     CGFloat offsetY = scrollView.contentOffset.y;
     if (offsetY > 0) {
         if (offsetY > scrollView.contentSize.height - scrollView.height + 50) {

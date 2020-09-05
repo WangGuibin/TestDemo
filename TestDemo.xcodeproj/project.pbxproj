@@ -302,6 +302,7 @@
 		CA4E2C6C24F2516F006DFAC5 /* WGBStrokeEndDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C6B24F2516E006DFAC5 /* WGBStrokeEndDemoViewController.m */; };
 		CA4E2C9A24FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9924FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m */; };
 		CA4E2C9D24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9C24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m */; };
+		CA4E2CA025037C30006DFAC5 /* WGBRefreshDemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9F25037C30006DFAC5 /* WGBRefreshDemo2ViewController.m */; };
 		CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */; };
 		CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */; };
 		CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */; };
@@ -887,6 +888,8 @@
 		CA4E2C9924FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRefreshDemo1ViewController.m; sourceTree = "<group>"; };
 		CA4E2C9B24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDemoRefreshHeder.h; sourceTree = "<group>"; };
 		CA4E2C9C24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDemoRefreshHeder.m; sourceTree = "<group>"; };
+		CA4E2C9E25037C30006DFAC5 /* WGBRefreshDemo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBRefreshDemo2ViewController.h; sourceTree = "<group>"; };
+		CA4E2C9F25037C30006DFAC5 /* WGBRefreshDemo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRefreshDemo2ViewController.m; sourceTree = "<group>"; };
 		CA59E3352459D57B00066333 /* WGBScrollTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBScrollTrackingViewController.h; sourceTree = "<group>"; };
 		CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBScrollTrackingViewController.m; sourceTree = "<group>"; };
 		CA59E338245D2B1F00066333 /* WGBAttentionListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAttentionListHeaderView.h; sourceTree = "<group>"; };
@@ -2701,6 +2704,8 @@
 			children = (
 				CA4E2C9824FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.h */,
 				CA4E2C9924FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m */,
+				CA4E2C9E25037C30006DFAC5 /* WGBRefreshDemo2ViewController.h */,
+				CA4E2C9F25037C30006DFAC5 /* WGBRefreshDemo2ViewController.m */,
 				CA4E2C9B24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.h */,
 				CA4E2C9C24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m */,
 			);
@@ -3054,6 +3059,7 @@
 				0408106623B70A5C002EA9E1 /* WHGradientHelper.m in Sources */,
 				9453141924DCEBE000665268 /* WGBHover2ViewController.m in Sources */,
 				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
+				CA4E2CA025037C30006DFAC5 /* WGBRefreshDemo2ViewController.m in Sources */,
 				CA06000C244C2DA7001BE692 /* WGBAspectFitImageBrowerViewController.m in Sources */,
 				048600D32363432200B63EDE /* TestPopverContentViewController.m in Sources */,
 				047F05EB2358C0D60009301D /* FSPopDialogViewControllerDemoViewController.m in Sources */,

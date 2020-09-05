@@ -34,8 +34,8 @@
     //调试插件 UI热重载
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
     //页面耗时统计
-    [[VCTimeProfiler shared] start];
-    [[XDAppFluencyMonitor sharedInstance] startMonitoring];
+//    [[VCTimeProfiler shared] start];
+//    [[XDAppFluencyMonitor sharedInstance] startMonitoring];
 //    RegisterTenderCrashHandler();
     //iconfont 资源初始化
     [TBCityIconFont setFontName:@"iconfont"];
