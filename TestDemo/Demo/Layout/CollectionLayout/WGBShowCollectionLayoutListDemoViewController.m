@@ -40,6 +40,7 @@ THE SOFTWARE.
 #import "WGBHoverFlowLayout.h"
 #import "FBLikeLayout.h"
 #import "RFQuiltLayout.h"
+#import "WGBVegaScrollFlowLayoutDemoViewController.h"
 
 @interface WGBShowCollectionLayoutListDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -118,6 +119,7 @@ THE SOFTWARE.
         @"FBLikeLayout瀑布流",//不好驾驭 需要和图片尺寸配合使用
         @"RFQuiltLayout横跨两列或者两行的格子布局",//灵活 需设置比例
         @"FMMosaicLayout不同大小cell的布局", //不灵活 固定比例 自动调整
+        @"VegaScrollFlowLayout的demo",
     ];
 /**
  ## 搜罗github的一些开源项目 整理如下:
@@ -234,6 +236,10 @@ THE SOFTWARE.
         layoutVC.layout = layout;
         layoutVC.navigationItem.title = title;
         [self.navigationController pushViewController:layoutVC animated:YES];
+    }else if([title isEqualToString:@"VegaScrollFlowLayout的demo"]){
+        WGBVegaScrollFlowLayoutDemoViewController *vc = [WGBVegaScrollFlowLayoutDemoViewController new];
+        vc.navigationItem.title = title;
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
 }

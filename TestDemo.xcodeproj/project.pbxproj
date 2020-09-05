@@ -303,6 +303,8 @@
 		CA4E2C9A24FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9924FFD8B9006DFAC5 /* WGBRefreshDemo1ViewController.m */; };
 		CA4E2C9D24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9C24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m */; };
 		CA4E2CA025037C30006DFAC5 /* WGBRefreshDemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9F25037C30006DFAC5 /* WGBRefreshDemo2ViewController.m */; };
+		CA4E2CA42503963C006DFAC5 /* VegaScrollFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2CA32503963C006DFAC5 /* VegaScrollFlowLayout.m */; };
+		CA4E2CA72503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2CA62503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m */; };
 		CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */; };
 		CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */; };
 		CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */; };
@@ -890,6 +892,10 @@
 		CA4E2C9C24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDemoRefreshHeder.m; sourceTree = "<group>"; };
 		CA4E2C9E25037C30006DFAC5 /* WGBRefreshDemo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBRefreshDemo2ViewController.h; sourceTree = "<group>"; };
 		CA4E2C9F25037C30006DFAC5 /* WGBRefreshDemo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBRefreshDemo2ViewController.m; sourceTree = "<group>"; };
+		CA4E2CA22503963C006DFAC5 /* VegaScrollFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VegaScrollFlowLayout.h; sourceTree = "<group>"; };
+		CA4E2CA32503963C006DFAC5 /* VegaScrollFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegaScrollFlowLayout.m; sourceTree = "<group>"; };
+		CA4E2CA52503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBVegaScrollFlowLayoutDemoViewController.h; sourceTree = "<group>"; };
+		CA4E2CA62503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBVegaScrollFlowLayoutDemoViewController.m; sourceTree = "<group>"; };
 		CA59E3352459D57B00066333 /* WGBScrollTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBScrollTrackingViewController.h; sourceTree = "<group>"; };
 		CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBScrollTrackingViewController.m; sourceTree = "<group>"; };
 		CA59E338245D2B1F00066333 /* WGBAttentionListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAttentionListHeaderView.h; sourceTree = "<group>"; };
@@ -2028,6 +2034,7 @@
 		04D704862389428400E88123 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				CA4E2CA125039612006DFAC5 /* VegaScrollFlowLayout */,
 				CA59E35524612C9600066333 /* FMMosaicLayout */,
 				CA59E350246126DF00066333 /* RFQuiltLayout */,
 				04E891AC23A7C5AE0081F833 /* FBLikeLayout */,
@@ -2712,6 +2719,17 @@
 			path = Refresh;
 			sourceTree = "<group>";
 		};
+		CA4E2CA125039612006DFAC5 /* VegaScrollFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E2CA22503963C006DFAC5 /* VegaScrollFlowLayout.h */,
+				CA4E2CA32503963C006DFAC5 /* VegaScrollFlowLayout.m */,
+				CA4E2CA52503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.h */,
+				CA4E2CA62503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m */,
+			);
+			path = VegaScrollFlowLayout;
+			sourceTree = "<group>";
+		};
 		CA59E3342459D54400066333 /* ScrollTracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -3194,6 +3212,7 @@
 				CA3AC00324E9361E00389257 /* WGBMasonrySudokuDemoViewController.m in Sources */,
 				04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */,
 				04CA01EF23517BC1009C8C22 /* HPSelectSexAlertView.m in Sources */,
+				CA4E2CA42503963C006DFAC5 /* VegaScrollFlowLayout.m in Sources */,
 				04157B9B23C5DEAC0069FC15 /* UIScrollView+WGBFloatingHeader.m in Sources */,
 				04083E23237FAE44002702C6 /* VCTimeProfilerRecorder.m in Sources */,
 				CA3AC00024E9314300389257 /* WGBMasonryItemFlexedLayoutViewController.m in Sources */,
@@ -3247,6 +3266,7 @@
 				CAF880B224E7BFDD00B0154B /* WGBFlipTransition.m in Sources */,
 				0408101A23B4B6E1002EA9E1 /* WGBCustomWindowDemoViewController.m in Sources */,
 				04083E15237FAE1B002702C6 /* XDZombieProxy.m in Sources */,
+				CA4E2CA72503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m in Sources */,
 				048A796922D397DC00A0E38F /* JPQRCodeTool.m in Sources */,
 				94ABB34924CABF3000947D65 /* MBProgressHUD+WM.m in Sources */,
 				04157B7D23C4B8400069FC15 /* WGBClipBorderView.m in Sources */,
