@@ -32,14 +32,11 @@ THE SOFTWARE.
     
 
 #import "WGBWeixinDemoTestToViewController.h"
-#import "WGBWeixinVideoTransition.h"
-#import "WGBTransitionInteractive.h"
+
 
 @interface WGBWeixinDemoTestToViewController ()
 
-@property (nonatomic, strong) WGBWeixinVideoTransition *transition;
-//手势过渡转场
-@property (nonatomic, strong) WGBTransitionInteractive *transitionInteractive;
+@property (nonatomic, strong) WGBInteractionMotionTransition *transition;
 
 @property (nonatomic, strong) UIImageView *imageView;
 
@@ -47,38 +44,17 @@ THE SOFTWARE.
 
 @implementation WGBWeixinDemoTestToViewController
 
-///MARK:- <WGBWeixinVideoTransitionDelegate>
-- (UIView *)wgb_TransitionContentView{
+///MARK:- <WGBInteractionMotionTransitionDelegate>
+- (UIView *)wgb_animationView{
     return self.imageView;
 }
 
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.transition.transitionType = WGBWeiXinTransitionTypePush;
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.imageView];
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    WGBCustomNavgationViewController *nvc = (WGBCustomNavgationViewController *)self.navigationController;
-    nvc.popGestureEnable = NO;
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    WGBCustomNavgationViewController *nvc = (WGBCustomNavgationViewController *)self.navigationController;
-    nvc.popGestureEnable = YES;
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
@@ -96,25 +72,10 @@ THE SOFTWARE.
                                             animationControllerForOperation:(UINavigationControllerOperation)operation
                                                          fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC{
-    if (operation == UINavigationControllerOperationPush) {
-        self.transition.transitionType = WGBWeiXinTransitionTypePush;
-        return self.transition;
-    }else if (operation == UINavigationControllerOperationPop){
-        self.transition.transitionType = WGBWeiXinTransitionTypePop;
-        return self.transition;
-    }
+    self.transition.isPush = operation == UINavigationControllerOperationPush;
     return self.transition;
 }
 
-//返回处理push/pop手势过渡的对象 这个代理方法依赖于上方的方法 ，这个代理实际上是根据交互百分比来控制上方的动画过程百分比
-- (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
-                                   interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController{
-    
-    if (self.transition.transitionType == WGBWeiXinTransitionTypePop) {
-        return self.transitionInteractive.isInteractive == YES ? self.transitionInteractive : nil;
-    }
-    return nil;
-}
 
 
 - (UIImageView *)imageView{
@@ -130,20 +91,12 @@ THE SOFTWARE.
     return _imageView;
 }
 
-- (WGBWeixinVideoTransition *)transition {
+- (WGBInteractionMotionTransition *)transition {
     if (!_transition) {
-        _transition = [[WGBWeixinVideoTransition alloc] init];
+        _transition = [[WGBInteractionMotionTransition alloc] init];
     }
     return _transition;
 }
 
-
-- (WGBTransitionInteractive *)transitionInteractive {
-    if (!_transitionInteractive) {
-        _transitionInteractive = [[WGBTransitionInteractive alloc] init];
-        [_transitionInteractive addPanGestureForViewController:self];
-    }
-    return _transitionInteractive;
-}
 
 @end

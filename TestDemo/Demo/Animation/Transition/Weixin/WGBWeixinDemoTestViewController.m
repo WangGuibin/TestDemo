@@ -42,16 +42,16 @@ THE SOFTWARE.
 
 @implementation WGBWeixinDemoTestViewController
 
-///MARK:- <WGBWeixinVideoTransitionDelegate>
-- (UIView *)wgb_TransitionContentView{
+///MARK:- <WGBInteractionMotionTransitionDelegate>
+- (UIView *)wgb_animationView{
     return self.demoView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.demoView.frame = CGRectMake(50, 100, 100 , 100);
+    self.view.backgroundColor = [UIColor orangeColor];
+    self.demoView.frame = CGRectMake(0, KHIGHT - 100, 100 , 100);
     self.demoView.userInteractionEnabled = YES;
     @weakify(self);
     [self.demoView addTapActionWithBlock:^(UIGestureRecognizer * _Nullable gestureRecoginzer) {
@@ -63,10 +63,6 @@ THE SOFTWARE.
     }];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.delegate = nil;
-}
 
 - (UIImageView *)demoView {
     if (!_demoView) {

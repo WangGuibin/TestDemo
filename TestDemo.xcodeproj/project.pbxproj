@@ -294,8 +294,6 @@
 		CA3AC00C24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3AC00B24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m */; };
 		CA4E2C5624F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C5524F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m */; };
 		CA4E2C5924F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C5824F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m */; };
-		CA4E2C5C24F160C5006DFAC5 /* WGBWeixinVideoTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C5B24F160C5006DFAC5 /* WGBWeixinVideoTransition.m */; };
-		CA4E2C5F24F2120B006DFAC5 /* WGBTransitionInteractive.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C5E24F2120B006DFAC5 /* WGBTransitionInteractive.m */; };
 		CA4E2C6324F244FA006DFAC5 /* WGBFlowButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C6224F244FA006DFAC5 /* WGBFlowButtonDemoViewController.m */; };
 		CA4E2C6624F24616006DFAC5 /* WGBAnimationFlowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C6524F24616006DFAC5 /* WGBAnimationFlowButton.m */; };
 		CA4E2C6824F24655006DFAC5 /* flow_mask.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4E2C6724F24655006DFAC5 /* flow_mask.png */; };
@@ -305,6 +303,9 @@
 		CA4E2CA025037C30006DFAC5 /* WGBRefreshDemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2C9F25037C30006DFAC5 /* WGBRefreshDemo2ViewController.m */; };
 		CA4E2CA42503963C006DFAC5 /* VegaScrollFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2CA32503963C006DFAC5 /* VegaScrollFlowLayout.m */; };
 		CA4E2CA72503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2CA62503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m */; };
+		CA4E2CAA2504D0DB006DFAC5 /* WGBInteractionMotionTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2CA92504D0DB006DFAC5 /* WGBInteractionMotionTransition.m */; };
+		CA4E2CAE2504DAF8006DFAC5 /* WGBInteractionDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2CAD2504DAF8006DFAC5 /* WGBInteractionDrawerTransition.m */; };
+		CA4E2CB22504DD4E006DFAC5 /* WGBInteractionOpenDoorTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2CB12504DD4E006DFAC5 /* WGBInteractionOpenDoorTransition.m */; };
 		CA59E3372459D57B00066333 /* WGBScrollTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */; };
 		CA59E33A245D2B1F00066333 /* WGBAttentionListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E339245D2B1F00066333 /* WGBAttentionListHeaderView.m */; };
 		CA59E33D245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E33C245D2CDB00066333 /* WGBTestTableListDataDemoSubVC.m */; };
@@ -875,10 +876,6 @@
 		CA4E2C5524F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBWeixinDemoTestViewController.m; sourceTree = "<group>"; };
 		CA4E2C5724F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBWeixinDemoTestToViewController.h; sourceTree = "<group>"; };
 		CA4E2C5824F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBWeixinDemoTestToViewController.m; sourceTree = "<group>"; };
-		CA4E2C5A24F160C5006DFAC5 /* WGBWeixinVideoTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBWeixinVideoTransition.h; sourceTree = "<group>"; };
-		CA4E2C5B24F160C5006DFAC5 /* WGBWeixinVideoTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBWeixinVideoTransition.m; sourceTree = "<group>"; };
-		CA4E2C5D24F2120B006DFAC5 /* WGBTransitionInteractive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTransitionInteractive.h; sourceTree = "<group>"; };
-		CA4E2C5E24F2120B006DFAC5 /* WGBTransitionInteractive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTransitionInteractive.m; sourceTree = "<group>"; };
 		CA4E2C6124F244FA006DFAC5 /* WGBFlowButtonDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBFlowButtonDemoViewController.h; sourceTree = "<group>"; };
 		CA4E2C6224F244FA006DFAC5 /* WGBFlowButtonDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBFlowButtonDemoViewController.m; sourceTree = "<group>"; };
 		CA4E2C6424F24616006DFAC5 /* WGBAnimationFlowButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAnimationFlowButton.h; sourceTree = "<group>"; };
@@ -896,6 +893,12 @@
 		CA4E2CA32503963C006DFAC5 /* VegaScrollFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegaScrollFlowLayout.m; sourceTree = "<group>"; };
 		CA4E2CA52503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBVegaScrollFlowLayoutDemoViewController.h; sourceTree = "<group>"; };
 		CA4E2CA62503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBVegaScrollFlowLayoutDemoViewController.m; sourceTree = "<group>"; };
+		CA4E2CA82504D0DB006DFAC5 /* WGBInteractionMotionTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBInteractionMotionTransition.h; sourceTree = "<group>"; };
+		CA4E2CA92504D0DB006DFAC5 /* WGBInteractionMotionTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBInteractionMotionTransition.m; sourceTree = "<group>"; };
+		CA4E2CAC2504DAF8006DFAC5 /* WGBInteractionDrawerTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBInteractionDrawerTransition.h; sourceTree = "<group>"; };
+		CA4E2CAD2504DAF8006DFAC5 /* WGBInteractionDrawerTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBInteractionDrawerTransition.m; sourceTree = "<group>"; };
+		CA4E2CB02504DD4E006DFAC5 /* WGBInteractionOpenDoorTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBInteractionOpenDoorTransition.h; sourceTree = "<group>"; };
+		CA4E2CB12504DD4E006DFAC5 /* WGBInteractionOpenDoorTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBInteractionOpenDoorTransition.m; sourceTree = "<group>"; };
 		CA59E3352459D57B00066333 /* WGBScrollTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBScrollTrackingViewController.h; sourceTree = "<group>"; };
 		CA59E3362459D57B00066333 /* WGBScrollTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBScrollTrackingViewController.m; sourceTree = "<group>"; };
 		CA59E338245D2B1F00066333 /* WGBAttentionListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBAttentionListHeaderView.h; sourceTree = "<group>"; };
@@ -1388,6 +1391,8 @@
 		046D95802399FEF200D79801 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				CA4E2CAF2504DD24006DFAC5 /* OpenDoor */,
+				CA4E2CAB2504DADC006DFAC5 /* Drawer */,
 				CA4E2C5324F15EC6006DFAC5 /* Weixin */,
 				CAF880B924E7DE0200B0154B /* Spread */,
 				CAF880AF24E7BFAF00B0154B /* Flip */,
@@ -2677,10 +2682,8 @@
 				CA4E2C5524F15EDE006DFAC5 /* WGBWeixinDemoTestViewController.m */,
 				CA4E2C5724F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.h */,
 				CA4E2C5824F15F6D006DFAC5 /* WGBWeixinDemoTestToViewController.m */,
-				CA4E2C5A24F160C5006DFAC5 /* WGBWeixinVideoTransition.h */,
-				CA4E2C5B24F160C5006DFAC5 /* WGBWeixinVideoTransition.m */,
-				CA4E2C5D24F2120B006DFAC5 /* WGBTransitionInteractive.h */,
-				CA4E2C5E24F2120B006DFAC5 /* WGBTransitionInteractive.m */,
+				CA4E2CA82504D0DB006DFAC5 /* WGBInteractionMotionTransition.h */,
+				CA4E2CA92504D0DB006DFAC5 /* WGBInteractionMotionTransition.m */,
 			);
 			path = Weixin;
 			sourceTree = "<group>";
@@ -2728,6 +2731,24 @@
 				CA4E2CA62503AD32006DFAC5 /* WGBVegaScrollFlowLayoutDemoViewController.m */,
 			);
 			path = VegaScrollFlowLayout;
+			sourceTree = "<group>";
+		};
+		CA4E2CAB2504DADC006DFAC5 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E2CAC2504DAF8006DFAC5 /* WGBInteractionDrawerTransition.h */,
+				CA4E2CAD2504DAF8006DFAC5 /* WGBInteractionDrawerTransition.m */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		CA4E2CAF2504DD24006DFAC5 /* OpenDoor */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E2CB02504DD4E006DFAC5 /* WGBInteractionOpenDoorTransition.h */,
+				CA4E2CB12504DD4E006DFAC5 /* WGBInteractionOpenDoorTransition.m */,
+			);
+			path = OpenDoor;
 			sourceTree = "<group>";
 		};
 		CA59E3342459D54400066333 /* ScrollTracking */ = {
@@ -3012,6 +3033,7 @@
 				04E8912423A0E3110081F833 /* NSMutableAttributedString+WGBExtension.m in Sources */,
 				046D95A8239B4CD600D79801 /* WGBHighLightLabelViewController.m in Sources */,
 				0454E5C823891B790000D62C /* JXCategoryDemoViewController.m in Sources */,
+				CA4E2CB22504DD4E006DFAC5 /* WGBInteractionOpenDoorTransition.m in Sources */,
 				043C2C9123B0CB1A005AF423 /* WGBShowCodeImageDemoViewController.m in Sources */,
 				CAF880BC24E7DE3300B0154B /* WGBSpreadTransition.m in Sources */,
 				040A7876238C03A100E1D2B7 /* LBXPermission.m in Sources */,
@@ -3091,6 +3113,7 @@
 				04E8911923A09D160081F833 /* WGBCustomNavgationViewController.m in Sources */,
 				04F914ED237599B1006E8B77 /* TableViewSigleSelectionViewController.m in Sources */,
 				043C30E723B1FA52005AF423 /* TBCityIconFont.m in Sources */,
+				CA4E2CAA2504D0DB006DFAC5 /* WGBInteractionMotionTransition.m in Sources */,
 				04B0CA9B2340CFD1007B2AD2 /* WGBCustomView.m in Sources */,
 				043C30DF23B1F96A005AF423 /* WGBIconFontDemoViewController.m in Sources */,
 				04E8917623A38F4A0081F833 /* UICollectionViewLeftAlignedLayout.m in Sources */,
@@ -3105,6 +3128,7 @@
 				04E8913D23A1F3A40081F833 /* IGListDemoItemModel.m in Sources */,
 				04D70492238945DA00E88123 /* WGBShowCollectionLayoutListDemoViewController.m in Sources */,
 				04E8919D23A7711C0081F833 /* UIView+WGBCornerCliper.m in Sources */,
+				CA4E2CAE2504DAF8006DFAC5 /* WGBInteractionDrawerTransition.m in Sources */,
 				94ABB34624CABE9500947D65 /* UIButton+WGBExtra.m in Sources */,
 				04E8915823A26D4F0081F833 /* WGBDropDownTestDemoViewController.m in Sources */,
 				04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */,
@@ -3164,9 +3188,7 @@
 				046D95832399FF4000D79801 /* WGBTransitionDemoListViewController.m in Sources */,
 				04C302652382DA7300356991 /* LayoutDemoListViewController.m in Sources */,
 				04B0CA9A2340CFD1007B2AD2 /* WGBDemoViewController.m in Sources */,
-				CA4E2C5F24F2120B006DFAC5 /* WGBTransitionInteractive.m in Sources */,
 				0450C92B2355FC4B0069AC4D /* HPPublishAlertView.m in Sources */,
-				CA4E2C5C24F160C5006DFAC5 /* WGBWeixinVideoTransition.m in Sources */,
 				04E8912B23A11B170081F833 /* WGBHoleAnimatedTransitioning.m in Sources */,
 				04034BC2239E96210063E0A5 /* IMYAOPTableDemo.m in Sources */,
 				047F05F62358C1D10009301D /* NSArray+Sudoku.m in Sources */,

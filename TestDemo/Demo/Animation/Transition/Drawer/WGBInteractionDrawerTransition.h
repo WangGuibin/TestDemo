@@ -1,12 +1,12 @@
 //
-// WGBTransitionInteractive.h
+// WGBInteractionDrawerTransition.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2020/8/23
+// Created by CoderWGB on 2020/9/6
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -35,16 +35,9 @@ THE SOFTWARE.
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WGBTransitionInteractive : UIPercentDrivenInteractiveTransition
+@interface WGBInteractionDrawerTransition : NSObject<UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic, strong) UIViewController * viewController;
-
-/**
- 区分是手势交互转场还是直接pop/push转场
- */
-@property (nonatomic, assign) BOOL isInteractive;
-//给控制器的View添加相应的手势
-- (void)addPanGestureForViewController:(UIViewController *)viewController;
+@property (nonatomic, assign) BOOL isPush;
 
 @end
 

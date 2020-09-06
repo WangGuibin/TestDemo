@@ -1,12 +1,12 @@
 //
-// WGBWeixinVideoTransition.h
+// WGBInteractionOpenDoorTransition.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2020/8/22
+// Created by CoderWGB on 2020/9/6
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -33,28 +33,11 @@ THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, WGBWeiXinTransitionType) {
-    WGBWeiXinTransitionTypePush,
-    WGBWeiXinTransitionTypePop,
-    WGBWeiXinTransitionTypePresent,
-    WGBWeiXinTransitionTypeDismiss
-};
-
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol WGBWeixinVideoTransitionDelegate <NSObject>
+@interface WGBInteractionOpenDoorTransition : NSObject<UIViewControllerAnimatedTransitioning>
 
-@required
-//转场前后的内容view 前后两个控制器均要实现
-- (UIView *)wgb_TransitionContentView;
-
-@end
-
-
-///仿微信视频号转场
-@interface WGBWeixinVideoTransition : NSObject<UIViewControllerAnimatedTransitioning>
-
-@property (nonatomic, assign) WGBWeiXinTransitionType transitionType;
+@property (nonatomic, assign) BOOL isPush;
 
 @end
 

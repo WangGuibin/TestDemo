@@ -1,12 +1,12 @@
 //
-// WGBWeixinDemoTestViewController.h
+// WGBInteractionMotionTransition.h
 // TestDemo
 //
 // Author:  @CoderWGB
 // Github:  https://github.com/WangGuibin/TestDemo
 // E-mail:  864562082@qq.com
 //
-// Created by CoderWGB on 2020/8/22
+// Created by CoderWGB on 2020/9/6
 //
 /**
 Copyright (c) 2019 Wangguibin  
@@ -31,13 +31,20 @@ THE SOFTWARE.
 */
     
 
-#import <UIKit/UIKit.h>
-#import "WGBInteractionMotionTransition.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WGBWeixinDemoTestViewController : UIViewController<WGBInteractionMotionTransitionDelegate>
+@protocol WGBInteractionMotionTransitionDelegate <NSObject>
 
+@required
+- (UIView *_Nonnull)wgb_animationView;
+
+@end
+
+@interface WGBInteractionMotionTransition : NSObject<UIViewControllerAnimatedTransitioning>
+
+@property (nonatomic, assign) BOOL isPush;//判断是否push还是pop
 
 @end
 
