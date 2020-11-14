@@ -30,7 +30,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
     
+/**
+ 使用方法 将`CATransition`动画添加到layer上执行转场
+@code
+CATransition *transition = [CATransition wgb_createTransitionWithAnimationType:self.animationType subType:subType duration:1.0];
+ [self.navigationController.view.layer addAnimation:transition forKey:nil];
+ [self.navigationController pushViewController:vc animated:YES];
+ 
+ CATransition *transition = [CATransition wgb_createTransitionWithAnimationType:(WGBTransitionAnimationTypePrivatePageUnCurl) subType:(WGBTransitionAnimationSubTypeFromTop) duration:0.5];
+ [self.view.window.layer addAnimation:transition forKey:nil];
+ [self dismissViewControllerAnimated:NO completion:^{
+     
+ }];
 
+@endcode
+ */
 
 
 #import <QuartzCore/QuartzCore.h>

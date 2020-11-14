@@ -3382,7 +3382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5LS8HSA233;
+				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
@@ -3522,7 +3522,7 @@
 			baseConfigurationReference = 1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5LS8HSA233;
+				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
@@ -3542,7 +3542,7 @@
 			baseConfigurationReference = DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5LS8HSA233;
+				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;

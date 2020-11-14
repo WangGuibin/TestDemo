@@ -55,18 +55,18 @@
 
 - (NSArray *)demoTitleArray{
     return @[
-        @"动画相关",
-        @"TableView相关Demo",
-        @"Debug相关Demo",
-        @"弹窗相关Demo",
+        @"动画相关demo",
+        @"TableView相关demo",
+        @"Debug相关demo",
+        @"弹窗相关demo",
         @"布局相关demo",
         @"自定义组件或者工具",
         @"JXCategoryView的一些demo实践",
         @"特殊效果demo",
-        @"IGListKit Demo",
+        @"IGListKit demo",
         @"设计模式相关",
         @"性能调优相关",
-        @"音视频相关demo"
+        @"音视频相关demo",
     ];
 }
 

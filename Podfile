@@ -7,14 +7,10 @@ target 'TestDemo' do
   inhibit_all_warnings!
   source 'https://cdn.cocoapods.org'
 
-#  pod "CoderLib", :path=> "../TestLocalPodLib"
-#  pod "Networking" , :path=> "../Networking"
-#  pod "SYHFileManager" , :path=> "../SYHFileManager"
-#  pod "SYHLoaderTool" , :path=> "../SYHLoaderTool"
-#  pod "NBTool" , :path=> "../NBTool"
   pod 'ReactiveObjC','~>3.1.1'
   pod 'AFNetworking'
   pod 'SDWebImage'
+  pod 'SDCycleScrollView'
   pod 'MJRefresh'
   pod 'Masonry'
   pod 'IQKeyboardManager'
