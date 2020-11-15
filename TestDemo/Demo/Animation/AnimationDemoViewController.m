@@ -41,6 +41,7 @@ THE SOFTWARE.
 #import "WGBEmitterDemoViewController.h"
 #import "WGBFlowButtonDemoViewController.h"
 #import "WGBStrokeEndDemoViewController.h"
+#import "WGBGoodsCartDemoViewController.h"
 
 @interface AnimationDemoViewController ()
 
@@ -58,7 +59,8 @@ THE SOFTWARE.
         [WGBDrawTextDemoViewController class],
         [WGBEmitterDemoViewController class],
         [WGBFlowButtonDemoViewController class],
-        [WGBStrokeEndDemoViewController class]
+        [WGBStrokeEndDemoViewController class],
+        [WGBGoodsCartDemoViewController class]
      ];
 }
 
@@ -73,7 +75,8 @@ THE SOFTWARE.
         @"绘制文字动画",
         @"粒子动画效果",
         @"按钮流光动画",
-        @"路径动画"
+        @"路径动画",
+        @"仿购物车动画"
     ];
 }
 

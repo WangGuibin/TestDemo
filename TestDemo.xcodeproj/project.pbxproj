@@ -316,6 +316,7 @@
 		CA59E34C245E72DD00066333 /* js2oc.html in Resources */ = {isa = PBXBuildFile; fileRef = CA59E34B245E72DD00066333 /* js2oc.html */; };
 		CA59E353246126F500066333 /* RFQuiltLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E352246126F500066333 /* RFQuiltLayout.m */; };
 		CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E35624612C9600066333 /* FMMosaicLayout.m */; };
+		CABF3F7B2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3F7A2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m */; };
 		CADD3C8024DC379E0033E6AD /* WGBHoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */; };
 		CADD3C8824E18CFA0033E6AD /* WGBVideoDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8724E18CFA0033E6AD /* WGBVideoDemoListViewController.m */; };
 		CADD3C8C24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8B24E18DB60033E6AD /* WGBTestAVPlayerOrVCDemoViewController.m */; };
@@ -918,6 +919,8 @@
 		CA59E352246126F500066333 /* RFQuiltLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuiltLayout.m; sourceTree = "<group>"; };
 		CA59E35624612C9600066333 /* FMMosaicLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMosaicLayout.m; sourceTree = "<group>"; };
 		CA59E35724612C9600066333 /* FMMosaicLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMosaicLayout.h; sourceTree = "<group>"; };
+		CABF3F792561449300EBF0E0 /* WGBGoodsCartDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGoodsCartDemoViewController.h; sourceTree = "<group>"; };
+		CABF3F7A2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGoodsCartDemoViewController.m; sourceTree = "<group>"; };
 		CADD3C7E24DC379E0033E6AD /* WGBHoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHoverViewController.h; sourceTree = "<group>"; };
 		CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHoverViewController.m; sourceTree = "<group>"; };
 		CADD3C8624E18CFA0033E6AD /* WGBVideoDemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBVideoDemoListViewController.h; sourceTree = "<group>"; };
@@ -1820,6 +1823,7 @@
 		04C302482382D19500356991 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				CABF3F782561447100EBF0E0 /* GoodsCart */,
 				CA4E2C6924F25152006DFAC5 /* StrokeEnd */,
 				CA4E2C6024F244DB006DFAC5 /* FlowButton */,
 				04E8918023A4F07E0081F833 /* EmitterAnimation */,
@@ -2798,6 +2802,15 @@
 			path = FMMosaicLayout;
 			sourceTree = "<group>";
 		};
+		CABF3F782561447100EBF0E0 /* GoodsCart */ = {
+			isa = PBXGroup;
+			children = (
+				CABF3F792561449300EBF0E0 /* WGBGoodsCartDemoViewController.h */,
+				CABF3F7A2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m */,
+			);
+			path = GoodsCart;
+			sourceTree = "<group>";
+		};
 		CADD3C7D24DC37550033E6AD /* Hover */ = {
 			isa = PBXGroup;
 			children = (
@@ -3071,6 +3084,7 @@
 				CAF880B524E7C21C00B0154B /* WGBFlipDemoViewController.m in Sources */,
 				04E890F3239F56320081F833 /* UIImage+Palette.m in Sources */,
 				04B0CA8D2340C734007B2AD2 /* WGBCustomPopUpDemoViewController.m in Sources */,
+				CABF3F7B2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m in Sources */,
 				04E8916323A332570081F833 /* WGBCommentCell.m in Sources */,
 				04B7C2F623B070E500F6BB2C /* HttpProxy.m in Sources */,
 				043C30E923B1FA52005AF423 /* UIImage+TBCityIconFont.m in Sources */,
