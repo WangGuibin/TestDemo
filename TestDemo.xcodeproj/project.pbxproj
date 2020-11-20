@@ -118,6 +118,7 @@
 		049973522374307900FBFC1E /* 666.png in Resources */ = {isa = PBXBuildFile; fileRef = 049973512374307900FBFC1E /* 666.png */; };
 		04A78F7D2361B9C500915493 /* UIImage+MaskExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */; };
 		04A78F802361BAB700915493 /* WGBMaskDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */; };
+		04ADBDE92567A9D500A50D60 /* PAirSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ADBDE72567A9D500A50D60 /* PAirSandbox.m */; };
 		04AE01992392252400B7D0D4 /* WGBPullScaleEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE01982392252400B7D0D4 /* WGBPullScaleEffectViewController.m */; };
 		04AE019D23924F1000B7D0D4 /* CCParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE019B23924F1000B7D0D4 /* CCParallaxView.m */; };
 		04AE01A523924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE01A323924F8A00B7D0D4 /* WGBCCParallaxViewDemoViewController.m */; };
@@ -536,6 +537,8 @@
 		04A78F7C2361B9C500915493 /* UIImage+MaskExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MaskExtension.m"; sourceTree = "<group>"; };
 		04A78F7E2361BAB700915493 /* WGBMaskDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBMaskDemoViewController.h; sourceTree = "<group>"; };
 		04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBMaskDemoViewController.m; sourceTree = "<group>"; };
+		04ADBDE72567A9D500A50D60 /* PAirSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAirSandbox.m; sourceTree = "<group>"; };
+		04ADBDE82567A9D500A50D60 /* PAirSandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAirSandbox.h; sourceTree = "<group>"; };
 		04AE01972392252400B7D0D4 /* WGBPullScaleEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBPullScaleEffectViewController.h; sourceTree = "<group>"; };
 		04AE01982392252400B7D0D4 /* WGBPullScaleEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBPullScaleEffectViewController.m; sourceTree = "<group>"; };
 		04AE019B23924F1000B7D0D4 /* CCParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCParallaxView.m; sourceTree = "<group>"; };
@@ -1505,6 +1508,7 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04ADBDE62567A9D500A50D60 /* AirSandbox */,
 				0408106323B70A5C002EA9E1 /* WHGradientHelper */,
 				04E890DE239F56320081F833 /* iOSPalette */,
 				04AE019A23924F1000B7D0D4 /* CCParallaxView */,
@@ -1582,6 +1586,15 @@
 				04A78F7F2361BAB700915493 /* WGBMaskDemoViewController.m */,
 			);
 			path = MaskLayer;
+			sourceTree = "<group>";
+		};
+		04ADBDE62567A9D500A50D60 /* AirSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				04ADBDE72567A9D500A50D60 /* PAirSandbox.m */,
+				04ADBDE82567A9D500A50D60 /* PAirSandbox.h */,
+			);
+			path = AirSandbox;
 			sourceTree = "<group>";
 		};
 		04AE01962392250400B7D0D4 /* PullScaleEffect */ = {
@@ -3120,6 +3133,7 @@
 				04B0CA852340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.m in Sources */,
 				94ABB34D24CABF9100947D65 /* UIImpactFeedbackGenerator+FeedBack.m in Sources */,
 				04C43940239E55E100A8BEC0 /* WGBDatePickerViewController.m in Sources */,
+				04ADBDE92567A9D500A50D60 /* PAirSandbox.m in Sources */,
 				04E8912E23A11C7D0081F833 /* WGBTestHoleDemoViewController.m in Sources */,
 				04C302592382D5B300356991 /* UIView+BoomBoomBoom.m in Sources */,
 				04AE01C12394B26100B7D0D4 /* GXUpvoteButton.m in Sources */,
@@ -3396,7 +3410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E27WNKVHV9;
+				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
@@ -3536,7 +3550,7 @@
 			baseConfigurationReference = 1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E27WNKVHV9;
+				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
@@ -3556,7 +3570,7 @@
 			baseConfigurationReference = DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E27WNKVHV9;
+				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;

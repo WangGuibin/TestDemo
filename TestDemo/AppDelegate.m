@@ -12,6 +12,7 @@
 #import "TBCityIconFont.h"
 #import "WGBTopWindow.h"
 #import "ViewController.h"
+#import "PAirSandbox.h"
 
 @interface AppDelegate ()
 
@@ -39,6 +40,7 @@
 //    RegisterTenderCrashHandler();
     //iconfont 资源初始化
     [TBCityIconFont setFontName:@"iconfont"];
+    [[PAirSandbox sharedInstance] enableSwipe];
     return YES;
 }
 
