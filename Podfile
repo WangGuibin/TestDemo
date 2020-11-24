@@ -44,6 +44,8 @@ target 'TestDemo' do
   pod 'WGBCocoaKit'
   
   pod 'LookinServer', :configurations => ['Debug']
+  pod 'FLEX', :configurations => ['Debug']
+ #pod 'MLeaksFinder', :configurations => ['Debug']
 end
 
 

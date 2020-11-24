@@ -176,6 +176,7 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IMYAOPTableView/IMYAOPTableView.framework"

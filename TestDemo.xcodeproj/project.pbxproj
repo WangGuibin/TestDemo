@@ -153,6 +153,9 @@
 		04B7C2FD23B071C300F6BB2C /* UserHttpHandlerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2FC23B071C300F6BB2C /* UserHttpHandlerImp.m */; };
 		04B7C30023B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C2FF23B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m */; };
 		04BF7A35237FD8F2003D99CF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF7A34237FD8F2003D99CF /* Constants.m */; };
+		04C2781E256CE125003EF302 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2781B256CE124003EF302 /* YYFPSLabel.m */; };
+		04C2781F256CE125003EF302 /* HMDebugToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2781D256CE125003EF302 /* HMDebugToolView.m */; };
+		04C27822256CE3BC003EF302 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C27821256CE3BC003EF302 /* YYWeakProxy.m */; };
 		04C3024B2382D21A00356991 /* TestDemoBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3024A2382D21A00356991 /* TestDemoBaseTableViewController.m */; };
 		04C3024E2382D35800356991 /* AnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3024D2382D35800356991 /* AnimationDemoViewController.m */; };
 		04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C302512382D44800356991 /* TableViewDemoViewController.m */; };
@@ -604,6 +607,12 @@
 		04B7C2FF23B0726B00F6BB2C /* WGBHttpProxyDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBHttpProxyDemoViewController.m; sourceTree = "<group>"; };
 		04BF7A33237FD8F2003D99CF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		04BF7A34237FD8F2003D99CF /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		04C2781A256CE124003EF302 /* HMDebugToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMDebugToolView.h; sourceTree = "<group>"; };
+		04C2781B256CE124003EF302 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		04C2781C256CE125003EF302 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		04C2781D256CE125003EF302 /* HMDebugToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDebugToolView.m; sourceTree = "<group>"; };
+		04C27820256CE3BC003EF302 /* YYWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		04C27821256CE3BC003EF302 /* YYWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		04C302492382D21A00356991 /* TestDemoBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDemoBaseTableViewController.h; sourceTree = "<group>"; };
 		04C3024A2382D21A00356991 /* TestDemoBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDemoBaseTableViewController.m; sourceTree = "<group>"; };
 		04C3024C2382D35800356991 /* AnimationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationDemoViewController.h; sourceTree = "<group>"; };
@@ -1508,6 +1517,7 @@
 		047F05F22358C19E0009301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04C27819256CE109003EF302 /* DebugToolView */,
 				04ADBDE62567A9D500A50D60 /* AirSandbox */,
 				0408106323B70A5C002EA9E1 /* WHGradientHelper */,
 				04E890DE239F56320081F833 /* iOSPalette */,
@@ -1831,6 +1841,19 @@
 				04B7C2FC23B071C300F6BB2C /* UserHttpHandlerImp.m */,
 			);
 			path = HttpProtocolImp;
+			sourceTree = "<group>";
+		};
+		04C27819256CE109003EF302 /* DebugToolView */ = {
+			isa = PBXGroup;
+			children = (
+				04C2781A256CE124003EF302 /* HMDebugToolView.h */,
+				04C2781D256CE125003EF302 /* HMDebugToolView.m */,
+				04C2781C256CE125003EF302 /* YYFPSLabel.h */,
+				04C2781B256CE124003EF302 /* YYFPSLabel.m */,
+				04C27820256CE3BC003EF302 /* YYWeakProxy.h */,
+				04C27821256CE3BC003EF302 /* YYWeakProxy.m */,
+			);
+			path = DebugToolView;
 			sourceTree = "<group>";
 		};
 		04C302482382D19500356991 /* Animation */ = {
@@ -3291,6 +3314,7 @@
 				04D70498238A737F00E88123 /* YogaKitFlexDirectionDemoViewController.m in Sources */,
 				046D95AB239B4D0200D79801 /* UILabel+WGBStringAction.m in Sources */,
 				04E8915523A267AF0081F833 /* WGBDropDownTransition.m in Sources */,
+				04C27822256CE3BC003EF302 /* YYWeakProxy.m in Sources */,
 				0450C8D92354A6CA0069AC4D /* WGBSelectImagesDemoViewController.m in Sources */,
 				CA59E353246126F500066333 /* RFQuiltLayout.m in Sources */,
 				04E891B723A877B70081F833 /* WGBGenericTestDemoViewController.m in Sources */,
@@ -3306,9 +3330,11 @@
 				046C5D872382E0E1005A12E4 /* LDNetDiagnoService.m in Sources */,
 				CA4E2C6624F24616006DFAC5 /* WGBAnimationFlowButton.m in Sources */,
 				04D704AB238A839700E88123 /* YogaKitAlignItemsViewController.m in Sources */,
+				04C2781F256CE125003EF302 /* HMDebugToolView.m in Sources */,
 				0408B8E22398A2140032C2A3 /* PKProtocolExtension.m in Sources */,
 				CADD3C8F24E789620033E6AD /* WGBTopWindow.m in Sources */,
 				04B7C2FA23B071A700F6BB2C /* CommentHttpHandlerImp.m in Sources */,
+				04C2781E256CE125003EF302 /* YYFPSLabel.m in Sources */,
 				04F7359A22CDAA8B007CB0D0 /* AppDelegate.m in Sources */,
 				CAF880AE24E7B6AA00B0154B /* WGBHover3ViewController.m in Sources */,
 				04D7048F2389448200E88123 /* WGBCollectionLayoutDemoViewController.m in Sources */,

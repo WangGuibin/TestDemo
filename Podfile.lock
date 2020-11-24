@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - FLEX (4.2.2)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
@@ -71,6 +72,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - FLEX
   - IGListKit (~> 4.0.0)
   - IMYAOPTableView
   - IQKeyboardManager
@@ -104,6 +106,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - FLEX
     - IGListDiffKit
     - IGListKit
     - IMYAOPTableView
@@ -137,6 +140,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FLEX: dbd68ae9c67fcc872c79c9e5a728f38243dfaa78
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   IMYAOPTableView: 9e5779267080be32e963c42d392ac36719569764
@@ -168,6 +172,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 04024b65c43d0ec4dcf2ca854823c7d5dfd2bda7
+PODFILE CHECKSUM: 02f4603aba02c1fb900d288192d5c0b9c11c55b2
 
 COCOAPODS: 1.10.0

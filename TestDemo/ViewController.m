@@ -20,6 +20,8 @@
 #import "DesignPatternsDemoListViewController.h"
 #import "WGBOptimizationDemoListViewController.h"
 #import "WGBVideoDemoListViewController.h"
+#import "HMDebugToolView.h"
+#import "UIView+DragExtension.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -84,7 +86,13 @@
     
     //录屏的时候的一个手势图标展示
 //    [[UIApplication sharedApplication] tch_enableTouchHintsWithImage: [UIImage imageNamed:@"touch"]];
-
+    if (@available(iOS 13.0, *)) {
+        HMDebugToolView *debugView = [[HMDebugToolView alloc] initWithFrame:CGRectMake(KWIDTH-60, 500, 55, 20)];
+        debugView.wgb_canDrag = YES;
+        UIView *rootView = self.view;
+        [rootView addSubview:debugView];
+        [rootView bringSubviewToFront:debugView];
+    }
 }
 
 - (void)refreshTabView{
