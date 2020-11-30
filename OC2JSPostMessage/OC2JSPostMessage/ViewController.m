@@ -67,8 +67,8 @@
     // 参考源码的 index.html 和 /src/index.js  https://github.com/sym233/core-values-encoder
 //    decoded-area 原文文本框  encoded-area 密文文本框
     // encode-btn 编码按钮  decode-btn 解码按钮
-    // 前端项目打包之后就很难hook到它的js 所以只能动态模拟它已有的操作 类似爬虫行为
-//    document.getElementById('encoded-area').value='值'; 获取输入框的值 
+    // 前端项目hook到它的js对按钮操作 动态模拟它已有的操作 比如文本输入按钮点击等  类似爬虫行为
+//    document.getElementById('encoded-area').value='值'; 设置或获取输入框的值 
 //    document.getElementById('encode-btn').click(); 模拟点击按钮 主动点击按钮
     NSString *js = [NSString stringWithFormat:@"document.getElementById('decoded-area').value='%@';document.getElementById('encode-btn').click();clickEncode()",self.textView1.text];
     [self.webView evaluateJavaScript:js completionHandler:^(id obj, NSError * _Nullable error) {
@@ -84,6 +84,21 @@
         
     }];
 }
+
+
+- (IBAction)copyCodeAction:(UIButton *)sender {
+    [UIPasteboard generalPasteboard].string = sender.tag == 1? self.textView2.text : self.textView1.text;
+}
+
+
+- (IBAction)cleanAction:(UIButton *)sender {
+    if (sender.tag == 1) {
+        self.textView2.text = nil;
+    }else{
+        self.textView1.text = nil;
+    }
+}
+
 
 
 - (WKWebView *)webView {
