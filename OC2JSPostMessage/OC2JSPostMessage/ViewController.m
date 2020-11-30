@@ -64,11 +64,13 @@
 
 ///MARK:- 编码
 - (IBAction)encodeAction:(id)sender {
-//    decoded-area 原文  encoded-area 密文
+    // 参考源码的 index.html 和 /src/index.js  https://github.com/sym233/core-values-encoder
+//    decoded-area 原文文本框  encoded-area 密文文本框
     // encode-btn 编码按钮  decode-btn 解码按钮
-//    document.getElementById('encoded-area').value='值';
-//    document.getElementById('encode-btn').click();
-    NSString *js = [NSString stringWithFormat:@"document.getElementById('decoded-area').value='%@';document.getElementById('encode-btn').click();",self.textView1.text];
+    // 前端项目打包之后就很难hook到它的js 所以只能动态模拟它已有的操作 类似爬虫行为
+//    document.getElementById('encoded-area').value='值'; 获取输入框的值 
+//    document.getElementById('encode-btn').click(); 模拟点击按钮 主动点击按钮
+    NSString *js = [NSString stringWithFormat:@"document.getElementById('decoded-area').value='%@';document.getElementById('encode-btn').click();clickEncode()",self.textView1.text];
     [self.webView evaluateJavaScript:js completionHandler:^(id obj, NSError * _Nullable error) {
         
         
@@ -77,7 +79,7 @@
 
 ///MARK:- 解码
 - (IBAction)decodeAction:(id)sender {
-    NSString *js = [NSString stringWithFormat:@"document.getElementById('encoded-area').value='%@';document.getElementById('decode-btn').click();",self.textView2.text];
+    NSString *js = [NSString stringWithFormat:@"document.getElementById('encoded-area').value='%@';document.getElementById('decode-btn').click();clickDecode()",self.textView2.text];
     [self.webView evaluateJavaScript:js completionHandler:^(id obj, NSError * _Nullable error) {
         
     }];
