@@ -35,6 +35,7 @@
 #import "WGBCustomWebViewController.h"
 #import "WGBSendArgsWebViewController.h"
 #import "WGBJSToOCDemoViewController.h"
+#import "WGBArchorDemoViewController.h"
 
 @interface WGBWebViewDemoViewController ()
 
@@ -48,6 +49,7 @@
         [WGBSendArgsWebViewController class],
         [WGBSendArgsWebViewController class],
         [WGBJSToOCDemoViewController class],
+        [WGBArchorDemoViewController class],
     ];
 }
 
@@ -57,6 +59,7 @@
         @"加载GET请求拼接参数",
         @"加载POST请求拼接参数",
         @"JS与OC交互(JS定义方法OC调用)",
+        @"本地html文件锚点处理"
     ];
 }
 
@@ -101,12 +104,15 @@
         
         }
             break;
-                        
+        case 4:
+        {
+        WGBArchorDemoViewController *webVC = [[WGBArchorDemoViewController alloc] init];
+        [self.navigationController pushViewController:webVC animated:YES];
+        }
+            break;
         default:
             break;
     }
-    
-    
 }
 
 @end

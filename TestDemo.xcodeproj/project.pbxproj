@@ -320,6 +320,8 @@
 		CA59E34C245E72DD00066333 /* js2oc.html in Resources */ = {isa = PBXBuildFile; fileRef = CA59E34B245E72DD00066333 /* js2oc.html */; };
 		CA59E353246126F500066333 /* RFQuiltLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E352246126F500066333 /* RFQuiltLayout.m */; };
 		CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E35624612C9600066333 /* FMMosaicLayout.m */; };
+		CAB582002674AFDB00097075 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = CAB581FF2674AFDB00097075 /* demo.html */; };
+		CAB582032674B73700097075 /* WGBArchorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB582022674B73700097075 /* WGBArchorDemoViewController.m */; };
 		CABF3F7B2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3F7A2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m */; };
 		CADD3C8024DC379E0033E6AD /* WGBHoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C7F24DC379E0033E6AD /* WGBHoverViewController.m */; };
 		CADD3C8824E18CFA0033E6AD /* WGBVideoDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD3C8724E18CFA0033E6AD /* WGBVideoDemoListViewController.m */; };
@@ -931,6 +933,9 @@
 		CA59E352246126F500066333 /* RFQuiltLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuiltLayout.m; sourceTree = "<group>"; };
 		CA59E35624612C9600066333 /* FMMosaicLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMosaicLayout.m; sourceTree = "<group>"; };
 		CA59E35724612C9600066333 /* FMMosaicLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMosaicLayout.h; sourceTree = "<group>"; };
+		CAB581FF2674AFDB00097075 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		CAB582012674B73700097075 /* WGBArchorDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBArchorDemoViewController.h; sourceTree = "<group>"; };
+		CAB582022674B73700097075 /* WGBArchorDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBArchorDemoViewController.m; sourceTree = "<group>"; };
 		CABF3F792561449300EBF0E0 /* WGBGoodsCartDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGoodsCartDemoViewController.h; sourceTree = "<group>"; };
 		CABF3F7A2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGoodsCartDemoViewController.m; sourceTree = "<group>"; };
 		CADD3C7E24DC379E0033E6AD /* WGBHoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBHoverViewController.h; sourceTree = "<group>"; };
@@ -2811,9 +2816,12 @@
 				CA59E340245E5A3900066333 /* WGBCustomWebViewController.m */,
 				CA59E345245E5E8C00066333 /* WGBSendArgsWebViewController.h */,
 				CA59E346245E5E8C00066333 /* WGBSendArgsWebViewController.m */,
+				CAB581FF2674AFDB00097075 /* demo.html */,
 				CA59E34B245E72DD00066333 /* js2oc.html */,
 				CA59E348245E6E4800066333 /* WGBJSToOCDemoViewController.h */,
 				CA59E349245E6E4800066333 /* WGBJSToOCDemoViewController.m */,
+				CAB582012674B73700097075 /* WGBArchorDemoViewController.h */,
+				CAB582022674B73700097075 /* WGBArchorDemoViewController.m */,
 				CA59E342245E5C3400066333 /* WGBWebViewDemoViewController.h */,
 				CA59E343245E5C3400066333 /* WGBWebViewDemoViewController.m */,
 			);
@@ -2973,6 +2981,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AE01AB2392502100B7D0D4 /* bird2.png in Resources */,
+				CAB582002674AFDB00097075 /* demo.html in Resources */,
 				043C311423B21F12005AF423 /* iconfont.woff in Resources */,
 				04F735A522CDAA8D007CB0D0 /* LaunchScreen.storyboard in Resources */,
 				04B0CA872340C5C4007B2AD2 /* WGBCommonLeftRightButtonAlertView.xib in Resources */,
@@ -3076,6 +3085,7 @@
 				048353B72397519900454141 /* WGBConfettiTypeModel.m in Sources */,
 				CA3AC00C24E945F800389257 /* WGBMasonryConstraintsAnimationDemoViewController.m in Sources */,
 				0454E5C123891AFB0000D62C /* WGBRankBaseViewController.m in Sources */,
+				CAB582032674B73700097075 /* WGBArchorDemoViewController.m in Sources */,
 				04DCE45A238814E900D380D9 /* WGBPersonEffectViewController.m in Sources */,
 				04E8915123A1FF450081F833 /* NSArray+Number.m in Sources */,
 				04B0CA882340C5C4007B2AD2 /* WGBRewardAlertView.m in Sources */,
