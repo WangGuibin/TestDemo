@@ -176,6 +176,7 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework"
@@ -210,6 +211,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IMYAOPTableView/IMYAOPTableView.framework"
@@ -242,6 +244,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
 fi
 if [[ "$CONFIGURATION" == "TestRelease" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IMYAOPTableView/IMYAOPTableView.framework"

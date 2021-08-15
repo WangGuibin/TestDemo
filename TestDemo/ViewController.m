@@ -153,11 +153,19 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self testCrash:@[]];
+    [self testCrash:@[@"1",@"2",@"666~ 没有crash"]];
+    
     Class cls = self.demoClassArray[indexPath.row];
     UIViewController *vc = (UIViewController *)[[cls alloc] init];
     vc.navigationItem.title = self.demoTitleArray[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+///测试Felix
+- (void)testCrash:(id)args{
+    if (args) {
+        NSLog(@"%@",args[2]);
+    }
+}
 
 @end

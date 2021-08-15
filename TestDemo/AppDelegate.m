@@ -13,6 +13,7 @@
 #import "WGBTopWindow.h"
 #import "ViewController.h"
 #import "PAirSandbox.h"
+#import "Felix.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self testFixOnLineBug];
+
     // Override point for customization after application launch.
     ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([ViewController class])];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -44,6 +47,23 @@
     return YES;
 }
 
+
+- (void)testFixOnLineBug{
+    [Felix fixIt];
+    NSString *fixScriptString = @" \
+    fixInstanceMethodReplace('ViewController', 'testCrash:', function(instance, originInvocation, originArguments){ \
+        if (originArguments[0].length == 0) { \
+            console.log('数组越界了,但被我修复了'); \
+        } else { \
+            runInvocation(originInvocation); \
+        } \
+    }); \
+    \
+    ";
+    
+    //通过服务端下发js 修复bug 只能加一些简单的替换逻辑(基于Aspects)
+    [Felix evalString:fixScriptString];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

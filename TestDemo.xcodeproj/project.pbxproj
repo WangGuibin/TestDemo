@@ -320,6 +320,7 @@
 		CA59E34C245E72DD00066333 /* js2oc.html in Resources */ = {isa = PBXBuildFile; fileRef = CA59E34B245E72DD00066333 /* js2oc.html */; };
 		CA59E353246126F500066333 /* RFQuiltLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E352246126F500066333 /* RFQuiltLayout.m */; };
 		CA59E35824612C9600066333 /* FMMosaicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59E35624612C9600066333 /* FMMosaicLayout.m */; };
+		CA627A4126C8FC20002C241B /* Felix.m in Sources */ = {isa = PBXBuildFile; fileRef = CA627A4026C8FC20002C241B /* Felix.m */; };
 		CAB582002674AFDB00097075 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = CAB581FF2674AFDB00097075 /* demo.html */; };
 		CAB582032674B73700097075 /* WGBArchorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB582022674B73700097075 /* WGBArchorDemoViewController.m */; };
 		CABF3F7B2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3F7A2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m */; };
@@ -933,6 +934,8 @@
 		CA59E352246126F500066333 /* RFQuiltLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuiltLayout.m; sourceTree = "<group>"; };
 		CA59E35624612C9600066333 /* FMMosaicLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMosaicLayout.m; sourceTree = "<group>"; };
 		CA59E35724612C9600066333 /* FMMosaicLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMosaicLayout.h; sourceTree = "<group>"; };
+		CA627A3F26C8FC1F002C241B /* Felix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Felix.h; sourceTree = "<group>"; };
+		CA627A4026C8FC20002C241B /* Felix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Felix.m; sourceTree = "<group>"; };
 		CAB581FF2674AFDB00097075 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		CAB582012674B73700097075 /* WGBArchorDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBArchorDemoViewController.h; sourceTree = "<group>"; };
 		CAB582022674B73700097075 /* WGBArchorDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBArchorDemoViewController.m; sourceTree = "<group>"; };
@@ -2538,6 +2541,8 @@
 				04B0CA782340C557007B2AD2 /* Demo */,
 				04F7359822CDAA8B007CB0D0 /* AppDelegate.h */,
 				04F7359922CDAA8B007CB0D0 /* AppDelegate.m */,
+				CA627A3F26C8FC1F002C241B /* Felix.h */,
+				CA627A4026C8FC20002C241B /* Felix.m */,
 				046098D42359EBFB00A673D6 /* WebCommonDemoViewController.h */,
 				046098D52359EBFB00A673D6 /* WebCommonDemoViewController.m */,
 				04C302492382D21A00356991 /* TestDemoBaseTableViewController.h */,
@@ -3157,6 +3162,7 @@
 				04E8910E239FAF360081F833 /* WGBCATransitionAnimationSubTypeDemoViewController.m in Sources */,
 				047BA6962383CFEA008B6FC8 /* WGBColorSliderPickerDemoViewController.m in Sources */,
 				0408106623B70A5C002EA9E1 /* WHGradientHelper.m in Sources */,
+				CA627A4126C8FC20002C241B /* Felix.m in Sources */,
 				9453141924DCEBE000665268 /* WGBHover2ViewController.m in Sources */,
 				04F9150723769EB8006E8B77 /* YogaKitDemoViewController.m in Sources */,
 				CA4E2CA025037C30006DFAC5 /* WGBRefreshDemo2ViewController.m in Sources */,

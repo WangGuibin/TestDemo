@@ -18,6 +18,7 @@ target 'TestDemo' do
   pod 'YBImageBrowser'
   pod 'YBImageBrowser/Video'
   pod 'KMNavigationBarTransition' #导航栏切换顺畅转场
+  pod 'Aspects'
 
   pod 'YYText'
   pod 'YYModel'

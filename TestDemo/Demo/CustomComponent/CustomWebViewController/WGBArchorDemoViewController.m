@@ -52,6 +52,7 @@ THE SOFTWARE.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"html"];
 //    NSString *fileURLString = [path stringByAppendingFormat:@"#third"];
     //    NSLog(@"%@",fileURLString); // 缺少 file:// 协议头,用这个得拼协议头
+//   NSString *filePath = [NSString stringByAppendingString:@"file://%@",fileURLString];
     NSURL *URL = [NSURL fileURLWithPath:path]; // # 会被转成 %23, 用这个方案得转换#
     
     // 方案① (推荐~)
