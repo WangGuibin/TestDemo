@@ -166,7 +166,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh xcode_build_framework.sh\n";
+			shellScript = "sh xcode_build_framework.sh \"armv7,armv7s,arm64,arm64e,x86_64,i386\"\n#sh xcode_build_framework.sh  # 不传参则弹出GUI选择菜单\n";
 		};
 		95D968D3279E7C6E0000B0E4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
