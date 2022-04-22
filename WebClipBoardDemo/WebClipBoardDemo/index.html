@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>上传图片</title>
+    <style type="text/css">
+        .button {
+            margin: 30px;
+            margin-left: 50px;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            width: 180px;
+            height: 50px;
+            line-height: 50px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #7799ff;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>上传图片</h1>
+    <hr />
+    <div>
+        <div class="button" onclick="getDrawImageAction()"> 获取绘制截图 </div>
+        <div class="button" onclick="getLastImageAction()"> 获取最新截图 </div>
+        <div class="button" onclick="changeBackgroundColor()"> 改变背景色 </div>
+
+    </div>
+    <div style="margin: 0px auto; width: 990px">
+      <label for="file">选择图片</label>
+      <input
+        type="file"
+        name="file"
+        id="doc"
+        multiple="multiple"
+        style="width: 150px"
+        onchange="javascript:setImagePreviews();"
+        accept="image/*"
+      />
+      <div id="dd" style="width: 990px"></div>
+      <div>
+          <img id="snapshot" />
+      </div>
+    </div>
+  </body>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>js上传图片预览</title>
+    </head>
+    <script type="text/javascript">
+      //下面用于多图片上传预览功能
+      function setImagePreviews(avalue) {
+        //获取选择图片的对象
+        var docObj = document.getElementById("doc");
+        //后期显示图片区域的对象
+        var dd = document.getElementById("dd");
+        dd.innerHTML = "";
+        //得到所有的图片文件
+        var fileList = docObj.files;
+        //循环遍历
+        for (var i = 0; i < fileList.length; i++) {
+          //动态添加html元素
+          dd.innerHTML += "<div> <img id='img" + i + "'  /> <br> <br> </div>";
+          //获取图片imgi的对象
+          var imgObjPreview = document.getElementById("img" + i);
+
+          if (docObj.files && docObj.files[i]) {
+            //火狐下，直接设img属性
+            imgObjPreview.style.display = "block";
+            imgObjPreview.style.width = "200px";
+            imgObjPreview.style.height = "180px";
+            imgObjPreview.style.backgroundSize = 'contain';
+            //imgObjPreview.src = docObj.files[0].getAsDataURL();
+            //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要以下方式
+            imgObjPreview.src = window.URL.createObjectURL(docObj.files[i]); //获取上传图片文件的物理路径
+          } else {
+            //IE下，使用滤镜
+            docObj.select();
+            var imgSrc = document.selection.createRange().text;
+            //alert(imgSrc)
+            var localImagId = document.getElementById("img" + i);
+            //必须设置初始大小
+            localImagId.style.width = "200px";
+            localImagId.style.height = "180px";
+            //图片异常的捕捉，防止用户修改后缀来伪造图片
+            try {
+              localImagId.style.filter =
+                "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+              localImagId.filters.item(
+                "DXImageTransform.Microsoft.AlphaImageLoader"
+              ).src = imgSrc;
+            } catch (e) {
+              alert("您上传的图片格式不正确，请重新选择!");
+              return false;
+            }
+            imgObjPreview.style.display = "none";
+            document.selection.empty();
+          }
+        }
+        return true;
+      }
+        
+        function getDrawImageAction() {
+            window.webkit.messageHandlers.getDrawImage.postMessage('');
+        }
+        
+        function getLastImageAction() {
+            window.webkit.messageHandlers.getLastImage.postMessage('');
+        }
+        
+        function randomColor(){
+            //十六进制颜色随机
+            var r = Math.floor(Math.random()*256);
+            var g = Math.floor(Math.random()*256);
+            var b = Math.floor(Math.random()*256);
+            var color = '#'+r.toString(16)+g.toString(16)+b.toString(16);
+            return color;
+        }
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = randomColor()
+        }
+        
+        function loadImage(base64Str) {
+            console.log('loadImage');
+            var img = document.getElementById("snapshot");
+            img.style.width = '414px';
+            img.style.height = '812px';
+            img.src = base64Str;
+        }
+        
+    </script>
+  </html>
+</html>
+
