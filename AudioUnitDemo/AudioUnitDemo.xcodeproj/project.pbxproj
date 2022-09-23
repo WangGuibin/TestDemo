@@ -17,6 +17,8 @@
 		952013DF280E992C004F4BFC /* XBPCMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 952013DE280E992C004F4BFC /* XBPCMPlayer.m */; };
 		952013E2280EA677004F4BFC /* CMAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 952013E1280EA677004F4BFC /* CMAudioSession.m */; };
 		952013E5280EB3E4004F4BFC /* GSNAudioUnitGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 952013E4280EB3E4004F4BFC /* GSNAudioUnitGraph.m */; };
+		9592161D281BBBAB004097AD /* FSUnitRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9592161C281BBBAB004097AD /* FSUnitRecorder.m */; };
+		95921620281BBCB3004097AD /* ZDUnitRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9592161F281BBCB3004097AD /* ZDUnitRecorder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		952013E1280EA677004F4BFC /* CMAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAudioSession.m; sourceTree = "<group>"; };
 		952013E3280EB3E3004F4BFC /* GSNAudioUnitGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNAudioUnitGraph.h; sourceTree = "<group>"; };
 		952013E4280EB3E4004F4BFC /* GSNAudioUnitGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNAudioUnitGraph.m; sourceTree = "<group>"; };
+		9592161B281BBBAB004097AD /* FSUnitRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSUnitRecorder.h; sourceTree = "<group>"; };
+		9592161C281BBBAB004097AD /* FSUnitRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSUnitRecorder.m; sourceTree = "<group>"; };
+		9592161E281BBCB3004097AD /* ZDUnitRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDUnitRecorder.h; sourceTree = "<group>"; };
+		9592161F281BBCB3004097AD /* ZDUnitRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDUnitRecorder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,10 @@
 				952013E1280EA677004F4BFC /* CMAudioSession.m */,
 				952013DD280E992C004F4BFC /* XBPCMPlayer.h */,
 				952013DE280E992C004F4BFC /* XBPCMPlayer.m */,
+				9592161B281BBBAB004097AD /* FSUnitRecorder.h */,
+				9592161C281BBBAB004097AD /* FSUnitRecorder.m */,
+				9592161E281BBCB3004097AD /* ZDUnitRecorder.h */,
+				9592161F281BBCB3004097AD /* ZDUnitRecorder.m */,
 				952013CA280E5712004F4BFC /* ViewController.h */,
 				952013CB280E5712004F4BFC /* ViewController.m */,
 				952013CD280E5712004F4BFC /* Main.storyboard */,
@@ -163,9 +173,11 @@
 			files = (
 				952013CC280E5712004F4BFC /* ViewController.m in Sources */,
 				952013E2280EA677004F4BFC /* CMAudioSession.m in Sources */,
+				9592161D281BBBAB004097AD /* FSUnitRecorder.m in Sources */,
 				952013E5280EB3E4004F4BFC /* GSNAudioUnitGraph.m in Sources */,
 				952013C6280E5712004F4BFC /* AppDelegate.m in Sources */,
 				952013DF280E992C004F4BFC /* XBPCMPlayer.m in Sources */,
+				95921620281BBCB3004097AD /* ZDUnitRecorder.m in Sources */,
 				952013D7280E5714004F4BFC /* main.m in Sources */,
 				952013C9280E5712004F4BFC /* SceneDelegate.m in Sources */,
 			);

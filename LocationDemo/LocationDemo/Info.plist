@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>ExampleUsageDescription</key>
+		<string>这个app需要精确定位,希望得到用户你的同意</string>
+		<key>AnotherUsageDescription</key>
+		<string>这个app需要精确定位,用来干啥干啥</string>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+</dict>
+</plist>

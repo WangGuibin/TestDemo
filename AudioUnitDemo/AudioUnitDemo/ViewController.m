@@ -256,6 +256,7 @@ static OSStatus inputCallBackFun(void * inRefCon,
                     &bufferList);
     AudioBuffer buffer = bufferList.mBuffers[0];
     int len = buffer.mDataByteSize;
+//    NSLog(@"buffer.mDataByteSize: %d",len);
 //    NSData *data = [NSData dataWithBytes:buffer.mData length:len];
     if (recorder.isRecording) {
         [recorder writePCMData:buffer.mData size:len];

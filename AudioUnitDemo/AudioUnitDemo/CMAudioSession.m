@@ -276,7 +276,7 @@ static OSStatus RecordCallback(void *inRefCon,
     
     void    *bufferData = session->_buffList->mBuffers[0].mData;
     UInt32   bufferSize = session->_buffList->mBuffers[0].mDataByteSize;
-    //    printf("Audio Recoder Render dataSize : %d \n",bufferSize);
+//    printf("Audio Recoder Render dataSize : %d \n",bufferSize);
     
     float channelValue[2];
     caculate_bm_db(bufferData, bufferSize, 0, k_Mono, channelValue,true);
