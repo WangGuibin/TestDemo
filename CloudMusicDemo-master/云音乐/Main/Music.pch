@@ -1,0 +1,49 @@
+//
+//  Music.pch
+//  云音乐
+//
+//  Created by 刘超正 on 2017/9/20.
+//  Copyright © 2017年 刘超正. All rights reserved.
+//
+
+#ifndef Music_pch
+#define Music_pch
+#import <AFNetworking.h>
+#import <Masonry.h>
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <MMDrawerController.h>
+#import <UIImageView+WebCache.h>
+//#import <TencentOpenAPI/TencentOAuth.h>
+#import "AFNTool.h"
+#define kWidth self.view.frame.size.width
+#define kHeight self.view.frame.size.height
+#define LCZColor(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+//酷狗TOP500
+#define CoolDogSlipped @"http://m.kugou.com/rank/info/?rankid=8888&page=1&json=true"
+//酷狗飙升榜
+#define CoolDogList @"http://m.kugou.com/rank/info/?rankid=6666&page=1&json=true"
+//网络红歌榜
+#define ListOfInternetRedSongs @"http://m.kugou.com/rank/info/?rankid=23784&page=1&json=true"
+//DJ热歌榜
+#define DJHotSongList @"http://m.kugou.com/rank/info/?rankid=24971&page=1&json=true"
+//华语新歌榜
+#define ChineseNewSongsList @"http://m.kugou.com/rank/info/?rankid=31308&page=1&json=true"
+//欧美新歌榜
+#define NewSongs @"http://m.kugou.com/rank/info/?rankid=31310&page=1&json=true"
+//韩国新歌榜
+#define NewSongList @"http://m.kugou.com/rank/info/?rankid=31311&page=1&json=true"
+//日本新歌版
+#define Nippon @"http://m.kugou.com/rank/info/?rankid=31312&page=1&json=true"
+//粤语新歌榜
+#define ANewListOfCantoneseSongs @"http://m.kugou.com/rank/info/?rankid=31313&page=1&json=true"
+//校园歌曲榜
+#define CampusSongList @"http://m.kugou.com/rank/info/?rankid=28061&page=1&json=true"
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Music_pch */

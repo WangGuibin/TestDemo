@@ -323,6 +323,9 @@
 		CA627A4126C8FC20002C241B /* Felix.m in Sources */ = {isa = PBXBuildFile; fileRef = CA627A4026C8FC20002C241B /* Felix.m */; };
 		CAB582002674AFDB00097075 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = CAB581FF2674AFDB00097075 /* demo.html */; };
 		CAB582032674B73700097075 /* WGBArchorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB582022674B73700097075 /* WGBArchorDemoViewController.m */; };
+		CABC5D512A03E71A00B6417F /* WGBBounceEffectButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CABC5D502A03E71A00B6417F /* WGBBounceEffectButtonDemoVC.m */; };
+		CABC5D552A03E73800B6417F /* DHBounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = CABC5D542A03E73800B6417F /* DHBounceView.m */; };
+		CABC5D572A03E74A00B6417F /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CABC5D562A03E74A00B6417F /* bg.jpg */; };
 		CABF3F7B2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3F7A2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m */; };
 		CAD0143228DDE9FF0070ACB5 /* ShowCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD0132328DDE9FE0070ACB5 /* ShowCodeViewController.m */; };
 		CAD0143328DDE9FF0070ACB5 /* HLJSLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD0132628DDE9FE0070ACB5 /* HLJSLayoutManager.m */; };
@@ -1197,6 +1200,11 @@
 		CAB581FF2674AFDB00097075 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		CAB582012674B73700097075 /* WGBArchorDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBArchorDemoViewController.h; sourceTree = "<group>"; };
 		CAB582022674B73700097075 /* WGBArchorDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBArchorDemoViewController.m; sourceTree = "<group>"; };
+		CABC5D4F2A03E71A00B6417F /* WGBBounceEffectButtonDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBBounceEffectButtonDemoVC.h; sourceTree = "<group>"; };
+		CABC5D502A03E71A00B6417F /* WGBBounceEffectButtonDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBBounceEffectButtonDemoVC.m; sourceTree = "<group>"; };
+		CABC5D532A03E73800B6417F /* DHBounceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBounceView.h; sourceTree = "<group>"; };
+		CABC5D542A03E73800B6417F /* DHBounceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHBounceView.m; sourceTree = "<group>"; };
+		CABC5D562A03E74A00B6417F /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		CABF3F792561449300EBF0E0 /* WGBGoodsCartDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGoodsCartDemoViewController.h; sourceTree = "<group>"; };
 		CABF3F7A2561449300EBF0E0 /* WGBGoodsCartDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGoodsCartDemoViewController.m; sourceTree = "<group>"; };
 		CAD0132328DDE9FE0070ACB5 /* ShowCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCodeViewController.m; sourceTree = "<group>"; };
@@ -2392,6 +2400,7 @@
 		04C302482382D19500356991 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				CABC5D4E2A03E6E000B6417F /* BounceEffectButton */,
 				CABF3F782561447100EBF0E0 /* GoodsCart */,
 				CA4E2C6924F25152006DFAC5 /* StrokeEnd */,
 				CA4E2C6024F244DB006DFAC5 /* FlowButton */,
@@ -3376,6 +3385,26 @@
 			path = FMMosaicLayout;
 			sourceTree = "<group>";
 		};
+		CABC5D4E2A03E6E000B6417F /* BounceEffectButton */ = {
+			isa = PBXGroup;
+			children = (
+				CABC5D522A03E73800B6417F /* DHBounceView */,
+				CABC5D562A03E74A00B6417F /* bg.jpg */,
+				CABC5D4F2A03E71A00B6417F /* WGBBounceEffectButtonDemoVC.h */,
+				CABC5D502A03E71A00B6417F /* WGBBounceEffectButtonDemoVC.m */,
+			);
+			path = BounceEffectButton;
+			sourceTree = "<group>";
+		};
+		CABC5D522A03E73800B6417F /* DHBounceView */ = {
+			isa = PBXGroup;
+			children = (
+				CABC5D532A03E73800B6417F /* DHBounceView.h */,
+				CABC5D542A03E73800B6417F /* DHBounceView.m */,
+			);
+			path = DHBounceView;
+			sourceTree = "<group>";
+		};
 		CABF3F782561447100EBF0E0 /* GoodsCart */ = {
 			isa = PBXGroup;
 			children = (
@@ -3869,6 +3898,7 @@
 				CAD0152728DDEA010070ACB5 /* vala.min.js in Resources */,
 				CAD0147828DDEA000070ACB5 /* tomorrow-night-bright.min.css in Resources */,
 				CAD014BC28DDEA000070ACB5 /* q.min.js in Resources */,
+				CABC5D572A03E74A00B6417F /* bg.jpg in Resources */,
 				CAD014DC28DDEA000070ACB5 /* gherkin.min.js in Resources */,
 				CAD0149328DDEA000070ACB5 /* julia.min.js in Resources */,
 				CAD014F728DDEA010070ACB5 /* scheme.min.js in Resources */,
@@ -4200,6 +4230,7 @@
 				0453FDBF236C2B9200D8B2A5 /* TableViewCustomDeleteButtonDemoViewController.m in Sources */,
 				04C302522382D44800356991 /* TableViewDemoViewController.m in Sources */,
 				04157B9E23C5DF5C0069FC15 /* WGBFloatingHeaderDemoViewController.m in Sources */,
+				CABC5D552A03E73800B6417F /* DHBounceView.m in Sources */,
 				04E891BD23A87B360081F833 /* WGBPerson.m in Sources */,
 				04B0CA862340C5C4007B2AD2 /* WGBAlertTool.m in Sources */,
 				04D7047A23893E5800E88123 /* WGBGlowEffectViewController.m in Sources */,
@@ -4418,6 +4449,7 @@
 				04E89101239F59010081F833 /* UIView+Geometry.m in Sources */,
 				CA4E2C9D24FFDA6F006DFAC5 /* WGBDemoRefreshHeder.m in Sources */,
 				CAD0143628DDE9FF0070ACB5 /* PHPickerView.m in Sources */,
+				CABC5D512A03E71A00B6417F /* WGBBounceEffectButtonDemoVC.m in Sources */,
 				0453FDC3236C2C9100D8B2A5 /* TestDeleteButtonTableViewCell.m in Sources */,
 				0461CBA9235EA85200F43B61 /* UIApplication+TouchHints.m in Sources */,
 				949C90D324F49DB300AC0B6A /* WGBPopupViewWrapper.m in Sources */,
@@ -4548,7 +4580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
@@ -4688,7 +4720,7 @@
 			baseConfigurationReference = 1EC81C144BB40E53E74B48C7 /* Pods-TestDemo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;
@@ -4708,7 +4740,7 @@
 			baseConfigurationReference = DA60FE685444BB449985F3E6 /* Pods-TestDemo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = $SRCROOT/TestDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TestDemo/Info.plist;

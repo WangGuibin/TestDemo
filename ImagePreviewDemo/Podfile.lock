@@ -1,0 +1,39 @@
+PODS:
+  - GKPhotoBrowser (2.5.9):
+    - GKPhotoBrowser/Default (= 2.5.9)
+  - GKPhotoBrowser/AVPlayer (2.5.9):
+    - GKPhotoBrowser/Core
+  - GKPhotoBrowser/Core (2.5.9):
+    - GKSliderView
+  - GKPhotoBrowser/Default (2.5.9):
+    - GKPhotoBrowser/AVPlayer
+    - GKPhotoBrowser/SD
+  - GKPhotoBrowser/SD (2.5.9):
+    - GKPhotoBrowser/Core
+    - SDWebImage (~> 5.0)
+  - GKSliderView (1.2.2)
+  - SDWebImage (5.15.8):
+    - SDWebImage/Core (= 5.15.8)
+  - SDWebImage/Core (5.15.8)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - GKPhotoBrowser
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - GKPhotoBrowser
+    - GKSliderView
+    - SDWebImage
+    - YYModel
+
+SPEC CHECKSUMS:
+  GKPhotoBrowser: 4a2353d2e705dc5e65822e2c7cbd37a8495ebf22
+  GKSliderView: 94fab41465f2ba543200f04bee401020beab4041
+  SDWebImage: cb032eba469c54e0000e78bcb0a13cdde0a52798
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 8fd791ed6cfbccf85022cda6de29f9f334a6c4e7
+
+COCOAPODS: 1.12.0
